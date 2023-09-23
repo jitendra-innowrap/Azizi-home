@@ -9,8 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@motionone/utils": "^10.16.3",
+    "@mui/material": "^5.14.10",
+    "axios": "^1.5.0",
+    "client-only": "^0.0.1",
+    "country-data": "^0.0.31",
+    "framer-motion": "^10.16.4",
     "next": "13.5.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-alice-carousel": "^2.7.1",
+    "react-icons": "^4.11.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-phone-number-input": "^3.3.6"
   }
 }

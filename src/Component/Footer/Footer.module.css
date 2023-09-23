@@ -1,0 +1,196 @@
+.footerSection{
+    background-color: #2C2A29;
+    padding-block: 60px;
+    padding-inline: 60px;
+}
+.footerMainDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.footerMain{
+    display: flex;
+    justify-content: space-between;
+}
+.linkSection{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.links{
+    display: block;
+    /* width: 100%; */
+    padding-top: 20px;
+}
+.link{
+    display: block;
+    /* width: 100%; */
+    font-family: helvetica neue;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -1%;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+.linkColumnHeading{
+    font-family: helvetica neue;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: #B6B4B7;
+    text-transform: uppercase;
+}
+.inputDiv{
+    display: flex;
+}
+.email{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffff;
+    font-family: helvetica neue;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -1%;
+    color: #77767B;
+    width: 400px;
+    height: 54px;
+    margin-top: 20px;
+}
+.emailBtnImage{
+    width: 24px;
+    height: 24px;
+}
+.emailBtn{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffff;
+    cursor: pointer;
+}
+.divForm{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.footerFooter{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+.privacySpan ,
+.copySpan ,
+.PrivacyLink{
+    font-family: helvetica neue;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -1%;
+    color: #B6B4B7;
+}
+.PrivacyLink{
+    text-decoration: none;
+    cursor: pointer;
+}
+.copySpan{
+    width: 424px;
+}
+
+.whiteLogo{
+    width: 110px;
+    height: 24px;
+}
+.footerHead{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.iconImg{
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+}
+.iconsDiv{
+    width: 424px;
+}
+@media (max-width: 1400px) {
+    .iconsDiv{
+        width: 324px;
+    }
+    .copySpan{
+        width: 324px;
+    }
+    .email{
+        width: 300px;
+    }
+}
+@media (max-width: 1280px) {
+    .iconsDiv{
+        width: 224px;
+    }
+    .copySpan{
+        width: 224px;
+    }
+    .email{
+        width: 200px;
+    }
+}
+@media (max-width: 1023px) {
+    .iconsDiv{
+        width: auto;
+    }
+    .copySpan{
+        width: auto;
+    }
+    .email{
+        width: 400px;
+    }
+    .footerMain{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .divForm {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        padding-bottom: 60px;
+    }
+}
+@media (max-width: 700px) {
+    .footerSection{
+        padding-block: 30px;
+        padding-inline: 30px;
+    }
+    .footerHead{
+        display: block;
+    }
+    .whiteLogo {
+       margin-bottom: 30px;
+    }
+    .email {
+        width: 300px;
+    }
+    .linkSection {
+        display: block;
+    }
+    .linkColumn1{
+        margin-bottom: 60px;
+    }
+    .linkColumn2{
+        margin-bottom: 60px;
+    }
+    .footerFooter {
+        display: block;
+    }
+    .copySpan {
+        display: block;
+        width: 100%;
+        margin-top: 12px;
+    }
+}
+@media (max-width: 380px) {
+    .email {
+        width: 100%;
+    }
+}

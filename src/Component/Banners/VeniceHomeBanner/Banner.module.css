@@ -1,0 +1,57 @@
+.homeBannerVideo{
+    position: relative;
+}
+.bannerVideo{
+    width: 100%;
+    height: 1080px;
+    object-fit: cover;
+}
+.videoOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99.5%;
+    background-color: rgba(0, 0, 0, 30%); /* Adjust the overlay color and opacity */
+}
+.playBtn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    color: #fff;
+    font-family: Montserrat;
+    width: 353px;
+    padding-block: 17px;
+    background: rgb(0,0,0, 30%);
+    border: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.playSvg{
+    width:20px;
+    height: 19px;
+    margin-right: 7px;
+}
+
+
+@media (max-width: 1600px) {
+    /* 1600 * 783 */
+    .bannerVideo {
+        height: 783px;
+    }
+}
+@media (max-width: 1400px) {
+    /* 1366 * 768 */
+    .bannerVideo {
+        height: 768px;
+    }
+}
+@media (max-width: 1280px) {
+    .bannerVideo {
+        height: 600px;
+    }
+}

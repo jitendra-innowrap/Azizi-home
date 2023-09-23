@@ -1,0 +1,53 @@
+.parallax {
+    overflow: hidden;
+    letter-spacing: -2px;
+    line-height: 0.8;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+
+  .parallax .scroller {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 64px;
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+.imageWrapped {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.imageWrapped:last-child {
+    margin-right: 30px;
+}
+
+.singleImage {
+    cursor: pointer;
+}
+.multiSliderDiv{
+  padding-top: 120px;
+}
+
+@media (max-width: 1600px) {
+  .multiSliderDiv{
+    padding-top: 100px;
+  }
+}
+@media (max-width: 1400px) {
+  .multiSliderDiv{
+    padding-top: 80px;
+  }
+}
+@media (max-width: 1280px) {
+  .multiSliderDiv{
+    padding-top: 60px;
+  }
+}

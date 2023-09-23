@@ -1,8 +1,8 @@
 'use client'
-import { useRef } from 'react';
 import Styles from './Banner.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import React, { useRef, useEffect } from 'react';
 
 export default function Banner() {
 
@@ -14,11 +14,31 @@ export default function Banner() {
         }
     };
 
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        // Ensure the video is muted (autoplay requires muting)
+        videoRef.current.muted = true;
+
+        // Start the video
+        videoRef.current.play().catch(error => {
+            // Handle any play errors, e.g., related to autoplay restrictions
+            console.error('Video playback error:', error);
+        });
+    }, []);
+
     return (
         <>
-            <section className={Styles.homeBannerVideo}>
-                <video autoPlay muted loop id="bg-video" className={Styles.bannerVideo}>
-                    <source src="/Assets/Home/videos/backgroundGif.mp4" type="video/mp4" />
+            <section className={Styles.homeBannerVideo}>              
+                <video
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    playsInline
+                    src="backgroundGif.mp4"
+                    type="video/mp4"
+                    className={Styles.bannerVideo}
+                >
                     Your browser does not support the video tag.
                 </video>
                 <div className={Styles.videoOverlay}></div>
@@ -26,7 +46,7 @@ export default function Banner() {
                     onClick={scrollToTop}
                 >
                     <Image
-                        src="/Assets/Home/svgs/mdi_play_icon.svg"
+                        src="/home/mdi_play_icon.svg"
                         alt="Image"
                         width={100}
                         height={100}

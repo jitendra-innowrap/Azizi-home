@@ -26,7 +26,7 @@ export default function PopUpInfo3({ handleClose }) {
                 </div>
                 <div className={`${Styles.infoDiv}`}>
                     <div className={`${Styles.infoBox}`}>
-                        <Image
+                        <img
                             src="/Assets/Home/images/DesireOndoorstep/School - Carousel.png"
                             alt="Image"
                             width={100}
@@ -38,7 +38,7 @@ export default function PopUpInfo3({ handleClose }) {
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
-                        <Image
+                        <img
                             src="/Assets/Home/images/DesireOndoorstep/Cable Car - Carousel.png"
                             alt="Image"
                             width={100}
@@ -50,7 +50,7 @@ export default function PopUpInfo3({ handleClose }) {
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
-                        <Image
+                        <img
                             src="/Assets/Home/images/DesireOndoorstep/Hotel - Carousel.png"
                             alt="Image"
                             width={100}
@@ -62,7 +62,7 @@ export default function PopUpInfo3({ handleClose }) {
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
-                        <Image
+                        <img
                             src="/Assets/Home/images/DesireOndoorstep/Hospital - Carousel.png"
                             alt="Image"
                             width={100}

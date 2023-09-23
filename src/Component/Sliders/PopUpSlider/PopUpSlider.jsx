@@ -8,7 +8,7 @@ import Styles from './PopUpSlider.module.css'
 export default function PopUpSlider() {
     const items = [
         <div key={1} className="item">
-           <Image
+            <img
                 src="/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png"
                 alt="Image"
                 width={100}
@@ -19,7 +19,7 @@ export default function PopUpSlider() {
             />
         </div>,
         <div key={2} className="item">
-            <Image
+            <img
                 src="/Assets/Home/images/DesireOndoorstep/Restaurant - Carousel.png"
                 alt="Image"
                 width={100}
@@ -29,7 +29,7 @@ export default function PopUpSlider() {
             />
         </div>,
         <div key={3} className="item">
-            <Image
+            <img
                 src="/Assets/Home/images/DesireOndoorstep/Luxury Boutiques - Carousel.png"
                 alt="Image"
                 width={100}
@@ -39,7 +39,7 @@ export default function PopUpSlider() {
             />
         </div>,
         <div key={4} className="item">
-        <Image
+            <img
                 src="/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png"
             alt="Image"
             width={100}

@@ -5,13 +5,23 @@ import PopUpSlider from '../Sliders/PopUpSlider/PopUpSlider'
 import PopUpInfo from '../PopUpSliderInfo/PopUpInfo'
 import PopUpInfo2 from '../PopUpSliderInfo1/PopUpInfo1'
 import PopUpInfo3 from '../PopUpSliderInfo3/PopUpInfo3'
+import PopUpSlider2 from '../Sliders/PopUpSlider2/PopUpSlider2'
+import PopUpSlider3 from '../Sliders/PopUpSlider3/PopUpSlider3'
 export default function PopUp({ handleClose, PopUpValue }) {
 
     return (
         <>
             <div className={styles.container} >
                 <div className={styles.carouselContainer}>
-                    <PopUpSlider/>
+                    {
+                        PopUpValue == 1 ?
+                            <PopUpSlider />
+                            : PopUpValue == 2 ?
+                                <PopUpSlider2 />
+                                :
+                                <PopUpSlider3 />
+
+                    }
                 </div>
                 <div className={styles.scrollableSection}>
                     {
@@ -39,7 +49,15 @@ export default function PopUp({ handleClose, PopUpValue }) {
                     }
                 </div>
                 <div className={styles.carouselContainerMobile}>
-                    <PopUpSlider/>
+                    {
+                        PopUpValue == 1 ?
+                            <PopUpSlider />
+                            : PopUpValue == 2 ?
+                                <PopUpSlider2 />
+                                :
+                                <PopUpSlider3 />
+
+                    }
                 </div>
             </div>
         </>

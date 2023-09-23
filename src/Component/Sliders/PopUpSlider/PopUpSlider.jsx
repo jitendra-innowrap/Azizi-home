@@ -9,17 +9,18 @@ export default function PopUpSlider() {
     const items = [
         <div key={1} className="item">
            <Image
-                src="/home/DesireOndoorstep/Retail - Carousel.png"
+                src="/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png"
                 alt="Image"
                 width={100}
                 height={100}
+                quality={100}
                 priority
                 className={Styles.ContainImage}
             />
         </div>,
         <div key={2} className="item">
             <Image
-                src="/home/DesireOndoorstep/Restaurant - Carousel.png"
+                src="/Assets/Home/images/DesireOndoorstep/Restaurant - Carousel.png"
                 alt="Image"
                 width={100}
                 height={100}
@@ -29,7 +30,7 @@ export default function PopUpSlider() {
         </div>,
         <div key={3} className="item">
             <Image
-                src="/home/DesireOndoorstep/Luxury Boutiques - Carousel.png"
+                src="/Assets/Home/images/DesireOndoorstep/Luxury Boutiques - Carousel.png"
                 alt="Image"
                 width={100}
                 height={100}
@@ -39,7 +40,7 @@ export default function PopUpSlider() {
         </div>,
         <div key={4} className="item">
         <Image
-                src="/home/DesireOndoorstep/Leisure - Carousel.png"
+                src="/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png"
             alt="Image"
             width={100}
             height={100}
@@ -64,8 +65,8 @@ export default function PopUpSlider() {
             <div className={Styles.CarouselBtns}>
             <button className={Styles.CarouselBtn} onClick={handlePrevClick}>
                 <Image
-                    src="/home/right-arrow-icon.svg"
-                    alt="Image"
+                            src="/Assets/Icons/right-arrow-icon.svg"
+                            alt="Image"
                     width={100}
                     height={100}
                     className={Styles.CarouselBtnIcon}
@@ -73,7 +74,7 @@ export default function PopUpSlider() {
             </button>
             <button className={Styles.CarouselBtn} onClick={handleNextClick}>
                 <Image
-                    src="/home/left-arrow-icon.svg"
+                            src="/Assets/Icons/left-arrow-icon.svg"
                     alt="Image"
                     width={100}
                     height={100}

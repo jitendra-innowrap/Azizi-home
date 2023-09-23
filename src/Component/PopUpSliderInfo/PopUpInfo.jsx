@@ -12,7 +12,7 @@ export default function PopUpInfo({handleClose}) {
                         onClick={handleClose}
                     >
                         <Image
-                            src="/home/Close.svg"
+                            src="/Assets/Icons/Close.svg"
                             alt="Image"
                             width={100}
                             height={100}
@@ -27,7 +27,7 @@ export default function PopUpInfo({handleClose}) {
                 <div className={`${Styles.infoDiv}`}>
                     <div className={`${Styles.infoBox}`}>
                         <Image
-                             src="/pop-up/info/info1.svg"
+                            src="/Assets/Home/images/DesireOndoorstep/Retail - Carousel.png"
                             alt="Image"
                             width={100}
                             height={100}
@@ -39,7 +39,7 @@ export default function PopUpInfo({handleClose}) {
                     </div>
                     <div className={`${Styles.infoBox}`}>
                         <Image
-                             src="/pop-up/info/info2.svg"
+                            src="/Assets/Home/images/DesireOndoorstep/Restaurant - Carousel.png"
                             alt="Image"
                             width={100}
                             height={100}
@@ -51,7 +51,7 @@ export default function PopUpInfo({handleClose}) {
                     </div>
                     <div className={`${Styles.infoBox}`}>
                         <Image
-                             src="/pop-up/info/info3.svg"
+                            src="/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png"
                             alt="Image"
                             width={100}
                             height={100}
@@ -63,7 +63,7 @@ export default function PopUpInfo({handleClose}) {
                     </div>
                     <div className={`${Styles.infoBox}`}>
                         <Image
-                             src="/pop-up/info/info4.svg"
+                            src="/Assets/Home/images/DesireOndoorstep/Luxury Boutiques - Carousel.png"
                             alt="Image"
                             width={100}
                             height={100}

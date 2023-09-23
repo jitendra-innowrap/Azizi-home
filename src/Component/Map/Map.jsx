@@ -5,7 +5,7 @@ export default function Map() {
     return (
         <div className={styles.map}>
             <Image
-                src="/home/svgs/Map.svg"
+                src="/Assets/Home/svgs/Map.svg"
                 alt="Image"
                 width={100}
                 height={100}

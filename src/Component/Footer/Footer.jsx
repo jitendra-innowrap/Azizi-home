@@ -8,7 +8,7 @@ export default function Footer() {
         <footer className={`${styles.footerSection}`}>
             <div className={`${styles.footerHead}`}>
                 <Image
-                    src="/home/white_logo.svg"
+                    src="/Assets/Icons/white_logo.svg"
                     alt="Image"
                     width={100}
                     height={100}
@@ -17,7 +17,7 @@ export default function Footer() {
                 <div className={`${styles.iconsDiv}`}>
                     <Link href="/" className={styles.iconlink}>
                         <Image
-                            src="/home/Facebook.svg"
+                            src="/Assets/Icons/Facebook.svg"
                             alt="Image"
                             width={100}
                             height={100}
@@ -26,7 +26,7 @@ export default function Footer() {
                     </Link>
                     <Link href="/" className={styles.iconlink}>
                         <Image
-                            src="/home/Linkedin.svg"
+                            src="/Assets/Icons/Linkedin.svg"
                             alt="Image"
                             width={100}
                             height={100}
@@ -35,7 +35,7 @@ export default function Footer() {
                     </Link>
                     <Link href="/" className={styles.iconlink}>
                         <Image
-                            src="/home/Instagram.svg"
+                            src="/Assets/Icons/Instagram.svg"
                             alt="Image"
                             width={100}
                             height={100}
@@ -44,7 +44,7 @@ export default function Footer() {
                     </Link>
                     <Link href="/" className={styles.iconlink}>
                         <Image
-                            src="/home/Twitter.svg"
+                            src="/Assets/Icons/Twitter.svg"
                             alt="Image"
                             width={100}
                             height={100}
@@ -101,7 +101,7 @@ export default function Footer() {
                                         />
                                         <button className={styles.emailBtn} >
                                             <Image
-                                                src="/home/left-arrow-icon.svg"
+                                                src="/Assets/Icons/left-arrow-icon.svg"
                                                 alt="Image"
                                                 width={100}
                                                 height={100}

@@ -9,19 +9,19 @@ export default function RealLookCarousel()  {
   const items = [
     <div key={1} className="item">
        <video autoPlay muted loop id="bg-video"  className={realLookCarouselStyle.ContainImage}>
-        <source src="look-1.mp4" type="video/mp4" />
+        <source src="/Assets/Home/videos/look-1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
     </div>,
     <div key={2} className="item">
         <video autoPlay muted loop id="bg-video"  className={realLookCarouselStyle.ContainImage}>
-        <source src="look-2.mp4" type="video/mp4" />
+        <source src="/Assets/Home/videos/look-2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
     </div>,
     <div key={3} className="item">
         <video autoPlay muted loop id="bg-video"  className={realLookCarouselStyle.ContainImage}>
-        <source src="look-3.mp4" type="video/mp4" />
+        <source src="/Assets/Home/videos/look-3.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
     </div>,
@@ -42,7 +42,7 @@ export default function RealLookCarousel()  {
         <div className={realLookCarouselStyle.CarouselBtns}>
           <button className={realLookCarouselStyle.CarouselBtn} onClick={handlePrevClick}>
             <Image
-                src="/home/right-arrow-icon.svg"
+              src="/Assets/Icons/right-arrow-icon.svg"
                 alt="Image"
                 width={100}
                 height={100}
@@ -51,7 +51,7 @@ export default function RealLookCarousel()  {
           </button>
           <button className={realLookCarouselStyle.CarouselBtn} onClick={handleNextClick}>
             <Image
-                src="/home/left-arrow-icon.svg"
+              src="/Assets/Icons/left-arrow-icon.svg"
                 alt="Image"
                 width={100}
                 height={100}

@@ -91,7 +91,7 @@ export default function OasisDreamCarousel() {
         <div className={oasisDreamCarouselStyle.CarouselBtns}>
           <button className={oasisDreamCarouselStyle.CarouselBtn} onClick={handlePrevClick}>
             <Image
-              src="/Assets/icons/right-arrow-icon.svg"
+              src="/Assets/Icons/right-arrow-icon.svg"
               alt="Image"
               width={100}
               height={100}
@@ -100,7 +100,7 @@ export default function OasisDreamCarousel() {
           </button>
           <button className={oasisDreamCarouselStyle.CarouselBtn} onClick={handleNextClick}>
             <Image
-              src="/Assets/icons/left-arrow-icon.svg"
+              src="/Assets/Icons/left-arrow-icon.svg"
               alt="Image"
               width={100}
               height={100}

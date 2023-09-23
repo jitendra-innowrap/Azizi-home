@@ -51,7 +51,7 @@
     padding-inline: 10px;
 }
 .oasisDreamTitleSection{
-    background-image: url('/Assets/Home/svgs/oasis-dream-title-section-bg-svg.');
+    background-image: url('/Assets/Home/svgs/oasis-dream-title-section-bg-svg.svg');
     /* background-size: cover;
     background-position: center center; */
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@
     padding-bottom: 114px;
 }
 .oasisDreamContainSection{
-    background-image: url('/Assets/Home/svgs/oasis-dream-contain-section-bg-svg.');
+    background-image: url('/Assets/Home/svgs/oasis-dream-contain-section-bg-svg.svg');
     background-repeat: no-repeat;
     background-size: 75% auto;
 }
@@ -141,7 +141,7 @@
     border: none;
 }
 .findHomeSection{
-    background-image: url('/Assets/Home/svgs/find-home-bg-svg.');
+    background-image: url('/Assets/Home/svgs/find-home-bg-svg.svg');
     background-repeat: no-repeat;
     background-position: top right;
     margin-top: -110px;
@@ -246,7 +246,7 @@
     background-position: top right;
     background-size: 80% auto;
     margin-top: -1050px; */
-    background-image: url('/Assets/Home/svgs/oasis-dream-title-section-bg-svg.');
+    background-image: url('/Assets/Home/svgs/oasis-dream-title-section-bg-svg.svg');
     /* background-size: cover;
     background-position: center center; */
     background-repeat: no-repeat;

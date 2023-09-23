@@ -46,7 +46,7 @@ export default function Banner() {
                     onClick={scrollToTop}
                 >
                     <Image
-                        src="/Assets/Home/videos/mdi_play_icon.svg"
+                        src="/Assets/Home/svgs/mdi_play_icon.svg"
                         alt="Image"
                         width={100}
                         height={100}

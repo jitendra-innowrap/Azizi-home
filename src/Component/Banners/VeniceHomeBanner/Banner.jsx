@@ -1,8 +1,8 @@
 'use client'
+import { useEffect, useRef } from 'react';
 import Styles from './Banner.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { useRef, useEffect } from 'react';
 
 export default function Banner() {
 
@@ -29,13 +29,13 @@ export default function Banner() {
 
     return (
         <>
-            <section className={Styles.homeBannerVideo}>              
+            <section className={Styles.homeBannerVideo}>
                 <video
                     ref={videoRef}
                     autoPlay
                     loop
                     playsInline
-                    src="backgroundGif.mp4"
+                    src="/Assets/Home/videos/backgroundGif.mp4"
                     type="video/mp4"
                     className={Styles.bannerVideo}
                 >
@@ -46,7 +46,7 @@ export default function Banner() {
                     onClick={scrollToTop}
                 >
                     <Image
-                        src="/home/mdi_play_icon.svg"
+                        src="/Assets/Home/videos/mdi_play_icon.svg"
                         alt="Image"
                         width={100}
                         height={100}

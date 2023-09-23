@@ -169,6 +169,16 @@
 .findHomeImageContainer{
     position: relative;
     display: inline-block;
+    width: 100%;
+    }
+    
+    .findHomeImageOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 30%);
 }
 .findHomeImageTilte{
     position: absolute;
@@ -181,6 +191,7 @@
     letter-spacing: 5%;
     color: #FFFFFF;
     font-weight: 500;
+    z-index: 1;
 }
 .findHomeImageButton{
     width: 169px;
@@ -617,7 +628,7 @@
         top: 10px;
         right: 10px;
     }
-    .findHomeImage {
+        .findHomeImageContainer {
         margin-bottom: 15px;
     }
     .mapSection {

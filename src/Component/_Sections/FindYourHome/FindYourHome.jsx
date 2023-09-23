@@ -1,15 +1,6 @@
 import React from 'react'
-import homeStyle from '@/app/home.module.css'
+import homeStyle from '@/app/home/home.module.css'
 import Image from 'next/image'
-
-const overlay = {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 30%)'
-};
 
 export default function FindYourHome() {
     return (

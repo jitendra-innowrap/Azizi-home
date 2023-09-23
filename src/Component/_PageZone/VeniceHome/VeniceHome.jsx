@@ -1,4 +1,5 @@
 import Banner from '@/Component/Banners/VeniceHomeBanner/Banner'
+import FormSection from '@/Component/FormSection/FormSection'
 import OasisDreamCarousel from '@/Component/OasisDreamCarousel'
 import DesireOnDoorStep from '@/Component/_Sections/DesireOnDoorStep/DesireOnDoorStep'
 import FindYourHome from '@/Component/_Sections/FindYourHome/FindYourHome'
@@ -16,6 +17,7 @@ export default function VeniceHome() {
             <DesireOnDoorStep />
             <LocationBenefits />
             <GetRealLook />
+            <FormSection />
         </>
 
     )

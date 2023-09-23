@@ -10,7 +10,7 @@ export default function FormSection() {
             <section className={`${styles.section}`}>
                 <div className={`${styles.container}`}>
                 <Image
-                    src="/home/form-bg-image.svg"
+                        src="/Assets/Home/images/FindYourHome/Enquire.png"
                     alt="Image"
                     width={100}
                     height={100}

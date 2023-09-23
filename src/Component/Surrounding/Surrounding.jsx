@@ -8,7 +8,7 @@ import DoorStepSliderImage from '@/Component/Molecules/DoorStepSliderImage/DoorS
 import DoorStepSliderText from '@/Component/Molecules/DoorStepSliderText/DoorStepSliderText'
 const slidedata = [
   {
-    title: 'Leisure & ENTERTAINMENT ',
+    title: 'Leisure & ENTERTAINMENT',
     url: '/surroudings/Line1/1.png'
   },
 
@@ -90,30 +90,30 @@ const Surrounding = ({ handleOpen }) => {
   return (
     <div className={surroundingStyle.multiSliderDiv}  >
         <ParallaxText baseVelocity={-1}>
-        <div className={surroundingStyle.imageWrapped}>
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Retail - Carousel.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Restaurant - Carousel.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Luxury Boutiques - Carousel.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png'} />
+        <div className={surroundingStyle.imageWrapped}   >
+          <DoorStepSliderImage onClick={handleOpen} className={surroundingStyle.singleImage} title={'Leisure & ENTERTAINMENT'} url={'/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png'} />
+          <DoorStepSliderText onClick={handleOpen} className={surroundingStyle.singleImage} title={'Boulevard'} color={'#B6B78A'} />
+          <DoorStepSliderImage onClick={handleOpen} className={surroundingStyle.singleImage} title={'RETAIL'} url={'/Assets/Home/images/DesireOndoorstep/Retail - Carousel.png'} />
+          <DoorStepSliderImage onClick={handleOpen} className={surroundingStyle.singleImage} title={'RESTAURANTS & CAFES'} url={'/Assets/Home/images/DesireOndoorstep/Restaurant - Carousel.png'} />
+          <DoorStepSliderImage onClick={handleOpen} className={surroundingStyle.singleImage} title={'Luxury Boutiques'} url={'/Assets/Home/images/DesireOndoorstep/Luxury Boutiques - Carousel.png'} />          
             </div>
         </ParallaxText>
       <ParallaxText baseVelocity={1}>
         <div className={surroundingStyle.imageWrapped}>
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Arts Culture - Carousel.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Cultural District - Carousel.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Perfomance - Carousel.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Floating Stage - Carousel.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Floating Stage - Carousel.png'} />
+          <DoorStepSliderImage onClick={handleOpen} className={surroundingStyle.singleImage} title={'Arts & culture'} url={'/Assets/Home/images/DesireOndoorstep/Arts Culture - Carousel.png'} />
+          <DoorStepSliderText onClick={handleOpen} className={surroundingStyle.singleImage} title={'OPERA HOUSE'} color={'#41929E'} />
+          <DoorStepSliderImage onClick={handleOpen} className={surroundingStyle.singleImage} title={'Thriving cultural district'} url={'/Assets/Home/images/DesireOndoorstep/Cultural District - Carousel.png'} />
+          <DoorStepSliderImage onClick={handleOpen} className={surroundingStyle.singleImage} title={'First-class performances'} url={'/Assets/Home/images/DesireOndoorstep/Perfomance - Carousel.png'} />
+          <DoorStepSliderImage onClick={handleOpen} className={surroundingStyle.singleImage} title={'Floating stage'} url={'/Assets/Home/images/DesireOndoorstep/Floating Stage - Carousel.png'} />
             </div>
         </ParallaxText>
         <ParallaxText baseVelocity={-1}>
         <div className={surroundingStyle.imageWrapped}>
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Hospital - Carousel.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/School - Carousel.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/School - Carousel.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Hotel - Carousel.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Cable Car - Carousel.png'} />
+          <DoorStepSliderImage onClick={handleOpen} className={surroundingStyle.singleImage} title={'Private hospital'} url={'/Assets/Home/images/DesireOndoorstep/Hospital - Carousel.png'} />
+          <DoorStepSliderText onClick={handleOpen} className={surroundingStyle.singleImage} title={'Everyday Amenities'} color={'#175A7E'} />
+          <DoorStepSliderImage onClick={handleOpen} className={surroundingStyle.singleImage} title={'International schools'} url={'/Assets/Home/images/DesireOndoorstep/School - Carousel.png'} />
+          <DoorStepSliderImage onClick={handleOpen} className={surroundingStyle.singleImage} title={'Cable car'} url={'/Assets/Home/images/DesireOndoorstep/Cable Car - Carousel.png'} />
+          <DoorStepSliderImage onClick={handleOpen} className={surroundingStyle.singleImage} title={'Five-star Family hotel'} url={'/Assets/Home/images/DesireOndoorstep/Hotel - Carousel.png'} />
             </div>
         </ParallaxText>
     </div>

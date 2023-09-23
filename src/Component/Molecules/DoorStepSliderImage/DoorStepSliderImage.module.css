@@ -1,0 +1,75 @@
+.image {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.imageContainer {
+    position: relative;
+    width: 427px;
+    height: 342px;
+    cursor: pointer;
+    display: block;
+}
+
+.title {
+    position: absolute;
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 130%;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    text-transform: uppercase;
+    z-index: 1;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 100%;
+    max-width: 400px;
+    word-wrap: break-word;
+    white-space: break-spaces;
+}
+
+.overlay {
+    height: 86px;
+    background: linear-gradient(0deg, rgb(44 42 41), rgb(255 255 255 / 0%));
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 1600px) {
+    .imageContainer {
+        position: relative;
+        width: 237px;
+        height: 190px;
+        cursor: pointer;
+    }
+
+    .title {
+        font-size: 16px;
+        bottom: 15px;
+        left: 15px;
+        max-width: 220px;
+        word-wrap: break-word;
+        white-space: break-spaces;
+    }
+}
+
+@media (max-width: 992px) {
+    .imageContainer {
+        position: relative;
+        width: 206px;
+        height: 165px;
+        cursor: pointer;
+    }
+
+    .title {
+        font-size: 14px;
+        bottom: 10px;
+        left: 10px;
+        max-width: 180px;
+        word-wrap: break-word;
+        white-space: break-spaces;
+    }
+}

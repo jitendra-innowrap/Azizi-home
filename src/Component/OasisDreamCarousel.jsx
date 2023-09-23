@@ -9,7 +9,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 export default function OasisDreamCarousel() {
   const items = [
     <div key={1} className="item">
-      <Image
+      <img
         src="/Assets/Home/images/masterplan/Villas.png"
         alt="Image"
         width={100}
@@ -20,7 +20,7 @@ export default function OasisDreamCarousel() {
       />
     </div>,
     <div key={2} className="item">
-      <Image
+      <img
         src="/Assets/Home/images/masterplan/Apartments.png"
         alt="Image"
         width={100}
@@ -31,7 +31,7 @@ export default function OasisDreamCarousel() {
       />
     </div>,
     <div key={3} className="item">
-      <Image
+      <img
         src="/Assets/Home/images/masterplan/Plot Area.png"
         alt="Image"
         width={100}
@@ -42,7 +42,7 @@ export default function OasisDreamCarousel() {
       />
     </div>,
     <div key={3} className="item">
-      <Image
+      <img
         src="/Assets/Home/images/masterplan/Opera.png"
         alt="Image"
         width={100}
@@ -53,7 +53,7 @@ export default function OasisDreamCarousel() {
       />
     </div>,
     <div key={3} className="item">
-      <Image
+      <img
         src="/Assets/Home/images/masterplan/Retail.png"
         alt="Image"
         width={100}
@@ -64,7 +64,7 @@ export default function OasisDreamCarousel() {
       />
     </div>,
     <div key={3} className="item">
-      <Image
+      <img
         src="/Assets/Home/images/masterplan/Water.png"
         alt="Image"
         width={100}

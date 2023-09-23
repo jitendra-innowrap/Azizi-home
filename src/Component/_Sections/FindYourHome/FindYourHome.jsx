@@ -21,7 +21,7 @@ export default function FindYourHome() {
                     <span className={`${homeStyle.findHomeImageTilte}`} >RESIDENCES</span>
                     <button className={`${homeStyle.findHomeImageButton}`}>
                         <Image
-                            src="/home/Rectangle-icon.svg"
+                            src="/Assets/Icons/Rectangle-icon.svg"
                             alt="Image"
                             width={100}
                             height={100}
@@ -29,6 +29,7 @@ export default function FindYourHome() {
                         />
                         EXPLORE
                     </button>
+                    <div className={`${homeStyle.findHomeImageOverlay}`}></div>
                 </div>
                 <div className={`${homeStyle.findHomeImageContainer}`} >
                     <Image
@@ -41,7 +42,7 @@ export default function FindYourHome() {
                     <span className={`${homeStyle.findHomeImageTilte}`}>VILLAS</span>
                     <button className={`${homeStyle.findHomeImageButton}`}>
                         <Image
-                            src="/home/Rectangle-icon.svg"
+                            src="/Assets/Icons/Rectangle-icon.svg"
                             alt="Image"
                             width={100}
                             height={100}
@@ -49,6 +50,7 @@ export default function FindYourHome() {
                         />
                         EXPLORE
                     </button>
+                    <div className={`${homeStyle.findHomeImageOverlay}`}></div>
                 </div>
             </div>
         </section>

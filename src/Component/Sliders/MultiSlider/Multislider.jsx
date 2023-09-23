@@ -18,16 +18,19 @@ const style = {
     // p: 4,
 };
 export default function Multislider() {
+    const [PopUpValue, setPopUpValue] = useState(1)
     const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
+    const handleOpen = (val) => {
+        setOpen(true)
+    };
     const handleClose = () => setOpen(false);
+
     return (
         <>
 
             <div className={styles.mltislider}
-                onClick={handleOpen}
             >
-                <Surrounding handleOpen={handleOpen} />
+                <Surrounding handleOpen={handleOpen} setPopUpValue={setPopUpValue} />
             </div>
 
 
@@ -38,7 +41,7 @@ export default function Multislider() {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={style}>
-                    <PopUp handleClose={handleClose} />
+                    <PopUp handleClose={handleClose} PopUpValue={PopUpValue} />
                 </Box>
             </Modal>
             

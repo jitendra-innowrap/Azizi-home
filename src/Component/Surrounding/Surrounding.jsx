@@ -91,29 +91,29 @@ const Surrounding = ({ handleOpen }) => {
     <div className={surroundingStyle.multiSliderDiv}  >
         <ParallaxText baseVelocity={-1}>
         <div className={surroundingStyle.imageWrapped}>
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line2/1.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line2/2.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line2/3.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line2/4.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line2/5.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Retail - Carousel.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Restaurant - Carousel.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Luxury Boutiques - Carousel.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png'} />
             </div>
         </ParallaxText>
       <ParallaxText baseVelocity={1}>
         <div className={surroundingStyle.imageWrapped}>
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line2/1.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line2/2.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line2/3.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line2/4.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line2/5.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Arts Culture - Carousel.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Cultural District - Carousel.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Perfomance - Carousel.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Floating Stage - Carousel.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Floating Stage - Carousel.png'} />
             </div>
         </ParallaxText>
         <ParallaxText baseVelocity={-1}>
         <div className={surroundingStyle.imageWrapped}>
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line3/1.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line3/2.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line3/3.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line3/4.png'} />
-          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/surroudings/Line3/5.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Hospital - Carousel.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/School - Carousel.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/School - Carousel.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Hotel - Carousel.png'} />
+          <Image onClick={handleOpen} className={surroundingStyle.singleImage} width={imageWidth} height={imageHeight} alt='' src={'/Assets/Home/images/DesireOndoorstep/Cable Car - Carousel.png'} />
             </div>
         </ParallaxText>
     </div>

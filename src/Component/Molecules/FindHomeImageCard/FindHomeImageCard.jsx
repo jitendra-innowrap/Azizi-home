@@ -6,6 +6,8 @@ import homeStyle from '@/app/home/home.module.css'
 
 export default function FindHomeImageCard({ image, title }) {
     const [position, setPosition] = useState({ x: 0, y: 0 });
+    const [isVisible, setIsVisible] = useState(false);
+
 
     // Update the button's position when the mouse moves
     const handleMouseMove = (e) => {
@@ -15,11 +17,10 @@ export default function FindHomeImageCard({ image, title }) {
         setPosition({ x, y });
     };
     const handleContainerHover = (e) => {
-        const rect = e.target.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        setInitialPosition({ x, y });
         setIsVisible(true);
+    };
+    const handleContainerLeave = (e) => {
+        setIsVisible(false);
     };
 
 
@@ -38,7 +39,7 @@ export default function FindHomeImageCard({ image, title }) {
         <div className={`${homeStyle.findHomeImageContainer}`}
             id="MouseFollowContainer"
             onMouseEnter={handleContainerHover}
-        // onMouseLeave={handleContainerLeave}
+            onMouseLeave={handleContainerLeave}
         >
             <img
                 src={image}
@@ -50,7 +51,7 @@ export default function FindHomeImageCard({ image, title }) {
             <span className={`${homeStyle.findHomeImageTilte}`}
             >{title}</span>
             <div className={`${homeStyle.findHomeImageOverlay}`}></div>
-            <button className={`${homeStyle.findHomeImageButton}`}
+            {isVisible && <button className={`${homeStyle.findHomeImageButton}`}
                 style={{
                     transform: `translate(${position.x}px, ${position.y}px)`,
                 }}
@@ -63,7 +64,7 @@ export default function FindHomeImageCard({ image, title }) {
                     className={homeStyle.exploreIcon}
                 />
                 EXPLORE
-            </button>
+            </button>}
         </div>
     )
 }

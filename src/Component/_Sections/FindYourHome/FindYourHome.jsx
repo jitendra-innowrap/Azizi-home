@@ -3,6 +3,7 @@ import homeStyle from '@/app/home/home.module.css'
 import Image from 'next/image'
 import FolowMouseCTA from '@/Component/Molecules/FindHomeImageCard/FindHomeImageCard'
 import FindHomeImageCard from '@/Component/Molecules/FindHomeImageCard/FindHomeImageCard'
+import FindHomeImageCard2 from '@/Component/Molecules/FindHomeImageCard/FindHomeImageCard2'
 
 export default function FindYourHome() {
     return (
@@ -13,7 +14,7 @@ export default function FindYourHome() {
             </div>
             <div className={`${homeStyle.findHomeImageSection}`}>
                 <FindHomeImageCard image={`/Assets/Home/images/FindYourHome/Residence.png`} title={`RESIDENCES`} />
-                <FindHomeImageCard image={`/Assets/Home/images/FindYourHome/Villas.png`} title={`VILLAS`} />
+                <FindHomeImageCard2 image={`/Assets/Home/images/FindYourHome/Villas.png`} title={`VILLAS`} />
             </div>
         </section>
     )

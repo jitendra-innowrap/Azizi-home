@@ -1,0 +1,224 @@
+.section {
+    padding-block: 180px;
+}
+
+.desc {
+    color: #555960;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1%;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1064px;
+    margin: auto;
+}
+
+.buttons {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.downloadIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.button {
+    color: #2C2A29;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 1%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.infoTitle {
+    font-family: Lamore;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 4%;
+    color: #2C2A29;
+    text-transform: uppercase;
+}
+
+.infoDesc {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1%;
+    color: #555960;
+}
+
+.infoBox {
+    border-top: 1px solid #D9D8DA;
+    padding-block: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoBox:last-child {
+    border-bottom: 1px solid #D9D8DA;
+}
+
+.CarouselContainer {
+    padding-top: 180px;
+    position: relative;
+}
+
+.ContainImage {
+    width: 100%;
+    height: auto;
+}
+
+.CarouselBtnDiv {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.CarouselBtn {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-inline: 8px;
+}
+
+.CarouselBtnIcon {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.CarouselBtnDiv {
+    height: 300px;
+    background: linear-gradient(0deg, rgb(44 42 41), rgb(255 255 255 / 0%));
+    width: 100%;
+}
+
+.CarouselBtns {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+}
+
+@media (max-width: 1600px) {
+
+    /* 1600 * 783 */
+    .section {
+        padding-block: 120px;
+    }
+
+    .buttons {
+        padding-bottom: 50px;
+    }
+
+    .infoBox {
+        padding-block: 50px;
+    }
+
+    .CarouselContainer {
+        padding-top: 120px;
+    }
+
+    .ContainImage {
+        max-height: 782px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 970px;
+    }
+
+    .ContainImage {
+        max-height: 767px;
+    }
+
+    .infoTitle {
+        font-size: 28px;
+        line-height: 31px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .infoBox {
+        padding-block: 40px;
+    }
+
+    .buttons {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section {
+        padding-block: 100px;
+    }
+
+    .CarouselContainer {
+        padding-top: 100px;
+    }
+
+    .container {
+        max-width: 800px;
+    }
+
+    .desc {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .buttons {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .infoBox {
+        padding-block: 30px;
+    }
+
+    .infoTitle {
+        font-size: 24px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 992px) {
+    .ContainImage {
+        width: 100%;
+        height: 786px;
+        object-fit: cover;
+    }
+
+    .CarouselBtnDiv {
+        height: 100px;
+    }
+
+    .CarouselBtns {
+        bottom: 30px;
+        right: 10px;
+    }
+}

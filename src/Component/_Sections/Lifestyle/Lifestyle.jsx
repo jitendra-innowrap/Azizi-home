@@ -1,10 +1,40 @@
 import SectionsTitle from '@/Component/Molecules/SectionTitle/SectionTitle'
 import React from 'react'
+import Styles from './Lifestyle.module.css'
+import Image from 'next/image';
 
-export default function Lifestyle() {
+export default function Lifestyle({ para, listItem }) {
+    console.log(listItem)
     return (
-        <section>
-            <SectionsTitle title={'LIFESTYLE'} para={'Experience a captivating lifestyle where your every desire is effortlessly fulfilled. Our apartment complexes are meticulously designed to encompass everything you need, including a state-of-the-art gym, steam room, sauna, your own cinema, and a clubhouse.'} />
+        <section className={Styles.section}>
+            <SectionsTitle title={'LIFESTYLE'} para={para} />
+            <div className={Styles.imageSection}>
+                <div className={Styles.imageContainer}>
+                    <Image
+                        src="/Assets/Residence/images/life-style.png"
+                        alt="Image"
+                        width={100}
+                        height={100}
+                        className={Styles.image}
+                    />
+                    <div className={Styles.overlay}></div>
+                    <span className={Styles.title}>LAGOON</span>
+                </div>
+            </div>
+            <div className={Styles.textSection}>
+                {listItem.map((title, index) => (
+                    <div className={Styles.box} key={index}>
+                        <Image
+                            src="/Assets/Residence/images/square.png"
+                            alt="Image"
+                            width={100}
+                            height={100}
+                            className={Styles.square}
+                        />
+                        <span className={Styles.boxTitle}>{title}</span>
+                    </div>
+                ))}
+            </div>
         </section>
     )
 }

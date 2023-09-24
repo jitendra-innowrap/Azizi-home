@@ -1,0 +1,198 @@
+.section {
+    padding-block: 180px;
+    background-image: url('/Assets/Residence/svg/life-style-bg.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 58% auto;
+    padding-top: 360px;
+    margin-top: -180px;
+}
+
+.imageSection {
+    padding-block: 120px;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+    background: linear-gradient(0deg, rgb(44 42 41), rgb(255 255 255 / 0%));
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    font-family: Lamore;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 4%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.textSection {
+    padding-top: 60px;
+    width: 100%;
+    max-width: 1248px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 122px;
+}
+
+.square {
+    width: 11px;
+    height: 11px;
+    margin-bottom: 30px;
+}
+
+.box {
+    display: grid;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3) {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #D9D8DA;
+}
+
+/* .box:last-child,
+.box:nth-last-child(2),
+.box:nth-last-child(3) {
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+} */
+.boxTitle {
+    font-family: Lamore;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 4%;
+    color: #2C2A29;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 1600px) {
+
+    /* 1600 * 783 */
+    .section {
+        padding-block: 120px;
+        padding-top: 240px;
+        margin-top: -120px;
+    }
+
+    .title,
+    .boxTitle {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .textSection {
+        padding-top: 50px;
+        max-width: 1148px;
+        column-gap: 100px;
+    }
+
+    .box {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    /* 1366 * 768 */
+    .title,
+    .boxTitle {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .textSection {
+        padding-top: 40px;
+        max-width: 1000px;
+        column-gap: 90px;
+    }
+
+    .box {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    .square {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .title,
+    .boxTitle {
+        font-size: 26px;
+        line-height: 29px;
+    }
+
+    .textSection {
+        padding-top: 40px;
+        max-width: 900px;
+        column-gap: 90px;
+    }
+
+    .box {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    .square {
+        width: 8px;
+        height: 8px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section {
+        padding-block: 100px;
+        padding-top: 100px;
+        margin-top: -100px;
+    }
+
+    .title,
+    .boxTitle {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    .textSection {
+        padding-top: 35px;
+        max-width: 100%;
+        column-gap: 80px;
+        padding-inline: 90px;
+    }
+
+    .box {
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+    }
+
+    .square {
+        margin-bottom: 15px;
+    }
+}

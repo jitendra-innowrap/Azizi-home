@@ -3,11 +3,11 @@ import homeStyle from '@/app/home.module.css'
 import Map from '@/Component/Map/Map'
 
 
-export default function LocationBenefits() {
+export default function LocationBenefits({ title, para }) {
     return (
         <section className={`${homeStyle.futureSurroundingSection}`}>
-            <h1 className={`${homeStyle.mainTitle} ${homeStyle.futureSurroundingTitle}`}>THE DESTINATION</h1>
-            <p className={`${homeStyle.mainParagraph} ${homeStyle.futureSurroundingParagraph}`}>Nestled in the breathtaking Arabian sands of Dubai South, Azizi Venice is poised to be an integral part of a smart and forward-thinking metropolis, spanning over 136 hectares. This prestigious enclave offers close proximity to the city&#39;s finest attractions, with direct access to the upcoming metro station and Etihad Rail Network, ensuring convenience and connectivity for residents.</p>
+            <h1 className={`${homeStyle.mainTitle} ${homeStyle.futureSurroundingTitle}`}>{title}</h1>
+            <p className={`${homeStyle.mainParagraph} ${homeStyle.futureSurroundingParagraph}`}>{para}</p>
             <div className={`${homeStyle.mapSection}`}>
                 <div className={`${homeStyle.column7}`}>
                     <Map />

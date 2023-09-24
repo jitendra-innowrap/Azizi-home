@@ -2,9 +2,10 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import homeStyle from '@/app/home/home.module.css'
+import Link from 'next/link';
 
 
-export default function FindHomeImageCard2({ image, title }) {
+export default function FindHomeImageCard2({ image, title, url }) {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [isVisible, setIsVisible] = useState(false);
 
@@ -36,7 +37,8 @@ export default function FindHomeImageCard2({ image, title }) {
     }, []);
 
     return (
-        <div className={`${homeStyle.findHomeImageContainer}`}
+        <Link href={url}>
+            <div className={`${homeStyle.findHomeImageContainer}`}
             id="MouseFollowContainer"
             onMouseEnter={handleContainerHover}
             onMouseLeave={handleContainerLeave}
@@ -66,5 +68,7 @@ export default function FindHomeImageCard2({ image, title }) {
                 EXPLORE
             </button>}
         </div>
+        </Link>
+
     )
 }

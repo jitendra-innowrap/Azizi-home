@@ -3,34 +3,14 @@ import React, { useRef } from 'react'
 import surroundingStyle from "./surrounding.module.css"
 import { useAnimation, motion, useTransform, useMotionValue, useAnimationFrame, useScroll, useVelocity, useSpring } from 'framer-motion';
 import { wrap } from '@motionone/utils';
-import Image from 'next/image';
 import DoorStepSliderImage from '@/Component/Molecules/DoorStepSliderImage/DoorStepSliderImage'
 import DoorStepSliderText from '@/Component/Molecules/DoorStepSliderText/DoorStepSliderText'
-const slidedata = [
-  {
-    title: 'Leisure & ENTERTAINMENT',
-    url: '/surroudings/Line1/1.png'
-  },
 
-  {
-    title: 'Leisure & ENTERTAINMENT ',
-    color: '##B6B78A'
-  },
-
-  {
-    title: 'Leisure & ENTERTAINMENT ',
-    url: '/surroudings/Line1/1.png'
-  },
-
-  {
-    title: 'Leisure & ENTERTAINMENT ',
-    url: '/surroudings/Line1/1.png'
-  }
-]
-function ParallaxText({ children, baseVelocity = 200 }) {
+function ParallaxText({ children, baseVelocity }) {
     const baseX = useMotionValue(0);
     const { scrollY } = useScroll();
     const scrollVelocity = useVelocity(scrollY);
+  console.log(scrollVelocity)
     const smoothVelocity = useSpring(scrollVelocity, {
       damping: 50,
       stiffness: 10
@@ -44,7 +24,9 @@ function ParallaxText({ children, baseVelocity = 200 }) {
      * have to replace for wrapping that works for you or dynamically
      * calculate
      */
-    const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+  // const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v + baseVelocity)}%`);
+
   
     const directionFactor = useRef(1);
     useAnimationFrame((t, delta) => {
@@ -54,13 +36,13 @@ function ParallaxText({ children, baseVelocity = 200 }) {
        * This is what changes the direction of the scroll once we
        * switch scrolling directions.
        */
-      if (velocityFactor.get() < 0) {
-        directionFactor.current = -1;
-      } else if (velocityFactor.get() > 0) {
-        directionFactor.current = 1;
-      }
-  
-      moveBy += directionFactor.current * moveBy * velocityFactor.get();
+      // if (velocityFactor.get() < 0) {
+      //   directionFactor.current = -1;
+      // } else if (velocityFactor.get() > 0) {
+      //   directionFactor.current = 1;
+      // }
+
+      // moveBy += directionFactor.current * moveBy * velocityFactor.get();
   
       baseX.set(baseX.get() + moveBy);
     });
@@ -85,8 +67,6 @@ function ParallaxText({ children, baseVelocity = 200 }) {
   }
 
 const Surrounding = ({ handleOpen, setPopUpValue }) => {
-  const imageWidth = 427;
-  const imageHeight = 342;
   return (
     <div className={surroundingStyle.multiSliderDiv}  >
         <ParallaxText baseVelocity={-1}>

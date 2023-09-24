@@ -1,5 +1,6 @@
 import Banner from '@/Component/Banners/VeniceHomeBanner/Banner'
 import FormSection from '@/Component/FormSection/FormSection'
+import StickySocials from '@/Component/Molecules/StickySocials/StickySocials'
 import OasisDreamCarousel from '@/Component/OasisDreamCarousel'
 import DesireOnDoorStep from '@/Component/_Sections/DesireOnDoorStep/DesireOnDoorStep'
 import FindYourHome from '@/Component/_Sections/FindYourHome/FindYourHome'
@@ -18,6 +19,7 @@ export default function VeniceHome() {
             <LocationBenefits />
             <GetRealLook />
             <FormSection />
+            <StickySocials />
         </>
 
     )

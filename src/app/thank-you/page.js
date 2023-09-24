@@ -8,7 +8,7 @@ export default function page() {
   return (
     <main className={styles.Main}>
       <Image
-        src="/colour-logo.png"
+        src="/Assets/Launch/images/colour-logo.png"
         alt="Image"
         width={340}
         height={240}
@@ -16,14 +16,14 @@ export default function page() {
         className={`${styles.thankYoucompanyImage} ${styles.companyImage}`}
       />
       <Image
-        src="/thank-you-bg.svg"
+        src="/Assets/Launch/svgs/thank-you-bg.svg"
         alt="Image"
         width={100}
         height={100}
         className={`${styles.thankBgSvg}`}
       />
       <Image
-        src="/Mobile - thank-you-bg.svg"
+        src="/Assets/Launch/svgs/Mobile - thank-you-bg.svg"
         alt="Image"
         width={100}
         height={100}
@@ -31,7 +31,7 @@ export default function page() {
       />
       <Link href={`/`} className={styles.tYlogo}>
           <Image
-            src="/black-Logo.svg"
+          src="/Assets/Launch/svgs/black-Logo.svg"
             alt="Image"
             width={100}
             height={100}

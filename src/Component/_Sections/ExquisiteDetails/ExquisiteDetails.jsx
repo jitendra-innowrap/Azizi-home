@@ -15,6 +15,7 @@ export default function ExquisiteDetails({ para }) {
                 alt="Image"
                 width={100}
                 height={100}
+                quality={100}
                 className={Styles.ContainImage}
             />
         </div>,
@@ -24,6 +25,7 @@ export default function ExquisiteDetails({ para }) {
                 alt="Image"
                 width={100}
                 height={100}
+                quality={100}
                 className={Styles.ContainImage}
             />
         </div>,
@@ -33,6 +35,7 @@ export default function ExquisiteDetails({ para }) {
                 alt="Image"
                 width={100}
                 height={100}
+                quality={100}
                 className={Styles.ContainImage}
             />
         </div>,
@@ -60,6 +63,7 @@ export default function ExquisiteDetails({ para }) {
                                 alt="Image"
                                 width={100}
                                 height={100}
+                                quality={100}
                                 className={Styles.CarouselBtnIcon}
                             />
                         </button>
@@ -69,6 +73,7 @@ export default function ExquisiteDetails({ para }) {
                                 alt="Image"
                                 width={100}
                                 height={100}
+                                quality={100}
                                 className={Styles.CarouselBtnIcon}
                             />
                         </button>

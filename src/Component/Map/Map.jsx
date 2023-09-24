@@ -25,14 +25,14 @@ const mapStyles = [
 export default function Map() {
     return (
         <div className={styles.map}>
-            {/* <Image
+            <Image
                 src="/Assets/Home/svgs/Map.svg"
                 alt="Image"
                 width={100}
                 height={100}
                 className={styles.mapImg}
-            /> */}
-            <LoadScript googleMapsApiKey="YOUR_API_KEY_HERE">
+            />
+            {/* <LoadScript googleMapsApiKey="YOUR_API_KEY_HERE">
                 <GoogleMap
                     mapContainerStyle={{ width: '100%', height: '100%' }}
                     center={{ lat: 37.7749, lng: -122.4194 }}
@@ -43,7 +43,7 @@ export default function Map() {
                 >
                     <Marker position={{ lat: 37.7749, lng: -122.4194 }} />
                 </GoogleMap>
-            </LoadScript>
+            </LoadScript> */}
         </div>
     )
 }

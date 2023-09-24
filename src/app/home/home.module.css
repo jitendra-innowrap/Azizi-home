@@ -116,7 +116,7 @@
 }
 .column7{
     width: 58.66%;
-    min-height: 375px;
+    /* min-height: 375px; */
 }
 .sliderSection{
     position: relative;
@@ -238,6 +238,9 @@
     padding-top: 200px;
     margin-top: -200px;
 }
+.futureSurroundingTitle {
+    max-width: 1000px;
+}
 .futureSurroundingParagraph{
     padding-inline: 10px;
     font-size: 16px;
@@ -245,6 +248,7 @@
 .futureSurroundingSection{
     padding-top: 360px;
     padding-bottom: 180px;
+    margin-top: -180px;
     /* padding-top: 1230px;
     background-image: url(/Assets/Home/svgs/futureSurrounding-bg.svg);
     background-repeat: no-repeat;
@@ -350,6 +354,7 @@
     .futureSurroundingSection {
         padding-top: 240px;
         padding-bottom: 120px;
+        margin-top: -120px;
     }
     .realLookSection {
         padding-top: 120px;
@@ -519,6 +524,7 @@
     .futureSurroundingSection {
         padding-top: 160px;
         padding-bottom: 90px;
+        margin-top: -80px;
     }
     .locationInfoDiv {
         padding-inline: 30px;
@@ -745,7 +751,4 @@
             padding-top: 260px;
             margin-top: -260px;
         }
-}
-.column7 {
-    height: 375px;
 }

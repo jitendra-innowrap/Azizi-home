@@ -65,6 +65,9 @@
     .section {
         padding-block: 120px;
     }
+    .CarouselContainer {
+        padding-top: 120px;
+    }
 
     .ContainImage {
         max-height: 682px;
@@ -100,6 +103,9 @@
     .section {
         padding-block: 100px;
     }
+    .CarouselContainer {
+        padding-top: 100px;
+    }
 
     .ContainImage {
         max-height: 500px;
@@ -115,7 +121,7 @@
 @media (max-width: 992px) {
     .ContainImage {
         width: 100%;
-        height: 786px;
+        height: 625px;
         object-fit: cover;
     }
 
@@ -127,4 +133,13 @@
         bottom: 30px;
         right: 10px;
     }
+    .section {
+        padding-block: 90px;
+    }
+    .CarouselContainer {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+}
+@media (max-width: 520px) {
 }

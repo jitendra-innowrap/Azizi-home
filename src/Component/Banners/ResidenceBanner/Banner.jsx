@@ -4,7 +4,7 @@ import Styles from './Banner.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Banner({ title }) {
+export default function Banner({ title, image }) {
 
     const myDivRef = useRef(null);
 
@@ -17,11 +17,11 @@ export default function Banner({ title }) {
     return (
         <>
             <section className={Styles.homeBannerVideo}>
-                <Image
-                    src="/Assets/Residence/images/Banner.png"
+                <img
+                    src={image}
                     alt="Image"
-                    width={100}
-                    height={100}
+                    // width={100}
+                    // height={100}
                     className={Styles.bannerVideo}
                 />
                 <div className={Styles.videoOverlay}></div>
@@ -54,9 +54,9 @@ export default function Banner({ title }) {
                             alt="Image"
                             width={100}
                             height={100}
-                            className={Styles.chevronRight}
+                           className={`${Styles.chevronRight} ${Styles.mobileHide}`}
                         />
-                        <Link className={Styles.Link} href="/">{ title }</Link>
+                        <Link className={`${Styles.Link} ${Styles.mobileHide}`} href="/">{ title }</Link>
                     </div>
                 </div>
             </section>

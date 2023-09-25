@@ -5,59 +5,7 @@ import Image from 'next/image';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-export default function IntroSection({ para }) {
-    const items = [
-        <div key={1} className="item">
-            <img
-                src="/Assets/Residence/images/Carousel-Gallery-1.jpg"
-                alt="Image"
-                // width={100}
-                // height={100}
-                // quality={100}
-                className={Styles.ContainImage}
-            />
-        </div>,
-        <div key={2} className="item">
-            <img
-                src="/Assets/Residence/images/Carousel-Gallery-2.jpg"
-                alt="Image"
-                // width={100}
-                // height={100}
-                // quality={100}
-                className={Styles.ContainImage}
-            />
-        </div>,
-        <div key={3} className="item">
-            <img
-                src="/Assets/Residence/images/Carousel-Gallery-3.jpg"
-                alt="Image"
-                // width={100}
-                // height={100}
-                // quality={100}
-                className={Styles.ContainImage}
-            />
-        </div>,
-        <div key={4} className="item">
-            <img
-                src="/Assets/Residence/images/Carousel-Gallery-4.jpg"
-                alt="Image"
-                // width={100}
-                // height={100}
-                // quality={100}
-                className={Styles.ContainImage}
-            />
-        </div>,
-        <div key={5} className="item">
-            <img
-                src="/Assets/Residence/images/Carousel-Gallery-5.jpg"
-                alt="Image"
-                // width={100}
-                // height={100}
-                // quality={100}
-                className={Styles.ContainImage}
-            />
-        </div>,
-    ];
+export default function IntroSection({ para, images }) { 
 
     const handlePrevClick = () => {
         carousel.slidePrev();
@@ -148,7 +96,20 @@ export default function IntroSection({ para }) {
                         infinite={true}
                         autoPlay={true}
                         animationDuration={1000}
-                        items={items} autoPlayInterval={3000} />
+                        // items={items} 
+                        autoPlayInterval={3000} >
+                            {images.map((image, index) => (
+                                 <div key={index} className="item">
+                                    <div className={Styles.ContainImage}>
+                                        <img
+                                            src={image}
+                                            alt="Image"
+                                            className={Styles.Image}
+                                        />
+                                    </div>
+                                 </div>
+                             ))}
+                    </AliceCarousel>
                 </div>
             </div>
         </section>

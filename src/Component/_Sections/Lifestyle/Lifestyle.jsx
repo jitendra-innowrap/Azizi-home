@@ -3,7 +3,7 @@ import React from 'react'
 import Styles from './Lifestyle.module.css'
 import Image from 'next/image';
 
-export default function Lifestyle({ para, listItem }) {
+export default function Lifestyle({ para, listItem , image}) {
     console.log(listItem)
     return (
         <section className={Styles.section}>
@@ -11,7 +11,7 @@ export default function Lifestyle({ para, listItem }) {
             <div className={Styles.imageSection}>
                 <div className={Styles.imageContainer}>
                     <img
-                        src="/Assets/Residence/images/life-style.jpg"
+                        src={image}
                         alt="Image"
                         // width={100}
                         // height={100}

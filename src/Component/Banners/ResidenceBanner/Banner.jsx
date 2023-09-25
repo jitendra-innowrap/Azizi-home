@@ -4,7 +4,7 @@ import Styles from './Banner.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Banner({ title }) {
+export default function Banner({ title, image }) {
 
     const myDivRef = useRef(null);
 
@@ -18,7 +18,7 @@ export default function Banner({ title }) {
         <>
             <section className={Styles.homeBannerVideo}>
                 <img
-                    src="/Assets/Residence/images/Banner.jpg"
+                    src={image}
                     alt="Image"
                     // width={100}
                     // height={100}

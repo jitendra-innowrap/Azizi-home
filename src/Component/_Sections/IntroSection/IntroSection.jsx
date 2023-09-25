@@ -21,7 +21,8 @@ export default function IntroSection({ para, images }) {
             <div className={Styles.container}>
                 <p className={Styles.desc}>{para}</p>
                 <div className={Styles.buttons}>
-                    <button className={Styles.button}>
+                    <a href="/Brochure/Azizi-Venice-Brochure.pdf" className='DownloadBTN' download="Brochure.pdf">
+                        <button className={Styles.button}>
                         <Image
                             src="/Assets/Residence/images/Download.png"
                             alt="Image"
@@ -32,6 +33,8 @@ export default function IntroSection({ para, images }) {
                         />
                         DOWNLOAD Floor plan
                     </button>
+                    </a>
+                    <a href="/Brochure/Azizi-Venice-Brochure.pdf" className='DownloadBTN' download="Brochure.pdf">
                     <button className={Styles.button}>
                         <Image
                             src="/Assets/Residence/images/Download.png"
@@ -43,6 +46,7 @@ export default function IntroSection({ para, images }) {
                         />
                         DOWNLOAD BROCHURE
                     </button>
+                    </a>
                 </div>
                 <div className={Styles.infoContainer}>
                     <div className={Styles.infoBox}>

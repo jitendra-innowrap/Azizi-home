@@ -111,7 +111,8 @@ export default function OasisOfDreams() {
                                     />
                                     SHARE
                                 </button>
-                                <button className={homeStyle.categoryButton}>
+                                <a href="/Brochure/Azizi-Venice-Brochure.pdf" className='DownloadBTN' download="Brochure.pdf">
+                                    <button className={homeStyle.categoryButton}>
                                     <Image
                                         src="/Assets/Home/svgs/Download-icon.svg"
                                         alt="Image"
@@ -121,6 +122,7 @@ export default function OasisOfDreams() {
                                     />
                                     DOWNLOAD BROCHURE
                                 </button>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,7 @@
 import React from 'react';
 import homeStyle from '../home.module.css'
+import '@/app/globals.css'
+
 import Footer from '@/Component/Footer/Footer';
 import Header from '@/Component/Header/Header';
 import VillasSections from '@/Component/_PageZone/Villas/VillasSections';

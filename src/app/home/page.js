@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import '@/app/globals.css'
 import homeStyle from '../home.module.css'
 import Link from 'next/link';
 import OasisDreamCarousel from '../../Component/OasisDreamCarousel';

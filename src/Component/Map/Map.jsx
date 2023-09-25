@@ -296,7 +296,8 @@ export default function Map() {
             <LoadScript googleMapsApiKey={'AIzaSyBcSjfsa1ggrx1M-ZIne3Lsn1H47rNT63g'}>
                 <GoogleMap
                     mapContainerStyle={{ width: '100%', height: '100%' }}
-                    center={{ lat: 24.917311, lng: 55.175599 }}
+                    // center={{ lat: 24.917311, lng: 55.175599 }}
+                    center={{ lat: 24.842354939624123, lng: 55.14311858048023 }}
                     zoom={11}
                     // options={{ mapId: "d62e2ebe3718e976" }}
                     options={{ 
@@ -304,12 +305,12 @@ export default function Map() {
                     }}
 
                 >
-                    <Marker position={{ lat: 37.7749, lng: -122.4194 }} />
+                    <Marker position={{ lat: 24.842354939624123, lng: 55.14311858048023 }} />
                 </GoogleMap>
             </LoadScript>
         </div>
     )
-    // 24.917311, 55.175599
+    // 24.842354939624123, 55.14311858048023
 }
 
 

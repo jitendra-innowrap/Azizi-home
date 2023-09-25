@@ -14,7 +14,7 @@ export default function FindYourHome() {
             </div>
             <div className={`${homeStyle.findHomeImageSection}`}>
                 <FindHomeImageCard image={`/Assets/Home/images/FindYourHome/Residence.png`} title={`RESIDENCES`} url={'/residences'} />
-                <FindHomeImageCard2 image={`/Assets/Home/images/FindYourHome/Villas.png`} title={`VILLAS`} url={'/villas'} />
+                <FindHomeImageCard image={`/Assets/Home/images/FindYourHome/Villas.png`} title={`VILLAS`} url={'/villas'} />
             </div>
         </section>
     )

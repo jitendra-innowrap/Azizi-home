@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import homeStyle from '@/app/home/home.module.css'
 import Link from 'next/link';
 
@@ -8,6 +8,7 @@ import Link from 'next/link';
 export default function FindHomeImageCard({ image, title, url }) {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [isVisible, setIsVisible] = useState(false);
+    const MouseFollowContainer = useRef();
 
 
     // Update the button's position when the mouse moves
@@ -27,7 +28,7 @@ export default function FindHomeImageCard({ image, title, url }) {
 
     useEffect(() => {
         // Add a mousemove event listener to the container when the component mounts
-        const container = document.querySelector(`#MouseFollowContainer`);
+        const container = MouseFollowContainer.current;
         container.addEventListener('mousemove', handleMouseMove);
 
         return () => {
@@ -39,7 +40,7 @@ export default function FindHomeImageCard({ image, title, url }) {
     return (
         <Link href={url}>
             <div className={`${homeStyle.findHomeImageContainer}`}
-            id="MouseFollowContainer"
+                ref={MouseFollowContainer}
             onMouseEnter={handleContainerHover}
             onMouseLeave={handleContainerLeave}
         >

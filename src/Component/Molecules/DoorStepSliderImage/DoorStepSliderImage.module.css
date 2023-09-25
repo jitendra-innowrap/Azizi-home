@@ -10,6 +10,7 @@
     height: 342px;
     cursor: pointer;
     display: block;
+    overflow: hidden;
 }
 
 .title {
@@ -38,6 +39,37 @@
     bottom: 0;
 }
 
+.animatedButton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    color: #fff;
+    font-family: Montserrat;
+    background: rgb(0, 0, 0, 30%);
+    border: none;
+    font-size: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.imageContainer:hover .animatedButton {
+    opacity: 1;
+}
+
+.squareIcon {
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    margin-right: 5px;
+}
 @media (max-width: 1600px) {
     .imageContainer {
         position: relative;

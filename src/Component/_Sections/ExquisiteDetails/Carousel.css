@@ -1,0 +1,11 @@
+.itemPadding{
+    margin-inline: 15px;
+}
+.alice-carousel__stage-item.__active img {
+    height: 100%;
+}
+@media (max-width: 992px) {
+    .itemPadding{
+        margin-inline: 7px;
+    }
+}

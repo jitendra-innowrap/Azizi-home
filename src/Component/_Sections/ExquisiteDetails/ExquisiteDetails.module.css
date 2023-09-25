@@ -10,8 +10,13 @@
 
 .ContainImage {
     width: 100%;
-    height: auto;
-    max-height: 980px;
+    height: 980px;
+}
+.image{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    transition: height 0.8s ease-in-out;
 }
 
 .CarouselBtnDiv {
@@ -22,6 +27,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline: 215px;
 }
 
 .CarouselBtn {
@@ -70,12 +76,15 @@
     }
 
     .ContainImage {
-        max-height: 682px;
+        height: 682px;
     }
 
     .Carouseltitle {
         font-size: 30px;
         line-height: 31px;
+    }
+    .CarouselBtnDiv{
+        padding-inline: 195px;
     }
 }
 
@@ -83,12 +92,15 @@
 
     /* 1366 * 768 */
     .ContainImage {
-        max-height: 667px;
+        height: 667px;
     }
 
     .Carouseltitle {
         font-size: 28px;
         line-height: 29px;
+    }
+    .CarouselBtnDiv{
+        padding-inline: 165px;
     }
 }
 
@@ -96,6 +108,9 @@
     .Carouseltitle {
         font-size: 26px;
         line-height: 27px;
+    }
+    .CarouselBtnDiv{
+        padding-inline: 115px;
     }
 }
 
@@ -108,7 +123,7 @@
     }
 
     .ContainImage {
-        max-height: 500px;
+        height: 500px;
     }
 
     .Carouseltitle {
@@ -120,13 +135,18 @@
 
 @media (max-width: 992px) {
     .ContainImage {
-        width: 100%;
         height: 625px;
-        object-fit: cover;
     }
 
     .CarouselBtnDiv {
-        height: 100px;
+        height: 107px;
+    }
+    .CarouselBtn {
+        background-color: transparent;
+        border: none;
+        width: 20px;
+        height: 20px;
+        margin-inline: 4px;
     }
 
     .CarouselBtns {
@@ -141,5 +161,24 @@
         padding-bottom: 30px;
     }
 }
+@media (max-width: 768px) {
+    .CarouselBtnDiv{
+        padding-inline: 57px;
+    }
+}
 @media (max-width: 520px) {
+    .CarouselBtnDiv{
+        padding-inline: 37px;
+    }
+}
+@media (max-width: 450px) {
+    .CarouselBtnDiv{
+        padding-inline: 27px;
+    }
+}
+@media (max-width: 390px) {
+    .Carouseltitle {
+        font-size: 20px;
+        line-height: 22px;
+    }
 }

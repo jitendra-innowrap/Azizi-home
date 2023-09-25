@@ -40,7 +40,7 @@ export default function Banner({ title, image }) {
                 </button> */}
                 <div className={Styles.breadCrumbs}>
                     <div className={Styles.breadCrumbsBox}>
-                        <Link className={Styles.Link} href="/">Home</Link>
+                        <Link className={Styles.Link} href="/home">Home</Link>
                         <Image
                             src="/Assets/Residence/images/chevron-right.png"
                             alt="Image"
@@ -48,7 +48,7 @@ export default function Banner({ title, image }) {
                             height={100}
                             className={Styles.chevronRight}
                         />
-                        <Link className={Styles.Link} href="/">Azizi Venice, Dubai South</Link>
+                        <Link className={Styles.Link} href="/home">Azizi Venice, Dubai South</Link>
                         <Image
                             src="/Assets/Residence/images/chevron-right.png"
                             alt="Image"

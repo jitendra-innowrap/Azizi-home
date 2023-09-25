@@ -85,6 +85,9 @@
     height: 19px;
     margin-right: 7px;
 }
+.mobileHide{
+    pointer-events: none;
+}
 
 
 @media (max-width: 1600px) {

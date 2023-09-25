@@ -16,6 +16,7 @@
     width: 100%;
     height: 80%;
     object-fit: cover;
+    transition: height 0.8s ease-in-out;
 }
 
 .CarouselBtnDiv {
@@ -83,7 +84,7 @@
         line-height: 31px;
     }
     .CarouselBtnDiv{
-        padding-inline: 180px;
+        padding-inline: 195px;
     }
 }
 
@@ -99,7 +100,7 @@
         line-height: 29px;
     }
     .CarouselBtnDiv{
-        padding-inline: 150px;
+        padding-inline: 165px;
     }
 }
 
@@ -109,7 +110,7 @@
         line-height: 27px;
     }
     .CarouselBtnDiv{
-        padding-inline: 100px;
+        padding-inline: 115px;
     }
 }
 
@@ -138,7 +139,14 @@
     }
 
     .CarouselBtnDiv {
-        height: 100px;
+        height: 107px;
+    }
+    .CarouselBtn {
+        background-color: transparent;
+        border: none;
+        width: 20px;
+        height: 20px;
+        margin-inline: 4px;
     }
 
     .CarouselBtns {
@@ -155,16 +163,22 @@
 }
 @media (max-width: 768px) {
     .CarouselBtnDiv{
-        padding-inline: 50px;
+        padding-inline: 57px;
     }
 }
 @media (max-width: 520px) {
     .CarouselBtnDiv{
-        padding-inline: 30px;
+        padding-inline: 37px;
     }
 }
 @media (max-width: 450px) {
     .CarouselBtnDiv{
-        padding-inline: 20px;
+        padding-inline: 27px;
+    }
+}
+@media (max-width: 390px) {
+    .Carouseltitle {
+        font-size: 20px;
+        line-height: 22px;
     }
 }

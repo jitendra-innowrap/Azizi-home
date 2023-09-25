@@ -53,7 +53,7 @@ export default function ExquisiteDetails({ para }) {
       }, []);
 
     const items = [
-        <div key={1} className="item">
+        <div key={1} className="item itemPadding">
             <div className={Styles.ContainImage}>
                 <img
                     src="/Assets/Residence/images/Carousel2Image.png"
@@ -62,7 +62,7 @@ export default function ExquisiteDetails({ para }) {
                 />
             </div>
         </div>,
-        <div key={2} className="item">
+        <div key={2} className="item itemPadding">
             <div className={Styles.ContainImage}>
                 <img
                     src="/Assets/Residence/images/Carousel2Image.png"
@@ -71,7 +71,7 @@ export default function ExquisiteDetails({ para }) {
                 />
             </div>
         </div>,
-        <div key={3} className="item">
+        <div key={3} className="item itemPadding">
             <div className={Styles.ContainImage}>
                 <img
                     src="/Assets/Residence/images/Carousel2Image.png"

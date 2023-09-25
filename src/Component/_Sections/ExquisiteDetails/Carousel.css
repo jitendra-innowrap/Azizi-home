@@ -1,0 +1,6 @@
+.item{
+    margin-inline: 15px;
+}
+.alice-carousel__stage-item.__active img {
+    height: 100%;
+}

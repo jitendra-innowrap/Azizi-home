@@ -1,13 +1,4 @@
-'use client'
-import React from 'react'
-import styles from './Map.module.css'
-import mapColor from '@/app/mapStyles.json'
-import Image from 'next/image'
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'; // Using @react-google-maps/api library
-const KEY = process.env.GOOGLE_MAPS_KEY;
-console.log(KEY);
-// Define custom map styles
-const mapStyles = [
+[
     {
         "elementType": "geometry",
         "stylers": [
@@ -281,33 +272,3 @@ const mapStyles = [
         ]
     }
 ]
-console.log(JSON)
-
-export default function Map() {
-    return (
-        <div className={styles.map}>
-            {/* <Image
-                src="/Assets/Home/svgs/Map.svg"
-                alt="Image"
-                width={100}
-                height={100}
-                className={styles.mapImg}
-            /> */}
-            <LoadScript googleMapsApiKey={KEY}>
-                <GoogleMap
-                    mapContainerStyle={{ width: '100%', height: '100%' }}
-                    center={{ lat: 24.917311, lng: 55.175599 }}
-                    zoom={11}
-                    options={{
-                        styles: mapStyles, // Apply custom map styles
-                    }}
-                >
-                    <Marker position={{ lat: 37.7749, lng: -122.4194 }} />
-                </GoogleMap>
-            </LoadScript>
-        </div>
-    )
-    // 24.917311, 55.175599
-}
-
-

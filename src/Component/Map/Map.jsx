@@ -3,7 +3,8 @@ import React from 'react'
 import styles from './Map.module.css'
 import Image from 'next/image'
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'; // Using @react-google-maps/api library
-
+const KEY = process.env.GOOGLE_MAPS_KEY;
+console.log(KEY);
 // Define custom map styles
 const mapStyles = [
     {
@@ -25,17 +26,17 @@ const mapStyles = [
 export default function Map() {
     return (
         <div className={styles.map}>
-            <Image
+            {/* <Image
                 src="/Assets/Home/svgs/Map.svg"
                 alt="Image"
                 width={100}
                 height={100}
                 className={styles.mapImg}
-            />
-            {/* <LoadScript googleMapsApiKey="YOUR_API_KEY_HERE">
+            /> */}
+            <LoadScript googleMapsApiKey={KEY}>
                 <GoogleMap
                     mapContainerStyle={{ width: '100%', height: '100%' }}
-                    center={{ lat: 37.7749, lng: -122.4194 }}
+                    center={{ lat: 24.917311, lng: 55.175599 }}
                     zoom={14}
                     options={{
                         styles: mapStyles, // Apply custom map styles
@@ -43,9 +44,10 @@ export default function Map() {
                 >
                     <Marker position={{ lat: 37.7749, lng: -122.4194 }} />
                 </GoogleMap>
-            </LoadScript> */}
+            </LoadScript>
         </div>
     )
+    // 24.917311, 55.175599
 }
 
 

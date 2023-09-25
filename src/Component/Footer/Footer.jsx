@@ -15,7 +15,7 @@ export default function Footer() {
                     className={styles.whiteLogo}
                 />
                 <div className={`${styles.iconsDiv}`}>
-                    <Link href="/" className={styles.iconlink}>
+                    <Link href="https://www.facebook.com/AziziGroup/" target='_blank' className={styles.iconlink}>
                         <Image
                             src="/Assets/Icons/Facebook.svg"
                             alt="Image"
@@ -24,7 +24,7 @@ export default function Footer() {
                             className={styles.iconImg}
                         />
                     </Link>
-                    <Link href="/" className={styles.iconlink}>
+                    <Link href="https://www.linkedin.com/company/azizi-developments" target='_blank' className={styles.iconlink}>
                         <Image
                             src="/Assets/Icons/Linkedin.svg"
                             alt="Image"
@@ -33,7 +33,7 @@ export default function Footer() {
                             className={styles.iconImg}
                         />
                     </Link>
-                    <Link href="/" className={styles.iconlink}>
+                    <Link href="https://www.instagram.com/azizigroup/?hl=en" target='_blank' className={styles.iconlink}>
                         <Image
                             src="/Assets/Icons/Instagram.svg"
                             alt="Image"
@@ -42,7 +42,7 @@ export default function Footer() {
                             className={styles.iconImg}
                         />
                     </Link>
-                    <Link href="/" className={styles.iconlink}>
+                    <Link href="https://twitter.com/azizigroup?lang=en" target='_blank' className={styles.iconlink}>
                         <Image
                             src="/Assets/Icons/Twitter.svg"
                             alt="Image"

@@ -17,11 +17,11 @@ export default function Banner({ title }) {
     return (
         <>
             <section className={Styles.homeBannerVideo}>
-                <Image
-                    src="/Assets/Residence/images/Banner.png"
+                <img
+                    src="/Assets/Residence/images/Banner.jpg"
                     alt="Image"
-                    width={100}
-                    height={100}
+                    // width={100}
+                    // height={100}
                     className={Styles.bannerVideo}
                 />
                 <div className={Styles.videoOverlay}></div>
@@ -54,9 +54,9 @@ export default function Banner({ title }) {
                             alt="Image"
                             width={100}
                             height={100}
-                            className={Styles.chevronRight}
+                           className={`${Styles.chevronRight} ${Styles.mobileHide}`}
                         />
-                        <Link className={Styles.Link} href="/">{ title }</Link>
+                        <Link className={`${Styles.Link} ${Styles.mobileHide}`} href="/">{ title }</Link>
                     </div>
                 </div>
             </section>

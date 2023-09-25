@@ -10,12 +10,12 @@ export default function Lifestyle({ para, listItem }) {
             <SectionsTitle title={'LIFESTYLE'} para={para} />
             <div className={Styles.imageSection}>
                 <div className={Styles.imageContainer}>
-                    <Image
-                        src="/Assets/Residence/images/life-style.png"
+                    <img
+                        src="/Assets/Residence/images/life-style.jpg"
                         alt="Image"
-                        width={100}
-                        height={100}
-                        quality={100}
+                        // width={100}
+                        // height={100}
+                        // quality={100}
                         className={Styles.image}
                     />
                     <div className={Styles.overlay}></div>

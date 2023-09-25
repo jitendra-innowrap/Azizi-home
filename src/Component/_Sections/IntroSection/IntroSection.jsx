@@ -8,52 +8,52 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 export default function IntroSection({ para }) {
     const items = [
         <div key={1} className="item">
-            <Image
-                src="/Assets/Residence/images/CarouselImage.png"
+            <img
+                src="/Assets/Residence/images/Carousel-Gallery-1.jpg"
                 alt="Image"
-                width={100}
-                height={100}
-                quality={100}
+                // width={100}
+                // height={100}
+                // quality={100}
                 className={Styles.ContainImage}
             />
         </div>,
         <div key={2} className="item">
-            <Image
-                src="/Assets/Residence/images/CarouselImage.png"
+            <img
+                src="/Assets/Residence/images/Carousel-Gallery-2.jpg"
                 alt="Image"
-                width={100}
-                height={100}
-                quality={100}
+                // width={100}
+                // height={100}
+                // quality={100}
                 className={Styles.ContainImage}
             />
         </div>,
         <div key={3} className="item">
-            <Image
-                src="/Assets/Residence/images/CarouselImage.png"
+            <img
+                src="/Assets/Residence/images/Carousel-Gallery-3.jpg"
                 alt="Image"
-                width={100}
-                height={100}
-                quality={100}
+                // width={100}
+                // height={100}
+                // quality={100}
                 className={Styles.ContainImage}
             />
         </div>,
         <div key={4} className="item">
-            <Image
-                src="/Assets/Residence/images/CarouselImage.png"
+            <img
+                src="/Assets/Residence/images/Carousel-Gallery-4.jpg"
                 alt="Image"
-                width={100}
-                height={100}
-                quality={100}
+                // width={100}
+                // height={100}
+                // quality={100}
                 className={Styles.ContainImage}
             />
         </div>,
         <div key={5} className="item">
-            <Image
-                src="/Assets/Residence/images/CarouselImage.png"
+            <img
+                src="/Assets/Residence/images/Carousel-Gallery-5.jpg"
                 alt="Image"
-                width={100}
-                height={100}
-                quality={100}
+                // width={100}
+                // height={100}
+                // quality={100}
                 className={Styles.ContainImage}
             />
         </div>,

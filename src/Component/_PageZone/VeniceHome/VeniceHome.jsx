@@ -16,7 +16,7 @@ export default function VeniceHome() {
             <OasisOfDreams />
             <FindYourHome />
             <DesireOnDoorStep />
-            <LocationBenefits />
+            <LocationBenefits title={'THE DESTINATION'} para={'Nestled in the breathtaking Arabian sands of Dubai South, Azizi Venice is poised to be an integral part of a smart and forward-thinking metropolis, spanning over 136 hectares. This prestigious enclave offers close proximity to the city&#39;s finest attractions, with direct access to the upcoming metro station and Etihad Rail Network, ensuring convenience and connectivity for residents.'} />
             <GetRealLook />
             <FormSection />
             <StickySocials />

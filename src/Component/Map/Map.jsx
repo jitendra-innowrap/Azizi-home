@@ -4,7 +4,7 @@ import styles from './Map.module.css'
 import mapColor from '@/app/mapStyles.json'
 import Image from 'next/image'
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'; // Using @react-google-maps/api library
-const KEY = process.env.GOOGLE_MAPS_KEY;
+const KEY = process.env.GTM_ID;
 console.log(KEY);
 // Define custom map styles
 const mapStyles = [
@@ -293,14 +293,16 @@ export default function Map() {
                 height={100}
                 className={styles.mapImg}
             /> */}
-            <LoadScript googleMapsApiKey={KEY}>
+            <LoadScript googleMapsApiKey={'AIzaSyBcSjfsa1ggrx1M-ZIne3Lsn1H47rNT63g'}>
                 <GoogleMap
                     mapContainerStyle={{ width: '100%', height: '100%' }}
                     center={{ lat: 24.917311, lng: 55.175599 }}
                     zoom={11}
-                    options={{
-                        styles: mapStyles, // Apply custom map styles
+                    // options={{ mapId: "d62e2ebe3718e976" }}
+                    options={{ 
+                        styles: mapStyles
                     }}
+
                 >
                     <Marker position={{ lat: 37.7749, lng: -122.4194 }} />
                 </GoogleMap>

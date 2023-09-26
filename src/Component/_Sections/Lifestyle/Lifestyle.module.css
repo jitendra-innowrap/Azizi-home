@@ -1,5 +1,6 @@
 .section {
-    padding-block: 180px;
+    /* padding-block: 180px; */
+    padding-bottom: 100px;
     background-image: url('/Assets/Residence/svg/life-style-bg.svg');
     background-repeat: no-repeat;
     background-position: top right;
@@ -93,7 +94,8 @@
 
     /* 1600 * 783 */
     .section {
-        padding-block: 120px;
+        /* padding-block: 120px; */
+        padding-bottom: 60px;
         padding-top: 240px;
         margin-top: -120px;
     }
@@ -172,7 +174,8 @@
 
 @media (max-width: 1024px) {
     .section {
-        padding-block: 100px;
+        /* padding-block: 100px; */
+        padding-bottom: 40px;
         padding-top: 200px;
         margin-top: -100px;
     }
@@ -244,7 +247,8 @@
 }
 @media (max-width: 520px) {
     .section {
-        padding-block: 140px;
+        /* padding-block: 140px; */
+        padding-bottom: 40px;
         background-size: 100% auto;
         padding-top: 140px;
         margin-top: 0px;

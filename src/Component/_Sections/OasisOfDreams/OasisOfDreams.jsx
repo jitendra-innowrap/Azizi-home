@@ -1,6 +1,7 @@
 import React from 'react'
 import homeStyle from '@/app/home.module.css'
 import OasisDreamCarousel from '@/Component/OasisDreamCarousel'
+import Styles from '@/Component/_Sections/OasisOfDreams/OasisOfDreams.module.css'
 import Image from 'next/image'
 export default function OasisOfDreams() {
     return (
@@ -14,10 +15,10 @@ export default function OasisOfDreams() {
                     <div className={`${homeStyle.column7} ${homeStyle.sliderSection}`}>
                         <OasisDreamCarousel />
                     </div>
-                    <div className={`${homeStyle.categorySection} ${homeStyle.column5}`}>
-                        <div className={`${homeStyle.categoryDivDiv}`}>
-                            <div className={`${homeStyle.categoryboxs} ${homeStyle.categorySectionWidth}`}>
-                                <div className={homeStyle.categorybox}>
+                    <div className={`${homeStyle.categorySection} ${Styles.categorySection} ${homeStyle.column5}`}>
+                        <div className={`${homeStyle.categoryDivDiv} ${Styles.categoryDivDiv}`}>
+                            <div className={`${homeStyle.categoryboxs} ${Styles.categoryboxs} ${homeStyle.categorySectionWidth}`}>
+                                <div className={`${homeStyle.categorybox} ${Styles.categorybox}`} >
                                     <Image
                                         src="/Assets/Home/images/masterplan/Villas.png"
                                         alt="Image"
@@ -44,7 +45,7 @@ export default function OasisOfDreams() {
                                     </div>
                                 </div>
                             </div>
-                            <div className={`${homeStyle.categoryboxs} ${homeStyle.categorySectionWidth}`}>
+                            <div className={`${homeStyle.categoryboxs} ${Styles.categoryboxs} ${homeStyle.categorySectionWidth}`}>
                                 <div className={homeStyle.categorybox}>
                                     <Image
                                         src="/Assets/Home/images/masterplan/Retail.png"
@@ -72,7 +73,7 @@ export default function OasisOfDreams() {
                                     </div>
                                 </div>
                             </div>
-                            <div className={`${homeStyle.categoryboxs} ${homeStyle.categorySectionWidth}`}>
+                            <div className={`${homeStyle.categoryboxs} ${Styles.categoryboxs} ${homeStyle.categorySectionWidth}`}>
                                 <div className={homeStyle.categorybox}>
                                     <Image
                                         src="/Assets/Home/images/masterplan/Opera.png"
@@ -100,7 +101,7 @@ export default function OasisOfDreams() {
                                     </div>
                                 </div>
                             </div>
-                            <div className={`${homeStyle.categoryButtons} ${homeStyle.categorySectionWidth}`}>
+                            <div className={`${homeStyle.categoryButtons} ${Styles.categoryboxs} ${homeStyle.categorySectionWidth}`}>
                                 <button className={homeStyle.categoryButton}>
                                     <Image
                                         src="/Assets/Home/svgs/Shaee-icon.svg"

@@ -58,34 +58,34 @@ export default function Footer() {
                     <div className={`${styles.linkColumn} ${styles.linkColumn1}`}>
                         <span  className={`${styles.linkColumnHeading}`}>About us</span>
                         <div className={`${styles.links}`}>
-                            <Link href="/" className={styles.link}>About us</Link>
-                            <Link href="/" className={styles.link}>Corporate Executives</Link>
-                            <Link href="/" className={styles.link}>Invest with Azizi</Link>
-                            <Link href="/" className={styles.link}>Careers</Link>
-                            <Link href="/" className={styles.link}>Contact us</Link>
+                            <Link href="https://azizidevelopments.com/en/about" className={styles.link}>About us</Link>
+                            <Link href="https://azizidevelopments.com/en/management" className={styles.link}>Corporate Executives</Link>
+                            <Link href="https://azizidevelopments.com/en/about" className={styles.link}>Invest with Azizi</Link>
+                            <Link href="https://azizidevelopments.com/en/career" className={styles.link}>Careers</Link>
+                            <Link href="https://azizidevelopments.com/en/contact" className={styles.link}>Contact us</Link>
                         </div>
                     </div>
                     <div className={`${styles.linkColumn} ${styles.linkColumn2}`}>
                         <span  className={`${styles.linkColumnHeading}`}>Our portfolio</span>
                         <div className={`${styles.links}`}>
-                            <Link href="/" className={styles.link}>Communities</Link>
-                            <Link href="/" className={styles.link}>Residences</Link>
-                            <Link href="/" className={styles.link}>Commercial</Link>
-                            <Link href="/" className={styles.link}>Construction updates</Link>
-                            <Link href="/" className={styles.link}>Virtual tour</Link>
+                            <Link href="https://azizidevelopments.com/en/destinations" className={styles.link}>Communities</Link>
+                            <Link href="https://azizidevelopments.com/en/dubai" className={styles.link}>Residences</Link>
+                            <Link href="https://azizidevelopments.com/en/retail/dubai" className={styles.link}>Commercial</Link>
+                            <Link href="https://azizidevelopments.com/en/dubai/construction-updates" className={styles.link}>Construction updates</Link>
+                            <Link href="https://azizidevelopments.com/en/walkthrough" className={styles.link}>Virtual tour</Link>
                         </div>
                     </div>
                     <div className={`${styles.linkColumn}`}>
                         <span  className={`${styles.linkColumnHeading}`}>Digital services</span>
                         <div className={`${styles.links}`}>
-                            <Link href="/" className={styles.link}>Offers</Link>
-                            <Link href="/" className={styles.link}>Handover procedure</Link>
-                            <Link href="/" className={styles.link}>Pay online</Link>
+                            <Link href="https://azizidevelopments.com/en/exclusive-offers" className={styles.link}>Offers</Link>
+                            <Link href="https://azizidevelopments.com/" className={styles.link}>Handover procedure</Link>
+                            <Link href="https://azizidevelopments.com/en/online-payments" className={styles.link}>Pay online</Link>
                         </div>
                     </div>
                 </div>
                 <div className={`${styles.divForm} ${styles.linkColumn3}`}>
-                    <div className={`${styles.linkColumn} ${styles.formSection}`}>
+                    {/* <div className={`${styles.linkColumn} ${styles.formSection}`}>
                         <span  className={`${styles.linkColumnHeading}`}>Newsletter</span>
                         <div className={`${styles.links}`}>
                             <Link href="/" className={styles.link}>Stay up to date with the latest news</Link>
@@ -112,7 +112,7 @@ export default function Footer() {
                                 </form>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className={`${styles.footerFooter}`}>

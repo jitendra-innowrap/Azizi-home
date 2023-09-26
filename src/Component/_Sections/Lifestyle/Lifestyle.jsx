@@ -19,7 +19,7 @@ export default function Lifestyle({ para, listItem , image}) {
                         className={Styles.image}
                     />
                     <div className={Styles.overlay}></div>
-                    <span className={Styles.title}>LAGOON</span>
+                    <span className={Styles.title}>Crystal Lagoon</span>
                 </div>
             </div>
             <div className={Styles.textSection}>

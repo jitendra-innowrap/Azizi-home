@@ -9,7 +9,7 @@ import LocationBenefits from '@/Component/_Sections/LocationBenefits/LocationBen
 export default function ResidenceSections() {
     const BannerTitle = 'Venice RESIDENCES';
     const BannerImage = '/Assets/Residence/images/Banner.jpg';
-    const IntroSectionPara = 'Discover a revitalizing place to call home, where you wake up every day in an incredible waterfront paradise. With a gleaming lagoon, pristine beachfront, vibrant boulevard, and world-class entertainment just steps away, this is a brand-new approach to apartment living, meticulously designed for the discerning few.';
+    const IntroSectionPara = 'Discover a revitalizing place to call home, where you wake up every day in an incredible waterfront paradise. With a gleaming Crystal Lagoon, pristine beachfront, vibrant boulevard, and world-class entertainment just steps away, this is a brand-new approach to apartment living, meticulously designed for the discerning few.';
     const IntroSectionCarouselImages = [
         '/Assets/Residence/images/Carousel-Gallery-1.jpg',
         '/Assets/Residence/images/Carousel-Gallery-2.jpg',

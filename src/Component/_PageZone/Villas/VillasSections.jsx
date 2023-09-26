@@ -21,7 +21,7 @@ export default function VillasSections() {
     const ExquisiteDetailsPara = 'From the use of biophilic materials and serene color schemes to cutting-edge technology with exceptional functionality, each villa radiates an aura of refined elegance and tranquil grandeur.';
     const LifestylePara = 'Pamper yourself with an array of luxurious amenities designed to enhance your daily life. Each villa is a modern sanctuary, featuring a private elevator, home cinema, games room, personal infinity pool, opulent rooftop terrace, and a BBQ area for entertaining. Plus, you`ll enjoy direct, effortless access to the swimmable lagoon, just steps from your doorstep.';
     const LifestyleBoxTitle = [
-        'Direct LAGOON ACCESS',
+        'Direct Crystal Lagoon ACCESS',
         'State-of-the-art gym & Pool',
         'Outdoor Jacuzzi & Sauna',
         'Cinema & Club House',

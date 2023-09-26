@@ -158,7 +158,7 @@ export default function LeadForm({ isArabic, isTitle }) {
             // trying to get lead submit by method 2
 
             await fetch(
-                `https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&oid=${oid}&retURL=${retURL}&first_name=${firstName}&last_name=${lastName}&company=${company}&title=${title}&email=${email}&phone=${phone}&lead_source=${leadSource}`,
+                `https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&oid=${oid}&retURL=${retURL}&first_name=${firstName}&last_name=${lastName}&company=${company}&title=${title}&email=${email}&mobile=${phone}&lead_source=${leadSource}`,
                 {
                     method: 'POST',
                     mode: 'no-cors', // Set the mode to 'no-cors'

@@ -43,7 +43,7 @@ export default function DoorStepSliderImage({ url, title, imageHeight, imageWidt
             onMouseEnter={handleContainerHover}
             onMouseLeave={handleContainerLeave}
         >
-            <Image
+            <img
                 src={url}
                 alt="Image"
                 width={100}
@@ -55,6 +55,7 @@ export default function DoorStepSliderImage({ url, title, imageHeight, imageWidt
             {isVisible && <button className={`${Styles.animatedButton}`}
                 style={{
                     transform: `translate(${position.x}px, ${position.y}px)`,
+                    cursor: 'none'
                 }}
             >
                 <span className={Styles.squareIcon}></span>

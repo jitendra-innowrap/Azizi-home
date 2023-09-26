@@ -28,12 +28,12 @@ export default function ResidenceSections() {
     ]
     const LifestyleImage = '/Assets/Residence/images/life-style.jpg';
     const LocationBenefitsTitle = 'LOCATION BENEFITS';
-    const LocationBenefitsPara = 'Located in Dubai South, the city&#39;s most expansive singular urban master development. Azizi Venice will become a part of a smart and futuristic metropolis that promises entirely new standard of living. Over 136 hectares in size, Azizi Venice is set to be a prestigious yet well-connected enclave.';
+    const LocationBenefitsPara = 'Located in Dubai South, the city`s most expansive singular urban master development. Azizi Venice will become a part of a smart and futuristic metropolis that promises entirely new standard of living. Over 136 hectares in size, Azizi Venice is set to be a prestigious yet well-connected enclave.';
     return (
         <>
             <Banner title={BannerTitle} image={BannerImage} />
             <IntroSection para={IntroSectionPara} images={IntroSectionCarouselImages}/>
-            <ExquisiteDetails para={ExquisiteDetailsPara} />
+            {/* <ExquisiteDetails para={ExquisiteDetailsPara} /> */}
             <Lifestyle para={LifestylePara} listItem={LifestyleBoxTitle} image={LifestyleImage} />
             <LocationBenefits title={LocationBenefitsTitle} para={LocationBenefitsPara} />
         </>

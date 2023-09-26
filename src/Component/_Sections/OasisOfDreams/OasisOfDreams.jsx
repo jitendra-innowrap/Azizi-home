@@ -1,9 +1,27 @@
-import React from 'react'
+'use client'
 import homeStyle from '@/app/home.module.css'
 import OasisDreamCarousel from '@/Component/OasisDreamCarousel'
 import Styles from '@/Component/_Sections/OasisOfDreams/OasisOfDreams.module.css'
 import Image from 'next/image'
+import React, { useState } from "react";
+import {
+    FacebookShareButton,
+    TwitterShareButton,
+    LinkedinShareButton,
+  } from "react-share";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 export default function OasisOfDreams() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleVisibility = () => {
+      setIsVisible(!isVisible);
+    };
+
+    const handleCopy = () => {
+        // alert("Link copied to clipboard!");
+      };
+
     return (
         <>
             <section className={`${homeStyle.oasisDreamTitleSection}`}>
@@ -102,7 +120,7 @@ export default function OasisOfDreams() {
                                 </div>
                             </div>
                             <div className={`${homeStyle.categoryButtons} ${Styles.categoryboxs} ${homeStyle.categorySectionWidth}`}>
-                                <button className={homeStyle.categoryButton}>
+                                <button className={homeStyle.categoryButton} onClick={toggleVisibility}>
                                     <Image
                                         src="/Assets/Home/svgs/Shaee-icon.svg"
                                         alt="Image"
@@ -125,6 +143,42 @@ export default function OasisOfDreams() {
                                 </button>
                                 </a>
                             </div>
+                            {isVisible && 
+                                <div className={`${Styles.shareListContanier}`}>
+                                    <CopyToClipboard className={`${Styles.shareListBox}`}  url={'http://localhost:3000'}  onCopy={handleCopy}>
+                                        <span><img
+                                            src="/Assets/Icons/copy_link.svg"
+                                            alt="Image"
+                                            className={Styles.shareListIcon}
+                                        />
+                                        COPY LINK</span>
+                                    </CopyToClipboard>
+                                    <FacebookShareButton className={`${Styles.shareListBox}`}  url={'http://localhost:3000'}  quote='Azizi'>
+                                        <img
+                                            src="/Assets/Icons/Facebook.svg"
+                                            alt="Image"
+                                            className={Styles.shareListIcon}
+                                        />
+                                        SHARE ON FACEBOOK
+                                    </FacebookShareButton>
+                                    <TwitterShareButton className={`${Styles.shareListBox}`}  url={'http://localhost:3000'} title='Azizi'>
+                                        <img
+                                            src="/Assets/Icons/Twitter.svg"
+                                            alt="Image"
+                                            className={Styles.shareListIcon}
+                                        />
+                                        SHARE ON TWITTER
+                                    </TwitterShareButton>
+                                    <LinkedinShareButton className={`${Styles.shareListBox}`}  url={'http://localhost:3000'} title='Azizi'>
+                                        <img
+                                            src="/Assets/Icons/Linkedin.svg"
+                                            alt="Image"
+                                            className={Styles.shareListIcon}
+                                        />
+                                        SHARE ON LINKEDIN
+                                    </LinkedinShareButton>
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>

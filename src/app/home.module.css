@@ -82,7 +82,7 @@
 .categoryboxs{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
+    grid-column-gap: 0px;
     border-bottom: 1px solid #D9D8DA;
     padding-bottom: 60px;
     margin-bottom: 60px;
@@ -405,7 +405,7 @@
         font-size: 26px;
     }
     .categoryboxs {
-        grid-column-gap: 10px;
+        grid-column-gap: 0px;
         padding-bottom: 25px;
         margin-bottom: 25px;
     }
@@ -487,6 +487,7 @@
     }
     .categoryDivDiv{
         width: 100%;
+        position: relative;
     }
     .categoryboxs {
         grid-column-gap: 0px;
@@ -709,6 +710,10 @@
         width: 100%;
         max-width: 650px;
     }  
+    .categoryButtons {
+        padding-inline: 20px;
+        gap: 30px;
+    }
 }
 @media (max-width: 720px) {
     .categoryboxs {

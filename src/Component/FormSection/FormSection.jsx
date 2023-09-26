@@ -10,7 +10,7 @@ export default function FormSection() {
             <section className={`${styles.section}`} id="home_form">
                 <div className={`${styles.container}`}>
                     <img
-                        src="/Assets/Home/images/FindYourHome/Enquire.png"
+                        src="/Assets/Home/images/FindYourHome/Enquire.webp"
                     alt="Image"
                     width={100}
                     height={100}

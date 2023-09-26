@@ -1,3 +1,42 @@
+.shareListIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+.shareListBox{
+    display: flex;
+    font-family: Montserrat !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 18px !important;
+    letter-spacing: 0.01em !important;
+    text-align: left;
+    color: #FFF !important;
+    align-items: center;
+    margin-bottom: 13px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.shareListBox:last-child{
+    margin-bottom: 0px;
+}
+.shareListContanier{
+    background-color: #2C2A29;
+    padding: 10px;
+    margin-inline: 40px;
+    margin-top: 15px;
+    width: fit-content;
+    position: absolute;
+}
+.shareButtonContanier{
+    position: relative;
+}
+@media (max-width: 992px) {
+    .shareListContanier{
+        margin-inline: 20px;
+    }
+}
 @media (min-width: 1920px) {
     .categoryboxs {
             /* display: flex;

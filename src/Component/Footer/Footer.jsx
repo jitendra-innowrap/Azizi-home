@@ -69,8 +69,8 @@ export default function Footer() {
                         <span  className={`${styles.linkColumnHeading}`}>Our portfolio</span>
                         <div className={`${styles.links}`}>
                             <Link href="https://azizidevelopments.com/en/destinations" className={styles.link}>Communities</Link>
-                            <Link href="https://azizidevelopments.com/en/dubai" className={styles.link}>Residences</Link>
-                            <Link href="https://azizidevelopments.com/en/retail/dubai" className={styles.link}>Commercial</Link>
+                            <Link href="https://azizidevelopments.com/en/dubai" className={styles.link}>Projects</Link>
+                            <Link href="https://azizidevelopments.com/en/retail/dubai" className={styles.link}>Retail</Link>
                             <Link href="https://azizidevelopments.com/en/dubai/construction-updates" className={styles.link}>Construction updates</Link>
                             <Link href="https://azizidevelopments.com/en/walkthrough" className={styles.link}>Virtual tour</Link>
                         </div>
@@ -79,7 +79,7 @@ export default function Footer() {
                         <span  className={`${styles.linkColumnHeading}`}>Digital services</span>
                         <div className={`${styles.links}`}>
                             <Link href="https://azizidevelopments.com/en/exclusive-offers" className={styles.link}>Offers</Link>
-                            <Link href="https://azizidevelopments.com/" className={styles.link}>Handover procedure</Link>
+                            <a href="/HandoverProcedure/Handover-Procedure.pdf" download="Handoverprocedure.pdf" className={styles.link} >Handover procedure</a>
                             <Link href="https://azizidevelopments.com/en/online-payments" className={styles.link}>Pay online</Link>
                         </div>
                     </div>

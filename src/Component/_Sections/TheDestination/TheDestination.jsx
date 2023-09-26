@@ -4,9 +4,9 @@ import Map from '@/Component/Map/Map'
 import LocationBenefitsInfo from '@/Component/_Sections/LocationBenefitsInfo/LocationBenefitsInfo'
 
 
-export default function LocationBenefits({ title, para }) {
+export default function TheDestination({ title, para }) {
     return (
-        <section className={`${homeStyle.futureSurroundingSection2}`}>
+        <section className={`${homeStyle.futureSurroundingSection}`}>
             <h1 className={`${homeStyle.mainTitle} ${homeStyle.futureSurroundingTitle}`}>{title}</h1>
             <p className={`${homeStyle.mainParagraph} ${homeStyle.futureSurroundingParagraph}`}>{para}</p>
             <div className={`${homeStyle.mapSection}`}>

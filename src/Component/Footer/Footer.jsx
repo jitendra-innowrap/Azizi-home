@@ -116,7 +116,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className={`${styles.footerFooter}`}>
-                <span className={`${styles.privacySpan}`}>Sitemap . <Link href="/" className={styles.PrivacyLink}>Privacy Policy</Link></span>
+                <span className={`${styles.privacySpan}`}><Link href="https://azizidevelopments.com/en/sitemap" className={styles.PrivacyLink}>Sitemap</Link> . <Link href="https://azizidevelopments.com/en/privacy" className={styles.PrivacyLink}>Privacy Policy</Link></span>
                 <span className={`${styles.copySpan}`}>© 2023 AZIZI Developments</span>
             </div>
         </footer>

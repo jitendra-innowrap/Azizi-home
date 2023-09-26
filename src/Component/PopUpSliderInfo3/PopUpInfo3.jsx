@@ -22,7 +22,7 @@ export default function PopUpInfo3({ handleClose }) {
                 </div>
                 <h2 className={`${Styles.title}`}>EVERYDAY amenities</h2>
                 <div className={`${Styles.descriptionDiv}`}>
-                    <p className={`${Styles.description}`}>From the infinity pool that gazes upon the glistening lagoon to serene beachfront access. Azizi Venice is a place where every wish is embraced. Enroll your children with ease at the International School and tend to your healthcare needs at the Community Hospital. Live in close proximity to the Friday Mosque and enjoy the high life at our Five Star Hotels - Dubai&#39;s upcoming legacy invites you to relish it all.</p>
+                    <p className={`${Styles.description}`}>From the infinity pool that gazes upon the glistening Crystal Lagoon to serene beachfront access. Azizi Venice is a place where every wish is embraced. Enroll your children with ease at the International School and tend to your healthcare needs at the Community Hospital. Live in close proximity to the Friday Mosque and enjoy the high life at our Five Star Hotels - Dubai&#39;s upcoming legacy invites you to relish it all.</p>
                 </div>
                 <div className={`${Styles.infoDiv}`}>
                     <div className={`${Styles.infoBox}`}>

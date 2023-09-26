@@ -8,7 +8,7 @@ const style = {
     z: 10,
     top: '10%',
     left: '50%',
-    width: '50vw',
+    width: '80vw',
     height: '',
     transform: 'translate(-50%, -50%)',
     bgcolor: 'background.paper',

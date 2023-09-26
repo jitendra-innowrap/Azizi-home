@@ -108,6 +108,8 @@ export default function IntroSection({ para, images }) {
                                         <img
                                             src={image}
                                             alt="Image"
+                                            priority
+                                            quality={100}
                                             className={Styles.Image}
                                         />
                                     </div>

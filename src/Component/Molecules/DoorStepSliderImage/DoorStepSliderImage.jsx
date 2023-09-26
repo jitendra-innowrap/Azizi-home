@@ -48,6 +48,8 @@ export default function DoorStepSliderImage({ url, title, imageHeight, imageWidt
                 alt="Image"
                 width={100}
                 height={100}
+                priority
+                quality={100}
                 className={Styles.image}
             />
             <span className={Styles.title}>{title}</span>

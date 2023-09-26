@@ -22,6 +22,8 @@ export default function Banner({ title, image }) {
                     alt="Image"
                     // width={100}
                     // height={100}
+                    priority
+                    quality={100}
                     className={Styles.bannerVideo}
                 />
                 <div className={Styles.videoOverlay}></div>

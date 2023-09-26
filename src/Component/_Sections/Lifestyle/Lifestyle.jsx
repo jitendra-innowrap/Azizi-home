@@ -16,6 +16,8 @@ export default function Lifestyle({ para, listItem , image, imageTitle}) {
                         // width={100}
                         // height={100}
                         // quality={100}
+                        priority
+                        quality={100}
                         className={Styles.image}
                     />
                     <div className={Styles.overlay}></div>

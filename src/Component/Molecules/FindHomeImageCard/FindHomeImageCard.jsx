@@ -57,6 +57,7 @@ export default function FindHomeImageCard({ image, title, url }) {
             {isVisible && <button className={`${homeStyle.findHomeImageButton}`}
                 style={{
                     transform: `translate(${position.x}px, ${position.y}px)`,
+                    cursor: 'none'
                 }}
             >
                 <Image

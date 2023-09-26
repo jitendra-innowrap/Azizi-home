@@ -55,6 +55,7 @@ export default function DoorStepSliderImage({ url, title, imageHeight, imageWidt
             {isVisible && <button className={`${Styles.animatedButton}`}
                 style={{
                     transform: `translate(${position.x}px, ${position.y}px)`,
+                    cursor: 'none'
                 }}
             >
                 <span className={Styles.squareIcon}></span>

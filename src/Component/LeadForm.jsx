@@ -35,7 +35,7 @@ export default function LeadForm({ isArabic, isTitle }) {
         retURL: 'http://azizidevelopments.com',
         email: '',
         phone: '',
-        leadSource: 'Walk In',
+        leadSource: 'Website',
         gclid: '',
         company: 'N/A',
         title: 'N/A'

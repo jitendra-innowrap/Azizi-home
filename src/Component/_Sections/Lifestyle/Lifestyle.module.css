@@ -62,10 +62,6 @@
     margin-bottom: 30px;
 }
 
-.box {
-    display: grid;
-}
-
 .box:nth-child(1),
 .box:nth-child(2),
 .box:nth-child(3) {
@@ -89,6 +85,7 @@
     letter-spacing: 4%;
     color: #2C2A29;
     text-transform: uppercase;
+    display: block;
 }
 
 

@@ -3,7 +3,7 @@ import React from 'react'
 import Styles from './Lifestyle.module.css'
 import Image from 'next/image';
 
-export default function Lifestyle({ para, listItem , image}) {
+export default function Lifestyle({ para, listItem , image, imageTitle}) {
     console.log(listItem)
     return (
         <section className={Styles.section}>
@@ -19,7 +19,7 @@ export default function Lifestyle({ para, listItem , image}) {
                         className={Styles.image}
                     />
                     <div className={Styles.overlay}></div>
-                    <span className={Styles.title}>Crystal Lagoon</span>
+                    <span className={Styles.title}>{imageTitle}</span>
                 </div>
             </div>
             <div className={Styles.textSection}>

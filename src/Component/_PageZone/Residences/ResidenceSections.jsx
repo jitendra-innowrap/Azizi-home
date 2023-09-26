@@ -20,13 +20,14 @@ export default function ResidenceSections() {
     const ExquisiteDetailsPara = 'Every detail matters in this thoughtfully crafted environment, where meticulous architecture and premium design harmonize with the natural surroundings. Floor-to-ceiling windows seamlessly blend indoor and outdoor spaces, offering breathtaking views of the water and cascading waterfalls. Every detail impeccable, every material exquisite.';
     const LifestylePara = 'Experience a captivating lifestyle where your every desire is effortlessly fulfilled. Our apartment complexes are meticulously designed to encompass everything you need, including a state-of-the-art gym, steam room, sauna, your own cinema, and a clubhouse.';
     const LifestyleBoxTitle = [
-        'State-of-the-art gym',
-        'Steam room & Sauna',
-        'Cinema & Clubhouse',
-        'Swimming Pool',
-        'KIDS` PLAY AREA'
+        'POOLSIDE PERFECTION',
+        'WORLD OF WELLNESS',
+        'ELEVATED ENTERTAINMENT',
+        'State-of-the-art WORKOUT',
+        'WILD AND FREE'
     ]
     const LifestyleImage = '/Assets/Residence/images/life-style.jpg';
+    const LifestyleImageTitle = 'POOLSIDE PERFECTION';
     const LocationBenefitsTitle = 'LOCATION BENEFITS';
     const LocationBenefitsPara = 'Located in Dubai South, the city`s most expansive singular urban master development. Azizi Venice will become a part of a smart and futuristic metropolis that promises entirely new standard of living. Over 136 hectares in size, Azizi Venice is set to be a prestigious yet well-connected enclave.';
     return (
@@ -34,7 +35,7 @@ export default function ResidenceSections() {
             <Banner title={BannerTitle} image={BannerImage} />
             <IntroSection para={IntroSectionPara} images={IntroSectionCarouselImages}/>
             {/* <ExquisiteDetails para={ExquisiteDetailsPara} /> */}
-            <Lifestyle para={LifestylePara} listItem={LifestyleBoxTitle} image={LifestyleImage} />
+            <Lifestyle para={LifestylePara} listItem={LifestyleBoxTitle} image={LifestyleImage} imageTitle={LifestyleImageTitle}/>
             <LocationBenefits title={LocationBenefitsTitle} para={LocationBenefitsPara} />
         </>
     )

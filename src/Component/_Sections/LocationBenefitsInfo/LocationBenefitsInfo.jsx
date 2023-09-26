@@ -4,12 +4,12 @@ import homeStyle from '@/app/home.module.css'
 export default function LocationBenefitsInfo() {
     return (
         <div>
-            <div className={`${homeStyle.locationInfo}`}>
-                <span className={`${homeStyle.locationInfoTitle}`}>EMIRATES ROAD</span>
-                <p className={`${homeStyle.locationInfoDistance}`}>5 min drive</p>
+             <div className={`${homeStyle.locationInfo}`}>
+                <span className={`${homeStyle.locationInfoTitle}`}>Dedicated Metro Station</span>
+                {/* <p className={`${homeStyle.locationInfoDistance}`}>5 min drive</p> */}
             </div>
             <div className={`${homeStyle.locationInfo}`}>
-                <span className={`${homeStyle.locationInfoTitle}`}>Dedicated Dubai Metro Station</span>
+                <span className={`${homeStyle.locationInfoTitle}`}>EMIRATES ROAD</span>
                 <p className={`${homeStyle.locationInfoDistance}`}>5 min drive</p>
             </div>
             <div className={`${homeStyle.locationInfo}`}>

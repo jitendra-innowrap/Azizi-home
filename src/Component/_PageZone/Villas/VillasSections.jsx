@@ -21,14 +21,15 @@ export default function VillasSections() {
     const ExquisiteDetailsPara = 'From the use of biophilic materials and serene color schemes to cutting-edge technology with exceptional functionality, each villa radiates an aura of refined elegance and tranquil grandeur.';
     const LifestylePara = 'Pamper yourself with an array of luxurious amenities designed to enhance your daily life. Each villa is a modern sanctuary, featuring a private elevator, home cinema, games room, personal infinity pool, opulent rooftop terrace, and a BBQ area for entertaining. Plus, you`ll enjoy direct, effortless access to the swimmable crystal lagoon, just steps from your doorstep.';
     const LifestyleBoxTitle = [
-        'Direct Crystal Lagoon ACCESS',
-        'State-of-the-art gym & Pool',
-        'Outdoor Jacuzzi & Sauna',
-        'Cinema & Club House',
-        'LUSH INDOOR GARDENS',
-        'MAJLIS'
+        'ELEVATED ENTERTAINMENT',
+        'State-of-the-art WORKOUT',
+        'WORLD OF WELLNESS',
+        'AQUATIC OASIS',
+        'WINTER WONDERLAND',
+        'EXPANSIVE VIEWS'
     ]
     const LifestyleImage = '/Assets/Villa/images/life-style.jpg';
+    const LifestyleImageTitle = 'ELEVATED ENTERTAINMENT';
     const LocationBenefitsTitle = 'LOCATION BENEFITS';
     const LocationBenefitsPara = 'Located in Dubai South, the city`s most expansive singular urban master development. Azizi Venice will become a part of a smart and futuristic metropolis that promises entirely new standard of living. Over 136 hectares in size, Azizi Venice is set to be a prestigious yet well-connected enclave.';
     return (
@@ -36,7 +37,7 @@ export default function VillasSections() {
             <Banner title={BannerTitle} image={BannerImage} />
             <IntroSection para={IntroSectionPara} images={IntroSectionCarouselImages}/>
             {/* <ExquisiteDetails para={ExquisiteDetailsPara} /> */}
-            <Lifestyle para={LifestylePara} listItem={LifestyleBoxTitle} image={LifestyleImage} />
+            <Lifestyle para={LifestylePara} listItem={LifestyleBoxTitle} image={LifestyleImage} imageTitle={LifestyleImageTitle} />
             <LocationBenefits title={LocationBenefitsTitle} para={LocationBenefitsPara} />
         </>
     )

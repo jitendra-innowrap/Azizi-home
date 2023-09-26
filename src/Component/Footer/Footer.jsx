@@ -44,7 +44,7 @@ export default function Footer() {
                     </Link>
                     <Link href="https://twitter.com/azizigroup?lang=en" target='_blank' className={styles.iconlink}>
                         <Image
-                            src="/Assets/Icons/Twitter.svg"
+                            src="/Assets/Icons/twitter-x.svg"
                             alt="Image"
                             width={100}
                             height={100}

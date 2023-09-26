@@ -182,7 +182,7 @@ export default function LeadForm({ isArabic, isTitle }) {
                     value={formData.name}
                     onChange={handleChange}
                     autoComplete="off"
-                    placeholder={isArabic ? 'الاسم الكامل' : 'Full Name'}
+                    placeholder={isArabic ? 'الاسم الكامل' : 'Full Name *'}
                 />
                  {nameError && <p className={`${styles.error} ${errorClass}`}>{isArabic ? 'الإسم الكامل ضروري' : 'Full Name is required.'}</p>}
             </div>
@@ -194,7 +194,7 @@ export default function LeadForm({ isArabic, isTitle }) {
                     value={formData.email}
                     onChange={handleChange}
                     autoComplete="off"
-                    placeholder={isArabic ? 'البريد الإلكتروني' : 'Email'} 
+                    placeholder={isArabic ? 'البريد الإلكتروني' : 'Email *'} 
                 />
                 {emailError && <p className={`${styles.error} ${errorClass}`}>{isArabic ? 'عنوان البريد الإلكتروني غير صحيح': 'Invalid email address.'}</p>}
             </div>
@@ -209,7 +209,7 @@ export default function LeadForm({ isArabic, isTitle }) {
                             className: `${styles.inputAnimated} ${styles.inputPhone}`,
                         }}
                         defaultCountry="AE"
-                        placeholder={isArabic ? 'رقم الهاتف' : 'Phone Number'}
+                        placeholder={isArabic ? 'رقم الهاتف' : 'Phone Number *'}
                         value={formData.phone}
                         onChange={handlePhoneChange}
                         displayInitialValueAsLocalNumber={!showCountryCode} // Hide the country code if showCountryCode is false

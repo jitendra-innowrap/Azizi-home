@@ -247,7 +247,7 @@
     font-size: 16px;
 }
 .futureSurroundingSection{
-    padding-top: 360px;
+    padding-top: 180px;
     padding-bottom: 180px;
     margin-top: -180px;
     /* padding-top: 1230px;
@@ -370,7 +370,7 @@
         padding-inline: 60px;
     }
     .futureSurroundingSection {
-        padding-top: 240px;
+        padding-top: 120px;
         padding-bottom: 120px;
         margin-top: -120px;
     }
@@ -546,7 +546,7 @@
         padding-top: 90px;
     }
     .futureSurroundingSection {
-        padding-top: 160px;
+        padding-top: 90px;
         padding-bottom: 90px;
         margin-top: -80px;
     }

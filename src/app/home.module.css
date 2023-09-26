@@ -262,12 +262,21 @@
     background-size: 100% auto;
 }
 .futureSurroundingSection2{
-    padding-top: 400px;
+    /* padding-top: 400px;
     margin-top: -220px;
     padding-bottom: 180px;
     background-image: url(/Assets/Home/svgs/location-bg.svg);
     background-repeat: no-repeat;
-    background-size: 79% auto;
+    background-size: 79% auto; */
+    padding-block: 180px;
+    position: relative;
+}
+.futureSurrounding2BgAnimation{
+    position: absolute;
+    top: -10%;
+    right: -25%;
+    width: 100%;
+    height: auto;
 }
 .mapSection{
     padding-top: 120px;
@@ -365,9 +374,10 @@
         margin-top: -120px;
     }
     .futureSurroundingSection2{
-        padding-top: 300px;
+        /* padding-top: 300px;
         margin-top: -180px;
-        padding-bottom: 120px;
+        padding-bottom: 120px; */
+        padding-block: 120px;
     }
     .realLookSection {
         padding-top: 120px;
@@ -540,9 +550,10 @@
         margin-top: -80px;
     }
     .futureSurroundingSection2{
-        padding-top: 240px;
+        /* padding-top: 240px;
         margin-top: -120px;
-        padding-bottom: 120px;
+        padding-bottom: 120px; */
+        padding-block: 120px;
     }
     .locationInfoDiv {
         padding-inline: 30px;
@@ -735,6 +746,11 @@
     }
     .realLookParagraph {
         font-size: 20px;
+    }
+    .futureSurrounding2BgAnimation{
+        top: -7%;
+        right: -90%;
+        width: 200%;
     }
 }
 @media (max-width: 393px) {

@@ -88,7 +88,7 @@ export default function Home() {
             <span className={styles.title}>{isArabic ? 'كن جزءًا من أيقونة دبي الجديدة' : 'BE PART OF THE NEXT LEGACY'}</span>
           </div>
           <div className={styles.columnForm}>
-            <LeadForm isArabic={isArabic} />
+            <LeadForm isArabic={isArabic} isTitle={true} />
           </div>
         </div>
       </div>

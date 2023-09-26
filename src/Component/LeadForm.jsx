@@ -12,7 +12,7 @@ import 'react-phone-number-input/style.css'
 // import queryString from 'query-string';
 import { useRouter } from "next/navigation";
 
-export default function LeadForm({ isArabic }) {
+export default function LeadForm({ isArabic, isTitle }) {
     const [subTitle, setSubTitle] = useState('');
     const subTitleClass = isArabic ? 'subTitleRight' : '';
     const errorClass = isArabic ? 'errorRight' : '';
@@ -172,7 +172,7 @@ export default function LeadForm({ isArabic }) {
     };
 
     return (<>
-        <span className={`${styles.subTitle} ${subTitleClass}`}>{isArabic ? 'سجّل اهتمامك' : 'REGISTER YOUR INTEREST'}</span>
+        {isTitle && <span className={`${styles.subTitle} ${subTitleClass}`}>{isArabic ? 'سجّل اهتمامك' : 'REGISTER YOUR INTEREST'}</span>}
         <form className={styles.form} >
             <div className={`${styles.inputContainer} ${inputContainerClass}`}>
                 <input className={styles.inputAnimated}

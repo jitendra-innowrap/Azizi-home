@@ -97,7 +97,7 @@ export default function Footer() {
                                             id="email"
                                             name="email"
                                             autoComplete="off"
-                                            placeholder='My emial is'
+                                            placeholder='My email is'
                                         />
                                         <button className={styles.emailBtn} >
                                             <Image

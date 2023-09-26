@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import surroundingStyle from "./surrounding.module.css"
 import { useAnimation, motion, useTransform, useMotionValue, useAnimationFrame, useScroll, useVelocity, useSpring } from 'framer-motion';
 import { wrap } from '@motionone/utils';
@@ -7,6 +7,7 @@ import DoorStepSliderImage from '@/Component/Molecules/DoorStepSliderImage/DoorS
 import DoorStepSliderText from '@/Component/Molecules/DoorStepSliderText/DoorStepSliderText'
 
 function ParallaxText({ children, baseVelocity }) {
+
     const baseX = useMotionValue(0);
     const { scrollY } = useScroll();
     const scrollVelocity = useVelocity(scrollY);
@@ -27,21 +28,9 @@ function ParallaxText({ children, baseVelocity }) {
   // const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
   const x = useTransform(baseX, (v) => `${wrap(-20, -45, v + baseVelocity)}%`);
 
-  
     const directionFactor = useRef(1);
     useAnimationFrame((t, delta) => {
       let moveBy = directionFactor.current * baseVelocity * (delta / 3000);
-  
-      /**
-       * This is what changes the direction of the scroll once we
-       * switch scrolling directions.
-       */
-      // if (velocityFactor.get() < 0) {
-      //   directionFactor.current = -1;
-      // } else if (velocityFactor.get() > 0) {
-      //   directionFactor.current = 1;
-      // }
-
       // moveBy += directionFactor.current * moveBy * velocityFactor.get();
   
       baseX.set(baseX.get() + moveBy);
@@ -67,10 +56,37 @@ function ParallaxText({ children, baseVelocity }) {
   }
 
 const Surrounding = ({ handleOpen, setPopUpValue }) => {
+  const [baseVelocity1, setBaseVelocity1] = useState(-1);
+  const [baseVelocity2, setBaseVelocity2] = useState(1);
+  const [baseVelocity3, setBaseVelocity3] = useState(-1);
+  const handleRowHover = (row) => {
+    if (row == 1) {
+      setBaseVelocity1(0)
+    } else if (row == 2) {
+      setBaseVelocity2(0)
+    } else if (row == 3) {
+      setBaseVelocity3(0)
+    }
+  }
+  const handleRowLeave = (row) => {
+    if (row == 1) {
+      setBaseVelocity1(-1)
+    } else if (row == 2) {
+      setBaseVelocity2(1)
+    } else if (row == 3) {
+      setBaseVelocity3(-1)
+    }
+  }
   return (
-    <div className={surroundingStyle.multiSliderDiv}  >
-        <ParallaxText baseVelocity={-1}>
-        <div className={surroundingStyle.imageWrapped} onClick={() => { handleOpen(); setPopUpValue(1) }} >
+    <div className={surroundingStyle.multiSliderDiv}
+    >
+      <div className=""
+        onMouseEnter={() => { handleRowHover(1) }}
+        onMouseLeave={() => { handleRowLeave(1) }}>
+        <ParallaxText baseVelocity={baseVelocity1}>
+          <div className={surroundingStyle.imageWrapped}
+            onClick={() => { handleOpen(); setPopUpValue(1) }}
+          >
           <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Leisure & ENTERTAINMENT'} url={'/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png'} />
           <DoorStepSliderText className={surroundingStyle.singleImage} title={'Boulevard'} color={'#B6B78A'} />
           <DoorStepSliderImage className={surroundingStyle.singleImage} title={'RETAIL'} url={'/Assets/Home/images/DesireOndoorstep/Retail - Carousel.png'} />
@@ -78,8 +94,14 @@ const Surrounding = ({ handleOpen, setPopUpValue }) => {
           <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Luxury Boutiques'} url={'/Assets/Home/images/DesireOndoorstep/Luxury Boutiques - Carousel.png'} />          
             </div>
         </ParallaxText>
-      <ParallaxText baseVelocity={1}>
-        <div className={surroundingStyle.imageWrapped} onClick={() => { handleOpen(); setPopUpValue(2) }}>
+      </div>
+      <div className=""
+        onMouseEnter={() => { handleRowHover(2) }}
+        onMouseLeave={() => { handleRowLeave(2) }}>
+        <ParallaxText baseVelocity={baseVelocity2}>
+          <div className={surroundingStyle.imageWrapped}
+            onClick={() => { handleOpen(); setPopUpValue(2) }}
+          >
           <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Arts & culture'} url={'/Assets/Home/images/DesireOndoorstep/Arts Culture - Carousel.png'} />
           <DoorStepSliderText className={surroundingStyle.singleImage} title={'OPERA HOUSE'} color={'#41929E'} />
           <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Thriving cultural district'} url={'/Assets/Home/images/DesireOndoorstep/Cultural District - Carousel.png'} />
@@ -87,8 +109,14 @@ const Surrounding = ({ handleOpen, setPopUpValue }) => {
           <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Floating stage'} url={'/Assets/Home/images/DesireOndoorstep/Floating Stage - Carousel.png'} />
             </div>
         </ParallaxText>
-      <ParallaxText baseVelocity={-1} >
-        <div className={surroundingStyle.imageWrapped} onClick={() => { handleOpen(); setPopUpValue(3) }}>
+      </div>
+      <div className=""
+        onMouseEnter={() => { handleRowHover(3) }}
+        onMouseLeave={() => { handleRowLeave(3) }}>
+        <ParallaxText baseVelocity={baseVelocity3} >
+          <div className={surroundingStyle.imageWrapped}
+            onClick={() => { handleOpen(); setPopUpValue(3) }}
+          >
           <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Private hospital'} url={'/Assets/Home/images/DesireOndoorstep/Hospital - Carousel.png'} />
           <DoorStepSliderText className={surroundingStyle.singleImage} title={'Everyday Amenities'} color={'#175A7E'} />
           <DoorStepSliderImage className={surroundingStyle.singleImage} title={'International schools'} url={'/Assets/Home/images/DesireOndoorstep/School - Carousel.png'} />
@@ -96,6 +124,7 @@ const Surrounding = ({ handleOpen, setPopUpValue }) => {
           <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Five-star Family hotel'} url={'/Assets/Home/images/DesireOndoorstep/Hotel - Carousel.png'} />
             </div>
         </ParallaxText>
+      </div>
     </div>
   )
 }

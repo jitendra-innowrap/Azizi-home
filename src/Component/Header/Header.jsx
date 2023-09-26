@@ -16,14 +16,14 @@ export default function Header() {
             {/* nav bar */}
             <nav className={Styles.navbar}>
                 <div className={Styles.navbarContainer}>
-                    {/* <div className={Styles.leftLinks}>
+                    <div className={Styles.leftLinks}>
                     <Link href="/" className={Styles.navLinks}>About</Link>
                     <Link href="/" className={Styles.navLinks}>Communities</Link>
                     <Link href="/" className={Styles.navLinks}>Residences</Link>
                     <Link href="/" className={Styles.navLinks}>Retail</Link>
                     <Link href="/" className={Styles.navLinks}>Media</Link>
-                </div> */}
-                    <div className={Styles.navLogo}>
+                    </div>
+                    <Link href={'/'} className={Styles.navLogo}>
                         <Image
                             src="/Assets/Azizi_Logo.svg"
                             alt="Image"
@@ -31,49 +31,49 @@ export default function Header() {
                             height={100}
                             className={Styles.navLogoImage}
                         />
-                    </div>
-                    {/* <div className={Styles.rightLinks}>
+                    </Link>
+                    <div className={Styles.rightLinks}>
                     <Link href="/" className={Styles.navLinks}>Azizi Venice</Link>
                     <Link href="/" className={Styles.navLinks}>800 (AZIZI) 29494</Link>
                     <Link href="/" className={Styles.navLinksLanuage}> العربية</Link>
                     <button className={Styles.navLinksButton}>ENQUIRE</button>
-                </div> */}
+                    </div>
                 </div>
             </nav>
 
             {/* mobile nav bar */}
-            {/* <div className={`${Styles.mobileWhiteLogo} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow}`}>
+            <Link href={'/'} className={`${Styles.mobileWhiteLogo} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow}`}>
             <Image
-                src="/Azizi_Logo.svg"
+                    src="/Assets/Azizi_Logo.svg"
                 alt="Image"
                 width={100}
                 height={100}
                 className={Styles.mobileNavLogoImage}
             />
-        </div> */}
-            {/* <button className={`${Styles.menuBtn} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow}`}>
+            </Link>
+            <button className={`${Styles.menuBtn} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow}`}>
             <Image
-                src="/home/BurgerMenu.svg"
+                    src="/Assets/Icons/BurgerMenu.svg"
                 alt="Image"
                 width={100}
                 height={100}
                 className={Styles.menuBtnImage}
                 onClick={toggleClass}
             />
-        </button> */}
+            </button>
             <nav className={`${Styles.navbarMobile} ${isActive ? Styles.mobileNavShow : Styles.mobileNavHide}`}>
-                <div className={`${Styles.mobileBlackLogo}`}>
+                <Link href={'/'} className={`${Styles.mobileBlackLogo}`}>
                     <Image
-                        src="/black-Logo.svg"
+                        src="/Assets/black-Logo.svg"
                         alt="Image"
                         width={100}
                         height={100}
                         className={Styles.mobileNavLogoBlackImage}
                     />
-                </div>
+                </Link>
                 <button className={`${Styles.menuBlackBtn}`}>
                     <Image
-                        src="/home/BurgerMenuBlack.svg"
+                        src="/Assets/Icons/BurgerMenuBlack.svg"
                         alt="Image"
                         width={100}
                         height={100}

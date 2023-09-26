@@ -1,0 +1,48 @@
+.homeBannerVideo {
+    position: relative;
+    background: #fff;
+    height: 600px;
+}
+
+.playBtn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    color: #fff;
+    font-family: Montserrat;
+    width: 353px;
+    padding-block: 17px;
+    background: rgb(0, 0, 0, 30%);
+    border: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.playSvg {
+    width: 20px;
+    height: 19px;
+    margin-right: 7px;
+}
+
+.closeBtnContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding-bottom: 30px;
+}
+
+.closeBtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.closeBtnImage {
+    width: 32px;
+    height: 32px;
+}

@@ -3,16 +3,17 @@ import { useEffect, useRef } from 'react';
 import Styles from './Banner.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import VideoPopUp from '@/Component/Molecules/VideoPopUp/VideoPopUp';
 
 export default function Banner() {
 
     const myDivRef = useRef(null);
 
-    const scrollToTop = () => {
-        if (myDivRef.current) {
-            myDivRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+    // const scrollToTop = () => {
+    //     if (myDivRef.current) {
+    //         myDivRef.current.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    // };
 
     const videoRef = useRef(null);
 
@@ -42,7 +43,7 @@ export default function Banner() {
                     Your browser does not support the video tag.
                 </video>
                 <div className={Styles.videoOverlay}></div>
-                <button className={Styles.playBtn}
+                {/* <button className={Styles.playBtn}
                     onClick={scrollToTop}
                 >
                     <Image
@@ -53,7 +54,8 @@ export default function Banner() {
                         className={Styles.playSvg}
                     />
                     EXPLORE MORE
-                </button>
+                </button> */}
+                <VideoPopUp />
             </section>
             <div id="myDiv" ref={myDivRef}></div>
         </>

@@ -123,7 +123,7 @@ export default function OasisDreamCarousel() {
             1080: { items: 1 },
           }}
           infinite={true}
-          autoPlay={true}
+          // autoPlay={true}
           animationDuration={1000}
           items={items} autoPlayInterval={3000} />
       </div>

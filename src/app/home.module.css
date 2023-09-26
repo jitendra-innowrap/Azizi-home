@@ -120,6 +120,7 @@
 }
 .sliderSection{
     position: relative;
+    overflow: hidden;
 }
 .categoryButtons{
     display: flex;

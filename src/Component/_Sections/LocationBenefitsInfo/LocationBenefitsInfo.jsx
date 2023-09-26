@@ -10,7 +10,7 @@ export default function LocationBenefitsInfo() {
             </div>
             <div className={`${homeStyle.locationInfo}`}>
                 <span className={`${homeStyle.locationInfoTitle}`}>Dedicated Dubai Metro Station</span>
-                <p className={`${homeStyle.locationInfoDistance}`}>x min drive</p>
+                <p className={`${homeStyle.locationInfoDistance}`}>5 min drive</p>
             </div>
             <div className={`${homeStyle.locationInfo}`}>
                 <span className={`${homeStyle.locationInfoTitle}`}>AL MAKTOUM INTERNATIONAL AIRPORT</span>

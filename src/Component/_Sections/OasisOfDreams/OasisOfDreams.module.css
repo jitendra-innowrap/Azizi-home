@@ -1,0 +1,12 @@
+.categoryboxs {
+    /* display: flex;
+    justify-content: space-between;
+    gap: 20px; */
+    width: 700px;
+}
+
+.categorybox {
+    /* display: flex;
+    justify-content: space-between;
+    gap: 20px; */
+}

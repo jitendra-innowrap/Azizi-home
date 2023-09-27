@@ -11,6 +11,7 @@ import {
   } from "react-share";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import CTAPopUp from '@/Component/Molecules/CTAPopUp/CTAPopUp'
+import LeftAnimation from '@/Component/LeftAnimation/LeftAnimation'
 
 export default function OasisOfDreams() {
     const [isVisible, setIsVisible] = useState(false);
@@ -49,6 +50,7 @@ export default function OasisOfDreams() {
                 <p className={`${homeStyle.mainParagraph} ${homeStyle.oasisDreamParagraph}`}>Dive into a world of unparalleled water-inspired living, unlike anything you&#39;ve ever experienced, at Dubai&#39;s forthcoming legacy - a truly unparalleled luxury Crystal Lagoon community. Brace yourself to embark on a journey where opulence knows no boundaries, as you step into a haven of lavishness that stretches the limits of imagination. This is not just another destination it&#39;s an uncharted masterpiece, waiting to be discovered.</p>
             </section>
             <section className={`${homeStyle.oasisDreamContainSection}`}>
+                <LeftAnimation />
                 <div className={`${homeStyle.oasisDreamContainContainer}`}>
                     <div className={`${homeStyle.column7} ${homeStyle.sliderSection}`}>
                         <OasisDreamCarousel />

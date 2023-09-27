@@ -51,18 +51,22 @@
     padding-inline: 10px;
 }
 .oasisDreamTitleSection{
-    background-image: url('/Assets/Home/svgs/oasis-dream-title-section-bg-svg.svg');
+    background-image: url('/Assets/Home/svgs/homeSvg.svg');
     /* background-size: cover;
     background-position: center center; */
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-position: right bottom;
+    background-size: 80% auto;
     padding-top: 220px;
     /* padding-bottom: 114px; */
 }
-.oasisDreamContainSection{
+/* .oasisDreamContainSection{
     background-image: url('/Assets/Home/svgs/oasis-dream-contain-section-bg-svg.svg');
     background-repeat: no-repeat;
     background-size: 75% auto;
+} */
+.oasisDreamContainSection{
+    position: relative;
 }
 .oasisDreamContainContainer{
     padding-top: 220px;
@@ -245,12 +249,15 @@
 .aroundNeighborhoodSection{
     padding-top: 220px;
 }
-.aroundNeighborhoodSlider{
+/* .aroundNeighborhoodSlider{
     background-image: url('/Assets/Home/svgs/around-neighborhood-bg.svg');
     background-repeat: no-repeat;
     background-size: 80% auto;
     padding-top: 200px;
     margin-top: -200px;
+} */
+.aroundNeighborhoodSlider{
+    position: relative;
 }
 .futureSurroundingTitle {
     max-width: 1000px;
@@ -799,13 +806,14 @@
 }
 @media (max-width: 393px) {
     .oasisDreamTitleSection{
-        background-image: url('/Assets/Home/svgs/oasis-dream-title-section-bg-svg-mobile.svg');
+        background-image: url('/Assets/Home/svgs/oasis-dream-title-section-bg-svg-mobile.svg') !important;
         background-size: 100% auto;
+        background-position: top right;
     }
-    .oasisDreamContainSection{
+    /* .oasisDreamContainSection{
         background-image: url('/Assets/Home/svgs/oasis-dream-contain-section-bg-svg-mobile.svg');
         background-size: 100% auto;
-    }
+    } */
     /* .findHomeSection {
         background-image: url('/Assets/Home/svgs/find-home-bg-svg-mobile.svg');
         background-repeat: no-repeat;
@@ -813,13 +821,13 @@
         margin-top: 50px;
         background-size: 100% auto;
     } */
-        .aroundNeighborhoodSlider {
+        /* .aroundNeighborhoodSlider {
             background-image: url('/Assets/Home/svgs/around-nei-bg-mobile.svg');
             background-repeat: no-repeat;
             background-size: 100% auto;
             padding-top: 580px;
             margin-top: -580px;
-        }
+        } */
     
         .realLookSection {
             background-image: url('/Assets/Home/svgs/get-real-look-bg-mobile.svg');

@@ -588,7 +588,7 @@ c-bg-img,
 }
 #header-bar.nav-dark {
   transform: translateY(-100%);
-  transition: all 20s;
+  transition: all 15s;
 }
 
 #header-bar.nav-hide {

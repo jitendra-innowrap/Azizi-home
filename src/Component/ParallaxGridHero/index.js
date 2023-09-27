@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from 'next/image';
+import VideoPopUp from '../Molecules/VideoPopUp/VideoPopUp';
 
 
 
@@ -122,6 +123,9 @@ const ParallexGridHero = () => {
                                     </video>
                                 </div>
                                 <div className="elem" style={{ backgroundImage: 'url("/Assets/banner/giphy.git")' }}></div>
+                            </div>
+                            <div className="explore-cta" style={{ zIndex: '9999' }}>
+                                <VideoPopUp />
                             </div>
                         </div>
                     </div>

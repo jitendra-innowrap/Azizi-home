@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from 'next/image';
@@ -7,6 +7,31 @@ import Image from 'next/image';
 
 
 const ParallexGridHero = () => {
+    const contentRef = useRef(null);
+
+    const handleScroll = () => {
+        const element = contentRef.current;
+        console.log('Scrolled to the bottom!', element.scrollHeight, element.scrollTop, element.clientHeight);
+
+        // Check if scrolled to the bottom
+        if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+            // Perform your action when scrolled to the bottom
+            console.log('Scrolled to the bottom!');
+            // Call your action function or perform the desired action here
+            // For example: load more content, fetch more data, etc.
+        }
+    };
+    // useEffect(() => {
+    //     const element = contentRef.current;
+    //     element.addEventListener('scroll', handleScroll);
+
+    //     // Cleanup event listener on component unmount
+    //     return () => {
+    //         element.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
+
+
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
@@ -39,12 +64,17 @@ const ParallexGridHero = () => {
                             }
                             target.style.setProperty("--p1", progress);
                             target.style.setProperty("--p2", 1 - progress);
-                            if (progress > 0.7) {
+                            if (progress > 0.8) {
                                 headerbar.classList.add("nav-dark");
-                                headerbar.classList.remove("nav-hide");
+                                // headerbar.classList.remove("nav-hide");
                             } else {
                                 headerbar.classList.remove("nav-dark");
+                                // headerbar.classList.add("nav-hide");
+                            }
+                            if (progress > 0.2) {
                                 headerbar.classList.add("nav-hide");
+                            } else {
+                                headerbar.classList.remove("nav-hide");
                             }
                         }
                     }
@@ -56,7 +86,10 @@ const ParallexGridHero = () => {
     }, []);
 
     return (
-        <div className='hero-banner'>
+        <div className='hero-banner'
+            ref={contentRef}
+            onScroll={handleScroll}
+        >
             <Image src={'/Assets/banner/Logo-Animation.gif'} quality={100} height={449} width={702} style={{ margin: "auto", display: "block" }} />
             <div className="c-hero ">
                 <div className="c-hero-sticky js-scroll-trigger" data-start="top top" data-end="bottom+=20% top" style={{ '--p1': 0, '--p2': 1 }}>

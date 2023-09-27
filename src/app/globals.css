@@ -568,3 +568,15 @@ c-bg-img,
     transform: translateY(0);
   }
 }
+#header-bar .nav_links a {
+  color: #000;
+}
+
+#header-bar.nav-hide .nav_links a {
+  color: #fff;
+}
+
+#header-bar.nav-hide {
+  position: sticky;
+  z-index: 99999;
+}

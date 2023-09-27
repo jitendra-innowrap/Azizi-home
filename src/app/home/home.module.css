@@ -148,6 +148,7 @@
     margin-top: -110px;
     background-size: 59% auto; */
     position: relative;
+    z-index: -1;
 }
 .findHomeSectionBgAnimation{
     position: absolute;
@@ -172,7 +173,6 @@
     padding-bottom: 180px;
     display: flex;
     gap: 30px;
-    z-index: -1;
 }
 .findHomeImage{
     width: 100%;

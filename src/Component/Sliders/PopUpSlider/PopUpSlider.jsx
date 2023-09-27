@@ -9,7 +9,7 @@ export default function PopUpSlider() {
     const items = [
         <div key={1} className="item">
             <img
-                src="/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png"
+                src="/Assets/Home/images/DesireOndoorstep/Retail - Carousel.png"
                 alt="Image"
                 width={100}
                 height={100}
@@ -30,7 +30,7 @@ export default function PopUpSlider() {
         </div>,
         <div key={3} className="item">
             <img
-                src="/Assets/Home/images/DesireOndoorstep/Luxury Boutiques - Carousel.png"
+                src="/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png"
                 alt="Image"
                 width={100}
                 height={100}
@@ -40,7 +40,7 @@ export default function PopUpSlider() {
         </div>,
         <div key={4} className="item">
             <img
-                src="/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png"
+                src="/Assets/Home/images/DesireOndoorstep/Luxury Boutiques - Carousel.png"
             alt="Image"
             width={100}
             height={100}

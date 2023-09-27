@@ -1,0 +1,9 @@
+.section {
+    padding-inline: 60px;
+}
+
+@media (max-width: 1024px) {
+    .section {
+        padding-inline: 20px;
+    }
+}

@@ -269,18 +269,15 @@ export default function LeadForm({ isArabic, isTitle, cta, fileName, filePath })
                 {phoneError && <p className={`${styles.error} ${errorClass}`}>{isArabic ? 'رقم الهاتف غير صحيح' : 'Invalid phone number.'}</p>}
             </div>
             <div className={styles.submitWrapper}>
-                {
-                    !cta ?
+
                         <button className={`${styles.submitBtn} ${submitBtnClass}`}
                             onClick={handleSubmit}>
                             {isArabic ? 'إرسال' : 'SUBMIT'}
                         </button>
-                        :
-                        <button className={`${styles.submitBtn} ${submitBtnClass}`}
-                            onClick={handleDownload}>
-                            {cta}
-                        </button>
-                }
+                {/* <button className={`${styles.submitBtn} ${submitBtnClass}`}
+                             onClick={handleDownload}>
+                             {cta}
+                         </button> */}
             </div>
         </form>
     </>

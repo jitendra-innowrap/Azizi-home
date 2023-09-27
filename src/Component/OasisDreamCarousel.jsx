@@ -8,71 +8,83 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 
 export default function OasisDreamCarousel() {
   const items = [
-    <div key={1} className="item">
-      <img
-        src="/Assets/Home/images/masterplan/Villas.png"
-        alt="Image"
-        width={100}
-        height={100}
-        priority
-        quality={100}
-        className={oasisDreamCarouselStyle.ContainImage}
-      />
+    <div key={1} className="item" >
+      <div className={`${oasisDreamCarouselStyle.imageContainer}`}>
+        <img
+          src="/Assets/Home/images/masterplan/Villas.png"
+          alt="Image"
+          width={100}
+          height={100}
+          priority
+          quality={100}
+          className={oasisDreamCarouselStyle.ContainImage}
+        />
+      </div>
     </div>,
     <div key={2} className="item">
-      <img
-        src="/Assets/Home/images/masterplan/Apartments.png"
-        alt="Image"
-        width={100}
-        height={100}
-        priority
-        quality={100}
-        className={oasisDreamCarouselStyle.ContainImage}
-      />
+      <div className={`${oasisDreamCarouselStyle.imageContainer}`}>
+        <img
+          src="/Assets/Home/images/masterplan/Apartments.png"
+          alt="Image"
+          width={100}
+          height={100}
+          priority
+          quality={100}
+          className={oasisDreamCarouselStyle.ContainImage}
+        />
+      </div>
     </div>,
     <div key={3} className="item">
-      <img
-        src="/Assets/Home/images/masterplan/Plot Area.png"
-        alt="Image"
-        width={100}
-        height={100}
-        priority
-        quality={100}
-        className={oasisDreamCarouselStyle.ContainImage}
-      />
+      <div className={`${oasisDreamCarouselStyle.imageContainer}`}>
+        <img
+          src="/Assets/Home/images/masterplan/Plot Area.png"
+          alt="Image"
+          width={100}
+          height={100}
+          priority
+          quality={100}
+          className={oasisDreamCarouselStyle.ContainImage}
+        />
+      </div>
     </div>,
-    <div key={3} className="item">
-      <img
-        src="/Assets/Home/images/masterplan/Opera.png"
-        alt="Image"
-        width={100}
-        height={100}
-        priority
-        quality={100}
-        className={oasisDreamCarouselStyle.ContainImage}
-      />
+    <div key={4} className="item">
+      <div className={`${oasisDreamCarouselStyle.imageContainer}`}>
+        <img
+          src="/Assets/Home/images/masterplan/Opera.png"
+          alt="Image"
+          width={100}
+          height={100}
+          priority
+          quality={100}
+          className={oasisDreamCarouselStyle.ContainImage}
+        />
+      </div>
     </div>,
-    <div key={3} className="item">
-      <img
-        src="/Assets/Home/images/masterplan/Retail.png"
-        alt="Image"
-        width={100}
-        height={100}
-        priority
-        quality={100}
-        className={oasisDreamCarouselStyle.ContainImage}
-      />
+    <div key={5} className="item">
+      <div className={`${oasisDreamCarouselStyle.imageContainer}`}>
+        <img
+          src="/Assets/Home/images/masterplan/Retail.png"
+          alt="Image"
+          width={100}
+          height={100}
+          priority
+          quality={100}
+          className={oasisDreamCarouselStyle.ContainImage}
+        />
+      </div>
     </div>,
-    <div key={3} className="item">
-      <img
-        src="/Assets/Home/images/masterplan/Water.png"
-        alt="Image"
-        width={100}
-        height={100}
-        priority
-        quality={100}
-        className={oasisDreamCarouselStyle.ContainImage}
-      />
+    <div key={6} className="item">
+      <div className={`${oasisDreamCarouselStyle.imageContainer}`}>
+        <img
+          src="/Assets/Home/images/masterplan/Water.png"
+          alt="Image"
+          width={100}
+          height={100}
+          priority
+          quality={100}
+          className={oasisDreamCarouselStyle.ContainImage}
+        />
+      </div>
     </div>,
   ];
 

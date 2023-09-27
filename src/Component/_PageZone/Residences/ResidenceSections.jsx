@@ -5,6 +5,7 @@ import IntroSection from '@/Component/_Sections/IntroSection/IntroSection';
 import ExquisiteDetails from '@/Component/_Sections/ExquisiteDetails/ExquisiteDetails';
 import Lifestyle from '@/Component/_Sections/Lifestyle/Lifestyle';
 import LocationBenefits from '@/Component/_Sections/LocationBenefits/LocationBenefits';
+import FormSection from '@/Component/FormSection/FormSection'
 
 export default function ResidenceSections() {
     const BannerTitle = 'Venice RESIDENCES';
@@ -20,11 +21,12 @@ export default function ResidenceSections() {
     const ExquisiteDetailsPara = 'Every detail matters in this thoughtfully crafted environment, where meticulous architecture and premium design harmonize with the natural surroundings. Floor-to-ceiling windows seamlessly blend indoor and outdoor spaces, offering breathtaking views of the water and cascading waterfalls. Every detail impeccable, every material exquisite.';
     const LifestylePara = 'Experience a captivating lifestyle where your every desire is effortlessly fulfilled. Our apartment complexes are meticulously designed to encompass everything you need, including a state-of-the-art gym, steam room, sauna, your own cinema, and a clubhouse.';
     const LifestyleBoxTitle = [
-        'POOLSIDE PERFECTION',
-        'WORLD OF WELLNESS',
-        'ELEVATED ENTERTAINMENT',
-        'State-of-the-art WORKOUT',
-        'WILD AND FREE'
+        'State-of-the-art gym',
+        'Multipurpose HalL',
+        'Cinema Room',
+        'ADULTS` & KIDS` SWIMMING POOL',
+        'kids` play area',
+        'Clubhouse'
     ]
     const LifestyleImage = '/Assets/Residence/images/life-style.webp';
     const LifestyleImageTitle = 'POOLSIDE PERFECTION';
@@ -37,6 +39,7 @@ export default function ResidenceSections() {
             {/* <ExquisiteDetails para={ExquisiteDetailsPara} /> */}
             <Lifestyle para={LifestylePara} listItem={LifestyleBoxTitle} image={LifestyleImage} imageTitle={LifestyleImageTitle}/>
             <LocationBenefits title={LocationBenefitsTitle} para={LocationBenefitsPara} />
+            <FormSection />
         </>
     )
 }

@@ -11,13 +11,16 @@ import {
   } from "react-share";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import CTAPopUp from '@/Component/Molecules/CTAPopUp/CTAPopUp'
+import LeftAnimation from '@/Component/LeftAnimation/LeftAnimation'
 
 export default function OasisOfDreams() {
     const [isVisible, setIsVisible] = useState(false);
+    const [copied, setCopied] = useState(false);
 
     useEffect(() => {
         const handleDocumentClick = () => {
           setIsVisible(false);
+          setCopied(false);
         };
     
         if (isVisible) {
@@ -36,8 +39,9 @@ export default function OasisOfDreams() {
     };
     
     const handleCopy = () => {
-        // alert("Link copied to clipboard!");
+        setCopied(true);
       };
+    
 
     return (
         <>
@@ -46,6 +50,7 @@ export default function OasisOfDreams() {
                 <p className={`${homeStyle.mainParagraph} ${homeStyle.oasisDreamParagraph}`}>Dive into a world of unparalleled water-inspired living, unlike anything you&#39;ve ever experienced, at Dubai&#39;s forthcoming legacy - a truly unparalleled luxury Crystal Lagoon community. Brace yourself to embark on a journey where opulence knows no boundaries, as you step into a haven of lavishness that stretches the limits of imagination. This is not just another destination it&#39;s an uncharted masterpiece, waiting to be discovered.</p>
             </section>
             <section className={`${homeStyle.oasisDreamContainSection}`}>
+                <LeftAnimation />
                 <div className={`${homeStyle.oasisDreamContainContainer}`}>
                     <div className={`${homeStyle.column7} ${homeStyle.sliderSection}`}>
                         <OasisDreamCarousel />
@@ -151,7 +156,7 @@ export default function OasisOfDreams() {
                             </div>
                             {isVisible && 
                                 <div className={`${Styles.shareListContanier}`}>
-                                    <CopyToClipboard className={`${Styles.shareListBox}`}  url={'http://localhost:3000'}  onCopy={handleCopy}>
+                                    <CopyToClipboard className={`${Styles.shareListBox}`} text={'https://azizi-home-demo.vercel.app/home'} url={'https://azizi-home-demo.vercel.app/home'}  onCopy={handleCopy}>
                                         <span><img
                                             src="/Assets/Icons/copy_link.svg"
                                             alt="Image"
@@ -159,7 +164,7 @@ export default function OasisOfDreams() {
                                         />
                                         COPY LINK</span>
                                     </CopyToClipboard>
-                                    <FacebookShareButton className={`${Styles.shareListBox}`}  url={'http://localhost:3000'}  quote='Azizi'>
+                                    <FacebookShareButton className={`${Styles.shareListBox}`}  url={'https://azizi-home-demo.vercel.app/home'}  quote='Azizi'>
                                         <img
                                             src="/Assets/Icons/Facebook.svg"
                                             alt="Image"
@@ -167,7 +172,7 @@ export default function OasisOfDreams() {
                                         />
                                         SHARE ON FACEBOOK
                                     </FacebookShareButton>
-                                    <TwitterShareButton className={`${Styles.shareListBox}`}  url={'http://localhost:3000'} title='Azizi'>
+                                    <TwitterShareButton className={`${Styles.shareListBox}`}  url={'https://azizi-home-demo.vercel.app/home'} title='Azizi'>
                                         <img
                                             src="/Assets/Icons/twitter-x.svg"
                                             alt="Image"
@@ -175,7 +180,7 @@ export default function OasisOfDreams() {
                                         />
                                         SHARE ON TWITTER
                                     </TwitterShareButton>
-                                    <LinkedinShareButton className={`${Styles.shareListBox}`}  url={'http://localhost:3000'} title='Azizi'>
+                                    <LinkedinShareButton className={`${Styles.shareListBox}`}  url={'https://azizi-home-demo.vercel.app/home'} title='Azizi'>
                                         <img
                                             src="/Assets/Icons/Linkedin.svg"
                                             alt="Image"

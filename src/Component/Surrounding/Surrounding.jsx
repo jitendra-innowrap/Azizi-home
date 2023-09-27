@@ -30,7 +30,7 @@ function ParallaxText({ children, baseVelocity }) {
 
     const directionFactor = useRef(1);
     useAnimationFrame((t, delta) => {
-      let moveBy = directionFactor.current * baseVelocity * (delta / 3000);
+      let moveBy = directionFactor.current * baseVelocity * (delta / 6000);
       // moveBy += directionFactor.current * moveBy * velocityFactor.get();
   
       baseX.set(baseX.get() + moveBy);

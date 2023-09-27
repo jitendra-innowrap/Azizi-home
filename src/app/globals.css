@@ -588,10 +588,15 @@ c-bg-img,
 }
 #header-bar.nav-dark {
   transform: translateY(-100%);
-  transition: all 10s;
+  transition: all 20s;
 }
 
 #header-bar.nav-hide {
   position: sticky;
   z-index: 99999;
+}
+.BannerGifWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

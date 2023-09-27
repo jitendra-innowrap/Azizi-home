@@ -64,7 +64,7 @@ const ParallexGridHero = () => {
                             }
                             target.style.setProperty("--p1", progress);
                             target.style.setProperty("--p2", 1 - progress);
-                            if (progress > 0.8) {
+                            if (progress > 0.89) {
                                 headerbar.classList.add("nav-dark");
                                 // headerbar.classList.remove("nav-hide");
                             } else {
@@ -90,7 +90,9 @@ const ParallexGridHero = () => {
             ref={contentRef}
             onScroll={handleScroll}
         >
-            <Image src={'/Assets/banner/Logo-Animation.gif'} quality={100} height={449} width={702} style={{ margin: "auto", display: "block" }} />
+            <div className="BannerGifWrapper">
+                <Image src={'/Assets/banner/Logo-Animation.gif'} quality={100} height={449} width={702} style={{ margin: "auto", display: "block" }} />
+            </div>
             <div className="c-hero ">
                 <div className="c-hero-sticky js-scroll-trigger" data-start="top top" data-end="bottom+=20% top" style={{ '--p1': 0, '--p2': 1 }}>
                     <div className="c-hero-img js-iv l" data-x="0" data-y="0" data-shown="0" data-visible="1">

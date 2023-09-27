@@ -596,8 +596,15 @@ c-bg-img,
   z-index: 99999;
 }
 .BannerGifWrapper {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
+  transform: translateX(22px);
   justify-content: center;
   margin-top: 100px;
+}
+@media (max-width: 1400px) {
+  .BannerGifWrapper {
+    transform: translateX(-6px);
+
+  }
 }

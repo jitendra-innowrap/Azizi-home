@@ -10,11 +10,11 @@ export default function OasisDreamCarousel() {
   const items = [
     <div key={1} className="item" >
       <div className={`${oasisDreamCarouselStyle.imageContainer}`}>
-        <img
-          src="/Assets/Home/images/masterplan/Villas.png"
+        <Image
+          src="/Assets/Home/images/masterplan/Masterplan-1.png"
           alt="Image"
-          width={100}
-          height={100}
+          width={600}
+          height={600}
           priority
           quality={100}
           className={oasisDreamCarouselStyle.ContainImage}
@@ -23,11 +23,11 @@ export default function OasisDreamCarousel() {
     </div>,
     <div key={2} className="item">
       <div className={`${oasisDreamCarouselStyle.imageContainer}`}>
-        <img
-          src="/Assets/Home/images/masterplan/Apartments.png"
+        <Image
+          src="/Assets/Home/images/masterplan/Masterplan-2.png"
           alt="Image"
-          width={100}
-          height={100}
+          width={600}
+          height={600}
           priority
           quality={100}
           className={oasisDreamCarouselStyle.ContainImage}
@@ -36,56 +36,17 @@ export default function OasisDreamCarousel() {
     </div>,
     <div key={3} className="item">
       <div className={`${oasisDreamCarouselStyle.imageContainer}`}>
-        <img
-          src="/Assets/Home/images/masterplan/Plot Area.png"
+        <Image
+          src="/Assets/Home/images/masterplan/Masterplan-3.png"
           alt="Image"
-          width={100}
-          height={100}
+          width={600}
+          height={600}
           priority
           quality={100}
           className={oasisDreamCarouselStyle.ContainImage}
         />
       </div>
-    </div>,
-    <div key={4} className="item">
-      <div className={`${oasisDreamCarouselStyle.imageContainer}`}>
-        <img
-          src="/Assets/Home/images/masterplan/Opera.png"
-          alt="Image"
-          width={100}
-          height={100}
-          priority
-          quality={100}
-          className={oasisDreamCarouselStyle.ContainImage}
-        />
-      </div>
-    </div>,
-    <div key={5} className="item">
-      <div className={`${oasisDreamCarouselStyle.imageContainer}`}>
-        <img
-          src="/Assets/Home/images/masterplan/Retail.png"
-          alt="Image"
-          width={100}
-          height={100}
-          priority
-          quality={100}
-          className={oasisDreamCarouselStyle.ContainImage}
-        />
-      </div>
-    </div>,
-    <div key={6} className="item">
-      <div className={`${oasisDreamCarouselStyle.imageContainer}`}>
-        <img
-          src="/Assets/Home/images/masterplan/Water.png"
-          alt="Image"
-          width={100}
-          height={100}
-          priority
-          quality={100}
-          className={oasisDreamCarouselStyle.ContainImage}
-        />
-      </div>
-    </div>,
+    </div>
   ];
 
   const handlePrevClick = () => {

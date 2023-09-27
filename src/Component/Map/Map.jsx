@@ -297,8 +297,8 @@ export default function Map() {
                 <GoogleMap
                     mapContainerStyle={{ width: '100%', height: '100%' }}
                     // center={{ lat: 24.917311, lng: 55.175599 }}
-                    center={{ lat: 24.842354939624123, lng: 55.14311858048023 }}
-                    zoom={11}
+                    center={{ lat: 24.915432730714127, lng: 55.08650690177196 }}
+                    zoom={11.5}
                     // options={{ mapId: "d62e2ebe3718e976" }}
                     options={{ 
                         styles: mapStyles
@@ -311,6 +311,7 @@ export default function Map() {
         </div>
     )
     // 24.842354939624123, 55.14311858048023
+    // 24.915432730714127, 55.08650690177196
 }
 
 

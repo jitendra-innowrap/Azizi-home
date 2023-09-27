@@ -56,7 +56,7 @@
     background-position: center center; */
     background-repeat: no-repeat;
     background-size: 100% auto;
-    padding-top: 300px;
+    padding-top: 220px;
     /* padding-bottom: 114px; */
 }
 .oasisDreamContainSection{
@@ -65,7 +65,7 @@
     background-size: 75% auto;
 }
 .oasisDreamContainContainer{
-    padding-top: 300px;
+    padding-top: 220px;
     display: flex;
 }
 .categorySection{
@@ -158,7 +158,7 @@
     z-index: -1;
 }
 .findHomeTitleSection{
-    padding-top: 300px;
+    padding-top: 220px;
 }
 /* .oasisDreamContainContainer{
     padding-bottom: 180px;
@@ -241,7 +241,7 @@
     font-size: 16px;
 }
 .aroundNeighborhoodSection{
-    padding-top: 300px;
+    padding-top: 220px;
 }
 .aroundNeighborhoodSlider{
     background-image: url('/Assets/Home/svgs/around-neighborhood-bg.svg');
@@ -258,7 +258,7 @@
     font-size: 16px;
 }
 .futureSurroundingSection{
-    padding-top: 300px;
+    padding-top: 220px;
     /* padding-bottom: 180px; */
     /* margin-top: -180px; */
     /* padding-top: 1230px;
@@ -320,7 +320,7 @@
     justify-content: center;
 }
 .realLookSection{
-    padding-top: 300px;
+    padding-top: 220px;
 }
 .realLookVideoDiv{
     position: relative;
@@ -346,17 +346,17 @@
         padding-top: 240px;
     } */
     .oasisDreamTitleSection{
-        padding-top: 240px;
+        padding-top: 160px;
         /* padding-bottom: 70px; */
     }
     /* .oasisDreamParagraph {
         padding-bottom: 70px;
     } */
     .oasisDreamContainContainer {
-        padding-top: 240px;
+        padding-top: 160px;
     }
     .findHomeTitleSection {
-        padding-top: 240px;
+        padding-top: 160px;
     }
     /* .oasisDreamContainContainer{
         padding-bottom: 120px;
@@ -365,7 +365,7 @@
         padding-bottom: 120px;
     } */
     .aroundNeighborhoodSection {
-        padding-top: 240px;
+        padding-top: 160px;
     }
     .locationInfo {
         padding-bottom: 30px;
@@ -375,7 +375,7 @@
         padding-inline: 60px;
     }
     .futureSurroundingSection {
-        padding-top: 240px;
+        padding-top: 160px;
         /* padding-bottom: 120px; */
         /* margin-top: -120px; */
     }
@@ -385,7 +385,7 @@
         padding-bottom: 120px;
     }
     .realLookSection {
-        padding-top: 240px;
+        padding-top: 160px;
     }
     .column7{
         width: 53.45%;
@@ -535,14 +535,14 @@
         width: 100%;
         height: auto;
     }
-    .realLookSection {
+    /* .realLookSection {
         padding-top: 200px;
-    }
-    .futureSurroundingSection {
+    } */
+    /* .futureSurroundingSection {
         padding-top: 200px;
-        /* padding-bottom: 90px; */
-        /* margin-top: -80px; */
-    }
+        padding-bottom: 90px;
+        margin-top: -80px;
+    } */
     .futureSurroundingSection2{
         padding-top: 240px;
         margin-top: -120px;
@@ -579,26 +579,26 @@
         font-size: 67px;
         max-width: 740px;
     }
-    .oasisDreamTitleSection{
+    /* .oasisDreamTitleSection{
         padding-top: 200px;
-    }
+    } */
     .oasisDreamParagraph {
         padding-inline: 135px;
     }
-    .findHomeTitleSection {
+    /* .findHomeTitleSection {
         padding-top: 200px;
-    }
-    .oasisDreamContainContainer{
-        /* padding-bottom: 100px; */
+    } */
+    /* .oasisDreamContainContainer{
+        padding-bottom: 100px;
         padding-top: 200px;
-    }
+    } */
     .findHomeImageSection {
         padding-top: 90px;
         /* padding-bottom: 90px; */
     }
-    .aroundNeighborhoodSection {
+    /* .aroundNeighborhoodSection {
         padding-top: 200px;
-    }
+    } */
     .locationInfoTitle {
         font-size: 20px;
     }

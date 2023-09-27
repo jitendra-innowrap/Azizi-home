@@ -284,6 +284,10 @@ const mapStyles = [
 console.log(JSON)
 
 export default function Map() {
+    const center = { lat: 24.915432730714127, lng: 55.08650690177196 }
+    const handleMarkerClick = () => {
+        window.open(`https://www.google.com/maps/search/?api=1&query=${center.lat},${center.lng}`, '_blank');
+    };
     return (
         <div className={styles.map}>
             {/* <Image
@@ -297,7 +301,7 @@ export default function Map() {
                 <GoogleMap
                     mapContainerStyle={{ width: '100%', height: '100%' }}
                     // center={{ lat: 24.917311, lng: 55.175599 }}
-                    center={{ lat: 24.915432730714127, lng: 55.08650690177196 }}
+                    center={center}
                     zoom={11.5}
                     // options={{ mapId: "d62e2ebe3718e976" }}
                     options={{ 
@@ -305,7 +309,7 @@ export default function Map() {
                     }}
 
                 >
-                    <Marker position={{ lat: 24.842354939624123, lng: 55.14311858048023 }} />
+                    <Marker position={{ lat: 24.842354939624123, lng: 55.14311858048023 }} onClick={handleMarkerClick} />
                 </GoogleMap>
             </LoadScript>
         </div>

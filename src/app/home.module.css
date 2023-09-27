@@ -298,7 +298,8 @@
 }
 .locationInfoTitle{
     font-family: Lamore;
-    font-size: 32px;
+    /* font-size: 32px; */
+        font-size: 30px;
     line-height: 110%;
     letter-spacing: 2%;
     text-transform: uppercase;
@@ -402,7 +403,8 @@
         font-size: 54px;
     }
     .locationInfoTitle {
-        font-size: 26px;
+        /* font-size: 26px; */
+            font-size: 24px;
     }
     .categoryboxs {
         grid-column-gap: 0px;
@@ -465,7 +467,8 @@
         margin-top: 20px;
     }
     .locationInfoTitle {
-        font-size: 24px;
+        /* font-size: 24px; */
+            font-size: 22px;
     }
     .locationInfo {
         padding-bottom: 20px;
@@ -565,7 +568,8 @@
         margin-bottom: 15px;
     }
     .locationInfoTitle {
-        font-size: 22px;
+        /* font-size: 22px; */
+            font-size: 20px;
     }
     .locationInfoDistance {
         font-size: 14px;
@@ -605,7 +609,8 @@
         padding-top: 90px;
     }
     .locationInfoTitle {
-        font-size: 20px;
+        /* font-size: 20px; */
+            font-size: 18px;
     }
     .locationInfo {
         padding-bottom: 15px;
@@ -680,7 +685,8 @@
         padding-block: 90px;
     }
     .locationInfoTitle {
-        font-size: 24px;
+        /* font-size: 24px; */
+            font-size: 20px;
     }
     .locationInfoDistance {
         margin-top: 10px;

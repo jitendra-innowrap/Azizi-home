@@ -14,7 +14,7 @@ export default function Header() {
     return (
         <>
             {/* nav bar */}
-            <nav className={Styles.navbar}>
+            <nav className={Styles.navbar} id='header-bar'>
                 <div className={Styles.navbarContainer}>
                     <div className={Styles.leftLinks}>
                         <Link href="https://azizidevelopments.com/en/about" className={Styles.navLinks}>About</Link>

@@ -35,7 +35,7 @@ export default function Header() {
                     <div className={Styles.rightLinks}>
                     <Link href="/home" className={Styles.navLinks}>Azizi Venice</Link>
                     <Link href="tel:80029494" className={Styles.navLinks}>800 (AZIZI) 29494</Link>
-                    <Link href="/" className={Styles.navLinksLanuage}> العربية</Link>
+                        {/* <Link href="/" className={Styles.navLinksLanuage}> العربية</Link> */}
                     <Link  href="#home_form"  className={Styles.navLinksButton}>ENQUIRE</Link>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ export default function Header() {
                         <Link  href="/home" className={Styles.navLinksMobile}>Azizi Venice</Link>
                         {/* <Link href="/" className={Styles.navLinks}>Contact</Link> */}
                         <Link href="tel:80029494" className={Styles.navLinksMobile}>800 (AZIZI) 29494</Link>
-                        <Link href="/" className={Styles.navLinksLanuageMobile}> العربية</Link>
+                        {/* <Link href="/" className={Styles.navLinksLanuageMobile}> العربية</Link> */}
                         <Link href="#home_form"  className={Styles.navLinksButtonMobile}>ENQUIRE</Link>
                     </div>
                 </div>

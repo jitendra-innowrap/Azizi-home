@@ -24,13 +24,24 @@
 .shareListContanier{
     background-color: #2C2A29;
     padding: 10px;
-    margin-inline: 40px;
+    /* margin-inline: 40px; */
     margin-top: 15px;
     width: fit-content;
     position: absolute;
+    z-index: 1;
 }
 .shareButtonContanier{
     position: relative;
+}
+@media (max-width: 1400px) {
+    .shareListContanier{
+        margin-inline: 50px;
+    }
+}
+@media (max-width: 1200px) {
+    .shareListContanier{
+        margin-inline: 40px;
+    }
 }
 @media (max-width: 992px) {
     .shareListContanier{

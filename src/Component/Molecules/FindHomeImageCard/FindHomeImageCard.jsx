@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function FindHomeImageCard({ image, title, url }) {
     const [position, setPosition] = useState({ x: 0, y: 0 });
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
     const MouseFollowContainer = useRef();
 
 

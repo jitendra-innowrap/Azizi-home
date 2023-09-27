@@ -10,7 +10,7 @@ import { Player } from '@lottiefiles/react-lottie-player';
 export default function FindYourHome() {
     return (
         <section className={`${homeStyle.findHomeSection}`} >
-             <Player
+            <Player
                 autoplay
                 loop
                 controls={false}

@@ -151,3 +151,36 @@
         overflow: hidden;
     }
 }
+@media (max-width: 690px) {
+    .section {
+        /* margin-block: 90px;
+        padding-inline: 20px; */
+        height: 70vh;
+    }
+
+    .container {
+        display: block;
+        padding-block: 60px;
+        padding-inline: 20px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .paragraph {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .titleContainer,
+    .formContainer {
+        padding-inline: 0px;
+    }
+
+    .formContainer {
+        padding-top: 60px;
+        width: 100%;
+        overflow: hidden;
+    }
+}

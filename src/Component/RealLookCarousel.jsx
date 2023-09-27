@@ -16,37 +16,36 @@ export default function RealLookCarousel()  {
     videoRef2.current.muted = true;
     videoRef3.current.muted = true;
 
-    // Start the video
-    videoRef1.current.play().catch(error => {
-      // Handle any play errors, e.g., related to autoplay restrictions
-      console.error('Video playback error:', error);
-    });
-    videoRef2.current.play().catch(error => {
-      // Handle any play errors, e.g., related to autoplay restrictions
-      console.error('Video playback error:', error);
-    });
-    videoRef3.current.play().catch(error => {
-      // Handle any play errors, e.g., related to autoplay restrictions
-      console.error('Video playback error:', error);
-    });
+    const playVideo = (videoRef) => {
+      if (videoRef.current) {
+        videoRef.current.play().catch((error) => {
+          // Handle any play errors, e.g., related to autoplay restrictions
+          console.error('Video playback error:', error);
+        });
+      }
+    };
+  
+    playVideo(videoRef1);
+    playVideo(videoRef2);
+    playVideo(videoRef3);
+
+    // // Start the video
+    // videoRef1.current.play().catch(error => {
+    //   // Handle any play errors, e.g., related to autoplay restrictions
+    //   console.error('Video playback error:', error);
+    // });
+    // videoRef2.current.play().catch(error => {
+    //   // Handle any play errors, e.g., related to autoplay restrictions
+    //   console.error('Video playback error:', error);
+    // });
+    // videoRef3.current.play().catch(error => {
+    //   // Handle any play errors, e.g., related to autoplay restrictions
+    //   console.error('Video playback error:', error);
+    // });
   }, []);
 
   const items = [
     <div key={1} className="item">
-      <video
-        ref={videoRef1}
-        autoPlay
-        loop
-        playsInline
-        src="/Assets/Home/videos/look-1.mp4"
-        type="video/mp4"
-        id="bg-video"
-        className={realLookCarouselStyle.ContainImage}
-      >
-            Your browser does not support the video tag.
-        </video>
-    </div>,
-    <div key={2} className="item">
       <video
         ref={videoRef2}
         autoPlay
@@ -60,7 +59,7 @@ export default function RealLookCarousel()  {
             Your browser does not support the video tag.
         </video>
     </div>,
-    <div key={3} className="item">
+    <div key={2} className="item">
       <video
         ref={videoRef3}
         autoPlay
@@ -74,6 +73,20 @@ export default function RealLookCarousel()  {
             Your browser does not support the video tag.
         </video>
     </div>,
+    <div key={3} className="item">
+      <video
+        ref={videoRef1}
+        autoPlay
+        loop
+        playsInline
+        src="/Assets/Home/videos/look-1.mp4"
+        type="video/mp4"
+        id="bg-video"
+        className={realLookCarouselStyle.ContainImage}
+      >
+            Your browser does not support the video tag.
+        </video>
+    </div>
   ];
 
   const handlePrevClick = () => {

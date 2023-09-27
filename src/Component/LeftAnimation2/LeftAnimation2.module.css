@@ -1,0 +1,15 @@
+.BgAnimation{
+    position: absolute;
+    top: -25%;
+    left: -35%;
+    width: 110%;
+    height: auto;
+    z-index: -1;
+}
+@media (max-width: 480px) {
+    .BgAnimation{
+        top: -100%;
+        left: -240%;
+        width: 400%;
+    }
+}

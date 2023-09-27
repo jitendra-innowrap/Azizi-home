@@ -1,0 +1,42 @@
+.BgAnimation{
+    position: absolute;
+    top: -95%;
+    right: -20%;
+    width: 90%;
+    height: auto;
+    z-index: -1;
+}
+@media (max-width: 1400px) {
+    .BgAnimation{
+        top: -95%;
+        right: -25%;
+        width: 100%;
+    }
+}
+@media (max-width: 1280px) {
+    .BgAnimation{
+        top: -90%;
+    }
+}
+@media (max-width: 1024px) {
+    .BgAnimation{
+        top: -70%;
+    }
+}
+@media (max-width: 992px) {
+    .BgAnimation{
+        top: -60%;
+    }
+}
+@media (max-width: 720px) {
+    .BgAnimation{
+        top: -50%;
+    }
+}
+@media (max-width: 500px) {
+    .BgAnimation{
+        top: -40%;
+        right: -50%;
+        width: 200%;
+    }
+}

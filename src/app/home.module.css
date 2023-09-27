@@ -51,13 +51,14 @@
     padding-inline: 10px;
 }
 .oasisDreamTitleSection{
-    background-image: url('/Assets/Home/svgs/homeSvg.svg');
+    /* background-image: url('/Assets/Home/svgs/homeSvg.svg'); */
     /* background-size: cover;
     background-position: center center; */
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 80% auto;
+    /* background-repeat: no-repeat; */
+    /* background-position: right bottom; */
+    /* background-size: 80% auto; */
     padding-top: 220px;
+    position: relative;
     /* padding-bottom: 114px; */
 }
 /* .oasisDreamContainSection{
@@ -367,7 +368,7 @@
     } */
     .oasisDreamTitleSection{
         padding-top: 160px;
-        background-size: 85% auto;
+        /* background-size: 85% auto; */
         /* padding-bottom: 70px; */
     }
     /* .oasisDreamParagraph {
@@ -598,10 +599,10 @@
         width: 80px;
         height: 80px;
     }
-    .oasisDreamTitleSection{
+    /* .oasisDreamTitleSection{
         background-size: 100% auto;
         background-position: top left;
-    }
+    } */
 }
 @media (max-width: 1024px) {
     .mainTitle {
@@ -811,11 +812,11 @@
     }
 }
 @media (max-width: 393px) {
-    .oasisDreamTitleSection{
+    /* .oasisDreamTitleSection{
         background-image: url('/Assets/Home/svgs/oasis-dream-title-section-bg-svg-mobile.svg') !important;
         background-size: 100% auto;
         background-position: top right;
-    }
+    } */
     /* .oasisDreamContainSection{
         background-image: url('/Assets/Home/svgs/oasis-dream-contain-section-bg-svg-mobile.svg');
         background-size: 100% auto;

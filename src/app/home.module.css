@@ -56,8 +56,8 @@
     background-position: center center; */
     background-repeat: no-repeat;
     background-size: 100% auto;
-    padding-top: 360px;
-    padding-bottom: 114px;
+    padding-top: 300px;
+    /* padding-bottom: 114px; */
 }
 .oasisDreamContainSection{
     background-image: url('/Assets/Home/svgs/oasis-dream-contain-section-bg-svg.svg');
@@ -65,7 +65,7 @@
     background-size: 75% auto;
 }
 .oasisDreamContainContainer{
-    padding-top: 245px;
+    padding-top: 300px;
     display: flex;
 }
 .categorySection{
@@ -152,17 +152,18 @@
 }
 .findHomeSectionBgAnimation{
     position: absolute;
-    top: -20%;
+    top: 0%;
     right: -30%;
     width: 100%;
     height: auto;
+    z-index: -1;
 }
 .findHomeTitleSection{
-    padding-top: 180px;
+    padding-top: 300px;
 }
-.oasisDreamContainContainer{
+/* .oasisDreamContainContainer{
     padding-bottom: 180px;
-}
+} */
 .findHomeParagraph{
     padding-inline: 190px;
     font-size: 16px;
@@ -170,7 +171,7 @@
 .findHomeImageSection{
     padding-inline: 60px;
     padding-top: 120px;
-    padding-bottom: 180px;
+    /* padding-bottom: 180px; */
     display: flex;
     gap: 30px;
 }
@@ -241,7 +242,7 @@
     font-size: 16px;
 }
 .aroundNeighborhoodSection{
-    padding-top: 180px;
+    padding-top: 300px;
 }
 .aroundNeighborhoodSlider{
     background-image: url('/Assets/Home/svgs/around-neighborhood-bg.svg');
@@ -258,9 +259,9 @@
     font-size: 16px;
 }
 .futureSurroundingSection{
-    padding-top: 180px;
-    padding-bottom: 180px;
-    margin-top: -180px;
+    padding-top: 300px;
+    /* padding-bottom: 180px; */
+    /* margin-top: -180px; */
     /* padding-top: 1230px;
     background-image: url(/Assets/Home/svgs/futureSurrounding-bg.svg);
     background-repeat: no-repeat;
@@ -330,7 +331,7 @@
     justify-content: center;
 }
 .realLookSection{
-    padding-top: 180px;
+    padding-top: 300px;
 }
 .realLookVideoDiv{
     position: relative;
@@ -357,25 +358,25 @@
     } */
     .oasisDreamTitleSection{
         padding-top: 240px;
-        padding-bottom: 70px;
+        /* padding-bottom: 70px; */
     }
     /* .oasisDreamParagraph {
         padding-bottom: 70px;
     } */
     .oasisDreamContainContainer {
-        padding-top: 130px;
+        padding-top: 240px;
     }
     .findHomeTitleSection {
-        padding-top: 120px;
+        padding-top: 240px;
     }
-    .oasisDreamContainContainer{
+    /* .oasisDreamContainContainer{
         padding-bottom: 120px;
-    }
-    .findHomeImageSection {
+    } */
+    /* .findHomeImageSection {
         padding-bottom: 120px;
-    }
+    } */
     .aroundNeighborhoodSection {
-        padding-top: 120px;
+        padding-top: 240px;
     }
     .locationInfo {
         padding-bottom: 30px;
@@ -385,9 +386,9 @@
         padding-inline: 60px;
     }
     .futureSurroundingSection {
-        padding-top: 120px;
-        padding-bottom: 120px;
-        margin-top: -120px;
+        padding-top: 240px;
+        /* padding-bottom: 120px; */
+        /* margin-top: -120px; */
     }
     .futureSurroundingSection2{
         /* padding-top: 300px;
@@ -396,7 +397,7 @@
         padding-top: 240px;
     }
     .realLookSection {
-        padding-top: 120px;
+        padding-top: 240px;
     }
     .column7{
         width: 53.45%;
@@ -430,9 +431,6 @@
     }
     .oasisDreamContainImages {
         margin-right: 10px;
-    }
-    .oasisDreamTitleSection{
-        padding-top: 225px;
     }
     .oasisDreamContainImages {
         width: 120px;
@@ -488,9 +486,6 @@
     .oasisDreamContainImages {
         margin-right: 10px;
     }
-    .oasisDreamTitleSection{
-        padding-top: 225px;
-    }
     .oasisDreamContainImages {
         width: 100px;
         height: 100px;
@@ -527,9 +522,6 @@
     /* .oasisDreamTitle {
         padding-top: 225px;
     } */
-    .oasisDreamTitleSection{
-        padding-top: 225px;
-    }
     .oasisDreamContainImages {
         width: 80px;
         height: 80px;
@@ -558,12 +550,12 @@
         height: auto;
     }
     .realLookSection {
-        padding-top: 90px;
+        padding-top: 200px;
     }
     .futureSurroundingSection {
-        padding-top: 90px;
-        padding-bottom: 90px;
-        margin-top: -80px;
+        padding-top: 200px;
+        /* padding-bottom: 90px; */
+        /* margin-top: -80px; */
     }
     /* .futureSurroundingSection2{
         padding-top: 240px;
@@ -603,23 +595,24 @@
         max-width: 740px;
     }
     .oasisDreamTitleSection{
-        padding-top: 120px;
+        padding-top: 200px;
     }
     .oasisDreamParagraph {
         padding-inline: 135px;
     }
     .findHomeTitleSection {
-        padding-top: 100px;
+        padding-top: 200px;
     }
     .oasisDreamContainContainer{
-        padding-bottom: 100px;
+        /* padding-bottom: 100px; */
+        padding-top: 200px;
     }
     .findHomeImageSection {
         padding-top: 90px;
-        padding-bottom: 90px;
+        /* padding-bottom: 90px; */
     }
     .aroundNeighborhoodSection {
-        padding-top: 90px;
+        padding-top: 200px;
     }
     .locationInfoTitle {
         /* font-size: 20px; */
@@ -637,22 +630,28 @@
     } 
 }
 @media (max-width: 992px) {
+    .futureSurroundingSection {
+        padding-top: 150px;
+    }
     .futureSurroundingSection2{
         padding-top: 150px;
     } 
+    .aroundNeighborhoodSection {
+        padding-top: 150px;
+    }
     /* .oasisDreamTitle {
         padding-top: 240px;
     } */
     .oasisDreamTitleSection{
-        padding-top: 240px;
-        padding-bottom: 0px;
+        padding-top: 150px;
+        /* padding-bottom: 0px; */
     }
     .mainTitle {
         font-size: 40px;
         /* max-width: 800px; */
     }
     .oasisDreamContainContainer {
-        padding-top: 240px;
+        padding-top: 150px;
         display: block;
     }
     /* .oasisDreamParagraph {
@@ -665,7 +664,7 @@
         width: 100%;
     }
     .categoryDivDiv {
-       padding-top: 90px;
+       padding-top: 60px;
     }
     .oasisDreamContainImages {
         width: 120px;
@@ -676,15 +675,15 @@
         height: 120px;
     }
     .findHomeTitleSection {
-        padding-top: 90px;
+        padding-top: 150px;
     }
-    .oasisDreamContainContainer{
+    /* .oasisDreamContainContainer{
         padding-bottom: 90px;
-    }
+    } */
     .findHomeImageSection {
         padding-inline: 20px;
         padding-top: 60px;
-        padding-bottom: 90px;
+        /* padding-bottom: 90px; */
         display: block;
     }
     .findHomeImageTilte {
@@ -723,7 +722,7 @@
         width: 100%;
     }
     .realLookSection {
-        padding-top: 90px;
+        padding-top: 150px;
     }
     .realLookVideoDiv {
         padding-top: 60px;
@@ -826,7 +825,7 @@
             background-repeat: no-repeat;
             background-position: top right;
             background-size: 80% auto;
-            padding-top: 260px;
-            margin-top: -260px;
+            padding-top: 150px;
+            /* margin-top: -260px; */
         }
 }

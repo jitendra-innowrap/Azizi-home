@@ -1,7 +1,7 @@
 .image {
     width: 100%;
     height: 100%;
-    cursor: none;
+    cursor: pointer;
 }
 
 .imageContainer {
@@ -106,5 +106,5 @@
     }
 }
 .imageContainer {
-    cursor: none !important;
+    cursor: pointer !important;
 }

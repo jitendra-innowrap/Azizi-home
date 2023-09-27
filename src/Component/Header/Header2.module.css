@@ -1,0 +1,233 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    z-index: 1;
+  }
+.navbarContainer{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+ padding-inline: 60px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+.navLogoImage{
+    width: 110px;
+    height: 24px;
+}
+  .leftLinks,
+  .rightLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  /* .leftLinks a,
+  .rightLinks a,
+  .navLogo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .leftLinks a:hover,
+  .rightLinks a:hover,
+  .navLogo a:hover {
+    color: #00bcd4;
+  } */
+
+  .navLinks{
+    color: #fff;
+    font-family: helvetica neue;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 3%;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .navLinksLanuage{
+    color: #fff;
+    font-family: helvetica neue;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .navLinksButton{
+    color: #fff;
+    font-family: helvetica neue;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 3%;
+    text-decoration: none;
+    padding-inline: 32px;
+    padding-block: 11px;
+    background-color: rgb(255 253 253 / 10%);
+    border: 1px solid white;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .menuBtn{
+    display: none;
+}
+.mobileWhiteLogo{
+    display: none;
+}
+.navbarMobile{
+    display: none;
+}
+  @media (max-width: 1400px) {
+    .navbarContainer {
+    padding-inline: 40px;
+    }
+    .leftLinks, .rightLinks {
+        gap: 20px;
+    }
+  }
+  @media (max-width: 1024px) {
+    /* .navbarContainer{
+        display: grid;
+    }
+    .navLogo{
+        order: 1;
+    }
+    .leftLinks{
+        order: 2;
+    }
+    .rightLinks{
+        order: 3;
+    }
+    .navbarContainer {
+        padding-inline: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    } 
+    .leftLinks{
+        display: block;
+        margin-top: 50px;
+    }
+    .navLinks{
+        display: block;
+        width: 100%;
+    }*/
+    .menuBtn{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: transparent;
+        border: none;
+        z-index: 3;
+        cursor: pointer;
+        display: block;
+    }
+    .menuBtnImage{
+       width: 24px;
+       height: 24px;
+    }
+    .navbar{
+        display: none;
+    }
+    .mobileWhiteLogo{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: transparent;
+        z-index: 3;
+        display: block;
+    }
+    .mobileNavLogoImage{
+        width: 110px;
+        height: 24px;
+    }
+    .navbarMobile{
+        /* display: block; */
+        position: absolute;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        z-index: 1;
+    }
+    .mobileBlackLogo{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: transparent;
+    }
+    .menuBlackBtn{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobileNavLogoBlackImage{
+        width: 110px;
+        height: 24px;
+    }
+    .menuBtnBlackImage{
+        width: 24px;
+        height: 24px;
+    }
+    .navbarContainerMobile{
+        display: block;
+        padding-top: 100px;
+        padding-inline: 20px;
+    }
+    .navLinksMobile ,
+    .navLinksLanuageMobile{
+        display: block;
+        width: 100%;
+        color: #2C2A29;
+        font-family: helvetica neue;
+        font-size: 12px;
+        line-height: 140%;
+        letter-spacing: 3%;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+    /* .navLinksLanuageMobile{
+        text-decoration: underline !important;
+    } */
+    .navLinksButtonMobile{
+        color: #2C2A29;
+        font-family: helvetica neue;
+        font-size: 12px;
+        line-height: 140%;
+        letter-spacing: 3%;
+        text-decoration: none;
+        padding-inline: 32px;
+        padding-block: 11px;
+        background-color: rgb(255 253 253 / 10%);
+        border: 1px solid #2C2A29;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .mobileNavHide{
+        display: none;
+    }
+    .mobileNavShow{
+        display: block;
+    }
+  }
+/* No navbar */
+/* .navbarContainer {
+    justify-content: center;
+}
+
+.navbar {
+    display: block;
+}
+
+*/

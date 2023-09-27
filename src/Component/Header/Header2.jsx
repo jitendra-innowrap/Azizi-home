@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import Styles from './Header.module.css'
+import Styles from './Header2.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
 

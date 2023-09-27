@@ -285,8 +285,9 @@ console.log(JSON)
 
 export default function Map() {
     const center = { lat: 24.915432730714127, lng: 55.08650690177196 }
+    const marker = { lat: 24.842354939624123, lng: 55.14311858048023 }
     const handleMarkerClick = () => {
-        window.open(`https://www.google.com/maps/search/?api=1&query=${center.lat},${center.lng}`, '_blank');
+        window.open(`https://www.google.com/maps/search/?api=1&query=${marker.lat},${marker.lng}`, '_blank');
     };
     return (
         <div className={styles.map}>
@@ -309,7 +310,7 @@ export default function Map() {
                     }}
 
                 >
-                    <Marker position={{ lat: 24.842354939624123, lng: 55.14311858048023 }} onClick={handleMarkerClick} />
+                    <Marker position={marker} onClick={handleMarkerClick} />
                 </GoogleMap>
             </LoadScript>
         </div>

@@ -366,6 +366,7 @@
     } */
     .oasisDreamTitleSection{
         padding-top: 160px;
+        background-size: 85% auto;
         /* padding-bottom: 70px; */
     }
     /* .oasisDreamParagraph {
@@ -595,6 +596,10 @@
         margin-right: 10px;
         width: 80px;
         height: 80px;
+    }
+    .oasisDreamTitleSection{
+        background-size: 100% auto;
+        background-position: top left;
     }
 }
 @media (max-width: 1024px) {

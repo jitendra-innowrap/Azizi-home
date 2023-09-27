@@ -23,9 +23,18 @@ export default function Header() {
                         <Link href="https://azizidevelopments.com/en/retail/dubai" className={Styles.navLinks}>Retail</Link>
                         <Link href="https://azizidevelopments.com/en/media-center" className={Styles.navLinks}>Media</Link>
                     </div>
-                    <Link href={'/home'} className={Styles.navLogo}>
+                    <Link href={'/home'} className={`${Styles.navLogo} logo_white`}>
                         <Image
                             src="/Assets/Azizi_Logo.svg"
+                            alt="Image"
+                            width={100}
+                            height={100}
+                            className={Styles.navLogoImage}
+                        />
+                    </Link>
+                    <Link href={'/'} className={`${Styles.mobileBlackLogo} logo_black`}>
+                        <Image
+                            src="/Assets/Azizi_Logo_black.svg"
                             alt="Image"
                             width={100}
                             height={100}

@@ -571,9 +571,20 @@ c-bg-img,
 #header-bar .nav_links a {
   color: #000;
 }
+#header-bar .logo_white {
+  color: #000;
+  display: none;
+}
 
 #header-bar.nav-hide .nav_links a {
   color: #fff;
+}
+#header-bar.nav-hide .logo_black {
+  display: none;
+}
+
+#header-bar.nav-hide .logo_white {
+  display: unset;
 }
 
 #header-bar.nav-hide {

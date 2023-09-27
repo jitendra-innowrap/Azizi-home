@@ -2,11 +2,13 @@ import SectionsTitle from '@/Component/Molecules/SectionTitle/SectionTitle'
 import React from 'react'
 import Styles from './Lifestyle.module.css'
 import Image from 'next/image';
+import RightAnimation from '@/Component/RightAnimation/RightAnimation';
 
 export default function Lifestyle({ para, listItem , image, imageTitle}) {
     console.log(listItem)
     return (
         <section className={Styles.section}>
+            <RightAnimation />
             <SectionsTitle title={'LIFESTYLE'} para={para} />
             <div className={Styles.imageSection}>
                 <div className={Styles.imageContainer}>

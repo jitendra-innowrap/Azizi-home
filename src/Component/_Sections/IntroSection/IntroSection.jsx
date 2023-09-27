@@ -4,6 +4,7 @@ import Styles from './IntroSection.module.css'
 import Image from 'next/image';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import CTAPopUp from '@/Component/Molecules/CTAPopUp/CTAPopUp';
 
 export default function IntroSection({ para, images }) { 
 
@@ -21,32 +22,9 @@ export default function IntroSection({ para, images }) {
             <div className={Styles.container}>
                 <p className={Styles.desc}>{para}</p>
                 <div className={Styles.buttons}>
-                    <a href="/Brochure/Azizi-Venice-Brochure.pdf" className='DownloadBTN' download="Brochure.pdf">
-                        <button className={Styles.button}>
-                        <Image
-                            src="/Assets/Residence/images/Download.png"
-                            alt="Image"
-                            width={100}
-                            height={100}
-                            quality={100}
-                            className={Styles.downloadIcon}
-                        />
-                        DOWNLOAD Floor plan
-                    </button>
-                    </a>
-                    <a href="/Brochure/Azizi-Venice-Brochure.pdf" className='DownloadBTN' download="Brochure.pdf">
-                    <button className={Styles.button}>
-                        <Image
-                            src="/Assets/Residence/images/Download.png"
-                            alt="Image"
-                            width={100}
-                            height={100}
-                            quality={100}
-                            className={Styles.downloadIcon}
-                        />
-                        DOWNLOAD BROCHURE
-                    </button>
-                    </a>
+                    <CTAPopUp cta={'DOWNLOAD FLOOR PLAN'} fileName={'Handover-Procedure.pdf'} filePath={'/Brochure/Handover-Procedure.pdf'} />
+                    <CTAPopUp cta={'DOWNLOAD BROCHURE'} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} />
+
                 </div>
                 <div className={Styles.infoContainer}>
                     <div className={Styles.infoBox}>

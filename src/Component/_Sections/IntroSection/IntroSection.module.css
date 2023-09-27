@@ -1,5 +1,6 @@
 .section {
     padding-block: 180px;
+    padding-inline: 60px;
 }
 
 .desc {
@@ -181,6 +182,7 @@
 @media (max-width: 1024px) {
     .section {
         padding-block: 100px;
+        padding-inline: 20px;
     }
 
     .CarouselContainer {

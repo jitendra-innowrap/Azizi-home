@@ -10,6 +10,7 @@ import {
     LinkedinShareButton,
   } from "react-share";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import CTAPopUp from '@/Component/Molecules/CTAPopUp/CTAPopUp'
 
 export default function OasisOfDreams() {
     const [isVisible, setIsVisible] = useState(false);
@@ -130,18 +131,7 @@ export default function OasisOfDreams() {
                                     />
                                     SHARE
                                 </button>
-                                <a href="/Brochure/Azizi-Venice-Brochure.pdf" className='DownloadBTN' download="Brochure.pdf">
-                                    <button className={homeStyle.categoryButton}>
-                                    <Image
-                                        src="/Assets/Home/svgs/Download-icon.svg"
-                                        alt="Image"
-                                        width={100}
-                                        height={100}
-                                        className={homeStyle.categoryButtonIcon}
-                                    />
-                                    DOWNLOAD BROCHURE
-                                </button>
-                                </a>
+                                <CTAPopUp cta={'DOWNLOAD BROCHURE'} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} />
                             </div>
                             {isVisible && 
                                 <div className={`${Styles.shareListContanier}`}>

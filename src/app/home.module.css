@@ -280,7 +280,7 @@
     background-image: url(/Assets/Home/svgs/location-bg.svg);
     background-repeat: no-repeat;
     background-size: 79% auto; */
-    padding-block: 180px;
+    padding-top: 300px;
     position: relative;
 }
 .futureSurrounding2BgAnimation{
@@ -393,7 +393,7 @@
         /* padding-top: 300px;
         margin-top: -180px;
         padding-bottom: 120px; */
-        padding-block: 120px;
+        padding-top: 240px;
     }
     .realLookSection {
         padding-top: 120px;
@@ -565,12 +565,11 @@
         padding-bottom: 90px;
         margin-top: -80px;
     }
-    .futureSurroundingSection2{
-        /* padding-top: 240px;
+    /* .futureSurroundingSection2{
+        padding-top: 240px;
         margin-top: -120px;
-        padding-bottom: 120px; */
-        padding-block: 120px;
-    }
+        padding-bottom: 120px;
+    } */
     .locationInfoDiv {
         padding-inline: 30px;
     }
@@ -633,8 +632,14 @@
     .locationInfoDistance {
         margin-top: 0px;
     }
+    .futureSurroundingSection2{
+        padding-top: 200px;
+    } 
 }
 @media (max-width: 992px) {
+    .futureSurroundingSection2{
+        padding-top: 150px;
+    } 
     /* .oasisDreamTitle {
         padding-top: 240px;
     } */
@@ -699,7 +704,9 @@
     }
     .locationInfoDiv {
         padding-inline: 20px;
-        padding-block: 90px;
+        padding-block: 0px;
+        padding-top: 60px;
+        padding-bottom: 0px;
     }
     .locationInfoTitle {
         /* font-size: 24px; */
@@ -736,6 +743,9 @@
     .categoryButtons {
         padding-inline: 20px;
         gap: 30px;
+    }
+    .mapSection{
+        padding-top: 60px;
     }
 }
 @media (max-width: 720px) {

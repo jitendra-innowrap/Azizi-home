@@ -1,5 +1,5 @@
 .section{
-    margin-block: 180px;
+    margin-block: 120px;
     padding-inline: 60px;
     height: 100%; 
 }
@@ -78,7 +78,7 @@
         padding-inline: 60px;
     }
     .section{
-        margin-block: 120px;
+        margin-block: 90px;
         padding-inline: 30px;
     }
 }
@@ -92,7 +92,7 @@
 }
 @media (max-width: 1024px) {
     .section{
-        margin-block: 90px;
+        margin-block: 60px;
         padding-inline: 20px;
     }
     .container{

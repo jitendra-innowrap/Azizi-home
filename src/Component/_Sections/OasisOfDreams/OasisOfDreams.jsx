@@ -3,7 +3,7 @@ import homeStyle from '@/app/home.module.css'
 import OasisDreamCarousel from '@/Component/OasisDreamCarousel'
 import Styles from '@/Component/_Sections/OasisOfDreams/OasisOfDreams.module.css'
 import Image from 'next/image'
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
     FacebookShareButton,
     TwitterShareButton,
@@ -15,10 +15,26 @@ import CTAPopUp from '@/Component/Molecules/CTAPopUp/CTAPopUp'
 export default function OasisOfDreams() {
     const [isVisible, setIsVisible] = useState(false);
 
+    useEffect(() => {
+        const handleDocumentClick = () => {
+          setIsVisible(false);
+        };
+    
+        if (isVisible) {
+          document.addEventListener('click', handleDocumentClick);
+        } else {
+          document.removeEventListener('click', handleDocumentClick);
+        }
+    
+        return () => {
+          document.removeEventListener('click', handleDocumentClick);
+        };
+      }, [isVisible]);
+
     const toggleVisibility = () => {
       setIsVisible(!isVisible);
     };
-
+    
     const handleCopy = () => {
         // alert("Link copied to clipboard!");
       };
@@ -74,7 +90,7 @@ export default function OasisOfDreams() {
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
-                                        <span>1.5</span>
+                                        <span>1.5M</span>
                                         <p>Square Metre of Retail Boulevard</p>
                                     </div>
                                 </div>
@@ -153,7 +169,7 @@ export default function OasisOfDreams() {
                                     </FacebookShareButton>
                                     <TwitterShareButton className={`${Styles.shareListBox}`}  url={'http://localhost:3000'} title='Azizi'>
                                         <img
-                                            src="/Assets/Icons/Twitter.svg"
+                                            src="/Assets/Icons/twitter-x.svg"
                                             alt="Image"
                                             className={Styles.shareListIcon}
                                         />

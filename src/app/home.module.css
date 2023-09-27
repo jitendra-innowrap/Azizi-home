@@ -141,6 +141,7 @@
     line-height: 130%;
     background: transparent;
     border: none;
+    color: #2C2A29;
 }
 .findHomeSection{
     /* background-image: url('/Assets/Home/svgs/find-home-bg-svg.svg');
@@ -783,7 +784,7 @@
         padding-inline: 20px;
     }
     .realLookParagraph {
-        font-size: 20px;
+        font-size: 14px;
     }
     .futureSurrounding2BgAnimation{
         top: -7%;

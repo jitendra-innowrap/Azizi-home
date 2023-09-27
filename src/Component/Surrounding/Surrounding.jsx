@@ -81,8 +81,9 @@ const Surrounding = ({ handleOpen, setPopUpValue }) => {
     <div className={surroundingStyle.multiSliderDiv}
     >
       <div className=""
-        onMouseEnter={() => { handleRowHover(1) }}
-        onMouseLeave={() => { handleRowLeave(1) }}>
+      // onMouseEnter={() => { handleRowHover(1) }}
+      // onMouseLeave={() => { handleRowLeave(1) }}
+      >
         <ParallaxText baseVelocity={baseVelocity1}>
           <div className={surroundingStyle.imageWrapped}
             onClick={() => { handleOpen(); setPopUpValue(1) }}
@@ -96,8 +97,9 @@ const Surrounding = ({ handleOpen, setPopUpValue }) => {
         </ParallaxText>
       </div>
       <div className=""
-        onMouseEnter={() => { handleRowHover(2) }}
-        onMouseLeave={() => { handleRowLeave(2) }}>
+      // onMouseEnter={() => { handleRowHover(2) }}
+      // onMouseLeave={() => { handleRowLeave(2) }}
+      >
         <ParallaxText baseVelocity={baseVelocity2}>
           <div className={surroundingStyle.imageWrapped}
             onClick={() => { handleOpen(); setPopUpValue(2) }}
@@ -111,8 +113,10 @@ const Surrounding = ({ handleOpen, setPopUpValue }) => {
         </ParallaxText>
       </div>
       <div className=""
-        onMouseEnter={() => { handleRowHover(3) }}
-        onMouseLeave={() => { handleRowLeave(3) }}>
+        style={{ cursor: 'pointer' }}
+      // onMouseEnter={() => { handleRowHover(3) }}
+      // onMouseLeave={() => { handleRowLeave(3) }}
+      >
         <ParallaxText baseVelocity={baseVelocity3} >
           <div className={surroundingStyle.imageWrapped}
             onClick={() => { handleOpen(); setPopUpValue(3) }}

@@ -43,6 +43,7 @@ export default function FindHomeImageCard({ image, title, url }) {
                 ref={MouseFollowContainer}
             onMouseEnter={handleContainerHover}
             onMouseLeave={handleContainerLeave}
+                style={{ cursor: 'pointer' }}
         >
             <img
                 src={image}
@@ -54,7 +55,7 @@ export default function FindHomeImageCard({ image, title, url }) {
             <span className={`${homeStyle.findHomeImageTilte}`}
             >{title}</span>
             <div className={`${homeStyle.findHomeImageOverlay}`}></div>
-            {isVisible && <button className={`${homeStyle.findHomeImageButton}`}
+                {/* {isVisible && <button className={`${homeStyle.findHomeImageButton}`}
                 style={{
                     transform: `translate(${position.x}px, ${position.y}px)`,
                     cursor: 'none'
@@ -68,7 +69,7 @@ export default function FindHomeImageCard({ image, title, url }) {
                     className={homeStyle.exploreIcon}
                 />
                 EXPLORE
-            </button>}
+            </button>} */}
         </div>
         </Link>
     )

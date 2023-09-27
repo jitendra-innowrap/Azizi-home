@@ -77,7 +77,7 @@ export function VideoPopUpContainer({ handleClose }) {
                     autoPlay
                     loop
                     playsInline
-                    src="/Assets/Home/videos/backgroundGif.mp4"
+                    src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/AziziVenice.webm"
                     type="video/mp4"
                     className={Styles.bannerVideo}
                 >

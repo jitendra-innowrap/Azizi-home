@@ -14,10 +14,12 @@ import CTAPopUp from '@/Component/Molecules/CTAPopUp/CTAPopUp'
 
 export default function OasisOfDreams() {
     const [isVisible, setIsVisible] = useState(false);
+    const [copied, setCopied] = useState(false);
 
     useEffect(() => {
         const handleDocumentClick = () => {
           setIsVisible(false);
+          setCopied(false);
         };
     
         if (isVisible) {
@@ -36,8 +38,9 @@ export default function OasisOfDreams() {
     };
     
     const handleCopy = () => {
-        // alert("Link copied to clipboard!");
+        setCopied(true);
       };
+    
 
     return (
         <>
@@ -151,7 +154,7 @@ export default function OasisOfDreams() {
                             </div>
                             {isVisible && 
                                 <div className={`${Styles.shareListContanier}`}>
-                                    <CopyToClipboard className={`${Styles.shareListBox}`}  url={'http://localhost:3000'}  onCopy={handleCopy}>
+                                    <CopyToClipboard className={`${Styles.shareListBox}`} text={'https://azizi-home-demo.vercel.app/home'} url={'https://azizi-home-demo.vercel.app/home'}  onCopy={handleCopy}>
                                         <span><img
                                             src="/Assets/Icons/copy_link.svg"
                                             alt="Image"
@@ -159,7 +162,7 @@ export default function OasisOfDreams() {
                                         />
                                         COPY LINK</span>
                                     </CopyToClipboard>
-                                    <FacebookShareButton className={`${Styles.shareListBox}`}  url={'http://localhost:3000'}  quote='Azizi'>
+                                    <FacebookShareButton className={`${Styles.shareListBox}`}  url={'https://azizi-home-demo.vercel.app/home'}  quote='Azizi'>
                                         <img
                                             src="/Assets/Icons/Facebook.svg"
                                             alt="Image"
@@ -167,7 +170,7 @@ export default function OasisOfDreams() {
                                         />
                                         SHARE ON FACEBOOK
                                     </FacebookShareButton>
-                                    <TwitterShareButton className={`${Styles.shareListBox}`}  url={'http://localhost:3000'} title='Azizi'>
+                                    <TwitterShareButton className={`${Styles.shareListBox}`}  url={'https://azizi-home-demo.vercel.app/home'} title='Azizi'>
                                         <img
                                             src="/Assets/Icons/twitter-x.svg"
                                             alt="Image"
@@ -175,7 +178,7 @@ export default function OasisOfDreams() {
                                         />
                                         SHARE ON TWITTER
                                     </TwitterShareButton>
-                                    <LinkedinShareButton className={`${Styles.shareListBox}`}  url={'http://localhost:3000'} title='Azizi'>
+                                    <LinkedinShareButton className={`${Styles.shareListBox}`}  url={'https://azizi-home-demo.vercel.app/home'} title='Azizi'>
                                         <img
                                             src="/Assets/Icons/Linkedin.svg"
                                             alt="Image"

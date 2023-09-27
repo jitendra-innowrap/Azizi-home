@@ -586,6 +586,10 @@ c-bg-img,
 #header-bar.nav-hide .logo_white {
   display: unset;
 }
+#header-bar.nav-dark {
+  transform: translateY(-100%);
+  transition: all 10s;
+}
 
 #header-bar.nav-hide {
   position: sticky;

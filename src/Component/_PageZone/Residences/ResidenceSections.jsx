@@ -24,14 +24,14 @@ export default function ResidenceSections() {
         'State-of-the-art gym',
         'Multipurpose HalL',
         'Cinema Room',
-        'ADULTS` & KIDS` SWIMMING POOL',
-        'kids` play area',
+        "ADULTS' & KIDS' SWIMMING POOL",
+        "kids' play area",
         'Clubhouse'
     ]
     const LifestyleImage = '/Assets/Residence/images/life-style.webp';
     const LifestyleImageTitle = 'POOLSIDE PERFECTION';
     const LocationBenefitsTitle = 'LOCATION BENEFITS';
-    const LocationBenefitsPara = 'Located in Dubai South, the city`s most expansive singular urban master development. Azizi Venice will become a part of a smart and futuristic metropolis that promises entirely new standard of living. Over 136 hectares in size, Azizi Venice is set to be a prestigious yet well-connected enclave.';
+    const LocationBenefitsPara = "Located in Dubai South, the city's most expansive singular urban master development. Azizi Venice will become a part of a smart and futuristic metropolis that promises entirely new standard of living. Over 136 hectares in size, Azizi Venice is set to be a prestigious yet well-connected enclave.";
     return (
         <>
             <Banner title={BannerTitle} image={BannerImage} />

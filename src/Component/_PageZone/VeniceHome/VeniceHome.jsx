@@ -8,11 +8,13 @@ import GetRealLook from '@/Component/_Sections/GetRealLook/GetRealLook'
 import TheDestination from '@/Component/_Sections/TheDestination/TheDestination'
 import OasisOfDreams from '@/Component/_Sections/OasisOfDreams/OasisOfDreams'
 import React from 'react'
+import ParallexGridHero from '@/Component/ParallaxGridHero'
 
 export default function VeniceHome() {
     return (
         <>
-            <Banner />
+            {/* <Banner /> */}
+            <ParallexGridHero />
             <OasisOfDreams />
             <FindYourHome />
             <DesireOnDoorStep />

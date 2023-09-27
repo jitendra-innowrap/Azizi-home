@@ -12,7 +12,7 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: Montserrat;
   padding: 0 !important;
 }
@@ -155,4 +155,416 @@ input:invalid+span::before {
 }
 .DownloadBTN {
   text-decoration: none;
+}
+/* Parallax grid banner css */
+:root {
+  --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
+  --vh: 10.01px;
+  --r: .347vw;
+  --go: 2vw;
+  --gw: calc(2vw - var(--go)*2/48);
+  --header-h: 5.208vw;
+  --single-w: 60vw;
+  --ease-power1-in: cubic-bezier(0.26, 0, 0.6, 0.2);
+  --ease-power1-out: cubic-bezier(0.4, 0.8, 0.74, 1);
+  --ease-power1-in-out: cubic-bezier(0.48, 0.04, 0.52, 0.96);
+  --ease-power2-in: cubic-bezier(0.4, 0, 0.68, 0.06);
+  --ease-power2-out: cubic-bezier(0.32, 0.94, 0.6, 1);
+  --ease-power2-in-out: cubic-bezier(0.66, 0, 0.34, 1);
+  --ease-power3-in: cubic-bezier(0.52, 0, 0.74, 0);
+  --ease-power3-out: cubic-bezier(0.26, 1, 0.48, 1);
+  --ease-power3-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-power4-in: cubic-bezier(0.64, 0, 0.78, 0);
+  --ease-power4-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-power4-in-out: cubic-bezier(0.84, 0, 0.16, 1);
+  --a-clip-s: 1.2s;
+  --a-clip-e: cubic-bezier(0.22, 1, 0.36, 1);
+  --a-clip-o-s: .6s;
+  --a-clip-o-e: cubic-bezier(0.22, 1, 0.36, 1);
+  --a-hover-s: .5s;
+  --a-global-t-s: .8s;
+  --a-leave: 0;
+  --a-enter: 1;
+  --px: 0;
+  --py: 0;
+  --p1: 0;
+  --p2: 1;
+}
+
+html.is-inner-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html.is-inner-scroll,
+html.is-inner-scroll body {
+  overflow: hidden;
+}
+
+
+.c-cursor {
+  position: fixed;
+  z-index: 99;
+  pointer-events: none;
+  height: 2em;
+  width: 4.513vw;
+  border-radius: 1em;
+  overflow: hidden;
+  margin-left: -2.2565vw;
+  margin-top: -1.75em
+}
+
+.is-any .c-cursor {
+  display: none !important
+}
+
+.c-cursor-body {
+  width: 100%;
+  height: 100%;
+  position: relative
+}
+
+.c-cursor-t {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  height: 2em;
+  width: 4.513vw;
+  justify-content: center;
+  align-items: center;
+  color: var(--col-white)
+}
+
+[data-cursor=view] .c-cursor-t[data-type=view] .t,
+[data-cursor=zoom] .c-cursor-t[data-type=zoom] .t {
+  transform: translate(0)
+}
+
+.c-cursor-blur {
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  overflow: hidden;
+  backdrop-filter: saturate(100%) blur(.347vw);
+  background: hsla(0, 0%, 62.7%, .3);
+  transition: opacity .3s, transform var(--a-global-t-s) var(--ease-power4-out);
+  opacity: 0;
+  transform: translateY(1em);
+  z-index: 0
+}
+
+.is-cursor-active .c-cursor-blur {
+  opacity: 1;
+  transform: translate(0)
+}
+
+:root {
+  --hero-w: calc(var(--gw)*20);
+  --hero-h: calc(var(--hero-w)*1.33232);
+  --hero-g: calc(var(--gw)*1);
+  --hero-r: calc(100vw - var(--hero-l) - var(--hero-w));
+  --hero-l: calc(var(--gw)*2 + var(--hero-g) + var(--hero-g) + var(--gw)*8 + var(--gw)*2 + var(--hero-g)*2);
+  --hero-t: calc(var(--gw)*2);
+  --hero-b: calc(var(--gw)*2);
+  --hero-x: calc(var(--hero-l) - 50vw + var(--hero-w)*0.5);
+  --hero-y: calc(var(--hero-h)*-0.33)
+}
+
+.c-hero {
+  position: relative;
+  height: calc(var(--vh)*230)
+}
+
+.c-hero-sticky {
+  position: sticky;
+  overflow: hidden;
+  perspective: 200vw
+}
+
+.c-hero-clip,
+.c-hero-sticky {
+  top: 0;
+  height: calc(var(--vh)*100);
+  width: 100%;
+  z-index: 2
+}
+
+.c-hero-clip {
+  left: 0;
+  position: absolute;
+  clip-path: inset(calc(var(--hero-t)*var(--p2)) calc(var(--hero-r)*var(--p2)) calc(var(--hero-b)*var(--p2)) calc(var(--hero-l)*var(--p2)) round calc(var(--r)))
+}
+
+.c-hero-mv {
+  width: 100%;
+  height: 100%;
+  transform: scale(calc(1 + var(--p2)*0.1));
+  transform: scale(calc(1 + var(--p2)*0.1)) translate(calc(var(--hero-x)*var(--p2)))
+}
+
+.c-hero-img {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: calc(var(--r)*var(--p2))
+}
+
+.c-hero-img[data-x="0"][data-y="0"] {
+  width: calc(var(--gw)*12);
+  height: calc(var(--gw)*12*1.3);
+  left: calc(var(--gw)*1.2 + var(--hero-g));
+  top: calc(var(--gw)*5 + var(--hero-t));
+  margin-left: calc(var(--gw)*14*-1);
+}
+
+.c-hero-img[data-x="1"][data-y="0"] {
+  top: calc(var(--gw)*2 + var(--hero-t))
+}
+
+.c-hero-img[data-x="1"][data-y="0"],
+.c-hero-img[data-x="1"][data-y="1"] {
+  width: calc(var(--gw)*8);
+  height: calc(var(--gw)*8*1.33232);
+  left: calc(var(--gw)*3 + var(--hero-g) + var(--hero-g))
+}
+
+.c-hero-img[data-x="1"][data-y="1"] {
+  top: calc(var(--gw)*2 + var(--hero-t) + var(--gw)*8*1.33232 + var(--hero-g))
+}
+
+.c-hero-img[data-x="2"][data-y="0"] {
+  width: calc(var(--gw)*14);
+  height: calc(var(--gw)*16*1.33232);
+  top: calc(var(--gw)*2 + var(--hero-t));
+  left: calc(-5.8vw + var(--hero-g) + var(--hero-g) + var(--gw)*1 + var(--hero-g));
+}
+
+.c-hero-img[data-x="3"][data-y="0"] {
+  width: calc(var(--gw)*14);
+  height: calc(var(--gw)*16*1.33232);
+  top: calc(var(--gw)*2 + var(--hero-t));
+  left: calc(var(--hero-l) + var(--hero-w) + var(--hero-g))
+}
+
+.c-hero-img[data-x="4"][data-y="0"] {
+  width: calc(var(--gw)*12);
+  height: calc(var(--gw)*12*1.3);
+  top: calc(var(--gw)*5 + var(--hero-t));
+  left: calc(var(--hero-r) * 1.91 + var(--hero-w) + var(--hero-g))
+}
+
+.c-hero-img.l:nth-child(0) {
+  transform-origin: center left;
+  transform: rotateX(calc(0deg*var(--p1))) rotateY(calc(0deg*var(--p1))) rotate(calc(0deg*var(--p1))) translate(calc(var(--go)*var(--p1)*-1 + var(--hero-l)*var(--p1)*-1 + -8vw*var(--p1)), calc(-100vh*var(--p1)*0.25 + -40vw*var(--p1)*0.25))
+}
+
+.c-hero-img.l:nth-child(0) .c-bg-img {
+  transform: scale(calc(1 + var(--p1)*0.3))
+}
+
+.c-hero-img.l:first-child {
+  transform-origin: center left;
+  transform: rotateX(calc(0deg*var(--p1))) rotateY(calc(0deg*var(--p1))) rotate(calc(0deg*var(--p1))) translate(calc(var(--go)*var(--p1)*-1 + var(--hero-l)*var(--p1)*-1 + -6vw*var(--p1)), calc(-100vh*var(--p1)*0.25 + -30vw*var(--p1)*0.25))
+}
+
+.c-hero-img.l:first-child .c-bg-img {
+  transform: scale(calc(1 + var(--p1)*0.3))
+}
+
+.c-hero-img.l:nth-child(2) {
+  transform-origin: center left;
+  transform: rotateX(calc(0deg*var(--p1))) rotateY(calc(0deg*var(--p1))) rotate(calc(0deg*var(--p1))) translate(calc(var(--go)*var(--p1)*-1 + var(--hero-l)*var(--p1)*-1 + -4vw*var(--p1)), calc(-100vh*var(--p1)*0.2 + -20vw*var(--p1)*0.2));
+  /* transform: rotateX(calc(0deg*var(--p1)*-1)) rotateY(calc(0deg*var(--p1)*-1)) rotate(calc(0deg*var(--p1)*-1)) translate(calc(var(--go)*var(--p1) + var(--hero-r)*var(--p1)*1),calc(-100vh*var(--p1)*0.2)) */
+}
+
+.c-hero-img.l:nth-child(2) .c-bg-img {
+  transform: scale(calc(1 + var(--p1)*0.3))
+}
+
+.c-hero-img.l:nth-child(3) {
+  transform-origin: center left;
+  transform: rotateX(calc(0deg*var(--p1))) rotateY(calc(0deg*var(--p1))) rotate(calc(0deg*var(--p1))) translate(calc(var(--go)*var(--p1)*-1 + var(--hero-l)*var(--p1)*-1 + -2vw*var(--p1)), calc(-100vh*var(--p1)*0.25 + -10vw*var(--p1)*0.25))
+}
+
+.c-hero-img.l:nth-child(3) .c-bg-img {
+  transform: scale(calc(1 + var(--p1)*0.3))
+}
+
+.c-hero-img.l:nth-child(4) {
+  transform-origin: center left;
+  transform: rotateX(calc(0deg*var(--p1))) rotateY(calc(0deg*var(--p1))) rotate(calc(0deg*var(--p1))) translate(calc(var(--go)*var(--p1)*-1 + var(--hero-l)*var(--p1)*-1 + 0vw*var(--p1)), calc(-100vh*var(--p1)*0.25 + 0vw*var(--p1)*0.25))
+}
+
+.c-hero-img.l:nth-child(4) .c-bg-img {
+  transform: scale(calc(1 + var(--p1)*0.3))
+}
+
+.c-hero-img.r {
+  transform-origin: center right;
+  transform: rotateX(calc(0deg*var(--p1)*-1)) rotateY(calc(0deg*var(--p1)*-1)) rotate(calc(0deg*var(--p1)*-1)) translate(calc(var(--go)*var(--p1) + var(--hero-r)*var(--p1)*1), calc(-100vh*var(--p1)*0.2))
+}
+
+.c-hero-img.r .c-bg-img {
+  transform: scale(calc(1 + var(--p1)*0.3))
+}
+
+.c-hero-clip,
+.c-hero-img,
+.c-hero-mv {
+  will-change: auto
+}
+
+.c-hero-img[data-visible="1"],
+[data-visible="1"] .c-hero-mv {
+  will-change: transform
+}
+
+.c-hero-clip[data-visible="1"] {
+  will-change: clip-path
+}
+
+c-bg-img,
+.c-bg-video {
+  width: 100%;
+  height: 100%;
+  position: relative
+}
+
+.c-bg-img .elem {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat
+}
+
+.c-bg-img .elem,
+.c-bg-video .elem {
+  text-indent: -9999px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: relative
+}
+
+.c-bg-img .poster,
+.c-bg-video .poster {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1
+}
+
+.c-bg-img .poster {
+  background-size: 500%;
+  background-position: 0 0
+}
+
+.c-bg-img img,
+.c-bg-video img,
+.c-bg-video video {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0
+}
+
+.c-bg-img,
+.c-bg-video {
+  background-color: var(--col-bg-img)
+}
+
+[data-bg=dark] .c-bg-img,
+[data-bg=dark] .c-bg-video {
+  background-color: var(--col-bg-menu)
+}
+
+.c-bg-img .elem,
+.c-bg-img .poster,
+.c-bg-video .elem,
+.c-bg-video .poster {
+  opacity: 0
+}
+
+.c-bg-img.is-img-loaded .elem,
+.c-bg-img.is-poster-loaded .poster,
+.c-bg-video.is-poster-loaded .poster,
+.c-bg-video.is-video-play .elem {
+  opacity: 1
+}
+
+[data-visible="1"].c-bg-img.is-img-loaded .elem,
+[data-visible="1"].c-bg-img.is-poster-loaded .poster,
+[data-visible="1"].c-bg-video.is-poster-loaded .poster,
+[data-visible="1"].c-bg-video.is-video-play .elem {
+  transition: opacity 1s
+}
+
+/* .c-hero-img[data-x="0"][data-y="0"] {
+  width: calc(var(--gw)*12);
+  height: calc(var(--gw)*12*1.33232);
+  left: calc(var(--gw)*3 + var(--hero-g));
+  top: var(--hero-t);
+  margin-left: calc(var(--gw)*12*-1);
+} */
+
+.c-bg-img,
+.c-bg-video {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* parallex banner */
+/* App.css */
+
+.scroll-animation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  /* Adjust as needed */
+  overflow: hidden;
+}
+
+.scrolling-text {
+  animation: scrollAnimation 5s ease-in-out infinite alternate;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.bottom-to-top-image {
+  animation: bottomToTopAnimation 5s ease-in-out infinite alternate;
+}
+
+@keyframes bottomToTopAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }

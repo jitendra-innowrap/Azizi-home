@@ -14,16 +14,16 @@ export default function Header() {
     return (
         <>
             {/* nav bar */}
-            <nav className={Styles.navbar}>
+            <nav className={Styles.navbar} id='header-bar'>
                 <div className={Styles.navbarContainer}>
-                    <div className={Styles.leftLinks}>
+                    <div className={`${Styles.leftLinks} nav_links`}>
                         <Link href="https://azizidevelopments.com/en/about" className={Styles.navLinks}>About</Link>
                         <Link href="https://azizidevelopments.com/en/destinations" className={Styles.navLinks}>Communities</Link>
                         <Link href="https://azizidevelopments.com/en/dubai" className={Styles.navLinks}>Projects</Link>
                         <Link href="https://azizidevelopments.com/en/retail/dubai" className={Styles.navLinks}>Retail</Link>
                         <Link href="https://azizidevelopments.com/en/media-center" className={Styles.navLinks}>Media</Link>
                     </div>
-                    <Link href={'/home'} className={Styles.navLogo}>
+                    <Link href={'/home'} className={`${Styles.navLogo} logo_white`}>
                         <Image
                             src="/Assets/Azizi_Logo.svg"
                             alt="Image"
@@ -32,7 +32,16 @@ export default function Header() {
                             className={Styles.navLogoImage}
                         />
                     </Link>
-                    <div className={Styles.rightLinks}>
+                    <Link href={'/'} className={`${Styles.mobileBlackLogo} logo_black`}>
+                        <Image
+                            src="/Assets/Azizi_Logo_black.svg"
+                            alt="Image"
+                            width={100}
+                            height={100}
+                            className={Styles.navLogoImage}
+                        />
+                    </Link>
+                    <div className={`${Styles.rightLinks} nav_links`}>
                     <Link href="/home" className={Styles.navLinks}>Azizi Venice</Link>
                     <Link href="tel:80029494" className={Styles.navLinks}>800 (AZIZI) 29494</Link>
                         {/* <Link href="/" className={Styles.navLinksLanuage}> العربية</Link> */}

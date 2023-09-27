@@ -2,18 +2,14 @@
     position: relative;
     background: #fff;
     height: auto;
-    max-width: fit-content;
-        max-height: 80vh;
+    min-width: fit-content;
+        background: transparent;
 }
 .bannerVideo {
-    height: auto;
     width: 100%;
+    /* height: auto; */
 }
-@media (max-width: 992px) {
-    .homeBannerVideo {
-        height: auto;
-    }
-}
+
 
 .playBtn {
     position: absolute;
@@ -31,6 +27,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    z-index: 9999;
 }
 
 .playSvg {
@@ -44,6 +41,7 @@
     top: 0;
     right: 0;
     text-align: right;
+    z-index: 9999;
     padding-bottom: 30px;
 }
 

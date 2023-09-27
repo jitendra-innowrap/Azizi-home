@@ -10,7 +10,7 @@ export default function page() {
     return (
         <main className={homeStyle.Main}>
 
-            <Header />
+            <Headers />
             <VillasSections />
             <StickySocials />
             <Footer />

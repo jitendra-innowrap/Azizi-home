@@ -4,7 +4,7 @@
     right: 0;
     display: grid;
     box-shadow: -1px 0px 1px #55596063;
-    z-index: 1;
+    z-index: 9999;
 }
 .socialIconSvg{
     width: 24px;
@@ -149,6 +149,7 @@
     margin-top: -110px;
     background-size: 59% auto; */
     position: relative;
+    overflow: hidden;
 }
 .findHomeSectionBgAnimation{
     position: absolute;

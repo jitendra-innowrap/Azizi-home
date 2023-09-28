@@ -4,12 +4,13 @@ import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from 'next/image';
 import VideoPopUp from '../Molecules/VideoPopUp/VideoPopUp';
-
+import { useMediaQuery } from 'react-responsive'
 
 
 const ParallexGridHero = (headerbar) => {
     const heroRef = useRef(null);
     const videoEl = useRef(null);
+    const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
     const handleScroll = (headerbar) => {
         const viewportBottom = window.scrollY + window.innerHeight;
         const heroBottom = heroRef.current.offsetTop + heroRef.current.clientHeight;
@@ -47,7 +48,7 @@ const ParallexGridHero = (headerbar) => {
         if (stickyElements) {
             for (let i = 0; i < stickyElements.length; i++) {
                 const element = stickyElements[i];
-                const target = element.querySelector(".js-scroll-trigger-target") || element;
+                const target = element.querySelector("body") || element;
                 const start = target.dataset.start || "top bottom";
                 const end = target.dataset.end || "bottom top";
                 const scrollTrigger = gsap.to(element, {
@@ -59,7 +60,6 @@ const ParallexGridHero = (headerbar) => {
                         end: end,
                         scrub: 0.01,
                         onUpdate: ({ progress }) => {
-                            console.log(progress)
                             if (progress > 0.5) {
                                 target.classList.add("_ov");
                             } else {
@@ -98,7 +98,7 @@ const ParallexGridHero = (headerbar) => {
 
     return (
         <div className='hero-banner-body'>
-            <div className='hero-banner'
+            {isBigScreen && <div className='hero-banner'
                 ref={heroRef}
             >
                 <div className="BannerGifWrapper">
@@ -168,7 +168,7 @@ const ParallexGridHero = (headerbar) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>}
         </div>
     );
 };

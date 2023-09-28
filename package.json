@@ -29,6 +29,7 @@
     "react-icons": "^4.11.0",
     "react-phone-input-2": "^2.15.1",
     "react-phone-number-input": "^3.3.6",
+    "react-responsive": "^9.0.2",
     "react-share": "^4.4.1",
     "react-use-downloader": "^1.2.4",
     "scrolltrigger": "^1.0.1"

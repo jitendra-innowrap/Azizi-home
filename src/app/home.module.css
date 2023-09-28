@@ -59,6 +59,7 @@
     /* background-size: 80% auto; */
     padding-top: 220px;
     position: relative;
+    overflow: hidden;
     /* padding-bottom: 114px; */
 }
 /* .oasisDreamContainSection{
@@ -283,6 +284,7 @@
     /* background-repeat: no-repeat; */
     /* background-size: 100% auto; */
     position: relative;
+    overflow: hidden;
 }
 .futureSurroundingSection2{
     /* padding-top: 400px;

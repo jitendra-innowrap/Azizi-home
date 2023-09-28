@@ -38,7 +38,7 @@ export default function Header2() {
                     <div className={`${Styles.rightLinks} nav_links`}>
                         <Link href="/home" className={Styles.navLinks}>Azizi Venice</Link>
                         <Link href="tel:80029494" className={Styles.navLinks}>800 (AZIZI) 29494</Link>
-                        <button onClick={() => changeLanguage(language === 'en' ? 'ar' : 'en')} className={Styles.navLinksLanuage}>{translations[language].header.language}</button>
+                        {/* <button onClick={() => changeLanguage(language === 'en' ? 'ar' : 'en')} className={Styles.navLinksLanuage}>{translations[language].header.language}</button> */}
                         <Link href="#home_form" className={Styles.navLinksButton}>ENQUIRE</Link>
                     </div>
                 </div>

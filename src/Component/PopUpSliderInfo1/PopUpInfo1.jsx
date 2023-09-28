@@ -2,8 +2,11 @@
 import Image from 'next/image';
 import React from 'react';
 import Styles from './PopUpInfo.module.css'
+import useLanguage from '@/hooks/useLanguage';
+import translations from '@/translations/translations.json';
 
 export default function PopUpInfo2({ handleClose }) {
+    const { language, changeLanguage } = useLanguage();
     return (
         <>
             <section className={`${Styles.infoSection}`}>
@@ -20,9 +23,9 @@ export default function PopUpInfo2({ handleClose }) {
                         />
                     </button>
                 </div>
-                <h2 className={`${Styles.title}`}>OPERA HOUSE</h2>
+                <h2 className={`${Styles.title}`}>{translations[language].home.operaHouseTitle}</h2>
                 <div className={`${Styles.descriptionDiv}`}>
-                    <p className={`${Styles.description}`}>Envelop yourself in a harmonious symphony of sounds within the awe- inspiring Opera House, nestled in the very heart of Azizi Venice. This floating stage, gracefully adrift on the Crystal Lagoon, offers a front-row seat to nature&#39;s dance, with fountains swaying in rhythmic choreography. It&#39;s a masterpiece of architectural composition, a bustling cultural overture, a pure work of art —a place where you can revel in the world&#39;s most electrifying performances, where every note, every movement, becomes a part of your own melodic journey.</p>
+                    <p className={`${Styles.description}`}>{translations[language].home.operaHousePara}</p>
                 </div>
                 <div className={`${Styles.infoDiv}`}>
                     <div className={`${Styles.infoBox}`}>
@@ -34,7 +37,7 @@ export default function PopUpInfo2({ handleClose }) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>Art & Culture</p>
+                            <p className={`${Styles.infoText}`}>{translations[language].home.operaHouseInfo1}</p>
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
@@ -46,7 +49,7 @@ export default function PopUpInfo2({ handleClose }) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>2000-seat centre</p>
+                            <p className={`${Styles.infoText}`}>{translations[language].home.operaHouseInfo2}</p>
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
@@ -58,7 +61,7 @@ export default function PopUpInfo2({ handleClose }) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>World-class performances</p>
+                            <p className={`${Styles.infoText}`}>{translations[language].home.operaHouseInfo3}</p>
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
@@ -70,7 +73,7 @@ export default function PopUpInfo2({ handleClose }) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>Floating Stage</p>
+                            <p className={`${Styles.infoText}`}>{translations[language].home.operaHouseInfo4}</p>
                         </div>
                     </div>
                 </div>

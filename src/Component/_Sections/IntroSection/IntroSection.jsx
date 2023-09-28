@@ -29,11 +29,11 @@ export default function IntroSection({ btn1, btn2, para, images, showHide , padd
                 <div className={Styles.infoContainer}  style={{ display: showHide }}>
                     <div className={Styles.infoBox}>
                         <span className={Styles.infoTitle}>Apartment Type</span>
-                        <span className={Styles.infoDesc}>Community</span>
+                        {/* <span className={Styles.infoDesc}>Community</span> */}
                     </div>
                     <div className={Styles.infoBox}>
                         <span className={Styles.infoTitle}>Starting size</span>
-                        <span className={Styles.infoDesc}>Type</span>
+                        {/* <span className={Styles.infoDesc}>Type</span> */}
                     </div>
                 </div>
             </div>

@@ -25,7 +25,7 @@ export default function Header() {
                         <Link href="https://azizidevelopments.com/en/retail/dubai" className={Styles.navLinks}>Retail</Link>
                         <Link href="https://azizidevelopments.com/en/media-center" className={Styles.navLinks}>Media</Link>
                     </div>
-                        <div className="nav_logos">
+                        {/* <div className="nav_logos"> */}
                             <Link href={'/home'} className={`${Styles.navLogo} logo_white`}>
                         <Image
                             src="/Assets/Azizi_Logo.svg"
@@ -44,9 +44,9 @@ export default function Header() {
                             className={Styles.navLogoImage}
                         />
                     </Link>
-                        </div>
+                        {/* </div> */}
                     <div className={`${Styles.rightLinks} nav_links`}>
-                            {/* <Link href="/home" className={Styles.navLinks}>Azizi Venice</Link> */}
+                            <Link href="/home" className={Styles.navLinks} style={{ opacity: 0 }}>Azizi Venice</Link>
                     <Link href="tel:80029494" className={Styles.navLinks}>800 (AZIZI) 29494</Link>
                         {/* <Link href="/" className={Styles.navLinksLanuage}> العربية</Link> */}
                             {/* <Link  href="#home_form"  className={Styles.navLinksButton}>ENQUIRE</Link> */}

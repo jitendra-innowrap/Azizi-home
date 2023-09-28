@@ -275,14 +275,16 @@
     overflow: hidden;
 }
 .futureSurroundingSection,
-.oasisDreamContainSection {
+.oasisDreamContainSection,
+.futureSurroundingSection2 {
     padding-inline: 60px;
 }
 
 @media (max-width: 1024px) {
 
     .futureSurroundingSection,
-    .oasisDreamContainSection {
+    .oasisDreamContainSection,
+        .futureSurroundingSection2 {
         padding-inline: 20px;
     }
 }

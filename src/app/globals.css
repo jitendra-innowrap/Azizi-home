@@ -666,3 +666,6 @@ c-bg-img,
     height: 559px;
   }
 }
+.overXhidden {
+  overflow-x: hidden;
+}

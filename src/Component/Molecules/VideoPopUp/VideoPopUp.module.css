@@ -59,5 +59,8 @@
     .playBtn {
         position: initial;
         transform: unset;
+        width: unset;
+            padding-inline: 35px;
+            font-size: 12px;
     }
 }

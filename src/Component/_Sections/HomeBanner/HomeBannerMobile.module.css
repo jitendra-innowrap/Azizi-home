@@ -15,10 +15,15 @@
 }
 
 .exploreWrapper {
-    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
+    position: absolute;
+        bottom: 10px;
+    }
+    
+    .BannerVideoMobileWrapper {
+        position: relative;
 }
 
 @media (min-width: 1025px) {

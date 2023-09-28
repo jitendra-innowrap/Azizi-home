@@ -19,13 +19,14 @@ export default function VeniceHome() {
         <>
             {/* <Banner /> */}
             <ParallexGridHero />
-            {/* <OasisOfDreams />
+            <HomeBanner />
+            <OasisOfDreams />
             <FindYourHome />
             <DesireOnDoorStep />
             <TheDestination title={translations[language].home.destinationTitle} para={translations[language].home.destinationPara} />
             <GetRealLook />
             <FormSection />
-            <StickySocials /> */}
+            <StickySocials />
         </>
 
     )

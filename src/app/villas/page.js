@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import homeStyle from '../home.module.css'
 import '@/app/globals.css'

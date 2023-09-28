@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Cookies from 'js-cookie';
 
 const useLanguage = () => {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('en');    
 
   useEffect(() => {
     // Check if the language cookie exists
@@ -16,9 +16,10 @@ const useLanguage = () => {
   const changeLanguage = (newLanguage) => {
     setLanguage(newLanguage);
     Cookies.set('language', newLanguage, { expires: 365 });
+    window.location.reload();
   };
 
-  return { language, changeLanguage };
+  return { language, changeLanguage , setLanguage};
 };
 
 export default useLanguage;

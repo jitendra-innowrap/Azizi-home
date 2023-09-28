@@ -6,7 +6,7 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import CTAPopUp from '@/Component/Molecules/CTAPopUp/CTAPopUp';
 
-export default function IntroSection({ para, images }) { 
+export default function IntroSection({ btn1, btn2, para, images }) { 
 
     const handlePrevClick = () => {
         carousel.slidePrev();
@@ -22,8 +22,8 @@ export default function IntroSection({ para, images }) {
             <div className={Styles.container}>
                 <p className={Styles.desc}>{para}</p>
                 <div className={Styles.buttons}>
-                    <CTAPopUp cta={'DOWNLOAD FLOOR PLAN'} fileName={'Handover-Procedure.pdf'} filePath={'/Brochure/Handover-Procedure.pdf'} />
-                    <CTAPopUp cta={'DOWNLOAD BROCHURE'} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} />
+                    <CTAPopUp cta={btn1} fileName={'Handover-Procedure.pdf'} filePath={'/Brochure/Handover-Procedure.pdf'} />
+                    <CTAPopUp cta={btn2} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} />
 
                 </div>
                 <div className={Styles.infoContainer}>

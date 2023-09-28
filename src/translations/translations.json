@@ -1,0 +1,77 @@
+{
+    "en": {
+      "header": {
+        "language": " العربية "
+      },
+      "villas": {
+        "BannerTitle": "Venice Villas",
+        "IntroSectionPara": "Tucked away in a charming, gated community along the crystal-blue lagoon, you'll find Azizi Venice Villas - meticulously designed for those who savor life's finer moments. Returning home to your Azizi Venice Villa is a lavish experience like no other in Dubai.",
+        "LifestyleTitle" : "LIFESTYLE",
+        "LifestylePara" : "Pamper yourself with an array of luxurious amenities designed to enhance your daily life. Each villa is a modern sanctuary, featuring a private elevator, home cinema, games room, personal infinity pool, opulent rooftop terrace, and a BBQ area for entertaining. Plus, you'll enjoy direct, effortless access to the swimmable crystal lagoon, just steps from your doorstep.",
+        "IntroSectionDownloadFloorPlan" : "DOWNLOAD FLOOR PLAN",
+        "IntroSectionDownloadBrochure" : "DOWNLOAD BROCHURE",
+        "LifestyleBoxTitle1" : "Direct lagoon access",
+        "LifestyleBoxTitle2" : "State-of-the-art gym",
+        "LifestyleBoxTitle3" : "Outdoor Jacuzzi and Spa Zone",
+        "LifestyleBoxTitle4" : "Home Cinema & Multipurpose Game Room",
+        "LifestyleBoxTitle5" : "Lush, indoor gardens and water features",
+        "LifestyleBoxTitle6" : "Swimming Pool & Deck Area",
+        "LocationBenefitsTitle" : "LOCATION BENEFITS",
+        "LocationBenefitsPara" : "Located in Dubai South, the city's most expansive singular urban master development. Azizi Venice will become a part of a smart and futuristic metropolis that promises entirely new standard of living. Over 136 hectares in size, Azizi Venice is set to be a prestigious yet well-connected enclave."
+      },
+      "residence": {
+        "BannerTitle": "Venice RESIDENCES",
+        "IntroSectionPara": "Discover a revitalizing place to call home, where you wake up every day in an incredible waterfront paradise. With a gleaming Crystal Lagoon, pristine beachfront, vibrant boulevard, and world-class entertainment just steps away, this is a brand-new approach to apartment living, meticulously designed for the discerning few.",
+        "LifestyleTitle" : "LIFESTYLE",
+        "LifestylePara" : "Experience a captivating lifestyle where your every desire is effortlessly fulfilled. Our apartment complexes are meticulously designed to encompass everything you need, including a state-of-the-art gym, steam room, sauna, your own cinema, and a clubhouse.",
+        "IntroSectionDownloadFloorPlan" : "DOWNLOAD FLOOR PLAN",
+        "IntroSectionDownloadBrochure" : "DOWNLOAD BROCHURE",
+        "LifestyleBoxTitle1" : "State-of-the-art gym",
+        "LifestyleBoxTitle2" : "Multipurpose HalL",
+        "LifestyleBoxTitle3" : "Cinema Room",
+        "LifestyleBoxTitle4" : "ADULTS' & KIDS' SWIMMING POOL",
+        "LifestyleBoxTitle5" : "kids' play area",
+        "LifestyleBoxTitle6" : "Clubhouse",
+        "LocationBenefitsTitle" : "LOCATION BENEFITS",
+        "LocationBenefitsPara" : "Located in Dubai South, the city's most expansive singular urban master development. Azizi Venice will become a part of a smart and futuristic metropolis that promises entirely new standard of living. Over 136 hectares in size, Azizi Venice is set to be a prestigious yet well-connected enclave."
+      }
+    },
+    "ar": {
+      "header": {
+        "language": "en"
+      },
+      "villas": {
+        "BannerTitle": "فلل ڤينيس",
+        "IntroSectionPara": "تقع فلل عزيزي ڤينيس الفخمة ضمن منطقة مسورة على طول البحيرة الكريستالية، لقد صممت خصيصاً لتناسب أصحابالذوق الرفيع،فيلات عزيزي ڤينيس، للرفاهية بعد آخر يجذبك إليه.",
+        "LifestyleTitle" : "الحياة اليومية",
+        "LifestylePara" : "استمتع بتجربة فريدة من نوعها مع مرافق فاخرة تُثري حياتك اليومية. تتميز كل فيلا بمصعد خاص، وسينما منزلية، وغرفة ألعاب، بالإضافة إلى مسبح لا متناهي خاص، وشرفة على مثالية للشواء والترفيه. أيضاً سيمكنك الوصول مباشرة إلى الشاطئ للاستمتاع بالسباحة في البحيرة، كل ذلك على عتبة بابك.",
+        "IntroSectionDownloadFloorPlan" : "تحميل مخطط الطابق",
+        "IntroSectionDownloadBrochure" : "تحميل الكتيب",
+        "LifestyleBoxTitle1" : "وصول مباشر إلى البحيرة",
+        "LifestyleBoxTitle2" : "صالة رياضية حديثة",
+        "LifestyleBoxTitle3" : "Outdoor Jacuzzi and Spa Zone",
+        "LifestyleBoxTitle4" : "Home Cinema & Multipurpose Game Room",
+        "LifestyleBoxTitle5" : "Lush, indoor gardens and water features",
+        "LifestyleBoxTitle6" : "Swimming Pool & Deck Area",
+        "LocationBenefitsTitle" : "LOCATION BENEFITS",
+        "LocationBenefitsPara" : "تقع عزيزي ڤينيس في دبي الجنوب، وستصبح أحد أكثر المشروعات الحضرية تطوراً، كما ستصبح جزءًا من المدينة الذكية في المستقبل،تبلغ مساحتها أكثر من 136 هكتاراً،بموقعها الاستراتيجي ستغدوالوجهة المثالية للباحثين عن الحياة الفاخرة."
+      },
+      "residence": {
+        "BannerTitle": "Venice Villas",
+        "IntroSectionPara": "عِش الحياة التي تحبها كل يوم في واحة خلابة حيث القناة المتلألئة وشاطئ البحيرة النقية، مع بوليفارد يجمع أجمل ما في الحياة من مرافق ترتقي إلى مستوى العالمية، إنه أسلوب جديد لاكتشاف جمال العيش في عزيزي ڤينيس المصممة خصيصاً لأصحاب الذوق الرفيع.",
+        "LifestyleTitle" : "الحياة اليومية",
+        "LifestylePara" : "اكتشف أسلوب حياة فاخر حيث تجد كل ما تتمناه وأكثر على عتبة بابك. لقد تم تصميم مجتمعات الشقق بطريقة تلبي كافة احتياجاتك اليومية، بما في ذلك صالة ألعاب رياضية حديثة، غرفة بخار وساونا، سينما خاصة بك ونادي اجتماعي.",
+        "IntroSectionDownloadFloorPlan" : "تحميل مخطط الطابق",
+        "IntroSectionDownloadBrochure" : "تحميل الكتيب",
+        "LifestyleBoxTitle1" : "صالة رياضية حديثة",
+        "LifestyleBoxTitle2" : "Multipurpose HalL",
+        "LifestyleBoxTitle3" : "Cinema Room",
+        "LifestyleBoxTitle4" : "ADULTS' & KIDS' SWIMMING POOL",
+        "LifestyleBoxTitle5" : "منطقة لعب للأطفال",
+        "LifestyleBoxTitle6" : "Clubhouse",
+        "LocationBenefitsTitle" : "LOCATION BENEFITS",
+        "LocationBenefitsPara" : "تُعد عزيزي ڤينيس الواقعة في قلب دبي الجنوبواحدة من أضخم مشروعات التطوير العقاري. تم تصميمها لتكون مدينة ذكية تواكب التقنيات المستقبلية، مُعدةً لتقديم مستوى جديد ومتميز من نمط الحياة. وعلى مساحة تتجاوز 136 هكتاراً، ما يميز عزيزي ڤينيس أيضاً قربها من أفضل مراكز التسوق والمرافق الترفيهية والرياضية في دبي."
+      }
+    }
+}
+  

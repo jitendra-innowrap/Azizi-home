@@ -8,7 +8,8 @@
     padding-top: 220px;
     margin-top: -110px;
     padding-inline: 60px;
-    position: relative;;
+    position: relative;
+    overflow: hidden;
 }
 
 .imageSection {

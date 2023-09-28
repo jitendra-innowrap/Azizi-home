@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import Styles from './Header2.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import useLanguage from '@/hooks/useLanguage';
+import translations from '@/translations/translations.json';
 
 export default function Header2() {
     const [isActive, setIsActive] = useState(false);
@@ -11,6 +13,7 @@ export default function Header2() {
         setIsActive(!isActive);
     };
 
+    const { language, changeLanguage } = useLanguage();
     return (
         <>
             {/* nav bar */}
@@ -35,7 +38,7 @@ export default function Header2() {
                     <div className={`${Styles.rightLinks} nav_links`}>
                         <Link href="/home" className={Styles.navLinks}>Azizi Venice</Link>
                         <Link href="tel:80029494" className={Styles.navLinks}>800 (AZIZI) 29494</Link>
-                        {/* <Link href="/" className={Styles.navLinksLanuage}> العربية</Link> */}
+                        <button onClick={() => changeLanguage(language === 'en' ? 'ar' : 'en')} className={Styles.navLinksLanuage}>{translations[language].header.language}</button>
                         <Link href="#home_form" className={Styles.navLinksButton}>ENQUIRE</Link>
                     </div>
                 </div>

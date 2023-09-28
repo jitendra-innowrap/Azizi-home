@@ -53,7 +53,7 @@ export function VideoPopUpContainer({ handleClose }) {
     const videoRef = useRef(null);
     useEffect(() => {
         // Ensure the video is muted (autoplay requires muting)
-        videoRef.current.muted = true;
+        // videoRef.current.muted = true;
 
         // Start the video
         videoRef.current.play().catch(error => {

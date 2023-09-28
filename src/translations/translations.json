@@ -1,0 +1,19 @@
+{
+    "en": {
+      "header": {
+        "language": "en"
+      },
+      "villas": {
+        "VeniceVillas": "Venice Villas"
+      }
+    },
+    "ar": {
+      "header": {
+        "language": " العربية "
+      },
+      "villas": {
+        "VeniceVillas": "فلل ڤينيس"
+      }
+    }
+}
+  

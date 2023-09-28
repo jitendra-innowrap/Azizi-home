@@ -568,15 +568,19 @@ c-bg-img,
     transform: translateY(0);
   }
 }
-#header-bar .nav_bar .nav_links a {
+#header-bar .nav_bar .nav_links a,
+#header-bar .nav_bar .nav_links button {
   color: #000;
+  border-color: #000;
 }
 #header-bar .nav_bar .logo_white {
   color: #000;
   display: none;
 }
 
-#header-bar.nav-hide .nav_links a {
+#header-bar.nav-hide .nav_links a,
+#header-bar.nav-hide .nav_links button {
+  border-color: #fff;
   color: #fff;
 }
 

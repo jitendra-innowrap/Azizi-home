@@ -96,7 +96,7 @@ const ParallexGridHero = (headerbar) => {
             </div>
             <div className="c-hero ">
                 <div className="c-hero-sticky js-scroll-trigger" data-start="top top" data-end="bottom+=20% top" style={{ '--p1': 0, '--p2': 1 }}>
-                    <div className="c-hero-img js-iv l" data-x="0" data-y="0" data-shown="0" data-visible="1">
+                    <div style={{ opacity: '0' }} className="c-hero-img js-iv l" data-x="0" data-y="0" data-shown="0" data-visible="1">
                         <div className="c-bg-img js-bg-img is-poster-loaded is-img-loaded" data-assets="true" data-delay="0" data-shown="1" data-visible="1">
                             <div className="poster" style={{ backgroundImage: 'url("/Assets/banner/Image-Left.webp")' }}></div>
                             <div className="elem" style={{ backgroundImage: 'url("/Assets/banner/Image-Left.webp")' }}></div>
@@ -147,7 +147,7 @@ const ParallexGridHero = (headerbar) => {
                             <div className="elem" style={{ backgroundImage: 'url("/Assets/banner/Image-Right.webp")' }}></div>
                         </div>
                     </div>
-                    <div className="c-hero-img js-iv r" data-x="4" data-y="0" data-shown="1" data-visible="1">
+                    <div style={{ opacity: '0' }} className="c-hero-img js-iv r" data-x="4" data-y="0" data-shown="1" data-visible="1">
                         <div className="c-bg-img js-bg-img is-poster-loaded is-img-loaded" data-assets="true" data-delay="0.6" data-shown="1" data-visible="1">
                             <div className="poster" style={{ backgroundImage: 'url("/Assets/banner/Image-Right.webp")' }}></div>
                             <div className="elem" style={{ backgroundImage: 'url("/Assets/banner/Image-Right.webp")' }}></div>

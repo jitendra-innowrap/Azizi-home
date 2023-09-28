@@ -1,11 +1,13 @@
+'use client'
 import React from 'react'
 import homeStyle from '@/app/home/home.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import CTAPopUp from '../CTAPopUp/CTAPopUp'
 export default function StickySocials() {
     return (
         <div className={homeStyle.socialIcons}>
-            <Link href="mailto:customercare@azizidevelopments.com" target="_blank" className={`${homeStyle.socialIcon} ${homeStyle.mailIconBg}`}>
+            <Link href={''} style={{ position: 'relative' }} className={`${homeStyle.socialIcon} ${homeStyle.mailIconBg}`}>
                 <Image
                     src="/Assets/Icons/mail_Icon.svg"
                     alt="Image"
@@ -13,6 +15,7 @@ export default function StickySocials() {
                     height={100}
                     className={`${homeStyle.socialIconSvg}`}
                 />
+                <CTAPopUp />
             </Link>
             <Link href="tel:80029494" target="_blank" className={`${homeStyle.socialIcon} ${homeStyle.phoneIconBg}`}>
                 <Image

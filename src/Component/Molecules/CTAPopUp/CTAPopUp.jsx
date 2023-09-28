@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import homeStyle from '@/app/home.module.css'
 import styles from './CTAPopUp.module.css';
 import Image from 'next/image'
-import { Box, Modal } from '@mui/material';
+import { Box, Button, Modal } from '@mui/material';
 import LeadForm from '@/Component/LeadForm';
 import { AiOutlineClose } from 'react-icons/ai';
+import Link from 'next/link';
 
-export default function CTAPopUp({ cta, fileName, filePath }) {
+export default function CTAPopUp({ cta, fileName, filePath, }) {
     const [open, setOpen] = useState(false);
     const handleOpen = (val) => {
         setOpen(true)
@@ -28,6 +29,7 @@ export default function CTAPopUp({ cta, fileName, filePath }) {
     return (
         <>
             {/* <a href="/Brochure/Azizi-Venice-Brochure.pdf" className='DownloadBTN' download="Brochure.pdf"> */}
+            {filePath ? 
             <button className={homeStyle.categoryButton} onClick={handleOpen}>
                 <Image
                     src="/Assets/Home/svgs/Download-icon.svg"
@@ -37,7 +39,9 @@ export default function CTAPopUp({ cta, fileName, filePath }) {
                     className={homeStyle.categoryButtonIcon}
                 />
                 {cta}
-            </button>
+                </button> :
+                <div style={{ position: 'absolute', width: '100%', height: '100%', top: 0 }} onClick={handleOpen}></div>
+            }
             {/* </a> */}
             <Modal
                 open={open}

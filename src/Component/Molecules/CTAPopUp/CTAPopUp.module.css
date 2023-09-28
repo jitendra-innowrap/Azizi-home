@@ -68,6 +68,20 @@
     right: 20px;
     cursor: pointer;
 }
+.navLinksButton {
+    color: #fff;
+    font-family: helvetica neue;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 3%;
+    text-decoration: none;
+    padding-inline: 32px;
+    padding-block: 11px;
+    background-color: rgb(255 253 253 / 10%);
+    border: 1px solid white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
 
 @media (max-width: 1600px) {
     .title {

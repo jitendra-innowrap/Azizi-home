@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Styles from './Header.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import CTAPopUp from '../Molecules/CTAPopUp/CTAPopUp';
 
 export default function Header() {
     const [isActive, setIsActive] = useState(false);
@@ -43,10 +44,13 @@ export default function Header() {
                         />
                     </Link>
                     <div className={`${Styles.rightLinks} nav_links`}>
-                    <Link href="/home" className={Styles.navLinks}>Azizi Venice</Link>
+                            {/* <Link href="/home" className={Styles.navLinks}>Azizi Venice</Link> */}
                     <Link href="tel:80029494" className={Styles.navLinks}>800 (AZIZI) 29494</Link>
                         {/* <Link href="/" className={Styles.navLinksLanuage}> العربية</Link> */}
-                    <Link  href="#home_form"  className={Styles.navLinksButton}>ENQUIRE</Link>
+                            {/* <Link  href="#home_form"  className={Styles.navLinksButton}>ENQUIRE</Link> */}
+                            <button className={Styles.navLinksButton} style={{ position: 'relative' }} >
+                                <CTAPopUp />
+                                ENQUIRE</button>
                     </div>
                 </div>
             </nav>

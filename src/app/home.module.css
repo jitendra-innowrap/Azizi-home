@@ -269,20 +269,19 @@
 }
 .futureSurroundingSection{
     padding-top: 220px;
-    /* padding-bottom: 180px; */
-    /* margin-top: -180px; */
-    /* padding-top: 1230px;
-    background-image: url(/Assets/Home/svgs/futureSurrounding-bg.svg);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 80% auto;
-    margin-top: -1050px; */
-    /* background-image: url('/Assets/Home/svgs/oasis-dream-title-section-bg-svg.svg'); */
-    /* background-size: cover;
-    background-position: center center; */
-    /* background-repeat: no-repeat; */
-    /* background-size: 100% auto; */
     position: relative;
+}
+.futureSurroundingSection,
+.oasisDreamContainSection {
+    padding-inline: 60px;
+}
+
+@media (max-width: 1024px) {
+
+    .futureSurroundingSection,
+    .oasisDreamContainSection {
+        padding-inline: 20px;
+    }
 }
 .futureSurroundingSection2{
     /* padding-top: 400px;

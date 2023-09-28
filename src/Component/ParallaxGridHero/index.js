@@ -7,30 +7,21 @@ import VideoPopUp from '../Molecules/VideoPopUp/VideoPopUp';
 
 
 
-const ParallexGridHero = () => {
-    const contentRef = useRef(null);
+const ParallexGridHero = (headerbar) => {
+    const heroRef = useRef(null);
 
-    const handleScroll = () => {
-        const element = contentRef.current;
-        console.log('Scrolled to the bottom!', element.scrollHeight, element.scrollTop, element.clientHeight);
+    const handleScroll = (headerbar) => {
+        const viewportBottom = window.scrollY + window.innerHeight;
+        const heroBottom = heroRef.current.offsetTop + heroRef.current.clientHeight;
 
-        // Check if scrolled to the bottom
-        if (element.scrollHeight - element.scrollTop === element.clientHeight) {
-            // Perform your action when scrolled to the bottom
-            console.log('Scrolled to the bottom!');
-            // Call your action function or perform the desired action here
-            // For example: load more content, fetch more data, etc.
+        if (viewportBottom >= heroBottom) {
+            headerbar.classList.add("nav-dark");
+            console.log('add', heroBottom, viewportBottom)
+        } else {
+            console.log('remove')
+            headerbar.classList.remove("nav-dark");
         }
     };
-    // useEffect(() => {
-    //     const element = contentRef.current;
-    //     element.addEventListener('scroll', handleScroll);
-
-    //     // Cleanup event listener on component unmount
-    //     return () => {
-    //         element.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
 
 
     useEffect(() => {
@@ -39,6 +30,10 @@ const ParallexGridHero = () => {
         const triggers = [];
         const stickyElements = document.querySelectorAll(".js-scroll-trigger");
         const headerbar = document.getElementById("header-bar")
+
+        // Add the scroll event listener
+        window.addEventListener('scroll', () => { handleScroll(headerbar) });
+
         for (let i = 0; i < triggers.length; i++) {
             const trigger = triggers[i];
             trigger && trigger.kill();
@@ -66,10 +61,10 @@ const ParallexGridHero = () => {
                             target.style.setProperty("--p1", progress);
                             target.style.setProperty("--p2", 1 - progress);
                             if (progress > 0.89) {
-                                headerbar.classList.add("nav-dark");
+                                // headerbar.classList.add("nav-dark");
                                 // headerbar.classList.remove("nav-hide");
                             } else {
-                                headerbar.classList.remove("nav-dark");
+                                // headerbar.classList.remove("nav-dark");
                                 // headerbar.classList.add("nav-hide");
                             }
                             if (progress > 0.2) {
@@ -84,12 +79,17 @@ const ParallexGridHero = () => {
                 triggers.push(scrollTrigger);
             }
         }
+
+        // Clean up the event listener on unmount
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+
     }, []);
 
     return (
         <div className='hero-banner'
-            ref={contentRef}
-            onScroll={handleScroll}
+            ref={heroRef}
         >
             <div className="BannerGifWrapper">
                 <Image src={'/Assets/banner/Logo-Animation.gif'} quality={100} height={449} width={702} style={{ margin: "auto", display: "block" }} />
@@ -111,8 +111,8 @@ const ParallexGridHero = () => {
                     <div className="c-hero-clip js-iv" data-shown="1" data-visible="1">
                         <div className="c-hero-mv">
                             <div className="c-bg-img js-bg-img is-poster-loaded is-img-loaded" data-assets="true" data-delay="0.4" data-shown="1" data-visible="1">
-                                <div className="poster">
-                                    <video
+                                <div className="poster" style={{ backgroundImage: 'url("/Assets/banner/center.jpg")' }}>
+                                    {/* <video
                                         autoPlay
                                         loop
                                         playsInline
@@ -120,9 +120,21 @@ const ParallexGridHero = () => {
                                         type="video/mp4"
                                     >
                                         Your browser does not support the video tag.
-                                    </video>
+                                    </video> */}
                                 </div>
-                                <div className="elem" style={{ backgroundImage: 'url("/Assets/banner/giphy.git")' }}></div>
+                                <div className="elem"
+                                    style={{ backgroundImage: 'url("/Assets/banner/center.jpg")' }}
+                                >
+                                    {/* <video
+                                        autoPlay
+                                        loop
+                                        playsInline
+                                        src="/Assets/Home/videos/backgroundGif.mp4"
+                                        type="video/mp4"
+                                    >
+                                        Your browser does not support the video tag.
+                                    </video> */}
+                                </div>
                             </div>
                             <div className="explore-cta" style={{ zIndex: '9999' }}>
                                 <VideoPopUp />

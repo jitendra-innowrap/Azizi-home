@@ -380,6 +380,7 @@
     } */
     .oasisDreamContainContainer {
         padding-top: 160px;
+        overflow: hidden;
     }
     .findHomeTitleSection {
         padding-top: 160px;

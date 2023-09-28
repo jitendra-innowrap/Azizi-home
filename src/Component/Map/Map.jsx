@@ -290,10 +290,10 @@ export default function Map() {
     const handleMarkerClick = () => {
         window.open(`https://www.google.com/maps/search/?api=1&query=${marker.lat},${marker.lng}`, '_blank');
     };
-    const customIcon = {
-        url: '/Assets/Icons/BurgerMenu.svg',
-        scaledSize: new window.google.maps.Size(50, 50),
-    };
+    // const customIcon = {
+    //     url: '/Assets/Icons/BurgerMenu.svg',
+    //     scaledSize: new window.google.maps.Size(50, 50),
+    // };
     return (
         <div className={styles.map}>
             {/* <Image

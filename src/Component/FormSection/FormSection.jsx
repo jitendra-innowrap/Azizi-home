@@ -1,10 +1,14 @@
+'use client'
 import React from 'react'
 import styles from './FormSection.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
 import LeadForm from '../LeadForm';
+import useLanguage from '@/hooks/useLanguage';
+import translations from '@/translations/translations.json';
 
 export default function FormSection() {
+    const { language, changeLanguage } = useLanguage();
     return (
         <>
             <section className={`${styles.section}`} id="home_form">
@@ -18,8 +22,8 @@ export default function FormSection() {
                     className={`${styles.bgImg}`}
                 />
                     <div className={`${styles.titleContainer}`}>
-                        <h2 className={`${styles.title}`}>enquire now</h2>
-                        <p  className={`${styles.paragraph}`}>Register your interest, schedule a private showing or request a callback by filling out the form.</p>
+                        <h2 className={`${styles.title}`}>{translations[language].home.enquireNow}</h2>
+                        <p  className={`${styles.paragraph}`}>{translations[language].home.enquireNowInfo}</p>
                     </div>
                     <div className={`${styles.formContainer}`}>
                      <LeadForm  />

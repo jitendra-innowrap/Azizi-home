@@ -34,6 +34,14 @@
         "LifestyleBoxTitle6" : "Clubhouse",
         "LocationBenefitsTitle" : "LOCATION BENEFITS",
         "LocationBenefitsPara" : "Located in Dubai South, the city's most expansive singular urban master development. Azizi Venice will become a part of a smart and futuristic metropolis that promises entirely new standard of living. Over 136 hectares in size, Azizi Venice is set to be a prestigious yet well-connected enclave."
+      },
+      "home": {
+        "enquireNow": "enquire now",
+        "enquireNowInfo": "Register your interest, schedule a private showing or request a callback by filling out the form.",
+        "getARealLook": "GET A REAL LOOK",
+        "getARealLookPara": "Experience Dubai's latest water-inspired masterpiece - Azizi Venice, thoughtfully designed to take your breath away.",
+        "destinationTitle": "THE DESTINATION",
+        "destinationPara": "Nestled in the breathtaking Arabian sands of Dubai South, Azizi Venice is poised to be an integral part of a smart and forward-thinking metropolis, spanning over 136 hectares. This prestigious enclave offers close proximity to the city's finest attractions, with direct access to the upcoming metro station and Etihad Rail Network, ensuring convenience and connectivity for residents."
       }
     },
     "ar": {
@@ -71,6 +79,14 @@
         "LifestyleBoxTitle6" : "Clubhouse",
         "LocationBenefitsTitle" : "LOCATION BENEFITS",
         "LocationBenefitsPara" : "تُعد عزيزي ڤينيس الواقعة في قلب دبي الجنوبواحدة من أضخم مشروعات التطوير العقاري. تم تصميمها لتكون مدينة ذكية تواكب التقنيات المستقبلية، مُعدةً لتقديم مستوى جديد ومتميز من نمط الحياة. وعلى مساحة تتجاوز 136 هكتاراً، ما يميز عزيزي ڤينيس أيضاً قربها من أفضل مراكز التسوق والمرافق الترفيهية والرياضية في دبي."
+      },
+      "home": {
+        "enquireNow": "enquire now",
+        "enquireNowInfo": "قم بتسجيل اهتمامك، حدد موعداً خاصاً،أو املأ النموذج لنقوم بإعادة الاتصال بك.",
+        "getARealLook": "اكتشف بنفسك",
+        "getARealLookPara": "أهلا بك في عزيزي ڤينيس’أيقونة دبي الجديدة ‘-المستوحاة من جمال الماء",
+        "destinationTitle": "THE DESTINATION",
+        "destinationPara": "تقع عزيزي ڤينيس في دبي الجنوب، وستصبح أحد أكثر المشروعات الحضرية تطوراً، كما أنها ستغدو جزءًا من المدينة الذكية في المستقبل، تمتدعلى مساحةتزيد عن 136 هكتاراً،معإمكانية الوصول المباشر إلى محطة المترو المستقبلية وشبكة الاتحاد للسكك الحديديةمما يضمن سهولة الوصول إليها، ما يميز هذه الوجهة أيضاً قربها من أفضل مراكز التسوق والمرافق الترفيهية والرياضية في دبي. "
       }
     }
 }

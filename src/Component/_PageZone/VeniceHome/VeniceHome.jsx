@@ -19,7 +19,7 @@ export default function VeniceHome() {
         <>
             {/* <Banner /> */}
             <ParallexGridHero />
-            <HomeBanner />
+            {/* <HomeBanner /> */}
             <OasisOfDreams />
             <FindYourHome />
             <DesireOnDoorStep />

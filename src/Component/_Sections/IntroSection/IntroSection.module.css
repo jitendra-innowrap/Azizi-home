@@ -1,5 +1,5 @@
 .section {
-    padding-block: 180px;
+    padding-block: 160px;
     padding-inline: 60px;
 }
 
@@ -130,7 +130,7 @@
 
     /* 1600 * 783 */
     .section {
-        padding-block: 120px;
+        padding-block: 100px;
     }
 
     .buttons {
@@ -182,7 +182,7 @@
 
 @media (max-width: 1024px) {
     .section {
-        padding-block: 100px;
+        padding-block: 80px;
         padding-inline: 20px;
     }
 
@@ -223,7 +223,7 @@
         right: 10px;
     }
     .section {
-        padding-block: 90px;
+        padding-block: 70px;
     }
     .CarouselContainer {
         padding-top: 90px;

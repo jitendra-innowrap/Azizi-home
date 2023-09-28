@@ -41,7 +41,7 @@ export default function ResidenceSections() {
     return (
         <>
             <Banner title={BannerTitle} image={BannerImage} />
-            <IntroSection btn1={IntroSectionDownloadFloorPlan} btn2={IntroSectionDownloadBrochure} para={IntroSectionPara} images={IntroSectionCarouselImages}/>
+            <IntroSection btn1={IntroSectionDownloadFloorPlan} btn2={IntroSectionDownloadBrochure} para={IntroSectionPara} images={IntroSectionCarouselImages} showHide={'block'}/>
             {/* <ExquisiteDetails para={ExquisiteDetailsPara} /> */}
             <Lifestyle title={LifestyleTitle} para={LifestylePara} listItem={LifestyleBoxTitle} image={LifestyleImage} imageTitle={LifestyleImageTitle}/>
             <LocationBenefits title={LocationBenefitsTitle} para={LocationBenefitsPara} />

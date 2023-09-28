@@ -22,8 +22,8 @@ export default function FindYourHome() {
                 <p className={`${homeStyle.mainParagraph} ${homeStyle.findHomeParagraph}`}>As the tranquil crystal lagoon laps gently at your feet and the soothing echoes of waterfalls fill the air, you&#39;ll unmistakably realize you&#39;re finally home. Greet each day with awe-inspiring waterfront vistas from your luxurious villa or thoughtfully designed apartment. Below, a whole new realm of elevated living awaits your exploration.</p>
             </div>
             <div className={`${homeStyle.findHomeImageSection}`}>
-                <FindHomeImageCard image={`/Assets/Home/images/FindYourHome/Residence.png`} title={`RESIDENCES`} url={'/residences'} />
-                <FindHomeImageCard image={`/Assets/Home/images/FindYourHome/Villas.png`} title={`VILLAS`} url={'/villas'} />
+                <FindHomeImageCard image={`/Assets/Home/images/FindYourHome/ResidencesCard.webp`} title={`RESIDENCES`} url={'/residences'} />
+                <FindHomeImageCard image={`/Assets/Home/images/FindYourHome/VillasCard.webp`} title={`VILLAS`} url={'/villas'} />
             </div>
         </section>
     )

@@ -6,7 +6,7 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import CTAPopUp from '@/Component/Molecules/CTAPopUp/CTAPopUp';
 
-export default function IntroSection({ btn1, btn2, para, images }) { 
+export default function IntroSection({ btn1, btn2, para, images, showHide , padding}) { 
 
     const handlePrevClick = () => {
         carousel.slidePrev();
@@ -21,18 +21,18 @@ export default function IntroSection({ btn1, btn2, para, images }) {
         <section className={Styles.section}>
             <div className={Styles.container}>
                 <p className={Styles.desc}>{para}</p>
-                <div className={Styles.buttons}>
+                <div className={Styles.buttons} style={{ paddingBottom: padding }}>
                     <CTAPopUp cta={btn1} fileName={'Handover-Procedure.pdf'} filePath={'/Brochure/Handover-Procedure.pdf'} />
                     <CTAPopUp cta={btn2} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} />
 
                 </div>
-                <div className={Styles.infoContainer}>
+                <div className={Styles.infoContainer}  style={{ display: showHide }}>
                     <div className={Styles.infoBox}>
-                        <span className={Styles.infoTitle}>Azizi VENICE</span>
+                        <span className={Styles.infoTitle}>Apartment Type</span>
                         <span className={Styles.infoDesc}>Community</span>
                     </div>
                     <div className={Styles.infoBox}>
-                        <span className={Styles.infoTitle}>Residential</span>
+                        <span className={Styles.infoTitle}>Starting size</span>
                         <span className={Styles.infoDesc}>Type</span>
                     </div>
                 </div>

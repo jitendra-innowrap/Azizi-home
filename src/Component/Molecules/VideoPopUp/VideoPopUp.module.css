@@ -55,3 +55,12 @@
     width: 32px;
     height: 32px;
 }
+@media (max-width: 1024px) {
+    .playBtn {
+        position: initial;
+        transform: unset;
+        width: unset;
+            padding-inline: 35px;
+            font-size: 12px;
+    }
+}

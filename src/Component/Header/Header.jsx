@@ -60,12 +60,7 @@ export default function Header() {
             {/* mobile nav bar */}
                 <div className="mobile">
                     <Link href={'/'} className={`${Styles.mobileWhiteLogo} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow} mobile_header_buttons`}>
-            <Image
-                            src="/Assets/Azizi_Logo.svg"
-                alt="Image"
-                width={100}
-                height={100}
-                            className={`${Styles.mobileNavLogoImage} logo_white`} />
+
                         <Image
                             src="/Assets/Azizi_Logo_black.svg"
                             alt="Image"
@@ -123,36 +118,13 @@ export default function Header() {
                         {/* <Link href="/" className={Styles.navLinks}>Contact</Link> */}
                         <Link href="tel:80029494" className={Styles.navLinksMobile}>800 (AZIZI) 29494</Link>
                         {/* <Link href="/" className={Styles.navLinksLanuageMobile}> العربية</Link> */}
-                                <Link href="#home_form" className={Styles.navLinksButtonMobile} style={{ position: 'relative' }} >
+                                <Link href="" className={Styles.navLinksButtonMobile} style={{ position: 'relative' }} >
                                     <CTAPopUp />ENQUIRE
-
                                 </Link>
                     </div>
                 </div>
             </nav>
                 </div>
-                {/* Breadcrumb */}
-                {/* <div className={Styles.breadCrumbs}>
-                    <div className={Styles.breadCrumbsBox}>
-                        <Link className={Styles.Link} href="/home">Home</Link>
-                        <Image
-                            src="/Assets/Residence/images/chevron-right.png"
-                            alt="Image"
-                            width={100}
-                            height={100}
-                            className={Styles.chevronRight}
-                        />
-                        <Link className={Styles.Link} href="/home">Azizi Venice, Dubai South</Link>
-                        <Image
-                            src="/Assets/Residence/images/chevron-right.png"
-                            alt="Image"
-                            width={100}
-                            height={100}
-                            className={`${Styles.chevronRight} ${Styles.mobileHide}`}
-                        />
-                        <Link className={`${Styles.Link} ${Styles.mobileHide}`} href="/">{"title"}</Link>
-                    </div>
-                </div> */}
             </header>
         </>
     );

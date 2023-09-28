@@ -12,13 +12,14 @@ import React from 'react'
 import ParallexGridHero from '@/Component/ParallaxGridHero'
 import useLanguage from '@/hooks/useLanguage';
 import translations from '@/translations/translations.json';
+import HomeBanner from '@/Component/_Sections/HomeBanner/HomeBanner'
 
 export default function VeniceHome() {
     const { language, changeLanguage } = useLanguage();
     return (
         <>
             {/* <Banner /> */}
-            <ParallexGridHero />
+            {/* <ParallexGridHero /> */}
             <HomeBanner />
             <OasisOfDreams />
             <FindYourHome />

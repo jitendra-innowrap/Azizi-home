@@ -14,7 +14,8 @@ export default function Header() {
     return (
         <>
             {/* nav bar */}
-            <nav className={Styles.navbar} id='header-bar'>
+            <header id='header-bar'>
+                <nav className={`${Styles.navbar} nav_bar`} >
                 <div className={Styles.navbarContainer}>
                     <div className={`${Styles.leftLinks} nav_links`}>
                         <Link href="https://azizidevelopments.com/en/about" className={Styles.navLinks}>About</Link>
@@ -51,22 +52,37 @@ export default function Header() {
             </nav>
 
             {/* mobile nav bar */}
-            <Link href={'/'} className={`${Styles.mobileWhiteLogo} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow}`}>
+                <div className="mobile">
+                    <Link href={'/'} className={`${Styles.mobileWhiteLogo} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow} mobile_header_buttons`}>
             <Image
-                    src="/Assets/Azizi_Logo.svg"
+                            src="/Assets/Azizi_Logo.svg"
                 alt="Image"
                 width={100}
                 height={100}
-                className={Styles.mobileNavLogoImage}
+                            className={`${Styles.mobileNavLogoImage} logo_white`} />
+                        <Image
+                            src="/Assets/Azizi_Logo_black.svg"
+                            alt="Image"
+                            width={100}
+                            height={100}
+                            className={`${Styles.mobileNavLogoImage} logo_black`}
             />
             </Link>
-            <button className={`${Styles.menuBtn} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow}`}>
+                    <button className={`${Styles.menuBtn} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow} mobile_header_buttons`}>
             <Image
                     src="/Assets/Icons/BurgerMenu.svg"
                 alt="Image"
                 width={100}
                 height={100}
-                className={Styles.menuBtnImage}
+                            className={`${Styles.menuBtnImage} logo_white`}
+                            onClick={toggleClass}
+                        />
+                        <Image
+                            src="/Assets/Icons/BurgerMenuBlack.svg"
+                            alt="Image"
+                            width={100}
+                            height={100}
+                            className={`${Styles.menuBtnImage} logo_black`}
                 onClick={toggleClass}
             />
             </button>
@@ -105,6 +121,30 @@ export default function Header() {
                     </div>
                 </div>
             </nav>
+                </div>
+                {/* Breadcrumb */}
+                {/* <div className={Styles.breadCrumbs}>
+                    <div className={Styles.breadCrumbsBox}>
+                        <Link className={Styles.Link} href="/home">Home</Link>
+                        <Image
+                            src="/Assets/Residence/images/chevron-right.png"
+                            alt="Image"
+                            width={100}
+                            height={100}
+                            className={Styles.chevronRight}
+                        />
+                        <Link className={Styles.Link} href="/home">Azizi Venice, Dubai South</Link>
+                        <Image
+                            src="/Assets/Residence/images/chevron-right.png"
+                            alt="Image"
+                            width={100}
+                            height={100}
+                            className={`${Styles.chevronRight} ${Styles.mobileHide}`}
+                        />
+                        <Link className={`${Styles.Link} ${Styles.mobileHide}`} href="/">{"title"}</Link>
+                    </div>
+                </div> */}
+            </header>
         </>
     );
 }

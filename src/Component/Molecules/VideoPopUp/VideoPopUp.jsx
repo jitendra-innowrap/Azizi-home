@@ -6,10 +6,10 @@ import Image from 'next/image';
 const style = {
     position: 'absolute',
     z: 10,
-    top: '10%',
+    top: '50%',
     left: '50%',
     width: '80vw',
-    height: '',
+    height: '50%',
     transform: 'translate(-50%, -50%)',
     bgcolor: 'background.paper',
     // border: '2px solid #000',
@@ -77,6 +77,8 @@ export function VideoPopUpContainer({ handleClose }) {
                     autoPlay
                     loop
                     playsInline
+                    controls={true}
+                    muted={false}
                     src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/AziziVenice.webm"
                     type="video/mp4"
                     className={Styles.bannerVideo}

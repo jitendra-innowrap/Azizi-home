@@ -73,6 +73,7 @@
 .oasisDreamContainContainer{
     padding-top: 220px;
     display: flex;
+    gap: 40px;
 }
 .categorySection{
     display: flex;

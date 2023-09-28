@@ -577,7 +577,16 @@ c-bg-img,
   color: #000;
   display: none;
 }
+#header-bar .nav_bar .navbarContainer {
+  position: relative;
+}
 
+#header-bar .nav_bar .nav_logos {
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+}
 #header-bar.nav-hide .nav_links a,
 #header-bar.nav-hide .nav_links button {
   border-color: #fff;

@@ -166,7 +166,7 @@
     padding-bottom: 180px;
 } */
 .findHomeParagraph{
-    padding-inline: 190px;
+    padding-inline: 10px;
     font-size: 16px;
 }
 .findHomeImageSection{
@@ -440,7 +440,7 @@
     }
     .findHomeParagraph{
         font-size: 14px;
-        padding-inline: 230px;
+        padding-inline: 60px;
     }
     .aroundNeighborhoodParagraph{
         font-size: 14px;

@@ -111,29 +111,30 @@ const ParallexGridHero = (headerbar) => {
                     <div className="c-hero-clip js-iv" data-shown="1" data-visible="1">
                         <div className="c-hero-mv">
                             <div className="c-bg-img js-bg-img is-poster-loaded is-img-loaded" data-assets="true" data-delay="0.4" data-shown="1" data-visible="1">
-                                <div className="poster" style={{ backgroundImage: 'url("/Assets/banner/center.jpg")' }}>
-                                    {/* <video
+                                <div className="poster">
+                                    <video
                                         autoPlay
                                         loop
                                         playsInline
-                                        src="/Assets/Home/videos/backgroundGif.mp4"
+                                        src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/Venice_15.webm"
                                         type="video/mp4"
                                     >
                                         Your browser does not support the video tag.
-                                    </video> */}
+                                    </video>
                                 </div>
                                 <div className="elem"
-                                    style={{ backgroundImage: 'url("/Assets/banner/center.jpg")' }}
+
                                 >
-                                    {/* <video
+                                    <video
                                         autoPlay
                                         loop
+                                        muted={true}
                                         playsInline
-                                        src="/Assets/Home/videos/backgroundGif.mp4"
+                                        src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/Venice_15.webm"
                                         type="video/mp4"
                                     >
                                         Your browser does not support the video tag.
-                                    </video> */}
+                                    </video>
                                 </div>
                             </div>
                             <div className="explore-cta" style={{ zIndex: '9999' }}>

@@ -119,11 +119,14 @@ export default function Header() {
                         <Link href="https://azizidevelopments.com/en/dubai" className={Styles.navLinksMobile}>Projects</Link>
                         <Link href="https://azizidevelopments.com/en/retail/dubai" className={Styles.navLinksMobile}>Retail</Link>
                         <Link href="https://azizidevelopments.com/en/media-center" className={Styles.navLinksMobile}>Media</Link>
-                        <Link  href="/home" className={Styles.navLinksMobile}>Azizi Venice</Link>
+                                {/* <Link  href="/home" className={Styles.navLinksMobile}>Azizi Venice</Link> */}
                         {/* <Link href="/" className={Styles.navLinks}>Contact</Link> */}
                         <Link href="tel:80029494" className={Styles.navLinksMobile}>800 (AZIZI) 29494</Link>
                         {/* <Link href="/" className={Styles.navLinksLanuageMobile}> العربية</Link> */}
-                        <Link href="#home_form"  className={Styles.navLinksButtonMobile}>ENQUIRE</Link>
+                                <Link href="#home_form" className={Styles.navLinksButtonMobile} style={{ position: 'relative' }} >
+                                    <CTAPopUp />ENQUIRE
+
+                                </Link>
                     </div>
                 </div>
             </nav>

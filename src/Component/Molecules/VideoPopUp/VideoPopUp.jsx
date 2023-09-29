@@ -71,7 +71,7 @@ export function VideoPopUpContainer({ handleClose }) {
                     ref={videoRef}
                     autoPlay
                     loop
-                    playsInline
+                    // playsInline
                     controls={true}
                     src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/AziziVenice.webm"
                     type="video/mp4"

@@ -7,10 +7,8 @@ const GMap = () => {
 
     // list of icons
     const iconList = {
-        icon1: 'https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Flag--Right-Chartreuse.png',
-        icon2: 'https://cdn2.iconfinder.com/data/icons/IconsLandVistaMapMarkersIconsDemo/256/MapMarker_Marker_Outside_Chartreuse.png',
-        icon3: 'https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Ball-Right-Azure.png',
-        icon4: 'https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Marker-Outside-Pink.png'
+        icon1: '/Assets/Icons/airport_pin.svg',
+        icon2: '/Assets/Icons/azizi_pin.svg'
     }
     const handleMarkerClick = (marker) => {
         window.open(`https://www.google.com/maps/search/?api=1&query=${marker.lat},${marker.lng}`, '_blank');
@@ -291,17 +289,17 @@ const GMap = () => {
     ]
     // list of the marker object along with icon
     const markerList = [
-        { lat: 24.89340, lng: 55.15673, icon: iconList.icon2 },
-        { lat: 24.84370, lng: 55.14309, icon: iconList.icon4 }
+        { lat: 24.88599, lng: 55.15879, icon: iconList.icon1 },
+        { lat: 24.84370, lng: 55.14309, icon: iconList.icon2 }
     ]
     useEffect(() => {
         googleMap = initGoogleMap();
-        var bounds = new window.google.maps.LatLngBounds();
+        // var bounds = new window.google.maps.LatLngBounds();
         markerList.map(x => {
             const marker = createMarker(x);
-            bounds.extend(marker.position);
+            // bounds.extend(marker.position);
         });
-        googleMap.fitBounds(bounds); // the map to contain all markers
+        // googleMap.fitBounds(bounds); // the map to contain all markers
     }, []);
 
 
@@ -309,25 +307,34 @@ const GMap = () => {
     const initGoogleMap = () => {
         return new window.google.maps.Map(googleMapRef.current, {
             center: { lat: 24.91563, lng: 55.08651 },
-            zoom: 10,
+            zoom: 11.5,
             styles: mapStyles
         });
     }
 
-    // create marker on google map
-    const createMarker = (markerObj) => new window.google.maps.Marker({
-        position: { lat: markerObj.lat, lng: markerObj.lng },
-        map: googleMap,
-        icon: {
+    const createMarker = (markerObj) => {
+        const marker = new window.google.maps.Marker({
+            position: { lat: markerObj.lat, lng: markerObj.lng },
+            map: googleMap,
+            icon: {
             url: markerObj.icon,
             // set marker width and height
-            scaledSize: new window.google.maps.Size(50, 50)
-        }
-    });
+                scaledSize: new window.google.maps.Size(70, 70)
+            }
+        });
+
+        // Add a click event listener to the marker
+        marker.addListener('click', () => {
+            handleMarkerClick(markerObj);
+        });
+
+        return marker;
+    };
+
 
     return <div
         ref={googleMapRef}
-        style={{ width: 600, height: 500 }}
+        style={{ width: '100%', height: '100%' }}
     />
 }
 

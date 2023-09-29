@@ -61,6 +61,7 @@ export function VideoPopUpContainer({ handleClose }) {
             console.error('Video playback error:', error);
         });
     }, []);
+
     return (
         <>
             <section className={Styles.homeBannerVideo}

@@ -10,7 +10,7 @@ import { useMediaQuery } from 'react-responsive'
 const ParallexGridHero = (headerbar) => {
     const heroRef = useRef(null);
     const videoEl = useRef(null);
-    const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
+    // const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
     const handleScroll = (headerbar) => {
         const viewportBottom = window.scrollY + window.innerHeight;
         const heroBottom = heroRef.current.offsetTop + heroRef.current.clientHeight;
@@ -98,7 +98,7 @@ const ParallexGridHero = (headerbar) => {
 
     return (
         <div className='hero-banner-body'>
-            {isBigScreen && <div className='hero-banner'
+            <div className='hero-banner'
                 ref={heroRef}
             >
                 <div className="BannerGifWrapper">
@@ -168,7 +168,7 @@ const ParallexGridHero = (headerbar) => {
                         </div>
                     </div>
                 </div>
-            </div>}
+            </div>
         </div>
     );
 };

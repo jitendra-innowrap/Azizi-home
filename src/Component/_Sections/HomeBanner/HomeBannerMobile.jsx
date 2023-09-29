@@ -1,9 +1,27 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import styles from './HomeBannerMobile.module.css'
 import VideoPopUp from '@/Component/Molecules/VideoPopUp/VideoPopUp'
 
 export default function HomeBannerMobile() {
+    const videoRef1 = useRef(null);
+    useEffect(() => {
+        // Ensure the video is muted (autoplay requires muting)
+        videoRef1.current.muted = true;
+
+        const playVideo = (videoRef) => {
+            if (videoRef.current) {
+                videoRef.current.play().catch((error) => {
+                    // Handle any play errors, e.g., related to autoplay restrictions
+                    console.error('Video playback error:', error);
+                });
+            }
+        };
+
+        playVideo(videoRef1);
+    }, []);
+
     return (
         <section className={styles.HomeBannerMobileSection}>
             <div className={styles.BannerGifWrapper}>
@@ -11,6 +29,7 @@ export default function HomeBannerMobile() {
             </div>
             <div className={styles.BannerVideoMobileWrapper}>
                 <video
+                    ref={videoRef1}
                     autoPlay
                     loop
                     playsInline

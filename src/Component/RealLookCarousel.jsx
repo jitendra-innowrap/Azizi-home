@@ -28,20 +28,6 @@ export default function RealLookCarousel()  {
     playVideo(videoRef1);
     playVideo(videoRef2);
     playVideo(videoRef3);
-
-    // // Start the video
-    // videoRef1.current.play().catch(error => {
-    //   // Handle any play errors, e.g., related to autoplay restrictions
-    //   console.error('Video playback error:', error);
-    // });
-    // videoRef2.current.play().catch(error => {
-    //   // Handle any play errors, e.g., related to autoplay restrictions
-    //   console.error('Video playback error:', error);
-    // });
-    // videoRef3.current.play().catch(error => {
-    //   // Handle any play errors, e.g., related to autoplay restrictions
-    //   console.error('Video playback error:', error);
-    // });
   }, []);
 
   const items = [

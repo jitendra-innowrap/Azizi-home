@@ -670,9 +670,9 @@ c-bg-img,
     height: 559px;
   }
 }
-.overXhidden {
+/* .overXhidden {
   overflow-x: hidden;
-}
+} */
 .hero-banner-body{
   position: relative;
   z-index: 2;

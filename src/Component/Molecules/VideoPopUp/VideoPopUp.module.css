@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 9999;
+    /* z-index: 9; */
 }
 
 .playSvg {
@@ -41,7 +41,7 @@
     top: 0;
     right: 0;
     text-align: right;
-    z-index: 9999;
+    /* z-index: 9; */
     padding-bottom: 30px;
 }
 

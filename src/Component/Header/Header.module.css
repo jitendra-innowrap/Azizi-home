@@ -5,7 +5,7 @@
     width: 100%;
     background-color: transparent;
     color: #fff;
-    z-index: 1;
+    /* z-index: 1; */
   }
 .navbarContainer{
     display: flex;
@@ -94,38 +94,13 @@
     }
   }
   @media (max-width: 1024px) {
-    /* .navbarContainer{
-        display: grid;
-    }
-    .navLogo{
-        order: 1;
-    }
-    .leftLinks{
-        order: 2;
-    }
-    .rightLinks{
-        order: 3;
-    }
-    .navbarContainer {
-        padding-inline: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    } 
-    .leftLinks{
-        display: block;
-        margin-top: 50px;
-    }
-    .navLinks{
-        display: block;
-        width: 100%;
-    }*/
     .menuBtn{
         position: absolute;
         top: 20px;
         right: 20px;
         background: transparent;
         border: none;
-        z-index: 3;
+        /* z-index: 3; */
         cursor: pointer;
         display: block;
     }
@@ -141,7 +116,7 @@
         top: 20px;
         left: 20px;
         background: transparent;
-        z-index: 3;
+        /* z-index: 3; */
         display: block;
     }
     .mobileNavLogoImage{
@@ -155,7 +130,7 @@
         width: 100vw;
         height: 100vh;
         background-color: white;
-        z-index: 99999;
+        z-index: 10;
     }
     .mobileBlackLogo{
         position: absolute;

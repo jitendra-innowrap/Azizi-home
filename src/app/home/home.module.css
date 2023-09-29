@@ -4,7 +4,7 @@
     right: 0;
     display: grid;
     box-shadow: -1px 0px 1px #55596063;
-    z-index: 9999;
+    z-index: 5;
 }
 .socialIconSvg{
     width: 24px;

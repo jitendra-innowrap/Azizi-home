@@ -149,7 +149,7 @@ const ParallexGridHero = (headerbar) => {
                                     </video>
                                 </div> */}
                                 </div>
-                                <div className="explore-cta" style={{ zIndex: '9999' }}>
+                                <div className="explore-cta" style={{ zIndex: '1', position: 'relative' }}>
                                     <VideoPopUp />
                                 </div>
                             </div>

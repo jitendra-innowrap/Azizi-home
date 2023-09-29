@@ -16,9 +16,11 @@ export default function FormSection() {
                     <Image
                         src="/Assets/Home/images/FindYourHome/Enquire.webp"
                     alt="Image"
-                        width={800}
-                        height={800}
-                        quality={100}
+                        // width={800}
+                        // height={800}
+                        // quality={100}
+                        layout="fill"
+                        objectFit="cover"
                     className={`${styles.bgImg}`}
                 />
                     <div className={`${styles.titleContainer}`}>

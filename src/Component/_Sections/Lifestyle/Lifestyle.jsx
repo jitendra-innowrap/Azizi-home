@@ -15,10 +15,12 @@ export default function Lifestyle({ title, para, listItem , image, imageTitle}) 
                     <Image
                         src={image}
                         alt="Image"
-                        width={1000}
-                        height={1000}
-                        quality={100}
-                        priority
+                        // width={1000}
+                        // height={1000}
+                        // quality={100}
+                        // priority
+                        layout="fill"
+                        objectFit="cover"
                         className={Styles.image}
                     />
                     <div className={Styles.overlay}></div>

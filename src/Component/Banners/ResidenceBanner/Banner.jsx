@@ -20,10 +20,12 @@ export default function Banner({ title, image }) {
                 <Image
                     src={image}
                     alt="Image"
-                    width={1000}
-                    height={1000}
-                    priority
-                    quality={100}
+                    // width={1000}
+                    // height={1000}
+                    // priority
+                    // quality={100}
+                    layout="fill"
+                    objectFit="cover"
                     className={Styles.bannerVideo}
                 />
                 <div className={Styles.videoOverlay}></div>

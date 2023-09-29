@@ -86,10 +86,12 @@ export default function IntroSection({ btn1, btn2, para, images, showHide , padd
                                         <Image
                                             src={image}
                                             alt="Image"
-                                            width={1000}
-                                            height={1000}
-                                            priority
-                                            quality={100}
+                                            // width={1000}
+                                            // height={1000}
+                                            // priority
+                                            // quality={100}
+                                            layout="fill"
+                                            objectFit="cover"
                                             className={Styles.Image}
                                         />
                                     </div>

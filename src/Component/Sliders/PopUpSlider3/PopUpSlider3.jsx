@@ -7,46 +7,62 @@ import Styles from './PopUpSlider.module.css'
 
 export default function PopUpSlider3() {
     const items = [
+        <div  className={Styles.ContainImage}>
         <div key={1} className="item">
             <img
                 src="/Assets/Home/images/DesireOndoorstep/School - Carousel.png"
                 alt="Image"
-                width={100}
-                height={100}
-                quality={100}
-                priority
-                className={Styles.ContainImage}
+                // width={100}
+                // height={100}
+                // quality={100}
+                // priority
+                layout="fill"
+                objectFit="cover"
+                className={Styles.image}
             />
+            </div>
         </div>,
         <div key={2} className="item">
+        <div  className={Styles.ContainImage}>
             <img
                 src="/Assets/Home/images/DesireOndoorstep/Cable Car - Carousel.png"
                 alt="Image"
-                width={100}
-                height={100}
-                priority
-                className={Styles.ContainImage}
+                // width={100}
+                // height={100}
+                // priority
+                layout="fill"
+                objectFit="cover"
+                className={Styles.image}
             />
+            </div>
         </div>,
         <div key={3} className="item">
+        <div  className={Styles.ContainImage}>
             <img
                 src="/Assets/Home/images/DesireOndoorstep/Hotel - Carousel.png"
                 alt="Image"
-                width={100}
-                height={100}
-                priority
-                className={Styles.ContainImage}
+                // width={100}
+                // height={100}
+                // priority
+                layout="fill"
+                objectFit="cover"
+                className={Styles.image}
             />
+            </div>
         </div>,
         <div key={4} className="item">
+        <div  className={Styles.ContainImage}>
             <img
                 src="/Assets/Home/images/DesireOndoorstep/Hospital - Carousel.png"
                 alt="Image"
-                width={100}
-                height={100}
-                priority
-                className={Styles.ContainImage}
+                // width={100}
+                // height={100}
+                // priority
+                layout="fill"
+                objectFit="cover"
+                className={Styles.image}
             />
+            </div>
         </div>,
     ];
 

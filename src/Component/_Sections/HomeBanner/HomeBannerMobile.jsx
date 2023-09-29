@@ -33,9 +33,8 @@ export default function HomeBannerMobile() {
                     autoPlay
                     loop
                     playsInline
-                    muted={true}
                     src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/Venice_15.webm"
-                    type="video/webm"
+                    type="video/mp4"
                     className={styles.BannerVideoMobile}
                 >
                     Your browser does not support the video tag.

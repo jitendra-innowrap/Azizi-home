@@ -53,7 +53,7 @@ export function VideoPopUpContainer({ handleClose }) {
     const videoRef = useRef(null);
     useEffect(() => {
         // Ensure the video is muted (autoplay requires muting)
-        // videoRef.current.muted = true;
+        videoRef.current.muted = true;
 
         // Start the video
         videoRef.current.play().catch(error => {
@@ -73,7 +73,6 @@ export function VideoPopUpContainer({ handleClose }) {
                     loop
                     playsInline
                     controls={true}
-                    muted={false}
                     src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/AziziVenice.webm"
                     type="video/mp4"
                     className={Styles.bannerVideo}

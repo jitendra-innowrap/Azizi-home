@@ -281,13 +281,25 @@ const mapStyles = [
         ]
     }
 ]
+const markers = [
+    {
+        id: 1,
+        name: "Al Maktoum International Airport",
+        position: { lat: 24.890392862046706, lag: 55.158111965412 }
+    },
+    {
+        id: 2,
+        name: "Azizi Venice",
+        position: { lat: 24.842354939624123, lng: 55.14311858048023 }
+    }
+];
 console.log(JSON)
 
 export default function Map() {
     const center = { lat: 24.915432730714127, lng: 55.08650690177196 }
     const airport = { lat: 24.890392862046706, lag: 55.158111965412 }
     const marker = { lat: 24.842354939624123, lng: 55.14311858048023 }
-    const handleMarkerClick = () => {
+    const handleMarkerClick = (position) => {
         window.open(`https://www.google.com/maps/search/?api=1&query=${marker.lat},${marker.lng}`, '_blank');
     };
     // const customIcon = {
@@ -314,10 +326,11 @@ export default function Map() {
                         styles: mapStyles
                     }}
 
-                >
-                    <Marker position={airport} />
-
-                    <Marker position={marker} onClick={handleMarkerClick} />
+                >{
+                        markers.map((marker, id) => {
+                            <Marker key={id} position={marker.position} onClick={() => { handleMarkerClick(marker.position) }} />
+                        })
+                    }
                 </GoogleMap>
             </LoadScript>
         </div>

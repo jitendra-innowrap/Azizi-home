@@ -70,14 +70,14 @@ export default function Header() {
             />
             </Link>
                     <button className={`${Styles.menuBtn} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow} mobile_header_buttons`}>
-            <Image
+                        {/* <Image
                     src="/Assets/Icons/BurgerMenu.svg"
                 alt="Image"
                 width={100}
                 height={100}
                             className={`${Styles.menuBtnImage} logo_white`}
                             onClick={toggleClass}
-                        />
+                        /> */}
                         <Image
                             src="/Assets/Icons/BurgerMenuBlack.svg"
                             alt="Image"

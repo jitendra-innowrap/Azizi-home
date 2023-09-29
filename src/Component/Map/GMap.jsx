@@ -319,7 +319,7 @@ const GMap = () => {
             icon: {
             url: markerObj.icon,
             // set marker width and height
-                scaledSize: new window.google.maps.Size(70, 70)
+                scaledSize: new window.google.maps.Size(100, 100)
             }
         });
 

@@ -32,8 +32,8 @@ export default function HomeBannerMobile() {
                     ref={videoRef1}
                     autoPlay
                     loop
-                    // playsInline
-                    src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/Venice_15.webm"
+                    playsInline
+                    src="/Assets/Home/videos/look-2.mp4"
                     type="video/mp4"
                     className={styles.BannerVideoMobile}
                 >

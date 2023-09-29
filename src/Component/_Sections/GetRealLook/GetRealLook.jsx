@@ -9,7 +9,7 @@ import translations from '@/translations/translations.json';
 export default function GetRealLook() {
     const { language, changeLanguage } = useLanguage();
     return (
-        <section className={`${homeStyle.realLookSection} ${styles.section} overXhidden`}>
+        <section className={`${homeStyle.realLookSection} ${styles.section}`}>
             <h1 className={`${homeStyle.mainTitle} ${homeStyle.realLookTitle}`}>{translations[language].home.getARealLook}</h1>
             <p className={`${homeStyle.mainParagraph} ${homeStyle.realLookParagraph}`}>{translations[language].home.getARealLookPara}</p>
             <div className={`${homeStyle.realLookVideoDiv}`}>

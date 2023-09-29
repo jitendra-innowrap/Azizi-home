@@ -7,7 +7,7 @@ import RightAnimation from '@/Component/RightAnimation/RightAnimation'
 
 export default function TheDestination({ title, para }) {
     return (
-        <section className={`${homeStyle.futureSurroundingSection} overXhidden`}>
+        <section className={`${homeStyle.futureSurroundingSection}`}>
             <RightAnimation />
             <h1 className={`${homeStyle.mainTitle} ${homeStyle.futureSurroundingTitle}`}>{title}</h1>
             <p className={`${homeStyle.mainParagraph} ${homeStyle.futureSurroundingParagraph}`}>{para}</p>

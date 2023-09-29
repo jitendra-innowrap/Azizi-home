@@ -46,12 +46,12 @@ export default function OasisOfDreams() {
 
     return (
         <>
-            <section className={`${homeStyle.oasisDreamTitleSection} overXhidden`} id='second-section'>
+            <section className={`${homeStyle.oasisDreamTitleSection}`} id='second-section'>
                 <RightAnimation2 />
                 <h1 className={`${homeStyle.mainTitle} ${homeStyle.oasisDreamTitle}`}>AN OASIS OF DREAMS</h1>
                 <p className={`${homeStyle.mainParagraph} ${homeStyle.oasisDreamParagraph}`}>Dive into a world of unparalleled water-inspired living, unlike anything you&#39;ve ever experienced, at Dubai&#39;s forthcoming legacy - a truly unparalleled luxury Crystal Lagoon community. Brace yourself to embark on a journey where opulence knows no boundaries, as you step into a haven of lavishness that stretches the limits of imagination. This is not just another destination it&#39;s an uncharted masterpiece, waiting to be discovered.</p>
             </section>
-            <section className={`${homeStyle.oasisDreamContainSection} overXhidden`}>
+            <section className={`${homeStyle.oasisDreamContainSection}`}>
                 <LeftAnimation />
                 <div className={`${homeStyle.oasisDreamContainContainer}`}>
                     <div className={`${homeStyle.column7} ${homeStyle.sliderSection}`}>

@@ -128,7 +128,7 @@ const ParallexGridHero = (headerbar) => {
                                             autoPlay
                                             playsInline
                                             muted
-                                            src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/Venice_15.webm"
+                                            src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/Venice_15s.mp4"
                                             type="video/mp4"
                                         >
                                             Your browser does not support the video tag.

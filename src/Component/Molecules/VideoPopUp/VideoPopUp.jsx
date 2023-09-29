@@ -73,7 +73,7 @@ export function VideoPopUpContainer({ handleClose }) {
                     loop
                     playsInline
                     controls={true}
-                    src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/AziziVeniceV2.webm"
+                    src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/AziziVeniceV2.mp4"
                     type="video/mp4"
                     className={Styles.bannerVideo}
                 >

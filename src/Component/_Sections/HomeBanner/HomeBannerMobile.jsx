@@ -33,7 +33,7 @@ export default function HomeBannerMobile() {
                     autoPlay
                     loop
                     playsInline
-                    src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/AziziVeniceV2.webm"
+                    src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/Venice_15s.mp4"
                     type="video/mp4"
                     className={styles.BannerVideoMobile}
                 >

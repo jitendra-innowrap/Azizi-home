@@ -76,7 +76,7 @@ input:invalid+span::before {
   font-size: 16px;
   color: white;
   padding: 10px 0;
-  outline: none; 
+  outline: none;
   margin-left: 10px;
 }
 .PhoneInputInput::placeholder {
@@ -136,7 +136,7 @@ input:invalid+span::before {
   float: right !important;
 }
 .inputContainerRight input{
-  text-align: right !important; 
+  text-align: right !important;
 }
 .inputContainerRight .PhoneInputCountry{
   order : 1 !important;
@@ -601,7 +601,7 @@ c-bg-img,
   display: unset;
 }
 /* For Mobile Header */
-/* 
+/*
 #header-bar .mobile .nav_links a {
   color: #000;
 }
@@ -635,7 +635,7 @@ c-bg-img,
   transform: translateY(-100%);
   transition: all 1s;
 }
-/* 
+/*
 #header-bar.nav-dark .mobile .mobile_header_buttons {
   top: 0;
   transform: translateY(-100%);
@@ -672,4 +672,9 @@ c-bg-img,
 }
 .overXhidden {
   overflow-x: hidden;
+}
+.hero-banner-body{
+  position: relative;
+  z-index: 2;
+  backface-visibility: hidden;
 }

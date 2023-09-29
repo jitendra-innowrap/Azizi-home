@@ -43,11 +43,11 @@ export default function DoorStepSliderImage({ url, title, imageHeight, imageWidt
             onMouseEnter={handleContainerHover}
             onMouseLeave={handleContainerLeave}
         >
-            <img
+            <Image
                 src={url}
                 alt="Image"
-                width={100}
-                height={100}
+                width={500}
+                height={500}
                 priority
                 quality={100}
                 className={Styles.image}

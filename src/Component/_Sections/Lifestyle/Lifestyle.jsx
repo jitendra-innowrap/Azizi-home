@@ -12,14 +12,13 @@ export default function Lifestyle({ title, para, listItem , image, imageTitle}) 
             <SectionsTitle title={title} para={para} />
             <div className={Styles.imageSection}>
                 <div className={Styles.imageContainer}>
-                    <img
+                    <Image
                         src={image}
                         alt="Image"
-                        // width={100}
-                        // height={100}
-                        // quality={100}
-                        priority
+                        width={1000}
+                        height={1000}
                         quality={100}
+                        priority
                         className={Styles.image}
                     />
                     <div className={Styles.overlay}></div>

@@ -62,11 +62,11 @@ export function CTAPopUpCotainer({ handleClose, fileName, filePath }) {
     return (
         <section className={`${styles.section}`} id="home_form">
             <div className={`${styles.container}`}>
-                <img
+                <Image
                     src="/Assets/Home/images/FindYourHome/Enquire.webp"
                     alt="Image"
-                    width={100}
-                    height={100}
+                    width={600}
+                    height={600}
                     quality={100}
                     className={`${styles.bgImg}`}
                 />

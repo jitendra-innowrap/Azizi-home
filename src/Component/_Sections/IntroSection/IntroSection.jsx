@@ -83,9 +83,11 @@ export default function IntroSection({ btn1, btn2, para, images, showHide , padd
                             {images.map((image, index) => (
                                  <div key={index} className="item">
                                     <div className={Styles.ContainImage}>
-                                        <img
+                                        <Image
                                             src={image}
                                             alt="Image"
+                                            width={1000}
+                                            height={1000}
                                             priority
                                             quality={100}
                                             className={Styles.Image}

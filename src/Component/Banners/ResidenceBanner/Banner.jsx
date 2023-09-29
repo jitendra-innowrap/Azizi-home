@@ -17,11 +17,11 @@ export default function Banner({ title, image }) {
     return (
         <>
             <section className={Styles.homeBannerVideo}>
-                <img
+                <Image
                     src={image}
                     alt="Image"
-                    // width={100}
-                    // height={100}
+                    width={1000}
+                    height={1000}
                     priority
                     quality={100}
                     className={Styles.bannerVideo}

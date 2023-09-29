@@ -64,8 +64,8 @@ export default function OasisOfDreams() {
                                     <Image
                                         src="/Assets/Home/images/masterplan/Villas.png"
                                         alt="Image"
-                                        width={100}
-                                        height={100}
+                                        width={200}
+                                        height={200}
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
@@ -77,8 +77,8 @@ export default function OasisOfDreams() {
                                     <Image
                                         src="/Assets/Home/images/masterplan/Apartments.png"
                                         alt="Image"
-                                        width={100}
-                                        height={100}
+                                        width={200}
+                                        height={200}
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
@@ -92,8 +92,8 @@ export default function OasisOfDreams() {
                                     <Image
                                         src="/Assets/Home/images/masterplan/Retail.png"
                                         alt="Image"
-                                        width={100}
-                                        height={100}
+                                        width={200}
+                                        height={200}
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
@@ -105,8 +105,8 @@ export default function OasisOfDreams() {
                                     <Image
                                         src="/Assets/Home/images/masterplan/Plot Area.png"
                                         alt="Image"
-                                        width={100}
-                                        height={100}
+                                        width={200}
+                                        height={200}
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
@@ -120,8 +120,8 @@ export default function OasisOfDreams() {
                                     <Image
                                         src="/Assets/Home/images/masterplan/Opera.png"
                                         alt="Image"
-                                        width={100}
-                                        height={100}
+                                        width={200}
+                                        height={200}
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
@@ -133,8 +133,8 @@ export default function OasisOfDreams() {
                                     <Image
                                         src="/Assets/Home/images/masterplan/Water.png"
                                         alt="Image"
-                                        width={100}
-                                        height={100}
+                                        width={200}
+                                        height={200}
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
@@ -157,9 +157,13 @@ export default function OasisOfDreams() {
                                 <CTAPopUp cta={'DOWNLOAD BROCHURE'} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} />
                             </div>
                             {isVisible && 
-                                <div className={`${Styles.shareListContanier}`}>
+                                <div className={`${Styles.shareListContanier}`}>gp=gyut
+
                                     <CopyToClipboard className={`${Styles.shareListBox}`} text={'https://azizi-home-demo.vercel.app/home'} url={'https://azizi-home-demo.vercel.app/home'}  onCopy={handleCopy}>
-                                        <span><img
+                                        <span><image
+
+                                            width={100}
+                                            height={100}
                                             src="/Assets/Icons/copy_link.svg"
                                             alt="Image"
                                             className={Styles.shareListIcon}
@@ -167,7 +171,10 @@ export default function OasisOfDreams() {
                                         COPY LINK</span>
                                     </CopyToClipboard>
                                     <FacebookShareButton className={`${Styles.shareListBox}`}  url={'https://azizi-home-demo.vercel.app/home'}  quote='Azizi'>
-                                        <img
+                                        <image
+
+                                            width={100}
+                                            height={100}
                                             src="/Assets/Icons/Facebook.svg"
                                             alt="Image"
                                             className={Styles.shareListIcon}
@@ -175,7 +182,10 @@ export default function OasisOfDreams() {
                                         SHARE ON FACEBOOK
                                     </FacebookShareButton>
                                     <TwitterShareButton className={`${Styles.shareListBox}`}  url={'https://azizi-home-demo.vercel.app/home'} title='Azizi'>
-                                        <img
+                                        <image
+
+                                            width={100}
+                                            height={100}
                                             src="/Assets/Icons/twitter-x.svg"
                                             alt="Image"
                                             className={Styles.shareListIcon}
@@ -183,7 +193,10 @@ export default function OasisOfDreams() {
                                         SHARE ON TWITTER
                                     </TwitterShareButton>
                                     <LinkedinShareButton className={`${Styles.shareListBox}`}  url={'https://azizi-home-demo.vercel.app/home'} title='Azizi'>
-                                        <img
+                                        <image
+
+                                            width={100}
+                                            height={100}
                                             src="/Assets/Icons/Linkedin.svg"
                                             alt="Image"
                                             className={Styles.shareListIcon}

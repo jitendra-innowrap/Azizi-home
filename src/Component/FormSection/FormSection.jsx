@@ -13,11 +13,11 @@ export default function FormSection() {
         <>
             <section className={`${styles.section}`} id="home_form">
                 <div className={`${styles.container}`}>
-                    <img
+                    <Image
                         src="/Assets/Home/images/FindYourHome/Enquire.webp"
                     alt="Image"
-                    width={100}
-                    height={100}
+                        width={800}
+                        height={800}
                         quality={100}
                     className={`${styles.bgImg}`}
                 />

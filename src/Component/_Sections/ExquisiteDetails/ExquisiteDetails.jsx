@@ -55,27 +55,33 @@ export default function ExquisiteDetails({ para }) {
     const items = [
         <div key={1} className="item itemPadding">
             <div className={Styles.ContainImage}>
-                <img
+                <Image
                     src="/Assets/Residence/images/Carousel2Image.png"
                     alt="Image"
+                    width={600}
+                    height={600}
                     className={Styles.image}  
                 />
             </div>
         </div>,
         <div key={2} className="item itemPadding">
             <div className={Styles.ContainImage}>
-                <img
+                <Image
                     src="/Assets/Residence/images/Carousel2Image.png"
                     alt="Image"
+                    width={600}
+                    height={600}
                     className={Styles.image}  
                 />
             </div>
         </div>,
         <div key={3} className="item itemPadding">
             <div className={Styles.ContainImage}>
-                <img
+                <Image
                     src="/Assets/Residence/images/Carousel2Image.png"
                     alt="Image"
+                    width={600}
+                    height={600}
                     className={Styles.image}  
                 />
             </div>

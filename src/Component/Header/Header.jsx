@@ -25,8 +25,7 @@ export default function Header() {
                         <Link href="https://azizidevelopments.com/en/retail/dubai" className={Styles.navLinks}>Retail</Link>
                         <Link href="https://azizidevelopments.com/en/media-center" className={Styles.navLinks}>Media</Link>
                     </div>
-                        {/* <div className="nav_logos"> */}
-                            <Link href={'/home'} className={`${Styles.navLogo} logo_white`}>
+                    <Link href={'/home'} className={`${Styles.navLogo} logo_white`}>
                         <Image
                             src="/Assets/Azizi_Logo.svg"
                             alt="Image"
@@ -35,7 +34,7 @@ export default function Header() {
                             className={Styles.navLogoImage}
                         />
                     </Link>
-                    <Link href={'/'} className={`${Styles.mobileBlackLogo} logo_black`}>
+                    <Link href="https://azizidevelopments.com/" className={`${Styles.mobileBlackLogo} logo_black`}>
                         <Image
                             src="/Assets/Azizi_Logo_black.svg"
                             alt="Image"
@@ -47,9 +46,7 @@ export default function Header() {
                         {/* </div> */}
                     <div className={`${Styles.rightLinks} nav_links`}>
                             <Link href="/home" className={Styles.navLinks} style={{ opacity: 0 }}>Azizi Venice</Link>
-                    <Link href="tel:80029494" className={Styles.navLinks}>800 (AZIZI) 29494</Link>
-                        {/* <Link href="/" className={Styles.navLinksLanuage}> العربية</Link> */}
-                            {/* <Link  href="#home_form"  className={Styles.navLinksButton}>ENQUIRE</Link> */}
+                            <Link href="tel:80029494" className={Styles.navLinks}>800 (AZIZI) 29494</Link>
                             <button className={Styles.navLinksButton} style={{ position: 'relative' }} >
                                 <CTAPopUp />
                                 ENQUIRE</button>
@@ -70,14 +67,6 @@ export default function Header() {
             />
             </Link>
                     <button className={`${Styles.menuBtn} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow} mobile_header_buttons`}>
-                        {/* <Image
-                    src="/Assets/Icons/BurgerMenu.svg"
-                alt="Image"
-                width={100}
-                height={100}
-                            className={`${Styles.menuBtnImage} logo_white`}
-                            onClick={toggleClass}
-                        /> */}
                         <Image
                             src="/Assets/Icons/BurgerMenuBlack.svg"
                             alt="Image"

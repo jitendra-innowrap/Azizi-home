@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Styles from './Header2.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import CTAPopUp from '../Molecules/CTAPopUp/CTAPopUp';
 import useLanguage from '@/hooks/useLanguage';
 import translations from '@/translations/translations.json';
 
@@ -26,7 +27,7 @@ export default function Header2() {
                         <Link href="https://azizidevelopments.com/en/retail/dubai" className={Styles.navLinks}>Retail</Link>
                         <Link href="https://azizidevelopments.com/en/media-center" className={Styles.navLinks}>Media</Link>
                     </div>
-                    <Link href={'/home'} className={`${Styles.navLogo} logo_white`}>
+                    <Link href="https://azizidevelopments.com/" className={`${Styles.navLogo} logo_white`}>
                         <Image
                             src="/Assets/Azizi_Logo.svg"
                             alt="Image"
@@ -39,7 +40,10 @@ export default function Header2() {
                         <Link href="/home" className={Styles.navLinks} style={{ opacity: 0 }}>Azizi Venice</Link>
                         <Link href="tel:80029494" className={Styles.navLinks}>800 (AZIZI) 29494</Link>
                         {/* <button onClick={() => changeLanguage(language === 'en' ? 'ar' : 'en')} className={Styles.navLinksLanuage}>{translations[language].header.language}</button> */}
-                        <Link href="#home_form" className={Styles.navLinksButton}>ENQUIRE</Link>
+                        <button className={Styles.navLinksButton} style={{ position: 'relative' }} >
+                            <CTAPopUp />
+                            ENQUIRE
+                        </button>
                     </div>
                 </div>
             </nav>

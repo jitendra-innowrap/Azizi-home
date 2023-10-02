@@ -17,7 +17,7 @@ export default function StickySocials() {
                 />
                 <CTAPopUp />
             </Link>
-            <Link href="tel:80029494" target="_blank" className={`${homeStyle.socialIcon} ${homeStyle.phoneIconBg}`}>
+            <Link href="tel:80029494" className={`${homeStyle.socialIcon} ${homeStyle.phoneIconBg}`}>
                 <Image
                     src="/Assets/Icons/phone_Icon.svg"
                     alt="Image"

@@ -9,7 +9,7 @@ export default function HomeBanner() {
     return (
         <>
             {isBigScreen ?
-                <ParallexGridHero /> :
+            <ParallexGridHero /> :
             <HomeBannerMobile />
             }</>
     )

@@ -69,7 +69,7 @@ export default function OasisOfDreams() {
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
-                                        <span>266</span>
+                                        <span>261</span>
                                         <p>Villas</p>
                                     </div>
                                 </div>
@@ -138,8 +138,8 @@ export default function OasisOfDreams() {
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
-                                        <span>15,860</span>
-                                        <p>Metre of Water Perimeter</p>
+                                        <span>18KM</span>
+                                        <p>Lagoon with beach and boardwalk</p>
                                     </div>
                                 </div>
                             </div>

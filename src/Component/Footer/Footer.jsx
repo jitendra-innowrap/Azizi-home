@@ -60,7 +60,6 @@ export default function Footer() {
                         <div className={`${styles.links}`}>
                             <Link href="https://azizidevelopments.com/en/about" className={styles.link}>About us</Link>
                             <Link href="https://azizidevelopments.com/en/management" className={styles.link}>Corporate Executives</Link>
-                            <Link href="https://azizidevelopments.com/en/about" className={styles.link}>Invest with Azizi</Link>
                             <Link href="https://azizidevelopments.com/en/career" className={styles.link}>Careers</Link>
                             <Link href="https://azizidevelopments.com/en/contact" className={styles.link}>Contact us</Link>
                         </div>
@@ -79,7 +78,7 @@ export default function Footer() {
                         <span  className={`${styles.linkColumnHeading}`}>Digital services</span>
                         <div className={`${styles.links}`}>
                             <Link href="https://azizidevelopments.com/en/exclusive-offers" className={styles.link}>Offers</Link>
-                            <a href="/HandoverProcedure/Handover-Procedure.pdf" download="Handoverprocedure.pdf" className={styles.link} >Handover procedure</a>
+                            <a href="/Brochure/Handover-Procedure.pdf" download="Handover-procedure.pdf" className={styles.link}>Handover procedure</a>
                             <Link href="https://azizidevelopments.com/en/online-payments" className={styles.link}>Pay online</Link>
                         </div>
                     </div>

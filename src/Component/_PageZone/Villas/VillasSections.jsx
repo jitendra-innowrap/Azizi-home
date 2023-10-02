@@ -15,9 +15,7 @@ export default function VillasSections() {
     const BannerImage = '/Assets/Villa/images/Banner.webp';
     const IntroSectionPara = translations[language].villas.IntroSectionPara;
     const IntroSectionCarouselImages = [
-        '/Assets/Villa/images/Carousel-Gallery-1.webp',
         '/Assets/Villa/images/Carousel-Gallery-2.webp',
-        // '/Assets/Villa/images/Carousel-Gallery-3.webp',
         '/Assets/Villa/images/Carousel-Gallery-4.webp',
         '/Assets/Villa/images/Carousel-Gallery-5.webp',
         '/Assets/Villa/images/Carousel-Gallery-6.webp',
@@ -43,7 +41,7 @@ export default function VillasSections() {
     return (
         <>
             <Banner title={BannerTitle} image={BannerImage} />
-            <IntroSection btn1={IntroSectionDownloadFloorPlan} btn2={IntroSectionDownloadBrochure} para={IntroSectionPara} images={IntroSectionCarouselImages} showHide={'none'} padding={'0px'}/>
+            <IntroSection para={IntroSectionPara} images={IntroSectionCarouselImages} showHide={'none'} padding={'0px'}/>
             {/* <ExquisiteDetails para={ExquisiteDetailsPara} /> */}
             <Lifestyle title={LifestyleTitle} para={LifestylePara} listItem={LifestyleBoxTitle} image={LifestyleImage} imageTitle={LifestyleImageTitle} />
             <LocationBenefits title={LocationBenefitsTitle} para={LocationBenefitsPara} />

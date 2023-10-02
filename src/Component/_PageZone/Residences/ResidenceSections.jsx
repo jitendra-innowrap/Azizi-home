@@ -23,6 +23,7 @@ export default function ResidenceSections() {
     ]
     const IntroSectionDownloadFloorPlan =  translations[language].residence.IntroSectionDownloadFloorPlan;
     const IntroSectionDownloadBrochure =  translations[language].residence.IntroSectionDownloadBrochure;
+    const IntroSectionDownloadUnitPlans =  translations[language].residence.IntroSectionDownloadUnitPlans;
     const ExquisiteDetailsPara = 'Every detail matters in this thoughtfully crafted environment, where meticulous architecture and premium design harmonize with the natural surroundings. Floor-to-ceiling windows seamlessly blend indoor and outdoor spaces, offering breathtaking views of the water and cascading waterfalls. Every detail impeccable, every material exquisite.';
     const LifestyleTitle = translations[language].residence.LifestyleTitle;
     const LifestylePara = translations[language].residence.LifestylePara;
@@ -41,7 +42,7 @@ export default function ResidenceSections() {
     return (
         <>
             <Banner title={BannerTitle} image={BannerImage} />
-            <IntroSection btn1={IntroSectionDownloadFloorPlan} btn2={IntroSectionDownloadBrochure} para={IntroSectionPara} images={IntroSectionCarouselImages} showHide={'block'}/>
+            <IntroSection btn1={IntroSectionDownloadFloorPlan} btn2={IntroSectionDownloadBrochure} btn3={IntroSectionDownloadUnitPlans} para={IntroSectionPara} images={IntroSectionCarouselImages} showHide={'block'}/>
             {/* <ExquisiteDetails para={ExquisiteDetailsPara} /> */}
             <Lifestyle title={LifestyleTitle} para={LifestylePara} listItem={LifestyleBoxTitle} image={LifestyleImage} imageTitle={LifestyleImageTitle}/>
             <LocationBenefits title={LocationBenefitsTitle} para={LocationBenefitsPara} />

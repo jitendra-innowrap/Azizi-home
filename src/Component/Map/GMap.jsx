@@ -7,8 +7,8 @@ const GMap = () => {
 
     // list of icons
     const iconList = {
-        icon1: '/Assets/Icons/airport_pin.svg',
-        icon2: '/Assets/Icons/azizi_pin.svg'
+        icon1: '/Assets/Icons/airport-text.svg',
+        icon2: '/Assets/Icons/azizi-logo-pin.svg'
     }
     const handleMarkerClick = (marker) => {
         window.open(`https://www.google.com/maps/search/?api=1&query=${marker.lat},${marker.lng}`, '_blank');

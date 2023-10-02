@@ -10,6 +10,7 @@ import { useMediaQuery } from 'react-responsive'
 const ParallexGridHero = (headerbar) => {
     const heroRef = useRef(null);
     const videoEl = useRef(null);
+
     // const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
     const handleScroll = (headerbar) => {
         const viewportBottom = window.scrollY + window.innerHeight;
@@ -68,13 +69,9 @@ const ParallexGridHero = (headerbar) => {
                             target.style.setProperty("--p1", progress);
                             target.style.setProperty("--p2", 1 - progress);
                             if (progress > 0.89) {
-                                attemptPlay();
-                                // headerbar.classList.add("nav-dark");
-                                // headerbar.classList.remove("nav-hide");
+                                // attemptPlay();
                             } else {
-                                videoEl.current.pause();
-                                // headerbar.classList.remove("nav-dark");
-                                // headerbar.classList.add("nav-hide");
+                                // videoEl.current.pause();
                             }
                             if (progress > 0.2) {
                                 headerbar.classList.add("nav-hide");
@@ -97,7 +94,7 @@ const ParallexGridHero = (headerbar) => {
     }, []);
 
     return (
-        <div className='hero-banner-body'>
+        <div className='hero-banner-body' suppressHydrationWarning={false}>
             <div className='hero-banner'
                 ref={heroRef}
             >
@@ -106,7 +103,7 @@ const ParallexGridHero = (headerbar) => {
                 </div>
                 <div className="c-hero ">
                     <div className="c-hero-sticky js-scroll-trigger" data-start="top top" data-end="bottom+=20% top" style={{ '--p1': 0, '--p2': 1 }}>
-                        <div style={{ opacity: '0' }} className="c-hero-img js-iv l" data-x="0" data-y="0" data-shown="0" data-visible="1">
+                        <div className="c-hero-img js-iv l" data-x="0" data-y="0" data-shown="0" data-visible="1">
                             <div className="c-bg-img js-bg-img is-poster-loaded is-img-loaded" data-assets="true" data-delay="0" data-shown="1" data-visible="1">
                                 <div className="poster" style={{ backgroundImage: 'url("/Assets/banner/Image-Left.webp")' }}></div>
                                 <div className="elem" style={{ backgroundImage: 'url("/Assets/banner/Image-Left.webp")' }}></div>
@@ -134,20 +131,6 @@ const ParallexGridHero = (headerbar) => {
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
-                                    {/* <div className="elem"
-
-                                >
-                                    <video
-                                        autoPlay
-                                        loop
-                                        muted={true}
-                                        playsInline
-                                        src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/Venice_15.webm"
-                                        type="video/mp4"
-                                    >
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div> */}
                                 </div>
                                 <div className="explore-cta" style={{ zIndex: '1', position: 'relative' }}>
                                     <VideoPopUp />
@@ -160,7 +143,7 @@ const ParallexGridHero = (headerbar) => {
                                 <div className="elem" style={{ backgroundImage: 'url("/Assets/banner/Image-Right.webp")' }}></div>
                             </div>
                         </div>
-                        <div style={{ opacity: '0' }} className="c-hero-img js-iv r" data-x="4" data-y="0" data-shown="1" data-visible="1">
+                        <div className="c-hero-img js-iv r" data-x="4" data-y="0" data-shown="1" data-visible="1">
                             <div className="c-bg-img js-bg-img is-poster-loaded is-img-loaded" data-assets="true" data-delay="0.6" data-shown="1" data-visible="1">
                                 <div className="poster" style={{ backgroundImage: 'url("/Assets/banner/Image-Right.webp")' }}></div>
                                 <div className="elem" style={{ backgroundImage: 'url("/Assets/banner/Image-Right.webp")' }}></div>

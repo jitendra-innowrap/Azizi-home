@@ -382,7 +382,7 @@ html.is-inner-scroll body {
 
 .c-hero-img.l:nth-child(2) {
   transform-origin: center left;
-  transform: rotateX(calc(0deg*var(--p1))) rotateY(calc(0deg*var(--p1))) rotate(calc(0deg*var(--p1))) translate(calc(var(--go)*var(--p1)*-1 + var(--hero-l)*var(--p1)*-1 + -4vw*var(--p1)), calc(-100vh*var(--p1)*0.2 + -20vw*var(--p1)*0.2));
+  transform: rotateX(calc(0deg*var(--p1))) rotateY(calc(0deg*var(--p1))) rotate(calc(0deg*var(--p1))) translate(calc(var(--go)*var(--p1)*-1 + var(--hero-l)*var(--p1)*-1 + -0vw*var(--p1)), calc(-100vh*var(--p1)*0.2 + -20vw*var(--p1)*0.2));
   /* transform: rotateX(calc(0deg*var(--p1)*-1)) rotateY(calc(0deg*var(--p1)*-1)) rotate(calc(0deg*var(--p1)*-1)) translate(calc(var(--go)*var(--p1) + var(--hero-r)*var(--p1)*1),calc(-100vh*var(--p1)*0.2)) */
 }
 
@@ -410,7 +410,7 @@ html.is-inner-scroll body {
 
 .c-hero-img.r {
   transform-origin: center right;
-  transform: rotateX(calc(0deg*var(--p1)*-1)) rotateY(calc(0deg*var(--p1)*-1)) rotate(calc(0deg*var(--p1)*-1)) translate(calc(var(--go)*var(--p1) + var(--hero-r)*var(--p1)*1), calc(-100vh*var(--p1)*0.2))
+  transform: rotateX(calc(0deg*var(--p1)*-1)) rotateY(calc(0deg*var(--p1)*-1)) rotate(calc(0deg*var(--p1)*-1)) translate(calc(var(--go)*var(--p1) + var(--hero-r)*var(--p1)*1), calc(-100vh*var(--p1)*0.278))
 }
 
 .c-hero-img.r .c-bg-img {
@@ -645,7 +645,7 @@ c-bg-img,
 .BannerGifWrapper {
   /* width: 100%; */
   display: flex;
-  transform: translateX(22px);
+  /* transform: translateX(22px); */
   justify-content: center;
   margin-top: 100px;
 }

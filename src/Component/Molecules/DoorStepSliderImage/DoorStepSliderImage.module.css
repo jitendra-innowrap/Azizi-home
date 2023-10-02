@@ -11,6 +11,7 @@
     cursor: none;
     display: block;
     overflow: hidden;
+    margin-right: 30px;
 }
 
 .title {

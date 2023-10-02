@@ -270,7 +270,7 @@ html.is-inner-scroll body {
   --hero-h: calc(var(--hero-w)*1.33232);
   --hero-g: calc(var(--gw)*1);
   --hero-r: calc(100vw - var(--hero-l) - var(--hero-w));
-  --hero-l: calc(var(--gw)*2 + var(--hero-g) + var(--hero-g) + var(--gw)*8 + var(--gw)*2 + var(--hero-g)*2);
+  --hero-l: calc(var(--gw)*2.5 + var(--hero-g) + var(--hero-g) + var(--gw)*8 + var(--gw)*2 + var(--hero-g)*2);
   --hero-t: calc(var(--gw)*2);
   --hero-b: calc(var(--gw)*2);
   --hero-x: calc(var(--hero-l) - 50vw + var(--hero-w)*0.5);

@@ -6,7 +6,7 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import CTAPopUp from '@/Component/Molecules/CTAPopUp/CTAPopUp';
 
-export default function IntroSection({ btn1, btn2, para, images, showHide , padding}) { 
+export default function IntroSection({ btn1, btn2, btn3, para, images, showHide , padding}) { 
 
     const handlePrevClick = () => {
         carousel.slidePrev();
@@ -22,18 +22,19 @@ export default function IntroSection({ btn1, btn2, para, images, showHide , padd
             <div className={Styles.container}>
                 <p className={Styles.desc}>{para}</p>
                 <div className={Styles.buttons} style={{ paddingBottom: padding }}>
-                    <CTAPopUp cta={btn1} fileName={'Handover-Procedure.pdf'} filePath={'/Brochure/Handover-Procedure.pdf'} />
-                    <CTAPopUp cta={btn2} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} />
+                    {btn1 && <CTAPopUp cta={btn1} fileName={'Handover-Procedure.pdf'} filePath={'/Brochure/Handover-Procedure.pdf'} /> }
+                    {btn3 && <CTAPopUp cta={btn3} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} /> }
+                    {btn2 && <CTAPopUp cta={btn2} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} /> }
 
                 </div>
                 <div className={Styles.infoContainer}  style={{ display: showHide }}>
                     <div className={Styles.infoBox}>
                         <span className={Styles.infoTitle}>Apartment Type</span>
-                        {/* <span className={Styles.infoDesc}>Community</span> */}
+                        <span className={Styles.infoDesc}>Studios, 1, 2 & 3 Bedrooms</span>
                     </div>
                     <div className={Styles.infoBox}>
                         <span className={Styles.infoTitle}>Starting size</span>
-                        {/* <span className={Styles.infoDesc}>Type</span> */}
+                        <span className={Styles.infoDesc}>356.07 SQ.FT</span>
                     </div>
                 </div>
             </div>
@@ -66,8 +67,6 @@ export default function IntroSection({ btn1, btn2, para, images, showHide , padd
                     <AliceCarousel
                         disableButtonsControls={true} // Disable default buttons
                         disableDotsControls={true} // Disable default dots
-                        //  paddingLeft={padding.left}
-                        //  paddingRight={padding.right}
                         ref={(el) => (carousel = el)}
                         mouseTracking={true}
                         responsive={{

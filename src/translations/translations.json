@@ -26,6 +26,7 @@
         "LifestylePara" : "Experience a captivating lifestyle where your every desire is effortlessly fulfilled. Our apartment complexes are meticulously designed to encompass everything you need, including a state-of-the-art gym, steam room, sauna, your own cinema, and a clubhouse.",
         "IntroSectionDownloadFloorPlan" : "DOWNLOAD FLOOR PLAN",
         "IntroSectionDownloadBrochure" : "DOWNLOAD BROCHURE",
+        "IntroSectionDownloadUnitPlans" : "DOWNLOAD UNIT PLANS",
         "LifestyleBoxTitle1" : "State-of-the-art gym",
         "LifestyleBoxTitle2" : "Multipurpose HalL",
         "LifestyleBoxTitle3" : "Cinema Room",
@@ -43,9 +44,9 @@
         "destinationTitle": "THE DESTINATION",
         "destinationPara": "Nestled in the breathtaking Arabian sands of Dubai South, Azizi Venice is poised to be an integral part of a smart and forward-thinking metropolis, spanning over 136 hectares. This prestigious enclave offers close proximity to the city's finest attractions, with direct access to the upcoming metro station and Etihad Rail Network, ensuring convenience and connectivity for residents.",
         "operaHouseTitle": "OPERA HOUSE",
-        "operaHousePara": "Envelop yourself in a harmonious symphony of sounds within the awe- inspiring Opera House, nestled in the very heart of Azizi Venice. This floating stage, gracefully adrift on the Crystal Lagoon, offers a front-row seat to nature&#39;s dance, with fountains swaying in rhythmic choreography. It&#39;s a masterpiece of architectural composition, a bustling cultural overture, a pure work of art —a place where you can revel in the world&#39;s most electrifying performances, where every note, every movement, becomes a part of your own melodic journey.",
+        "operaHousePara": "Envelop yourself in a harmonious symphony of sounds within the awe- inspiring Opera House, nestled in the very heart of Azizi Venice. This floating stage, gracefully adrift on the Crystal Lagoon, offers a front-row seat to nature's dance, with fountains swaying in rhythmic choreography. It's a masterpiece of architectural composition, a bustling cultural overture, a pure work of art —a place where you can revel in the world's most electrifying performances, where every note, every movement, becomes a part of your own melodic journey.",
         "operaHouseInfo1": "Art & Culture",
-        "operaHouseInfo2": "2000-seat centre",
+        "operaHouseInfo2": "1500-seat centre",
         "operaHouseInfo3": "World-class performances",
         "operaHouseInfo4": "Floating Stage"
       }

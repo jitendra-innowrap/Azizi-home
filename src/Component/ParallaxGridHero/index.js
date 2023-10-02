@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from 'next/image';
@@ -31,7 +31,7 @@ const ParallexGridHero = (headerbar) => {
     };
 
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         // document.querySelectorAll("html")[0].classList.add('is-inner-scroll');
         const triggers = [];
@@ -69,12 +69,8 @@ const ParallexGridHero = (headerbar) => {
                             target.style.setProperty("--p2", 1 - progress);
                             if (progress > 0.89) {
                                 attemptPlay();
-                                // headerbar.classList.add("nav-dark");
-                                // headerbar.classList.remove("nav-hide");
                             } else {
                                 videoEl.current.pause();
-                                // headerbar.classList.remove("nav-dark");
-                                // headerbar.classList.add("nav-hide");
                             }
                             if (progress > 0.2) {
                                 headerbar.classList.add("nav-hide");
@@ -134,20 +130,6 @@ const ParallexGridHero = (headerbar) => {
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
-                                    {/* <div className="elem"
-
-                                >
-                                    <video
-                                        autoPlay
-                                        loop
-                                        muted={true}
-                                        playsInline
-                                        src="https://azizi-assets.fra1.cdn.digitaloceanspaces.com/Venice_15.webm"
-                                        type="video/mp4"
-                                    >
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div> */}
                                 </div>
                                 <div className="explore-cta" style={{ zIndex: '1', position: 'relative' }}>
                                     <VideoPopUp />

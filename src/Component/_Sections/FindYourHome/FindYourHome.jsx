@@ -6,8 +6,11 @@ import FolowMouseCTA from '@/Component/Molecules/FindHomeImageCard/FindHomeImage
 import FindHomeImageCard from '@/Component/Molecules/FindHomeImageCard/FindHomeImageCard'
 import FindHomeImageCard2 from '@/Component/Molecules/FindHomeImageCard/FindHomeImageCard2'
 import { Player } from '@lottiefiles/react-lottie-player';
+import translations from '@/translations/translations.json';
+import useLanguage from '@/hooks/useLanguage';
 
 export default function FindYourHome() {
+    const { language, changeLanguage } = useLanguage();
     return (
         <section className={`${homeStyle.findHomeSection}`} >
             <Player
@@ -18,12 +21,12 @@ export default function FindYourHome() {
                 className={`${homeStyle.findHomeSectionBgAnimation}`}
             />
             <div className={`${homeStyle.findHomeTitleSection}`}>
-                <h1 className={`${homeStyle.mainTitle} ${homeStyle.findHomeTitle}`}>FIND YOUR HOME</h1>
-                <p className={`${homeStyle.mainParagraph} ${homeStyle.findHomeParagraph}`}>As the tranquil crystal lagoon laps gently at your feet and the soothing echoes of waterfalls fill the air, you&#39;ll unmistakably realize you&#39;re finally home. Greet each day with awe-inspiring waterfront vistas from your luxurious villa or thoughtfully designed apartment. Below, a whole new realm of elevated living awaits your exploration.</p>
+                <h1 className={`${homeStyle.mainTitle} ${homeStyle.findHomeTitle}`}>{translations[language].home.findTitle}</h1>
+                <p className={`${homeStyle.mainParagraph} ${homeStyle.findHomeParagraph}`}>{translations[language].home.findPara}</p>
             </div>
             <div className={`${homeStyle.findHomeImageSection}`}>
-                <FindHomeImageCard image={`/Assets/Home/images/FindYourHome/ResidencesCard.webp`} title={`RESIDENCES`} url={'/residences'} />
-                <FindHomeImageCard image={`/Assets/Home/images/FindYourHome/VillasCard.webp`} title={`VILLAS`} url={'/villas'} />
+                <FindHomeImageCard image={`/Assets/Home/images/FindYourHome/ResidencesCard.webp`} title={translations[language].home.findResidence} url={'/residences'} />
+                <FindHomeImageCard image={`/Assets/Home/images/FindYourHome/VillasCard.webp`} title={translations[language].home.findVillas} url={'/villas'} />
             </div>
         </section>
     )

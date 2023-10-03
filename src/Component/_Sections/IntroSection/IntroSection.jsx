@@ -5,9 +5,12 @@ import Image from 'next/image';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import CTAPopUp from '@/Component/Molecules/CTAPopUp/CTAPopUp';
+import useLanguage from '@/hooks/useLanguage';
+import translations from '@/translations/translations.json';
 
 export default function IntroSection({ btn1, btn2, btn3, para, images, showHide , padding}) { 
 
+    const { language, changeLanguage } = useLanguage();
     const handlePrevClick = () => {
         carousel.slidePrev();
     };
@@ -29,12 +32,12 @@ export default function IntroSection({ btn1, btn2, btn3, para, images, showHide 
                 </div>
                 <div className={Styles.infoContainer}  style={{ display: showHide }}>
                     <div className={Styles.infoBox}>
-                        <span className={Styles.infoTitle}>Apartment Type</span>
-                        <span className={Styles.infoDesc}>Studios, 1, 2 & 3 Bedrooms</span>
+                        <span className={Styles.infoTitle}>{translations[language].residence.introSectionT1}</span>
+                        <span className={Styles.infoDesc}>{translations[language].residence.introSectionV1}</span>
                     </div>
                     <div className={Styles.infoBox}>
-                        <span className={Styles.infoTitle}>Starting size</span>
-                        <span className={Styles.infoDesc}>356.07 SQ.FT</span>
+                        <span className={Styles.infoTitle}>{translations[language].residence.introSectionT2}</span>
+                        <span className={Styles.infoDesc}>{translations[language].residence.introSectionV2}</span>
                     </div>
                 </div>
             </div>

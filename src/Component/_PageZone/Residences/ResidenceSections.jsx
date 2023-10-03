@@ -11,7 +11,7 @@ import translations from '@/translations/translations.json';
 
 export default function ResidenceSections() {
     const { language, changeLanguage } = useLanguage();
-    const BannerTitle = 'Venice RESIDENCES';
+    const BannerTitle = translations[language].residence.BannerTitle;
     const BannerImage = '/Assets/Residence/images/Banner.webp';
     const IntroSectionPara = translations[language].residence.IntroSectionPara;
     const IntroSectionCarouselImages = [
@@ -36,7 +36,7 @@ export default function ResidenceSections() {
         translations[language].residence.LifestyleBoxTitle6,
     ]
     const LifestyleImage = '/Assets/Residence/images/life-style.webp';
-    const LifestyleImageTitle = 'POOLSIDE PERFECTION';
+    const LifestyleImageTitle = translations[language].residence.LifestyleImageTitle;
     const LocationBenefitsTitle =  translations[language].residence.LocationBenefitsTitle;
     const LocationBenefitsPara = translations[language].residence.LocationBenefitsPara;
     return (

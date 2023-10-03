@@ -3,6 +3,8 @@ import { useEffect, useRef } from 'react';
 import Styles from './Banner.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import useLanguage from '@/hooks/useLanguage';
+import translations from '@/translations/translations.json';
 
 export default function Banner({ title, image }) {
 
@@ -13,6 +15,7 @@ export default function Banner({ title, image }) {
             myDivRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
+    const { language, changeLanguage } = useLanguage();
 
     return (
         <>
@@ -42,15 +45,15 @@ export default function Banner({ title, image }) {
                 </button> */}
                 <div className={Styles.breadCrumbs}>
                     <div className={Styles.breadCrumbsBox}>
-                        <Link className={Styles.Link} href="/home">Home</Link>
+                        <Link className={Styles.Link} href="/home">{translations[language].residence.home}</Link>
                         <Image
-                            src="/Assets/Residence/images/chevron-right.png"
+                            src="/Assets/Residence/images/chevron-right.png" 
                             alt="Image"
                             width={100}
                             height={100}
                             className={Styles.chevronRight}
                         />
-                        <Link className={Styles.Link} href="/home">Azizi Venice, Dubai South</Link>
+                        <Link className={Styles.Link} href="/home">{translations[language].residence.AziziSouth}</Link>
                         <Image
                             src="/Assets/Residence/images/chevron-right.png"
                             alt="Image"

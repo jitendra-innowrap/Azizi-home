@@ -35,7 +35,7 @@ export default function VillasSections() {
         translations[language].villas.LifestyleBoxTitle6,
     ]
     const LifestyleImage = '/Assets/Villa/images/life-style.webp';
-    const LifestyleImageTitle = 'ELEVATED ENTERTAINMENT';
+    const LifestyleImageTitle = translations[language].villas.LifestyleImageTitle;
     const LocationBenefitsTitle =  translations[language].villas.LocationBenefitsTitle;
     const LocationBenefitsPara = translations[language].villas.LocationBenefitsPara;
     return (

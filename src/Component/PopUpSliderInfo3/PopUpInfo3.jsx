@@ -2,8 +2,11 @@
 import Image from 'next/image';
 import React from 'react';
 import Styles from './PopUpInfo.module.css'
+import translations from '@/translations/translations.json';
+import useLanguage from '@/hooks/useLanguage';
 
 export default function PopUpInfo3({ handleClose }) {
+    const { language, changeLanguage } = useLanguage();
     return (
         <>
             <section className={`${Styles.infoSection}`}>
@@ -20,9 +23,9 @@ export default function PopUpInfo3({ handleClose }) {
                         />
                     </button>
                 </div>
-                <h2 className={`${Styles.title}`}>EVERYDAY amenities</h2>
+                <h2 className={`${Styles.title}`}>{translations[language].home.doorPopup3Title}</h2>
                 <div className={`${Styles.descriptionDiv}`}>
-                    <p className={`${Styles.description}`}>From the infinity pool that gazes upon the glistening Crystal Lagoon to serene beachfront access. Azizi Venice is a place where every wish is embraced. Enroll your children with ease at the International School and tend to your healthcare needs at the Community Hospital. Live in close proximity to the Friday Mosque and enjoy the high life at our Five Star Hotels - Dubai&#39;s upcoming legacy invites you to relish it all.</p>
+                    <p className={`${Styles.description}`}>{translations[language].home.doorPopup3Para}</p>
                 </div>
                 <div className={`${Styles.infoDiv}`}>
                     <div className={`${Styles.infoBox}`}>
@@ -34,7 +37,7 @@ export default function PopUpInfo3({ handleClose }) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>International School</p>
+                            <p className={`${Styles.infoText}`}>{translations[language].home.doorPopup3V1}</p>
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
@@ -46,7 +49,7 @@ export default function PopUpInfo3({ handleClose }) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>Cable car </p>
+                            <p className={`${Styles.infoText}`}>{translations[language].home.doorPopup3V2}</p>
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
@@ -58,7 +61,7 @@ export default function PopUpInfo3({ handleClose }) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>Five-Star Family Hotel</p>
+                            <p className={`${Styles.infoText}`}>{translations[language].home.doorPopup3V3}</p>
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
@@ -70,7 +73,7 @@ export default function PopUpInfo3({ handleClose }) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>Private Hospital</p>
+                            <p className={`${Styles.infoText}`}>{translations[language].home.doorPopup3V4}</p>
                         </div>
                     </div>
                 </div>

@@ -2,8 +2,11 @@
 import Image from 'next/image';
 import React from 'react';
 import Styles from './PopUpInfo.module.css'
+import translations from '@/translations/translations.json';
+import useLanguage from '@/hooks/useLanguage';
 
 export default function PopUpInfo({handleClose}) {
+    const { language, changeLanguage } = useLanguage();
     return (
         <>
            <section className={`${Styles.infoSection}`}>
@@ -20,9 +23,9 @@ export default function PopUpInfo({handleClose}) {
                         />
                     </button>
                 </div>
-                <h2 className={`${Styles.title}`}>Boulevard</h2>
+                <h2 className={`${Styles.title}`}>{translations[language].home.doorPopup1Title}</h2>
                 <div className={`${Styles.descriptionDiv}`}>
-                    <p className={`${Styles.description}`}>Step into a vibrant new world along the kilometre-long Azizi Venice Boulevard. Overlooking the waterfront, this pedestrian-connected, climate-controlled environment is the perfect place to shop the retail boutiques, feast on the finest cuisine, and indulge in exceptional culture and entertainment. An all-year destination of leisure, entertainment and shopping – where you can live, work and play, your way.</p>
+                    <p className={`${Styles.description}`}>{translations[language].home.doorPopup1Para}</p>
                 </div>
                 <div className={`${Styles.infoDiv}`}>
                     <div className={`${Styles.infoBox}`}>
@@ -34,7 +37,7 @@ export default function PopUpInfo({handleClose}) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>Retail</p>
+                            <p className={`${Styles.infoText}`}>{translations[language].home.doorPopup1V1}</p>
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
@@ -46,7 +49,7 @@ export default function PopUpInfo({handleClose}) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>Restaurants & Cafes</p>
+                            <p className={`${Styles.infoText}`}>{translations[language].home.doorPopup1V2}</p>
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
@@ -58,7 +61,7 @@ export default function PopUpInfo({handleClose}) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>Leisure & Entertainment</p>
+                            <p className={`${Styles.infoText}`}>{translations[language].home.doorPopup1V3}</p>
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
@@ -70,7 +73,7 @@ export default function PopUpInfo({handleClose}) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>Luxury Boutiques</p>
+                            <p className={`${Styles.infoText}`}>{translations[language].home.doorPopup1V4}</p>
                         </div>
                     </div>
                 </div>

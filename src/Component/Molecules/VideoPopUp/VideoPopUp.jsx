@@ -3,6 +3,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import Styles from './VideoPopUp.module.css'
 import { Box, Modal } from '@mui/material'
 import Image from 'next/image';
+import translations from '@/translations/translations.json';
+import useLanguage from '@/hooks/useLanguage';
 const style = {
     position: 'absolute',
     z: 10,
@@ -12,6 +14,7 @@ const style = {
     transform: 'translate(-50%, -50%)',
 };
 export default function VideoPopUp() {
+    const { language, changeLanguage } = useLanguage();
     const [open, setOpen] = useState(false);
     const handleOpen = () => {
         setOpen(true)
@@ -29,7 +32,7 @@ export default function VideoPopUp() {
                     height={100}
                     className={Styles.playSvg}
                 />
-                EXPLORE MORE
+                {translations[language].home.exploreMore}
             </button>
 
             <Modal

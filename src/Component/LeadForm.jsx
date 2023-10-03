@@ -7,6 +7,8 @@ import React, { useEffect, useState } from 'react';
 import PhoneInput, { isValidPhoneNumber , formatPhoneNumber } from 'react-phone-number-input'
 import countryData from 'country-data';
 import useDownloader from "react-use-downloader";
+import useLanguage from '@/hooks/useLanguage';
+import translations from '@/translations/translations.json';
 
 import 'react-phone-number-input/style.css'
 // import PhoneInput from 'react-phone-input-2';
@@ -209,6 +211,7 @@ export default function LeadForm({ isArabic, isTitle, cta, fileName, filePath })
             .catch((error) => console.log('error', error));
         }
     };
+    const { language, changeLanguage } = useLanguage();
 
     return (<>
         {isTitle && <span className={`${styles.subTitle} ${subTitleClass}`}>{isArabic ? 'سجّل اهتمامك' : 'REGISTER YOUR INTEREST'}</span>}
@@ -221,9 +224,11 @@ export default function LeadForm({ isArabic, isTitle, cta, fileName, filePath })
                     value={formData.name}
                     onChange={handleChange}
                     autoComplete="off"
-                    placeholder={isArabic ? 'الاسم الكامل' : 'Full Name *'}
+                    // placeholder={isArabic ? 'الاسم الكامل' : 'Full Name *'}
+                    placeholder={translations[language].form.fullName}
                 />
-                 {nameError && <p className={`${styles.error} ${errorClass}`}>{isArabic ? 'الإسم الكامل ضروري' : 'Full Name is required.'}</p>}
+                 {/* {nameError && <p className={`${styles.error} ${errorClass}`}>{isArabic ? 'الإسم الكامل ضروري' : 'Full Name is required.'}</p>} */}
+                 {nameError && <p className={`${styles.error} ${errorClass}`}>{translations[language].form.fullNameRequired}</p>}
             </div>
             <div className={`${styles.inputContainer} ${inputContainerClass}`}>
                 <input className={styles.inputAnimated}
@@ -233,9 +238,11 @@ export default function LeadForm({ isArabic, isTitle, cta, fileName, filePath })
                     value={formData.email}
                     onChange={handleChange}
                     autoComplete="off"
-                    placeholder={isArabic ? 'البريد الإلكتروني' : 'Email *'} 
+                    // placeholder={isArabic ? 'البريد الإلكتروني' : 'Email *'} 
+                    placeholder={translations[language].form.email} 
                 />
-                {emailError && <p className={`${styles.error} ${errorClass}`}>{isArabic ? 'عنوان البريد الإلكتروني غير صحيح': 'Invalid email address.'}</p>}
+                {/* {emailError && <p className={`${styles.error} ${errorClass}`}>{isArabic ? 'عنوان البريد الإلكتروني غير صحيح': 'Invalid email address.'}</p>} */}
+                {emailError && <p className={`${styles.error} ${errorClass}`}>{translations[language].form.emailRequired}</p>}
             </div>
             <div className={`${styles.inputContainer} ${inputContainerClass}`}>
                 <div className={styles.phoneContainer}>
@@ -248,24 +255,28 @@ export default function LeadForm({ isArabic, isTitle, cta, fileName, filePath })
                             className: `${styles.inputAnimated} ${styles.inputPhone}`,
                         }}
                         defaultCountry="AE"
-                        placeholder={isArabic ? 'رقم الهاتف' : 'Phone Number *'}
+                        // placeholder={isArabic ? 'رقم الهاتف' : 'Phone Number *'}
+                        placeholder={translations[language].form.phoneNo} 
                         value={formData.phone}
                         onChange={handlePhoneChange}
                         displayInitialValueAsLocalNumber={!showCountryCode} // Hide the country code if showCountryCode is false
                         onCountryChange={handleFlagChange} 
                         />
                 </div>
-                {phoneError && <p className={`${styles.error} ${errorClass}`}>{isArabic ? 'رقم الهاتف غير صحيح' : 'Invalid phone number.'}</p>}
+                {/* {phoneError && <p className={`${styles.error} ${errorClass}`}>{isArabic ? 'رقم الهاتف غير صحيح' : 'Invalid phone number.'}</p>} */}
+                {phoneError && <p className={`${styles.error} ${errorClass}`}>{translations[language].form.phoneNoRequired} </p>}
             </div>
             <div className={styles.submitWrapper}>
                         {fileName ? 
                         <button className={`${styles.submitBtn} ${submitBtnClass}`}
                             onClick={handleDownload}>
-                            {isArabic ? 'إرسال' : 'Download'}
+                            {/* {isArabic ? 'إرسال' : 'Download'} */}
+                            {translations[language].form.download}
                         </button> :
                         <button className={`${styles.submitBtn} ${submitBtnClass}`}
                             onClick={handleSubmit}>
-                            {isArabic ? 'إرسال' : 'SUBMIT'}
+                            {/* {isArabic ? 'إرسال' : 'SUBMIT'} */}
+                            {translations[language].form.submit}
                         </button>
                         }
             </div>

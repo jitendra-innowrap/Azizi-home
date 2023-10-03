@@ -4,6 +4,8 @@ import OasisDreamCarousel from '@/Component/OasisDreamCarousel'
 import Styles from '@/Component/_Sections/OasisOfDreams/OasisOfDreams.module.css'
 import Image from 'next/image'
 import React, { useState, useEffect } from "react";
+import translations from '@/translations/translations.json';
+import useLanguage from '@/hooks/useLanguage';
 import {
     FacebookShareButton,
     TwitterShareButton,
@@ -15,6 +17,7 @@ import LeftAnimation from '@/Component/LeftAnimation/LeftAnimation'
 import RightAnimation2 from '@/Component/RightAnimation2/RightAnimation2'
 
 export default function OasisOfDreams() {
+    const { language, changeLanguage } = useLanguage();
     const [isVisible, setIsVisible] = useState(false);
     const [copied, setCopied] = useState(false);
 
@@ -48,8 +51,8 @@ export default function OasisOfDreams() {
         <>
             <section className={`${homeStyle.oasisDreamTitleSection}`} id='second-section'>
                 <RightAnimation2 />
-                <h1 className={`${homeStyle.mainTitle} ${homeStyle.oasisDreamTitle}`}>AN OASIS OF DREAMS</h1>
-                <p className={`${homeStyle.mainParagraph} ${homeStyle.oasisDreamParagraph}`}>Dive into a world of unparalleled water-inspired living, unlike anything you&#39;ve ever experienced, at Dubai&#39;s forthcoming legacy - a truly unparalleled luxury Crystal Lagoon community. Brace yourself to embark on a journey where opulence knows no boundaries, as you step into a haven of lavishness that stretches the limits of imagination. This is not just another destination it&#39;s an uncharted masterpiece, waiting to be discovered.</p>
+                <h1 className={`${homeStyle.mainTitle} ${homeStyle.oasisDreamTitle}`}>{translations[language].home.oasisTitle}</h1>
+                <p className={`${homeStyle.mainParagraph} ${homeStyle.oasisDreamParagraph}`}>{translations[language].home.oasisPara}</p>
             </section>
             <section className={`${homeStyle.oasisDreamContainSection}`}>
                 <LeftAnimation />
@@ -69,8 +72,8 @@ export default function OasisOfDreams() {
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
-                                        <span>261</span>
-                                        <p>Villas</p>
+                                        <span>{translations[language].home.oasisCategoryNo1}</span>
+                                        <p>{translations[language].home.oasisCategoryValue1}</p>
                                     </div>
                                 </div>
                                 <div className={homeStyle.categorybox}>
@@ -82,8 +85,8 @@ export default function OasisOfDreams() {
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
-                                        <span>15,057</span>
-                                        <p>Apartments</p>
+                                        <span>{translations[language].home.oasisCategoryNo2}</span>
+                                        <p>{translations[language].home.oasisCategoryValue2}</p>
                                     </div>
                                 </div>
                             </div>
@@ -97,8 +100,8 @@ export default function OasisOfDreams() {
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
-                                        <span>1.5M</span>
-                                        <p>Square Metre of Retail Boulevard</p>
+                                        <span>{translations[language].home.oasisCategoryNo2}</span>
+                                        <p>{translations[language].home.oasisCategoryValue3}</p>
                                     </div>
                                 </div>
                                 <div className={homeStyle.categorybox}>
@@ -110,8 +113,8 @@ export default function OasisOfDreams() {
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
-                                        <span>136M</span>
-                                        <p>Square Metre of Plot Area</p>
+                                        <span>{translations[language].home.oasisCategoryNo4}</span>
+                                        <p>{translations[language].home.oasisCategoryValue4}</p>
                                     </div>
                                 </div>
                             </div>
@@ -125,8 +128,8 @@ export default function OasisOfDreams() {
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
-                                        <span>1</span>
-                                        <p>World-class Opera</p>
+                                        <span>{translations[language].home.oasisCategoryNo5}</span>
+                                        <p>{translations[language].home.oasisCategoryValue5}</p>
                                     </div>
                                 </div>
                                 <div className={homeStyle.categorybox}>
@@ -138,8 +141,8 @@ export default function OasisOfDreams() {
                                         className={homeStyle.oasisDreamContainImages}
                                     />
                                     <div className={homeStyle.categoryContain}>
-                                        <span>18KM</span>
-                                        <p>Lagoon with beach and boardwalk</p>
+                                        <span>{translations[language].home.oasisCategoryNo6}</span>
+                                        <p>{translations[language].home.oasisCategoryValue6}</p>
                                     </div>
                                 </div>
                             </div>
@@ -152,9 +155,9 @@ export default function OasisOfDreams() {
                                         height={100}
                                         className={homeStyle.categoryButtonIcon}
                                     />
-                                    SHARE
+                                    {translations[language].home.SHARE}
                                 </button>
-                                <CTAPopUp cta={'DOWNLOAD BROCHURE'} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} />
+                                <CTAPopUp cta={translations[language].home.downloadBrochure} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} />
                             </div>
                             {isVisible && 
                                 <div className={`${Styles.shareListContanier}`}>

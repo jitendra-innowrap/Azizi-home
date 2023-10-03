@@ -200,9 +200,14 @@
         text-decoration: none;
         margin-bottom: 20px;
     }
-    /* .navLinksLanuageMobile{
-        text-decoration: underline !important;
-    } */
+    .navLinksLanuageMobile{
+        /* text-decoration: underline !important; */
+        max-width: 100px;
+        text-align: left;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
     .navLinksButtonMobile{
         color: #2C2A29;
         font-family: helvetica neue;

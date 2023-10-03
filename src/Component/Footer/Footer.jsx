@@ -1,9 +1,13 @@
+'use client'
 import React from 'react'
 import styles from './Footer.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import useLanguage from '@/hooks/useLanguage';
+import translations from '@/translations/translations.json';
 
 export default function Footer() {
+    const { language, changeLanguage } = useLanguage();
     return (
         <footer className={`${styles.footerSection}`}>
             <div className={`${styles.footerHead}`}>
@@ -56,30 +60,30 @@ export default function Footer() {
             <div className={`${styles.footerMain}`}>
                 <div className={`${styles.linkSection}`}>
                     <div className={`${styles.linkColumn} ${styles.linkColumn1}`}>
-                        <span  className={`${styles.linkColumnHeading}`}>About us</span>
+                        <span  className={`${styles.linkColumnHeading}`}>{translations[language].footer.aboutUs}</span>
                         <div className={`${styles.links}`}>
-                            <Link href="https://azizidevelopments.com/en/about" className={styles.link}>About us</Link>
-                            <Link href="https://azizidevelopments.com/en/management" className={styles.link}>Corporate Executives</Link>
-                            <Link href="https://azizidevelopments.com/en/career" className={styles.link}>Careers</Link>
-                            <Link href="https://azizidevelopments.com/en/contact" className={styles.link}>Contact us</Link>
+                            <Link href="https://azizidevelopments.com/en/about" className={styles.link}>{translations[language].footer.aboutUs}</Link>
+                            <Link href="https://azizidevelopments.com/en/management" className={styles.link}>{translations[language].footer.corporateExecutives}</Link>
+                            <Link href="https://azizidevelopments.com/en/career" className={styles.link}>{translations[language].footer.career}</Link>
+                            <Link href="https://azizidevelopments.com/en/contact" className={styles.link}>{translations[language].footer.contact}</Link>
                         </div>
                     </div>
                     <div className={`${styles.linkColumn} ${styles.linkColumn2}`}>
-                        <span  className={`${styles.linkColumnHeading}`}>Our portfolio</span>
+                        <span  className={`${styles.linkColumnHeading}`}>{translations[language].footer.ourPorfolio}</span>
                         <div className={`${styles.links}`}>
-                            <Link href="https://azizidevelopments.com/en/destinations" className={styles.link}>Communities</Link>
-                            <Link href="https://azizidevelopments.com/en/dubai" className={styles.link}>Projects</Link>
-                            <Link href="https://azizidevelopments.com/en/retail/dubai" className={styles.link}>Retail</Link>
-                            <Link href="https://azizidevelopments.com/en/dubai/construction-updates" className={styles.link}>Construction updates</Link>
-                            <Link href="https://azizidevelopments.com/en/walkthrough" className={styles.link}>Virtual tour</Link>
+                            <Link href="https://azizidevelopments.com/en/destinations" className={styles.link}>{translations[language].footer.communities}</Link>
+                            <Link href="https://azizidevelopments.com/en/dubai" className={styles.link}>{translations[language].footer.project}</Link>
+                            <Link href="https://azizidevelopments.com/en/retail/dubai" className={styles.link}>{translations[language].footer.retail}</Link>
+                            <Link href="https://azizidevelopments.com/en/dubai/construction-updates" className={styles.link}>{translations[language].footer.constructionUpdate}</Link>
+                            <Link href="https://azizidevelopments.com/en/walkthrough" className={styles.link}>{translations[language].footer.virtualTour}</Link>
                         </div>
                     </div>
                     <div className={`${styles.linkColumn}`}>
-                        <span  className={`${styles.linkColumnHeading}`}>Digital services</span>
+                        <span  className={`${styles.linkColumnHeading}`}>{translations[language].footer.digitalServices}</span>
                         <div className={`${styles.links}`}>
-                            <Link href="https://azizidevelopments.com/en/exclusive-offers" className={styles.link}>Offers</Link>
-                            <a href="/Brochure/Handover-Procedure.pdf" download="Handover-procedure.pdf" className={styles.link}>Handover procedure</a>
-                            <Link href="https://azizidevelopments.com/en/online-payments" className={styles.link}>Pay online</Link>
+                            <Link href="https://azizidevelopments.com/en/exclusive-offers" className={styles.link}>{translations[language].footer.offer}</Link>
+                            <a href="/Brochure/Handover-Procedure.pdf" download="Handover-procedure.pdf" className={styles.link}>{translations[language].footer.handoverProcedure}</a>
+                            <Link href="https://azizidevelopments.com/en/online-payments" className={styles.link}>{translations[language].footer.payonline}</Link>
                         </div>
                     </div>
                 </div>
@@ -115,8 +119,8 @@ export default function Footer() {
                 </div>
             </div>
             <div className={`${styles.footerFooter}`}>
-                <span className={`${styles.privacySpan}`}><Link href="https://azizidevelopments.com/en/sitemap" className={styles.PrivacyLink}>Sitemap</Link> . <Link href="https://azizidevelopments.com/en/privacy" className={styles.PrivacyLink}>Privacy Policy</Link></span>
-                <span className={`${styles.copySpan}`}>© 2023 AZIZI Developments</span>
+                <span className={`${styles.privacySpan}`}><Link href="https://azizidevelopments.com/en/sitemap" className={styles.PrivacyLink}>{translations[language].footer.sitemap}</Link> . <Link href="https://azizidevelopments.com/en/privacy" className={styles.PrivacyLink}>{translations[language].footer.privacyPolicy}</Link></span>
+                <span className={`${styles.copySpan}`}>{translations[language].footer.copyWrite}</span>
             </div>
         </footer>
     )

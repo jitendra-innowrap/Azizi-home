@@ -5,9 +5,10 @@ import { useAnimation, motion, useTransform, useMotionValue, useAnimationFrame, 
 import { wrap } from '@motionone/utils';
 import DoorStepSliderImage from '@/Component/Molecules/DoorStepSliderImage/DoorStepSliderImage'
 import DoorStepSliderText from '@/Component/Molecules/DoorStepSliderText/DoorStepSliderText'
+import translations from '@/translations/translations.json';
+import useLanguage from '@/hooks/useLanguage';
 
 function ParallaxText({ children, baseVelocity }) {
-
     const baseX = useMotionValue(0);
     const { scrollY } = useScroll();
     const scrollVelocity = useVelocity(scrollY);
@@ -77,6 +78,7 @@ const Surrounding = ({ handleOpen, setPopUpValue }) => {
       setBaseVelocity3(-1)
     }
   }
+  const { language, changeLanguage } = useLanguage();
   return (
     <div className={surroundingStyle.multiSliderDiv}
     >
@@ -86,11 +88,11 @@ const Surrounding = ({ handleOpen, setPopUpValue }) => {
           <div className={surroundingStyle.imageWrapped}
             onClick={() => { handleOpen(); setPopUpValue(1) }}
           >
-          <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Leisure & ENTERTAINMENT'} url={'/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png'} />
-          <DoorStepSliderText className={surroundingStyle.singleImage} title={'Boulevard'} color={'#B6B78A'} />
-          <DoorStepSliderImage className={surroundingStyle.singleImage} title={'RETAIL'} url={'/Assets/Home/images/DesireOndoorstep/Retail - Carousel.png'} />
-          <DoorStepSliderImage className={surroundingStyle.singleImage} title={'RESTAURANTS & CAFES'} url={'/Assets/Home/images/DesireOndoorstep/Restaurant - Carousel.png'} />
-          <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Luxury Boutiques'} url={'/Assets/Home/images/DesireOndoorstep/Luxury Boutiques - Carousel.png'} />          
+          <DoorStepSliderImage className={surroundingStyle.singleImage} title={translations[language].home.doorCRow11} url={'/Assets/Home/images/DesireOndoorstep/Leisure - Carousel.png'} />
+          <DoorStepSliderText className={surroundingStyle.singleImage} title={translations[language].home.doorCRow12} color={'#B6B78A'} />
+          <DoorStepSliderImage className={surroundingStyle.singleImage} title={translations[language].home.doorCRow13} url={'/Assets/Home/images/DesireOndoorstep/Retail - Carousel.png'} />
+          <DoorStepSliderImage className={surroundingStyle.singleImage} title={translations[language].home.doorCRow14} url={'/Assets/Home/images/DesireOndoorstep/Restaurant - Carousel.png'} />
+          <DoorStepSliderImage className={surroundingStyle.singleImage} title={translations[language].home.doorCRow15} url={'/Assets/Home/images/DesireOndoorstep/Luxury Boutiques - Carousel.png'} />          
             </div>
         </ParallaxText>
       </div>
@@ -100,11 +102,11 @@ const Surrounding = ({ handleOpen, setPopUpValue }) => {
           <div className={surroundingStyle.imageWrapped}
             onClick={() => { handleOpen(); setPopUpValue(2) }}
           >
-          <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Arts & culture'} url={'/Assets/Home/images/DesireOndoorstep/Arts Culture - Carousel.png'} />
-          <DoorStepSliderText className={surroundingStyle.singleImage} title={'OPERA HOUSE'} color={'#41929E'} />
-          <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Thriving cultural district'} url={'/Assets/Home/images/DesireOndoorstep/Cultural District - Carousel.png'} />
-          <DoorStepSliderImage className={surroundingStyle.singleImage} title={'First-class performances'} url={'/Assets/Home/images/DesireOndoorstep/Perfomance - Carousel.png'} />
-          <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Floating stage'} url={'/Assets/Home/images/DesireOndoorstep/Floating Stage - Carousel.png'} />
+          <DoorStepSliderImage className={surroundingStyle.singleImage} title={translations[language].home.doorCRow21} url={'/Assets/Home/images/DesireOndoorstep/Arts Culture - Carousel.png'} />
+          <DoorStepSliderText className={surroundingStyle.singleImage} title={translations[language].home.doorCRow22} color={'#41929E'} />
+          <DoorStepSliderImage className={surroundingStyle.singleImage} title={translations[language].home.doorCRow23} url={'/Assets/Home/images/DesireOndoorstep/Cultural District - Carousel.png'} />
+          <DoorStepSliderImage className={surroundingStyle.singleImage} title={translations[language].home.doorCRow24} url={'/Assets/Home/images/DesireOndoorstep/Perfomance - Carousel.png'} />
+          <DoorStepSliderImage className={surroundingStyle.singleImage} title={translations[language].home.doorCRow25} url={'/Assets/Home/images/DesireOndoorstep/Floating Stage - Carousel.png'} />
             </div>
         </ParallaxText>
       </div>
@@ -115,11 +117,11 @@ const Surrounding = ({ handleOpen, setPopUpValue }) => {
           <div className={surroundingStyle.imageWrapped}
             onClick={() => { handleOpen(); setPopUpValue(3) }}
           >
-            <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Private hospital'} url={'/Assets/Home/images/DesireOndoorstep/Hospital - Carousel.png'} />
-            <DoorStepSliderText className={surroundingStyle.singleImage} title={'Everyday Amenities'} color={'#175A7E'} />
-            <DoorStepSliderImage className={surroundingStyle.singleImage} title={'International schools'} url={'/Assets/Home/images/DesireOndoorstep/School - Carousel.png'} />
-            <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Cable car'} url={'/Assets/Home/images/DesireOndoorstep/Cable Car - Carousel.png'} />
-            <DoorStepSliderImage className={surroundingStyle.singleImage} title={'Five-star Family hotel'} url={'/Assets/Home/images/DesireOndoorstep/Hotel - Carousel.png'} />
+            <DoorStepSliderImage className={surroundingStyle.singleImage} title={translations[language].home.doorCRow31} url={'/Assets/Home/images/DesireOndoorstep/Hospital - Carousel.png'} />
+            <DoorStepSliderText className={surroundingStyle.singleImage} title={translations[language].home.doorCRow32} color={'#175A7E'} />
+            <DoorStepSliderImage className={surroundingStyle.singleImage} title={translations[language].home.doorCRow33} url={'/Assets/Home/images/DesireOndoorstep/School - Carousel.png'} />
+            <DoorStepSliderImage className={surroundingStyle.singleImage} title={translations[language].home.doorCRow34} url={'/Assets/Home/images/DesireOndoorstep/Cable Car - Carousel.png'} />
+            <DoorStepSliderImage className={surroundingStyle.singleImage} title={translations[language].home.doorCRow35} url={'/Assets/Home/images/DesireOndoorstep/Hotel - Carousel.png'} />
           </div>
         </ParallaxText>
       </div>

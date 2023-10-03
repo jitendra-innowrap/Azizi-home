@@ -6,6 +6,8 @@ import { Box, Button, Modal } from '@mui/material';
 import LeadForm from '@/Component/LeadForm';
 import { AiOutlineClose } from 'react-icons/ai';
 import Link from 'next/link';
+import useLanguage from '@/hooks/useLanguage';
+import translations from '@/translations/translations.json';
 
 export default function CTAPopUp({ cta, fileName, filePath, }) {
     const [open, setOpen] = useState(false);
@@ -20,6 +22,7 @@ export default function CTAPopUp({ cta, fileName, filePath, }) {
         transform: 'translate(-50%, -50%)',
         bgcolor: 'background.paper',
     };
+
     return (
         <>
             {filePath ? 
@@ -52,6 +55,7 @@ export default function CTAPopUp({ cta, fileName, filePath, }) {
 
 
 export function CTAPopUpContainer({ handleClose, fileName, filePath }) {
+    const { language, changeLanguage } = useLanguage();
     return (
         <section className={`${styles.section}`} id="home_form">
             <div className={`${styles.container}`}>
@@ -64,8 +68,8 @@ export function CTAPopUpContainer({ handleClose, fileName, filePath }) {
                     className={`${styles.bgImg}`}
                 />
                 <div className={`${styles.titleContainer}`}>
-                    <h2 className={`${styles.title}`}>Enquire now</h2>
-                    <p className={`${styles.paragraph}`}>Register your interest, schedule a private showing or request a callback by filling out the form.</p>
+                    <h2 className={`${styles.title}`}>{translations[language].home.enquireNow}</h2>
+                    <p className={`${styles.paragraph}`}>{translations[language].home.enquireNowInfo}</p>
                 </div>
                 <div className={`${styles.formContainer}`}>
                     <LeadForm cta={fileName ? 'Download' : 'Submit'} fileName={fileName} filePath={filePath} />

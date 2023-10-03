@@ -22,8 +22,8 @@ export default function IntroSection({ btn1, btn2, btn3, para, images, showHide 
             <div className={Styles.container}>
                 <p className={Styles.desc}>{para}</p>
                 <div className={Styles.buttons} style={{ paddingBottom: padding }}>
-                    {btn1 && <CTAPopUp cta={btn1} fileName={'Handover-Procedure.pdf'} filePath={'/Brochure/Handover-Procedure.pdf'} /> }
-                    {btn3 && <CTAPopUp cta={btn3} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} /> }
+                    {btn1 && <CTAPopUp cta={btn1} fileName={'Azizi-Venice-Floorplans.pdf'} filePath={'/Brochure/Azizi-Venice-Floorplans.pdf'} /> }
+                    {btn3 && <CTAPopUp cta={btn3} fileName={'Azizi-Venice-Typical-Unit-Plans.pdf'} filePath={'/Brochure/Azizi-Venice-Typical-Unit-Plans.pdf'} /> }
                     {btn2 && <CTAPopUp cta={btn2} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} /> }
 
                 </div>

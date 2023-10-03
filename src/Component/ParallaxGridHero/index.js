@@ -54,7 +54,7 @@ const ParallexGridHero = (headerbar) => {
                             if (progress > 0.89) {
                                 attemptPlay();
                             } else {
-                                videoEl.current.pause();
+                                videoEl?.current?.pause();
                             }
                         }
                     }
@@ -66,6 +66,10 @@ const ParallexGridHero = (headerbar) => {
 
         // Clean up the event listener on unmount
         return () => {
+            for (let i = 0; i < triggers.length; i++) {
+                const trigger = triggers[i];
+                trigger && trigger.kill();
+            }
         };
 
     }, []);

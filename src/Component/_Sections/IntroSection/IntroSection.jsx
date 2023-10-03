@@ -32,10 +32,10 @@ export default function IntroSection({ btn1, btn2, btn3, para, images, showHide 
                         <span className={Styles.infoTitle}>Apartment Type</span>
                         <span className={Styles.infoDesc}>Studios, 1, 2 & 3 Bedrooms</span>
                     </div>
-                    <div className={Styles.infoBox}>
+                    {/* <div className={Styles.infoBox}>
                         <span className={Styles.infoTitle}>Starting size</span>
                         <span className={Styles.infoDesc}>356.07 SQ.FT</span>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className={Styles.CarouselContainer}>

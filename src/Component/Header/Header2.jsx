@@ -37,8 +37,8 @@ export default function Header2() {
                         />
                     </Link>
                     <div className={`${Styles.rightLinks} nav_links`}>
-                        <Link href="/home" className={Styles.navLinks} style={{ opacity: 0 }}>Azizi Venice</Link>
-                        <Link href="tel:80029494" className={Styles.navLinks}>800 (AZIZI) 29494</Link>
+                        {/* <Link href="/" className={Styles.navLinks} style={{ opacity: 0 }}>Azizi Venice</Link> */}
+                        <a href="tel:80029494" className={Styles.navLinks}>800 (AZIZI) 29494</a>
                         {/* <button onClick={() => changeLanguage(language === 'en' ? 'ar' : 'en')} className={Styles.navLinksLanuage}>{translations[language].header.language}</button> */}
                         <button className={Styles.navLinksButton} style={{ position: 'relative' }} >
                             <CTAPopUp />
@@ -49,7 +49,7 @@ export default function Header2() {
             </nav>
 
             {/* mobile nav bar */}
-            <Link href={'/'} className={`${Styles.mobileWhiteLogo} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow}`}>
+            <Link href={'https://azizidevelopments.com/'} className={`${Styles.mobileWhiteLogo} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow}`}>
                 <Image
                     src="/Assets/Azizi_Logo.svg"
                     alt="Image"
@@ -69,7 +69,7 @@ export default function Header2() {
                 />
             </button>
             <nav className={`${Styles.navbarMobile} ${isActive ? Styles.mobileNavShow : Styles.mobileNavHide}`}>
-                <Link href={'/'} className={`${Styles.mobileBlackLogo}`}>
+                <Link href={'https://azizidevelopments.com/'} className={`${Styles.mobileBlackLogo}`}>
                     <Image
                         src="/Assets/black-Logo.svg"
                         alt="Image"
@@ -95,9 +95,9 @@ export default function Header2() {
                         <Link href="https://azizidevelopments.com/en/dubai" className={Styles.navLinksMobile}>Projects</Link>
                         <Link href="https://azizidevelopments.com/en/retail/dubai" className={Styles.navLinksMobile}>Retail</Link>
                         <Link href="https://azizidevelopments.com/en/media-center" className={Styles.navLinksMobile}>Media</Link>
-                        <Link href="/home" className={Styles.navLinksMobile}>Azizi Venice</Link>
+                        {/* <Link href="/home" className={Styles.navLinksMobile}>Azizi Venice</Link> */}
                         {/* <Link href="/" className={Styles.navLinks}>Contact</Link> */}
-                        <Link href="tel:80029494" className={Styles.navLinksMobile}>800 (AZIZI) 29494</Link>
+                        <a href="tel:80029494" className={Styles.navLinksMobile}>800 (AZIZI) 29494</a>
                         {/* <Link href="/" className={Styles.navLinksLanuageMobile}> العربية</Link> */}
                         <Link href="" className={Styles.navLinksButtonMobile} style={{ position: 'relative' }} >
                             <CTAPopUp />ENQUIRE

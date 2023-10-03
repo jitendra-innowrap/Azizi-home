@@ -25,7 +25,7 @@ export default function Header() {
                         <Link href="https://azizidevelopments.com/en/retail/dubai" className={Styles.navLinks}>Retail</Link>
                         <Link href="https://azizidevelopments.com/en/media-center" className={Styles.navLinks}>Media</Link>
                     </div>
-                    <Link href={'/home'} className={`${Styles.navLogo} logo_white`}>
+                        <Link href={'https://azizidevelopments.com/'} className={`${Styles.navLogo} logo_white`}>
                         <Image
                             src="/Assets/Azizi_Logo.svg"
                             alt="Image"
@@ -45,18 +45,18 @@ export default function Header() {
                     </Link>
                         {/* </div> */}
                     <div className={`${Styles.rightLinks} nav_links`}>
-                            <Link href="/home" className={Styles.navLinks} style={{ opacity: 0 }}>Azizi Venice</Link>
+                            <Link href="/" className={Styles.navLinks} style={{ opacity: 0 }}>Azizi Venice</Link>
                             <Link href="tel:80029494" className={Styles.navLinks}>800 (AZIZI) 29494</Link>
                             <button className={Styles.navLinksButton} style={{ position: 'relative' }} >
                                 <CTAPopUp />
                                 ENQUIRE</button>
                     </div>
                 </div>
-            </nav>
+                </nav>
 
             {/* mobile nav bar */}
                 <div className="mobile">
-                    <Link href={'/'} className={`${Styles.mobileWhiteLogo} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow} mobile_header_buttons`}>
+                    <Link href={'https://azizidevelopments.com/'} className={`${Styles.mobileWhiteLogo} ${isActive ? Styles.mobileNavHide : Styles.mobileNavShow} mobile_header_buttons`}>
 
                         <Image
                             src="/Assets/Azizi_Logo_black.svg"
@@ -77,7 +77,7 @@ export default function Header() {
             />
             </button>
             <nav className={`${Styles.navbarMobile} ${isActive ? Styles.mobileNavShow : Styles.mobileNavHide}`}>
-                <Link href={'/'} className={`${Styles.mobileBlackLogo}`}>
+                        <Link href={'https://azizidevelopments.com/'} className={`${Styles.mobileBlackLogo}`}>
                     <Image
                         src="/Assets/black-Logo.svg"
                         alt="Image"
@@ -103,9 +103,9 @@ export default function Header() {
                         <Link href="https://azizidevelopments.com/en/dubai" className={Styles.navLinksMobile}>Projects</Link>
                         <Link href="https://azizidevelopments.com/en/retail/dubai" className={Styles.navLinksMobile}>Retail</Link>
                         <Link href="https://azizidevelopments.com/en/media-center" className={Styles.navLinksMobile}>Media</Link>
-                                {/* <Link  href="/home" className={Styles.navLinksMobile}>Azizi Venice</Link> */}
+                                {/* <Link  href="/" className={Styles.navLinksMobile}>Azizi Venice</Link> */}
                         {/* <Link href="/" className={Styles.navLinks}>Contact</Link> */}
-                        <Link href="tel:80029494" className={Styles.navLinksMobile}>800 (AZIZI) 29494</Link>
+                                <a href="tel:80029494" className={Styles.navLinksMobile}>800 (AZIZI) 29494</a>
                         {/* <Link href="/" className={Styles.navLinksLanuageMobile}> العربية</Link> */}
                                 <Link href="" className={Styles.navLinksButtonMobile} style={{ position: 'relative' }} >
                                     <CTAPopUp />ENQUIRE

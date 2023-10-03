@@ -651,3 +651,6 @@ c-bg-img,
 .carousel-container {
   overflow: hidden;
 }
+.alice-carousel__stage-item.__active {
+  width: 100% !important;
+}

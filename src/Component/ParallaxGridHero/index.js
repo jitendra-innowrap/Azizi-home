@@ -10,17 +10,6 @@ import { useMediaQuery } from 'react-responsive'
 const ParallexGridHero = (headerbar) => {
     const heroRef = useRef(null);
     const videoEl = useRef(null);
-    // const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
-    const handleScroll = (headerbar) => {
-        const viewportBottom = window.scrollY + window.innerHeight;
-        const heroBottom = heroRef.current.offsetTop + heroRef.current.clientHeight;
-
-        if (viewportBottom >= heroBottom) {
-            headerbar.classList.add("nav-dark");
-        } else {
-            headerbar.classList.remove("nav-dark");
-        }
-    };
 
     const attemptPlay = () => {
         videoEl &&
@@ -33,13 +22,8 @@ const ParallexGridHero = (headerbar) => {
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        // document.querySelectorAll("html")[0].classList.add('is-inner-scroll');
         const triggers = [];
         const stickyElements = document.querySelectorAll(".js-scroll-trigger");
-        const headerbar = document.getElementById("header-bar")
-
-        // Add the scroll event listener
-        window.addEventListener('scroll', () => { handleScroll(headerbar) });
 
         for (let i = 0; i < triggers.length; i++) {
             const trigger = triggers[i];
@@ -72,11 +56,6 @@ const ParallexGridHero = (headerbar) => {
                             } else {
                                 videoEl.current.pause();
                             }
-                            if (progress > 0.2) {
-                                headerbar.classList.add("nav-hide");
-                            } else {
-                                headerbar.classList.remove("nav-hide");
-                            }
                         }
                     }
                 });
@@ -87,7 +66,6 @@ const ParallexGridHero = (headerbar) => {
 
         // Clean up the event listener on unmount
         return () => {
-            window.removeEventListener('scroll', handleScroll);
         };
 
     }, []);

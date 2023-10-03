@@ -37,9 +37,11 @@
 }
 
 .title {
-    position: absolute;
-    bottom: 60px;
-    left: 60px;
+    position: relative;
+    /* bottom: 60px;
+    left: 60px; */
+    padding-inline: 60px;
+    top: -60px;
     font-family: Lamore;
     font-size: 32px;
     font-weight: 400;
@@ -207,8 +209,9 @@
         margin-bottom: 15px;
     }
     .title {
-        bottom: 40px;
-        left: 40px;
+        /* bottom: 40px; */
+        /* left: 40px; */
+        padding-inline: 40px;
     }
     
 }
@@ -259,8 +262,9 @@
         margin-top: -60px;
     }
     .title {
-        bottom: 20px;
-        left: 30px;
+        /* bottom: 20px; */
+        /* left: 30px; */
+        padding-inline: 30px;
     }
     .textSection {
         padding-inline: 20px;

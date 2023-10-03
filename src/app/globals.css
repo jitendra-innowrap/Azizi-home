@@ -91,11 +91,22 @@ input:invalid+span::before {
 .PhoneInputInput::-ms-input-placeholder { /* Microsoft Edge */
  color: white;
 }
+.shareBtnAR{
+  right: 130px !important;
+}
+@media (max-width: 1800px) {
+  .shareBtnAR{
+    right: 150px !important;
+  }
+}
 @media (max-width: 1600px) {
   .PhoneInputInput {
     height: 45px;
     margin-bottom: 10px;
     font-size: 14px;
+  }
+  .shareBtnAR{
+    right: 15px !important;
   }
 }
 @media (max-width: 1400px) {

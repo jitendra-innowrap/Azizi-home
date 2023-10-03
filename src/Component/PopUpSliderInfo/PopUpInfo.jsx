@@ -23,9 +23,9 @@ export default function PopUpInfo({handleClose}) {
                         />
                     </button>
                 </div>
-                <h2 className={`${Styles.title}`}>{translations[language].home.doorPopup1Title}</h2>
+                <h2 className={`${Styles.title}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.doorPopup1Title}</h2>
                 <div className={`${Styles.descriptionDiv}`}>
-                    <p className={`${Styles.description}`}>{translations[language].home.doorPopup1Para}</p>
+                    <p className={`${Styles.description}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.doorPopup1Para}</p>
                 </div>
                 <div className={`${Styles.infoDiv}`}>
                     <div className={`${Styles.infoBox}`}>
@@ -37,7 +37,7 @@ export default function PopUpInfo({handleClose}) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>{translations[language].home.doorPopup1V1}</p>
+                            <p className={`${Styles.infoText}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.doorPopup1V1}</p>
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
@@ -49,7 +49,7 @@ export default function PopUpInfo({handleClose}) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>{translations[language].home.doorPopup1V2}</p>
+                            <p className={`${Styles.infoText}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.doorPopup1V2}</p>
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
@@ -61,7 +61,7 @@ export default function PopUpInfo({handleClose}) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>{translations[language].home.doorPopup1V3}</p>
+                            <p className={`${Styles.infoText}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.doorPopup1V3}</p>
                         </div>
                     </div>
                     <div className={`${Styles.infoBox}`}>
@@ -73,7 +73,7 @@ export default function PopUpInfo({handleClose}) {
                             className={Styles.infoImg}
                         />
                         <div className={`${Styles.infoTextDiv}`}>
-                            <p className={`${Styles.infoText}`}>{translations[language].home.doorPopup1V4}</p>
+                            <p className={`${Styles.infoText}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.doorPopup1V4}</p>
                         </div>
                     </div>
                 </div>

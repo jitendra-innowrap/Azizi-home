@@ -165,7 +165,7 @@
     }
     .navLinksLanuageMobile{
         /* text-decoration: underline !important; */
-        max-width: 100px;
+       width: 100%;
     text-align: left;
     background: transparent;
     border: none;

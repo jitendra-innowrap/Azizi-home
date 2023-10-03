@@ -126,7 +126,11 @@
         "destinationV4": "15 min drive",
         "destinationV5": "25 min drive",
         "destinationV6": "25 min drive",
-        "destinationV7": "30 min drive"
+        "destinationV7": "30 min drive",
+        "copyLink": "COPY LINK",
+        "shareFacebook": "SHARE ON FACEBOOK",
+        "shareTwitter": "SHARE ON TWITTER",
+        "shareLinkedin": "SHARE ON LINKEDIN"
       },
       "footer": {
         "aboutUs": "About us",
@@ -285,7 +289,11 @@
         "destinationV4": "",
         "destinationV5": "",
         "destinationV6": "",
-        "destinationV7": ""
+        "destinationV7": "",
+        "copyLink": "نسخ الوصلة",
+        "shareFacebook": "أنشرها على الفيسبوك",
+        "shareTwitter": "حصة على التغريد",
+        "shareLinkedin": "شارك على لينكدين"
       },
       "footer": {
         "aboutUs": "نبذة عنا",

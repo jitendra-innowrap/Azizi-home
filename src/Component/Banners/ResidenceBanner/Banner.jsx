@@ -44,7 +44,7 @@ export default function Banner({ title, image }) {
                     EXPLORE MORE
                 </button> */}
                 <div className={Styles.breadCrumbs}>
-                    <div className={Styles.breadCrumbsBox}>
+                    <div className={Styles.breadCrumbsBox} style={{justifyContent:`${language=='ar'? 'end':''}`, flexDirection:`${language=='ar'? 'row-reverse':''}`}}>
                         <Link className={Styles.Link} href="/home">{translations[language].residence.home}</Link>
                         <Image
                             src="/Assets/Residence/images/chevron-right.png" 

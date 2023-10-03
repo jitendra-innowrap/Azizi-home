@@ -59,7 +59,7 @@ export default function Footer() {
             </div>
             <div className={`${styles.footerMain}`}>
                 <div className={`${styles.linkSection}`}>
-                    <div className={`${styles.linkColumn} ${styles.linkColumn1}`}>
+                    <div className={`${styles.linkColumn} ${styles.linkColumn1}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>
                         <span  className={`${styles.linkColumnHeading}`}>{translations[language].footer.aboutUs}</span>
                         <div className={`${styles.links}`}>
                             <Link href="https://azizidevelopments.com/en/about" className={styles.link}>{translations[language].footer.aboutUs}</Link>
@@ -68,7 +68,7 @@ export default function Footer() {
                             <Link href="https://azizidevelopments.com/en/contact" className={styles.link}>{translations[language].footer.contact}</Link>
                         </div>
                     </div>
-                    <div className={`${styles.linkColumn} ${styles.linkColumn2}`}>
+                    <div className={`${styles.linkColumn} ${styles.linkColumn2}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>
                         <span  className={`${styles.linkColumnHeading}`}>{translations[language].footer.ourPorfolio}</span>
                         <div className={`${styles.links}`}>
                             <Link href="https://azizidevelopments.com/en/destinations" className={styles.link}>{translations[language].footer.communities}</Link>
@@ -78,7 +78,7 @@ export default function Footer() {
                             <Link href="https://azizidevelopments.com/en/walkthrough" className={styles.link}>{translations[language].footer.virtualTour}</Link>
                         </div>
                     </div>
-                    <div className={`${styles.linkColumn}`}>
+                    <div className={`${styles.linkColumn}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>
                         <span  className={`${styles.linkColumnHeading}`}>{translations[language].footer.digitalServices}</span>
                         <div className={`${styles.links}`}>
                             <Link href="https://azizidevelopments.com/en/exclusive-offers" className={styles.link}>{translations[language].footer.offer}</Link>
@@ -118,7 +118,7 @@ export default function Footer() {
                     </div> */}
                 </div>
             </div>
-            <div className={`${styles.footerFooter}`}>
+            <div className={`${styles.footerFooter}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>
                 <span className={`${styles.privacySpan}`}><Link href="https://azizidevelopments.com/en/sitemap" className={styles.PrivacyLink}>{translations[language].footer.sitemap}</Link> . <Link href="https://azizidevelopments.com/en/privacy" className={styles.PrivacyLink}>{translations[language].footer.privacyPolicy}</Link></span>
                 <span className={`${styles.copySpan}`}>{translations[language].footer.copyWrite}</span>
             </div>

@@ -22,8 +22,8 @@ export default function FormSection() {
                     className={`${styles.bgImg}`}
                 />
                     <div className={`${styles.titleContainer}`}>
-                        <h2 className={`${styles.title}`}>{translations[language].home.enquireNow}</h2>
-                        <p  className={`${styles.paragraph}`}>{translations[language].home.enquireNowInfo}</p>
+                        <h2 className={`${styles.title}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.enquireNow}</h2>
+                        <p  className={`${styles.paragraph}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.enquireNowInfo}</p>
                     </div>
                     <div className={`${styles.formContainer}`}>
                      <LeadForm  />

@@ -17,13 +17,14 @@ import 'react-phone-number-input/style.css'
 import { useRouter } from "next/navigation";
 
 export default function LeadForm({ isArabic, isTitle, cta, fileName, filePath }) {
+    const { language, changeLanguage } = useLanguage();
     const { download } = useDownloader();
     const [subTitle, setSubTitle] = useState('');
-    const subTitleClass = isArabic ? 'subTitleRight' : '';
-    const errorClass = isArabic ? 'errorRight' : '';
-    const submitBtnClass = isArabic ? 'submitBtnRight' : '';
-    const inputContainerClass = isArabic ? 'inputContainerRight' : '';
-    const phoneCountryCodeClass = isArabic ? 'phoneCountryCodeRight' : '';
+    const subTitleClass = language=='ar' ? 'subTitleRight' : '';
+    const errorClass = language=='ar' ? 'errorRight' : '';
+    const submitBtnClass = language=='ar' ? 'submitBtnRight' : '';
+    const inputContainerClass = language=='ar' ? 'inputContainerRight' : '';
+    const phoneCountryCodeClass = language=='ar' ? 'phoneCountryCodeRight' : '';
     const router = useRouter()
 
     // State to track whether to show the country code
@@ -211,7 +212,6 @@ export default function LeadForm({ isArabic, isTitle, cta, fileName, filePath })
             .catch((error) => console.log('error', error));
         }
     };
-    const { language, changeLanguage } = useLanguage();
 
     return (<>
         {isTitle && <span className={`${styles.subTitle} ${subTitleClass}`}>{isArabic ? 'سجّل اهتمامك' : 'REGISTER YOUR INTEREST'}</span>}
@@ -266,7 +266,7 @@ export default function LeadForm({ isArabic, isTitle, cta, fileName, filePath })
                 {/* {phoneError && <p className={`${styles.error} ${errorClass}`}>{isArabic ? 'رقم الهاتف غير صحيح' : 'Invalid phone number.'}</p>} */}
                 {phoneError && <p className={`${styles.error} ${errorClass}`}>{translations[language].form.phoneNoRequired} </p>}
             </div>
-            <div className={styles.submitWrapper}>
+            <div className={styles.submitWrapper} style={{float:`${language=='ar'? 'right':''}`}}>
                         {fileName ? 
                         <button className={`${styles.submitBtn} ${submitBtnClass}`}
                             onClick={handleDownload}>

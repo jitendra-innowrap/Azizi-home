@@ -67,7 +67,7 @@ export function CTAPopUpContainer({ handleClose, fileName, filePath }) {
                     quality={100}
                     className={`${styles.bgImg}`}
                 />
-                <div className={`${styles.titleContainer}`}>
+                <div className={`${styles.titleContainer}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>
                     <h2 className={`${styles.title}`}>{translations[language].home.enquireNow}</h2>
                     <p className={`${styles.paragraph}`}>{translations[language].home.enquireNowInfo}</p>
                 </div>

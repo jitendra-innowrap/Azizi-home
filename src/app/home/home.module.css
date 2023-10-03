@@ -124,6 +124,7 @@
 .categoryButtons{
     display: flex;
     gap: 60px;
+    width: 100%;
 }
 .categoryButtonIcon{
     width: 24px;

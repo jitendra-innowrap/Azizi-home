@@ -3,6 +3,8 @@ import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 import Styles from './DoorStepSliderImage.module.css'
 import homeStyle from '@/app/home/home.module.css'
+import translations from '@/translations/translations.json';
+import useLanguage from '@/hooks/useLanguage';
 
 
 export default function DoorStepSliderImage({ url, title, imageHeight, imageWidth }) {
@@ -37,6 +39,8 @@ export default function DoorStepSliderImage({ url, title, imageHeight, imageWidt
         };
     }, []);
 
+    const { language, changeLanguage } = useLanguage();
+
     return (
         <div className={Styles.imageContainer}
             ref={MouseFollowContainer}
@@ -52,7 +56,7 @@ export default function DoorStepSliderImage({ url, title, imageHeight, imageWidt
                 quality={100}
                 className={Styles.image}
             />
-            <span className={Styles.title}>{title}</span>
+            <span className={Styles.title} style={{textAlign:`${language=='ar'? 'right':''}`}}>{title}</span>
             <div className={Styles.overlay}></div>
         </div>
     )

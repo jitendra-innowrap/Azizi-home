@@ -55,7 +55,8 @@
 .breadCrumbs {
     position: absolute;
     top: 126px;
-    left: 60px;
+    width: 100%;
+    padding-inline: 60px;
 }
 
 .breadCrumbsBox {
@@ -110,7 +111,7 @@
 
     .breadCrumbs {
         top: 100px;
-        left: 40px;
+        padding-inline: 40px;
     }
 
 }
@@ -127,7 +128,7 @@
 }
 @media (max-width: 992px) {
     .breadCrumbs {
-        left: 20px;
+        padding-inline: 20px;
     }
     .title {
         font-size: 55px;

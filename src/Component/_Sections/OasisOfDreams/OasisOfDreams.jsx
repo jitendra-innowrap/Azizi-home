@@ -18,6 +18,7 @@ import RightAnimation2 from '@/Component/RightAnimation2/RightAnimation2'
 
 export default function OasisOfDreams() {
     const { language, changeLanguage } = useLanguage();
+    const shareBtnAR = language=='ar' ? 'shareBtnAR' : '';
     const [isVisible, setIsVisible] = useState(false);
     const [copied, setCopied] = useState(false);
 
@@ -73,7 +74,7 @@ export default function OasisOfDreams() {
                                     />
                                     <div className={homeStyle.categoryContain}>
                                         <span>{translations[language].home.oasisCategoryNo1}</span>
-                                        <p>{translations[language].home.oasisCategoryValue1}</p>
+                                        <p style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.oasisCategoryValue1}</p>
                                     </div>
                                 </div>
                                 <div className={homeStyle.categorybox}>
@@ -86,7 +87,7 @@ export default function OasisOfDreams() {
                                     />
                                     <div className={homeStyle.categoryContain}>
                                         <span>{translations[language].home.oasisCategoryNo2}</span>
-                                        <p>{translations[language].home.oasisCategoryValue2}</p>
+                                        <p style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.oasisCategoryValue2}</p>
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +102,7 @@ export default function OasisOfDreams() {
                                     />
                                     <div className={homeStyle.categoryContain}>
                                         <span>{translations[language].home.oasisCategoryNo2}</span>
-                                        <p>{translations[language].home.oasisCategoryValue3}</p>
+                                        <p style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.oasisCategoryValue3}</p>
                                     </div>
                                 </div>
                                 <div className={homeStyle.categorybox}>
@@ -114,7 +115,7 @@ export default function OasisOfDreams() {
                                     />
                                     <div className={homeStyle.categoryContain}>
                                         <span>{translations[language].home.oasisCategoryNo4}</span>
-                                        <p>{translations[language].home.oasisCategoryValue4}</p>
+                                        <p style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.oasisCategoryValue4}</p>
                                     </div>
                                 </div>
                             </div>
@@ -129,7 +130,7 @@ export default function OasisOfDreams() {
                                     />
                                     <div className={homeStyle.categoryContain}>
                                         <span>{translations[language].home.oasisCategoryNo5}</span>
-                                        <p>{translations[language].home.oasisCategoryValue5}</p>
+                                        <p style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.oasisCategoryValue5}</p>
                                     </div>
                                 </div>
                                 <div className={homeStyle.categorybox}>
@@ -142,11 +143,11 @@ export default function OasisOfDreams() {
                                     />
                                     <div className={homeStyle.categoryContain}>
                                         <span>{translations[language].home.oasisCategoryNo6}</span>
-                                        <p>{translations[language].home.oasisCategoryValue6}</p>
+                                        <p style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.oasisCategoryValue6}</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className={`${homeStyle.categoryButtons} ${Styles.categoryboxs} ${homeStyle.categorySectionWidth}`}>
+                            <div className={`${homeStyle.categoryButtons} ${Styles.categoryboxs} ${homeStyle.categorySectionWidth}`} style={{justifyContent:`${language=='ar'? 'end':''}`}}>
                                 <button className={homeStyle.categoryButton} onClick={toggleVisibility}>
                                     <Image
                                         src="/Assets/Home/svgs/Shaee-icon.svg"
@@ -160,14 +161,14 @@ export default function OasisOfDreams() {
                                 <CTAPopUp cta={translations[language].home.downloadBrochure} fileName={'Brochure.pdf'} filePath={'/Brochure/Azizi-Venice-Brochure.pdf'} />
                             </div>
                             {isVisible && 
-                                <div className={`${Styles.shareListContanier}`}>
+                                <div className={`${Styles.shareListContanier} ${shareBtnAR}`}>
                                     <CopyToClipboard className={`${Styles.shareListBox}`} text={'https://azizi-home-demo.vercel.app/home'} url={'https://azizi-home-demo.vercel.app/home'}  onCopy={handleCopy}>
                                         <span><img
                                             src="/Assets/Icons/copy_link.svg"
                                             alt="Image"
                                             className={Styles.shareListIcon}
                                         />
-                                        COPY LINK</span>
+                                        {translations[language].home.copyLink}</span>
                                     </CopyToClipboard>
                                     <FacebookShareButton className={`${Styles.shareListBox}`}  url={'https://azizi-home-demo.vercel.app/home'}  quote='Azizi'>
                                         <img
@@ -175,7 +176,7 @@ export default function OasisOfDreams() {
                                             alt="Image"
                                             className={Styles.shareListIcon}
                                         />
-                                        SHARE ON FACEBOOK
+                                        {translations[language].home.shareFacebook}
                                     </FacebookShareButton>
                                     <TwitterShareButton className={`${Styles.shareListBox}`}  url={'https://azizi-home-demo.vercel.app/home'} title='Azizi'>
                                         <img
@@ -183,7 +184,7 @@ export default function OasisOfDreams() {
                                             alt="Image"
                                             className={Styles.shareListIcon}
                                         />
-                                        SHARE ON TWITTER
+                                        {translations[language].home.shareTwitter}
                                     </TwitterShareButton>
                                     <LinkedinShareButton className={`${Styles.shareListBox}`}  url={'https://azizi-home-demo.vercel.app/home'} title='Azizi'>
                                         <img
@@ -191,7 +192,7 @@ export default function OasisOfDreams() {
                                             alt="Image"
                                             className={Styles.shareListIcon}
                                         />
-                                        SHARE ON LINKEDIN
+                                        {translations[language].home.shareLinkedin}
                                     </LinkedinShareButton>
                                 </div>
                             }

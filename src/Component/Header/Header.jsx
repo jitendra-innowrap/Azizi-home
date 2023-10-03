@@ -101,7 +101,7 @@ export default function Header() {
                     />
                 </button>
                 <div className={Styles.navbarContainerMobile}>
-                    <div className={Styles.LinksMobile}>
+                    <div className={Styles.LinksMobile} style={{textAlign:`${language=='ar'? 'right':''}`}}>
                         <Link href="https://azizidevelopments.com/en/about" className={Styles.navLinksMobile}>{translations[language].header.ABOUT}</Link>
                         <Link href="https://azizidevelopments.com/en/destinations" className={Styles.navLinksMobile}>{translations[language].header.COMMUNITIES}</Link>
                         <Link href="https://azizidevelopments.com/en/dubai" className={Styles.navLinksMobile}>{translations[language].header.PROJECTS}</Link>
@@ -111,7 +111,7 @@ export default function Header() {
                         {/* <Link href="/" className={Styles.navLinks}>Contact</Link> */}
                         <Link href="tel:80029494" className={Styles.navLinksMobile}>800 (AZIZI) 29494</Link>
                         {/* <Link href="/" className={Styles.navLinksLanuageMobile}> العربية</Link> */}
-                        <button onClick={() => changeLanguage(language === 'en' ? 'ar' : 'en')} className={Styles.navLinksLanuageMobile}>{translations[language].header.language}</button>
+                        <button onClick={() => changeLanguage(language === 'en' ? 'ar' : 'en')} className={Styles.navLinksLanuageMobile} style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].header.language}</button>
                                 <Link href="" className={Styles.navLinksButtonMobile} style={{ position: 'relative' }} >
                                     <CTAPopUp />{translations[language].header.ENQUIRE}
                                 </Link>

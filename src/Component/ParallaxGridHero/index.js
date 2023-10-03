@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from 'next/image';
 import VideoPopUp from '../Molecules/VideoPopUp/VideoPopUp';
-import { useMediaQuery } from 'react-responsive'
+// import { useMediaQuery } from 'react-responsive'
 
 
 const ParallexGridHero = (headerbar) => {
@@ -69,9 +69,9 @@ const ParallexGridHero = (headerbar) => {
                             target.style.setProperty("--p1", progress);
                             target.style.setProperty("--p2", 1 - progress);
                             if (progress > 0.89) {
-                                // attemptPlay();
+                                attemptPlay();
                             } else {
-                                // videoEl.current.pause();
+                                videoEl.current.pause();
                             }
                             if (progress > 0.2) {
                                 headerbar.classList.add("nav-hide");

@@ -99,7 +99,9 @@ export default function Header2() {
                         {/* <Link href="/" className={Styles.navLinks}>Contact</Link> */}
                         <Link href="tel:80029494" className={Styles.navLinksMobile}>800 (AZIZI) 29494</Link>
                         {/* <Link href="/" className={Styles.navLinksLanuageMobile}> العربية</Link> */}
-                        <Link href="#home_form" className={Styles.navLinksButtonMobile}>ENQUIRE</Link>
+                        <Link href="" className={Styles.navLinksButtonMobile} style={{ position: 'relative' }} >
+                            <CTAPopUp />ENQUIRE
+                        </Link>
                     </div>
                 </div>
             </nav>

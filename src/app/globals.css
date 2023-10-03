@@ -647,3 +647,7 @@ c-bg-img,
   z-index: 2;
   backface-visibility: hidden;
 }
+
+.carousel-container {
+  overflow: hidden;
+}

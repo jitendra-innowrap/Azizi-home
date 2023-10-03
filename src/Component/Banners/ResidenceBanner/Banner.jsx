@@ -31,6 +31,7 @@ export default function Banner({ title, image }) {
         gsap.registerPlugin(ScrollTrigger);
         const stickyElements = document.querySelectorAll(".parallax-hero-banner");
         const childElement = document.querySelector('#banner-title');
+        const bannerImg = document.querySelector('#banner-img');
         const headerbar = document.querySelector("nav")
         window.addEventListener('scroll', () => { handleScroll(headerbar) });
         if (stickyElements) {
@@ -44,9 +45,13 @@ export default function Banner({ title, image }) {
                     scrub: 0,
                     pin: true,
                     onUpdate: ({progress}) => {
-                        console.log(progress)
+                        let bannerWidth = progress * 1000 + 50
+                        if(bannerWidth > 94 && bannerWidth <= 100){
+                            bannerImg.style.width = `${bannerWidth}%`
+                        }
                         if(progress > 0.050){
                             childElement.style.top = `${progress*100}px`
+
                         }
                         if(progress < 0.049){
                             childElement.style.top = `-${progress*1100}px`
@@ -100,7 +105,7 @@ export default function Banner({ title, image }) {
                 <div className={Styles.blackBannerContainer}>
                     <h1 className={Styles.titleBlack} data-speed="-1.1" id='main-title'>{title}</h1>
                 </div>
-                <div className={Styles.bannerImg}>
+                <div className={Styles.bannerImg} id="banner-img">
                     <div className={`${Styles.titleWhite}`} id="banner-title" data-speed="0">{title}</div>
                     <img
                         src={image}

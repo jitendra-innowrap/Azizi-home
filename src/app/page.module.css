@@ -342,7 +342,7 @@
   }
   .form {
     padding-top: 15px;
-    width: 357px;
+    width:357px;
   }
   .submitBtn {
     margin-top: 25px;
@@ -437,7 +437,8 @@
     line-height: 28px;
   }
   .form {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     padding-top: 10px;
   }
   .submitWrapper {
@@ -512,7 +513,8 @@
     line-height: 28px;
   }
   .form {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     padding-top: 10px;
   }
   .submitWrapper {

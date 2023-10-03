@@ -21,11 +21,11 @@ export default function FormSection() {
                         quality={100}
                     className={`${styles.bgImg}`}
                 />
-                    <div className={`${styles.titleContainer}`}>
+                    <div className={`${styles.titleContainer}`} style={{alignItems:`${language=='ar'? 'end':''}`}}>
                         <h2 className={`${styles.title}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.enquireNow}</h2>
                         <p  className={`${styles.paragraph}`} style={{textAlign:`${language=='ar'? 'right':''}`}}>{translations[language].home.enquireNowInfo}</p>
                     </div>
-                    <div className={`${styles.formContainer}`}>
+                    <div className={`${styles.formContainer}`} style={{alignItems:`${language=='ar'? 'end':''}`}}>
                      <LeadForm  />
                     </div>
                 </div>
